@@ -1,0 +1,122 @@
+{
+  "packet_id": "P011",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "clinic",
+      "date": "2024-12-10",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2024-12-10\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\nKnown gastro-oesophageal reflux disease.\n\nMedications:\n- insulin glargine 16 units at night\n- lisinopril 10 mg once daily\n- atorvastatin 20 mg at night\n- levothyroxine 50 micrograms once daily before breakfast"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "gp_letter",
+      "date": "2025-07-22",
+      "text": "GP referral letter, primary care centre, Valencia\nDate: 2025-07-22\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\nKnown gastro-oesophageal reflux disease.\nKnown atrial fibrillation.\n\nMedications:\n- insulin glargine 16 units at night\n- lisinopril 10 mg once daily\n- atorvastatin 20 mg at night\n- levothyroxine 50 micrograms once daily before breakfast"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "pharmacy",
+      "date": "2026-01-31",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2026-01-31\nPatient: synthetic case P011, 56-year-old male.\n\n\nMedications:\n- insulin glargine 16 units at night\n- lisinopril 10 mg once daily\n- atorvastatin 20 mg at night\n- levothyroxine 50 micrograms once daily before breakfast"
+    },
+    {
+      "doc_id": "D4",
+      "kind": "discharge",
+      "date": "2026-05-04",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-05-04\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\nKnown gastro-oesophageal reflux disease.\nKnown chronic kidney disease stage 3a.\n\nMedications:\n- insulin glargine 16 units at night\n- bisoprolol 2.5 mg once daily\n- atorvastatin stopped on 2026-05-04\n- levothyroxine 50 micrograms once daily before breakfast"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D4"
+        ]
+      },
+      {
+        "name": "atrial fibrillation",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "supported",
+        "sources": [
+          "D4"
+        ]
+      },
+      {
+        "name": "asthma",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "no_info",
+      "allergen": null,
+      "reaction": null
+    },
+    "medications": [
+      {
+        "drug": "insulin glargine",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "insulin glargine 16 units at night",
+          "D2": "insulin glargine 16 units at night",
+          "D3": "insulin glargine 16 units at night",
+          "D4": "insulin glargine 16 units at night"
+        }
+      },
+      {
+        "drug": "bisoprolol",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D4": "bisoprolol 2.5 mg once daily"
+        }
+      },
+      {
+        "drug": "lisinopril",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily",
+          "D2": "lisinopril 10 mg once daily",
+          "D3": "lisinopril 10 mg once daily"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night",
+          "D3": "atorvastatin 20 mg at night",
+          "D4": "atorvastatin stopped on 2026-05-04"
+        }
+      },
+      {
+        "drug": "levothyroxine",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "levothyroxine 50 micrograms once daily before breakfast",
+          "D2": "levothyroxine 50 micrograms once daily before breakfast",
+          "D3": "levothyroxine 50 micrograms once daily before breakfast",
+          "D4": "levothyroxine 50 micrograms once daily before breakfast"
+        }
+      }
+    ]
+  }
+}

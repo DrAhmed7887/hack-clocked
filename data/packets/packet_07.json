@@ -1,0 +1,105 @@
+{
+  "packet_id": "P007",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "clinic",
+      "date": "2025-03-15",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2025-03-15\nPatient: synthetic case P007, 51-year-old female.\n\nProblems:\nKnown asthma.\nKnown type 2 diabetes.\n\nMedications:\n- metformin 500 mg twice daily\n- amlodipine 5 mg once daily\n- insulin glargine 16 units at night\n- lisinopril 10 mg once daily"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "gp_letter",
+      "date": "2026-04-16",
+      "text": "GP referral letter, primary care centre, Valencia\nDate: 2026-04-16\nPatient: synthetic case P007, 51-year-old female.\n\nProblems:\nKnown asthma.\nKnown type 2 diabetes.\n\nMedications:\n- metformin 500 mg twice daily\n- amlodipine 5 mg once daily\n- insulin glargine 16 units at night\n- lisinopril 10 mg once daily"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "pharmacy",
+      "date": "2026-08-01",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2026-08-01\nPatient: synthetic case P007, 51-year-old female.\n\n\nMedications:\n- metformin 500 mg twice daily\n- insulin glargine stopped on 2026-08-01\n- salbutamol inhaler 100 micrograms, 2 puffs as needed\n- lisinopril 10 mg once daily"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "asthma",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      },
+      {
+        "name": "type 2 diabetes",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "no_info",
+      "allergen": null,
+      "reaction": null
+    },
+    "medications": [
+      {
+        "drug": "metformin",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "metformin 500 mg twice daily",
+          "D2": "metformin 500 mg twice daily",
+          "D3": "metformin 500 mg twice daily"
+        }
+      },
+      {
+        "drug": "amlodipine",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "amlodipine 5 mg once daily",
+          "D2": "amlodipine 5 mg once daily"
+        }
+      },
+      {
+        "drug": "insulin glargine",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "insulin glargine 16 units at night",
+          "D2": "insulin glargine 16 units at night",
+          "D3": "insulin glargine stopped on 2026-08-01"
+        }
+      },
+      {
+        "drug": "salbutamol inhaler",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D3": "salbutamol inhaler 100 micrograms, 2 puffs as needed"
+        }
+      },
+      {
+        "drug": "lisinopril",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily",
+          "D2": "lisinopril 10 mg once daily",
+          "D3": "lisinopril 10 mg once daily"
+        }
+      }
+    ]
+  }
+}

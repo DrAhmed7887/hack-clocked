@@ -1,0 +1,104 @@
+{
+  "packet_id": "P012",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "discharge",
+      "date": "2024-06-06",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2024-06-06\nPatient: synthetic case P012, 40-year-old male.\n\nProblems:\nKnown essential hypertension.\n\nAllergy: latex (contact dermatitis).\n\nMedications:\n- metformin 500 mg twice daily\n- warfarin 3 mg once daily, dose by INR\n- lisinopril 10 mg once daily\n- salbutamol inhaler 100 micrograms, 2 puffs as needed"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "clinic",
+      "date": "2024-09-16",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2024-09-16\nPatient: synthetic case P012, 40-year-old male.\n\nProblems:\nKnown essential hypertension.\nKnown asthma.\n\nAllergy: latex (contact dermatitis).\n\nMedications:\n- metformin 500 mg twice daily\n- warfarin 3 mg once daily, dose by INR\n- lisinopril 10 mg once daily\n- salbutamol inhaler 100 micrograms, 2 puffs as needed"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "pharmacy",
+      "date": "2025-12-01",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-12-01\nPatient: synthetic case P012, 40-year-old male.\n\n\nAllergy: latex (contact dermatitis).\n\nMedications:\n- amlodipine 5 mg once daily\n- warfarin stopped on 2025-12-01\n- lisinopril 20 mg once daily\n- salbutamol inhaler 100 micrograms, 2 puffs as needed"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "essential hypertension",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      },
+      {
+        "name": "asthma",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "known",
+      "allergen": "latex",
+      "reaction": "contact dermatitis"
+    },
+    "medications": [
+      {
+        "drug": "metformin",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "metformin 500 mg twice daily",
+          "D2": "metformin 500 mg twice daily"
+        }
+      },
+      {
+        "drug": "amlodipine",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D3": "amlodipine 5 mg once daily"
+        }
+      },
+      {
+        "drug": "warfarin",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "warfarin 3 mg once daily, dose by INR",
+          "D2": "warfarin 3 mg once daily, dose by INR",
+          "D3": "warfarin stopped on 2025-12-01"
+        }
+      },
+      {
+        "drug": "lisinopril",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily",
+          "D2": "lisinopril 10 mg once daily",
+          "D3": "lisinopril 20 mg once daily"
+        }
+      },
+      {
+        "drug": "salbutamol inhaler",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D2": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D3": "salbutamol inhaler 100 micrograms, 2 puffs as needed"
+        }
+      }
+    ]
+  }
+}

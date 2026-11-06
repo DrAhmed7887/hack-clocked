@@ -1,0 +1,112 @@
+{
+  "packet_id": "P013",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "discharge",
+      "date": "2024-04-14",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2024-04-14\nPatient: synthetic case P013, 36-year-old male.\n\nProblems:\nKnown essential hypertension.\nKnown asthma.\n\nAllergy: latex (contact dermatitis).\n\nMedications:\n- bisoprolol 2.5 mg once daily\n- atorvastatin 20 mg at night\n- amlodipine 5 mg once daily\n- lisinopril 10 mg once daily"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "gp_letter",
+      "date": "2024-04-15",
+      "text": "GP referral letter, primary care centre, Valencia\nDate: 2024-04-15\nPatient: synthetic case P013, 36-year-old male.\n\nProblems:\nKnown essential hypertension.\nKnown atrial fibrillation.\n\nNo known drug allergies.\n\nMedications:\n- bisoprolol 2.5 mg once daily\n- atorvastatin 20 mg at night\n- amlodipine 5 mg once daily\n- lisinopril 10 mg once daily"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "pharmacy",
+      "date": "2025-09-17",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-09-17\nPatient: synthetic case P013, 36-year-old male.\n\n\nMedications:\n- bisoprolol 2.5 mg once daily\n- insulin glargine 16 units at night\n- atorvastatin stopped on 2025-09-17\n- amlodipine 10 mg once daily\n- lisinopril 10 mg once daily"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "essential hypertension",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      },
+      {
+        "name": "atrial fibrillation",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "asthma",
+        "status": "supported",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "name": "hypothyroidism",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "conflicting",
+      "allergen": "latex",
+      "reaction": "contact dermatitis"
+    },
+    "medications": [
+      {
+        "drug": "bisoprolol",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "bisoprolol 2.5 mg once daily",
+          "D2": "bisoprolol 2.5 mg once daily",
+          "D3": "bisoprolol 2.5 mg once daily"
+        }
+      },
+      {
+        "drug": "insulin glargine",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D3": "insulin glargine 16 units at night"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night",
+          "D3": "atorvastatin stopped on 2025-09-17"
+        }
+      },
+      {
+        "drug": "amlodipine",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "amlodipine 5 mg once daily",
+          "D2": "amlodipine 5 mg once daily",
+          "D3": "amlodipine 10 mg once daily"
+        }
+      },
+      {
+        "drug": "lisinopril",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily",
+          "D2": "lisinopril 10 mg once daily",
+          "D3": "lisinopril 10 mg once daily"
+        }
+      }
+    ]
+  }
+}
