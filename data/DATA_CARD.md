@@ -23,7 +23,7 @@ Each packet has an answer key (`truth`) used only for scoring, never sent to any
 ## Known limits
 - Drug and problem lists are drawn at random: a packet can list warfarin without atrial fibrillation. The packets test **record comparison**, not prescribing logic.
 - Frequencies of each label are fixed by design, not taken from real prevalence. No number from this data describes real patients.
-- English only (the Cairo document is presented as already translated).
+- Clean set: English only (the Cairo document is presented as already translated). Hard set: Valencia GP letters in Spanish.
 
 ## Reproduce
 `python3 data/generate.py` (seed `20261107`) regenerates the identical files.
