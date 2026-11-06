@@ -1,0 +1,119 @@
+{
+  "packet_id": "P001",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "clinic",
+      "date": "2024-08-15",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2024-08-15\nPatient: synthetic case P001, 38-year-old female.\n\nProblems:\nHistory of chronic kidney disease stage 3a.\n\nMedications:\n- atorvastatin 20mg ON\n- bisoprolol 2.5mg o.d.\n- metformin 500 mg bd\n- warfarin 3 mg OD as per INR\n- omeprazole 20mg daily"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "discharge",
+      "date": "2025-01-11",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-01-11\nPatient: synthetic case P001, 38-year-old female.\n\nProblems:\nKnown chronic kidney disease stage 3a.\nHistory of type 2 diabetes.\n\nMedications:\n- atorvastatin 20 mg ON\n- bisoprolol 2.5 mg o.d.\n- metformin 500mg bd\n- warfarin 3 mg OD as per INR\n- omeprazole 20mg o.d."
+    },
+    {
+      "doc_id": "D3",
+      "kind": "pharmacy",
+      "date": "2025-04-17",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-04-17\nPatient: synthetic case P001, 38-year-old female.\n\n\nAllergies: sulfonamides (hives)\n\nMedications:\n- atorvastatin 20 mg ON\n- bisoprolol 2.5mg OD\n- metformin 500 mg b.i.d.\n- warfarin 3mg OD as per INR\n- omeprazole 20mg OD"
+    },
+    {
+      "doc_id": "D4",
+      "kind": "gp_letter",
+      "date": "2025-12-25",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2025-12-25\nPaciente: caso sintético P001, 38 años, mujer.\n\nAntecedentes:\n- enfermedad renal crónica estadio 3a\n\nSin alergias medicamentosas conocidas.\n\nTratamiento:\n- atorvastatina suspendido el 2025-12-25\n- bisoprolol 5 mg una vez al día\n- metformina 500 mg cada 12 horas\n- omeprazol 20 mg una vez al día"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D4"
+        ]
+      },
+      {
+        "name": "type 2 diabetes",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "hypothyroidism",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "conflicting",
+      "allergen": "sulfonamides",
+      "reaction": "hives"
+    },
+    "medications": [
+      {
+        "drug": "atorvastatin",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night",
+          "D3": "atorvastatin 20 mg at night",
+          "D4": "atorvastatin stopped on 2025-12-25"
+        }
+      },
+      {
+        "drug": "bisoprolol",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "bisoprolol 2.5 mg once daily",
+          "D2": "bisoprolol 2.5 mg once daily",
+          "D3": "bisoprolol 2.5 mg once daily",
+          "D4": "bisoprolol 5 mg once daily"
+        }
+      },
+      {
+        "drug": "metformin",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "metformin 500 mg twice daily",
+          "D2": "metformin 500 mg twice daily",
+          "D3": "metformin 500 mg twice daily",
+          "D4": "metformin 500 mg twice daily"
+        }
+      },
+      {
+        "drug": "warfarin",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "warfarin 3 mg once daily, dose by INR",
+          "D2": "warfarin 3 mg once daily, dose by INR",
+          "D3": "warfarin 3 mg once daily, dose by INR"
+        }
+      },
+      {
+        "drug": "omeprazole",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "omeprazole 20 mg once daily",
+          "D2": "omeprazole 20 mg once daily",
+          "D3": "omeprazole 20 mg once daily",
+          "D4": "omeprazole 20 mg once daily"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

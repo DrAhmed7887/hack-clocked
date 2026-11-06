@@ -1,7 +1,7 @@
 """Gate G1: run every synthetic packet through the handoff and score it against the answer key.
 
 Writes eval/results.json and eval/RESULTS.md. Every public number must come from this script.
-Usage: python3 eval/score.py [N]   (N = first N packets; default all)
+Usage: python3 eval/score.py [N] [clean|hard]   (N = first N packets, 0 = all; default all, clean)
 """
 import json
 import sys
@@ -27,15 +27,18 @@ def score_packet(packet: dict) -> dict:
     got_probs = set(out["problems"])
     return {"packet": packet["packet_id"], "allergy": rows["allergy"], "meds": med_rows,
             "invented_meds": invented_meds, "missed_problems": sorted(truth_probs - got_probs),
-            "invented_problems": sorted(got_probs - truth_probs), "credits": out["credits"]}
+            "invented_problems": sorted(got_probs - truth_probs), "problems_total": len(truth_probs),
+            "credits": out["credits"]}
 
 
 def main() -> None:
-    files = sorted((ROOT / "data" / "packets").glob("packet_*.json"))
-    if len(sys.argv) > 1:
+    variant = sys.argv[2] if len(sys.argv) > 2 else "clean"
+    folder = "packets" if variant == "clean" else "packets_hard"
+    files = sorted((ROOT / "data" / folder).glob("packet_*.json"))
+    if len(sys.argv) > 1 and int(sys.argv[1]) > 0:
         files = files[: int(sys.argv[1])]
     results = [score_packet(json.loads(f.read_text())) for f in files]
-    (ROOT / "eval" / "results.json").write_text(json.dumps(results, indent=1))
+    (ROOT / "eval" / f"results_{variant}.json").write_text(json.dumps(results, indent=1))
 
     allergy_ok = sum(r["allergy"][0] == r["allergy"][1] for r in results)
     conf = Counter((r["allergy"][0], r["allergy"][1]) for r in results)
@@ -48,16 +51,17 @@ def main() -> None:
     nonconsistent = [m for m in med if m[1] != "consistent"]
     flagged = sum(m[2] not in ("consistent", "MISSING") for m in nonconsistent)
     lines = [
-        f"# G1 results ({len(results)} synthetic packets, {sum(len(json.loads(f.read_text())['documents']) for f in files)} documents)",
+        f"# G1 results, {variant} set ({len(results)} synthetic packets, {sum(len(json.loads(f.read_text())['documents']) for f in files)} documents)",
         "", "Produced by `python3 eval/score.py`. Synthetic data only.", "",
         f"- Allergy state correct: **{allergy_ok}/{len(results)}**",
         f"- Allergy conflicts flagged: **{caught}/{len(allergy_conflicts)}**",
         f"- Medication labels correct: **{med_ok}/{len(med)}**",
         f"- Medication discrepancies flagged (any non-consistent label): **{flagged}/{len(nonconsistent)}**",
+        f"- Problems found: **{sum(r['problems_total'] - len(r['missed_problems']) for r in results)}/{sum(r['problems_total'] for r in results)}**",
         f"- Invented medications: **{sum(len(r['invented_meds']) for r in results)}**; "
         f"invented problems: **{sum(len(r['invented_problems']) for r in results)}**; "
         f"missed problems: **{sum(len(r['missed_problems']) for r in results)}**",
-        f"- Clocked credits used (this run, excluding cached calls): {sum(r['credits'] or 0 for r in results)}",
+        f"- Clocked credits charged when these calls were first made: {sum(r['credits'] or 0 for r in results)}",
         "", "| Medication label | correct |", "|---|---|"]
     lines += [f"| {k} | {per_label_ok[k]}/{v} |" for k, v in sorted(per_label.items())]
     lines += ["", "Allergy (truth → got): " + ", ".join(f"{a}→{b}: {n}" for (a, b), n in sorted(conf.items()))]
@@ -67,7 +71,7 @@ def main() -> None:
              if r["invented_meds"] or r["invented_problems"] or r["missed_problems"]]
     lines += ["", "## Invented / missed", ""] + [f"- {p}: invented meds {a}, invented problems {b}, missed problems {c}"
                                                     for p, a, b, c in extra]
-    (ROOT / "eval" / "RESULTS.md").write_text("\n".join(lines) + "\n")
+    (ROOT / "eval" / f"RESULTS_{variant}.md").write_text("\n".join(lines) + "\n")
     print("\n".join(lines[:12]))
 
 

@@ -30,6 +30,7 @@ Not used (unverified, keep out of public material): a "best possible medication 
 | R6 | Any allergy conflict appears at the top of the handoff, highlighted, before anything else. | E4; clinical judgement | ✅ 7 Nov 2026 |
 | R7 | Every sentence in the generated handoff is checked against the sources (Clocked Verify/grounding). An unsupported sentence is removed and listed as "removed: not supported by any source". | E5, E6 | ✅ 7 Nov 2026 |
 | R8 | The app is decision support for a clinician, not a diagnosis or a prescription. It never suggests which medication or dose is right. | design; safety | ✅ 7 Nov 2026 |
+| R9 | Prescriber shorthand and Spanish terms are mapped to one meaning before comparing: BD / b.i.d. / cada 12 horas = twice daily; OD / o.d. / daily / una vez al día = once daily; nocte / ON / por la noche = at night; PRN / when required / a demanda = as needed; mane before food / en ayunas = morning, fasting; mcg = micrograms = microgramos. Spanish drug and problem names map to the English generic (fixed list in `src/normalize.py`). A term not on the list is shown as written, never guessed. | Standard prescribing abbreviations; Ahmed's clinical judgement. Added 7 Nov after G1 (realistic wording broke matching: 54/100 → 100/100 after this rule). | ☐ |
 
 ## C. Test-set measures (Gate G1)
 - **Conflict recall:** of the planted conflicts in each synthetic packet, how many the handoff flags (target: all allergy conflicts).

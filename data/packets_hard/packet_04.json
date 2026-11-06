@@ -1,0 +1,101 @@
+{
+  "packet_id": "P004",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "pharmacy",
+      "date": "2025-02-15",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-02-15\nPatient: synthetic case P004, 77-year-old male.\n\n\nAllergic to latex - causes contact dermatitis.\n\nMedications:\n- salbutamol inhaler 100 mcg, 2 puffs when required\n- lisinopril 10mg o.d.\n- metformin 500 mg b.i.d.\n- atorvastatin 20 mg ON"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "gp_letter",
+      "date": "2026-03-16",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2026-03-16\nPaciente: caso sintético P004, 77 años, varón.\n\nAntecedentes:\n- diabetes mellitus tipo 2\n- hiperlipidemia\n- fibrilación auricular\n\nAlergia: látex (dermatitis de contacto).\n\nTratamiento:\n- levotiroxina 50 microgramos una vez al día en ayunas\n- salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda\n- metformina 1000 mg cada 12 horas\n- atorvastatina 20 mg por la noche"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "type 2 diabetes",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "hyperlipidaemia",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "atrial fibrillation",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "known",
+      "allergen": "latex",
+      "reaction": "contact dermatitis"
+    },
+    "medications": [
+      {
+        "drug": "levothyroxine",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D2": "levothyroxine 50 micrograms once daily before breakfast"
+        }
+      },
+      {
+        "drug": "salbutamol inhaler",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D2": "salbutamol inhaler 100 micrograms, 2 puffs as needed"
+        }
+      },
+      {
+        "drug": "lisinopril",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily"
+        }
+      },
+      {
+        "drug": "metformin",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "metformin 500 mg twice daily",
+          "D2": "metformin 1000 mg twice daily"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

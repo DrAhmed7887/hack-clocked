@@ -1,0 +1,106 @@
+{
+  "packet_id": "P015",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "clinic",
+      "date": "2024-08-19",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2024-08-19\nPatient: synthetic case P015, 44-year-old male.\n\nProblems:\n- essential hypertension\nKnown atrial fibrillation.\n\nMedications:\n- levothyroxine 50 micrograms OD before breakfast\n- lisinopril 10 mg o.d.\n- bisoprolol 2.5mg o.d.\n- warfarin 3 mg OD as per INR"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "pharmacy",
+      "date": "2024-12-07",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2024-12-07\nPatient: synthetic case P015, 44-year-old male.\n\n\nMedications:\n- levothyroxine 50 mcg OD before breakfast\n- lisinopril 10mg o.d.\n- bisoprolol 2.5mg daily\n- warfarin 3mg OD as per INR"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "discharge",
+      "date": "2024-12-26",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2024-12-26\nPatient: synthetic case P015, 44-year-old male.\n\nProblems:\nKnown essential hypertension.\n\nMedications:\n- levothyroxine 75 micrograms mane, before food\n- lisinopril stopped on 2024-12-26\n- salbutamol inhaler 100 micrograms, 2 puffs PRN\n- bisoprolol 2.5mg daily\n- warfarin 3mg OD as per INR"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "essential hypertension",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "atrial fibrillation",
+        "status": "supported",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "name": "hypothyroidism",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "no_info",
+      "allergen": null,
+      "reaction": null
+    },
+    "medications": [
+      {
+        "drug": "levothyroxine",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "levothyroxine 50 micrograms once daily before breakfast",
+          "D2": "levothyroxine 50 micrograms once daily before breakfast",
+          "D3": "levothyroxine 75 micrograms once daily before breakfast"
+        }
+      },
+      {
+        "drug": "lisinopril",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily",
+          "D2": "lisinopril 10 mg once daily",
+          "D3": "lisinopril stopped on 2024-12-26"
+        }
+      },
+      {
+        "drug": "salbutamol inhaler",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D3": "salbutamol inhaler 100 micrograms, 2 puffs as needed"
+        }
+      },
+      {
+        "drug": "bisoprolol",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "bisoprolol 2.5 mg once daily",
+          "D2": "bisoprolol 2.5 mg once daily",
+          "D3": "bisoprolol 2.5 mg once daily"
+        }
+      },
+      {
+        "drug": "warfarin",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "warfarin 3 mg once daily, dose by INR",
+          "D2": "warfarin 3 mg once daily, dose by INR",
+          "D3": "warfarin 3 mg once daily, dose by INR"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

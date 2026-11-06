@@ -1,0 +1,108 @@
+{
+  "packet_id": "P010",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "discharge",
+      "date": "2025-05-19",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-05-19\nPatient: synthetic case P010, 45-year-old female.\n\nProblems:\nHistory of hypothyroidism.\nHistory of essential hypertension.\n\nMedications:\n- lisinopril 10mg OD\n- salbutamol inhaler 100 micrograms, 2 puffs when required\n- atorvastatin 20 mg nocte\n- levothyroxine 50 micrograms OD before breakfast\n- bisoprolol 2.5mg daily"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "pharmacy",
+      "date": "2025-07-05",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-07-05\nPatient: synthetic case P010, 45-year-old female.\n\n\nMedications:\n- lisinopril 10mg o.d.\n- salbutamol inhaler 100 micrograms, 2 puffs when required\n- atorvastatin 20 mg nocte\n- levothyroxine 50 mcg OD before breakfast\n- bisoprolol 2.5 mg o.d."
+    },
+    {
+      "doc_id": "D3",
+      "kind": "gp_letter",
+      "date": "2025-12-23",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2025-12-23\nPaciente: caso sintético P010, 45 años, mujer.\n\nAntecedentes:\n- hipotiroidismo\n- hipertensión arterial esencial\n\nSin alergias medicamentosas conocidas.\n\nTratamiento:\n- lisinopril suspendido el 2025-12-23\n- salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda\n- levotiroxina 75 microgramos una vez al día en ayunas\n- bisoprolol 2.5 mg una vez al día"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "hypothyroidism",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "essential hypertension",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "type 2 diabetes",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "nkda",
+      "allergen": null,
+      "reaction": null
+    },
+    "medications": [
+      {
+        "drug": "lisinopril",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily",
+          "D2": "lisinopril 10 mg once daily",
+          "D3": "lisinopril stopped on 2025-12-23"
+        }
+      },
+      {
+        "drug": "salbutamol inhaler",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D2": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D3": "salbutamol inhaler 100 micrograms, 2 puffs as needed"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night"
+        }
+      },
+      {
+        "drug": "levothyroxine",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "levothyroxine 50 micrograms once daily before breakfast",
+          "D2": "levothyroxine 50 micrograms once daily before breakfast",
+          "D3": "levothyroxine 75 micrograms once daily before breakfast"
+        }
+      },
+      {
+        "drug": "bisoprolol",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "bisoprolol 2.5 mg once daily",
+          "D2": "bisoprolol 2.5 mg once daily",
+          "D3": "bisoprolol 2.5 mg once daily"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

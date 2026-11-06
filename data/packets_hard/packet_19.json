@@ -1,0 +1,114 @@
+{
+  "packet_id": "P019",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "discharge",
+      "date": "2024-12-09",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2024-12-09\nPatient: synthetic case P019, 42-year-old female.\n\nProblems:\nKnown hypothyroidism.\n- hyperlipidaemia\nHistory of chronic kidney disease stage 3a.\n\nMedications:\n- lisinopril 10 mg OD\n- omeprazole 20 mg o.d.\n- atorvastatin 20mg ON\n- bisoprolol 2.5 mg OD"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "pharmacy",
+      "date": "2025-05-15",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-05-15\nPatient: synthetic case P019, 42-year-old female.\n\n\nMedications:\n- lisinopril 10mg OD\n- omeprazole 20mg daily\n- atorvastatin 20mg nocte\n- bisoprolol 2.5 mg o.d."
+    },
+    {
+      "doc_id": "D3",
+      "kind": "gp_letter",
+      "date": "2025-07-20",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2025-07-20\nPaciente: caso sintético P019, 42 años, mujer.\n\nAntecedentes:\n- hipotiroidismo\n- hiperlipidemia\n- enfermedad renal crónica estadio 3a\n\nTratamiento:\n- omeprazol suspendido el 2025-07-20\n- warfarina 3 mg una vez al día según INR\n- atorvastatina 40 mg por la noche\n- bisoprolol 2.5 mg una vez al día"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "hypothyroidism",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "hyperlipidaemia",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "no_info",
+      "allergen": null,
+      "reaction": null
+    },
+    "medications": [
+      {
+        "drug": "lisinopril",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily",
+          "D2": "lisinopril 10 mg once daily"
+        }
+      },
+      {
+        "drug": "omeprazole",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "omeprazole 20 mg once daily",
+          "D2": "omeprazole 20 mg once daily",
+          "D3": "omeprazole stopped on 2025-07-20"
+        }
+      },
+      {
+        "drug": "warfarin",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D3": "warfarin 3 mg once daily, dose by INR"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night",
+          "D3": "atorvastatin 40 mg at night"
+        }
+      },
+      {
+        "drug": "bisoprolol",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "bisoprolol 2.5 mg once daily",
+          "D2": "bisoprolol 2.5 mg once daily",
+          "D3": "bisoprolol 2.5 mg once daily"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

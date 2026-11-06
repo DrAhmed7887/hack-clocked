@@ -6,9 +6,10 @@ import re
 from concurrent.futures import ThreadPoolExecutor
 
 from clocked import call
+import normalize as nz
 
 FIELDS = {
-    "problems": {"description": "Each diagnosis or long-term condition listed for the patient, verbatim, without the word 'Known'",
+    "problems": {"description": "Every diagnosis or long-term condition under the Problems or Antecedentes heading, one item per line, including lines that start with 'Known', 'History of' or a dash. Copy each condition verbatim.",
                  "list": True, "max_items": 12},
     "allergies": {"description": "Each drug or substance allergy with its reaction, verbatim. Do not include statements that there are no allergies.",
                   "list": True, "max_items": 8},
@@ -37,11 +38,15 @@ def extract_document(doc: dict) -> dict:
         cols = item.get("fields", {})
         get = lambda k: (cols.get(k) or {}).get("value")
         if get("drug"):
-            meds.append({"drug": get("drug").strip().lower(), "line": get("line"), "dose": get("dose"),
-                         "frequency": get("frequency"),
-                         "stopped": get("stopped"), "span": [item.get("start"), item.get("end")]})
-    problems = [{"name": it["value"].strip().rstrip(".").lower(), "span": [it.get("start"), it.get("end")]}
-                for it in (f.get("problems", {}).get("items") or []) if it.get("value")]
+            stopped = get("stopped") or (get("line") if nz.is_stop(get("line")) else None)
+            meds.append({"drug": nz.drug(get("drug")), "as_written": get("drug"), "line": get("line"),
+                         "dose": get("dose"), "frequency": get("frequency"),
+                         "stopped": stopped, "span": [item.get("start"), item.get("end")]})
+    problems = []
+    for it in (f.get("problems", {}).get("items") or []):
+        for part in (it.get("value") or "").split("\n"):  # a span can run across two lines; keep each line
+            if part.strip(" .-") and part.strip(" .-").lower() not in ("none recorded", "sin antecedentes registrados"):
+                problems.append({"name": nz.problem(part), "as_written": part, "span": [it.get("start"), it.get("end")]})
     allergies = [{"text": it["value"], "span": [it.get("start"), it.get("end")]}
                  for it in (f.get("allergies", {}).get("items") or []) if it.get("value")]
     nkda = _val(f.get("no_known_allergies"))
@@ -52,11 +57,7 @@ def extract_document(doc: dict) -> dict:
 def _norm_dose(m: dict) -> str:
     """Dose + frequency as written. Uses the whole verbatim line (minus the drug name) when available, because
     separate dose/frequency spans can be cut at different points in different documents (G1, 7 Nov)."""
-    if m.get("line"):
-        text = m["line"].lower().replace(m["drug"], "", 1)
-    else:
-        text = f"{m.get('dose') or ''} {m.get('frequency') or ''}".lower()
-    return re.sub(r"[\s,.;:-]+", " ", text).strip()
+    return nz.regimen(m.get("line") or f"{m.get('dose') or ''} {m.get('frequency') or ''}", m["drug"])
 
 
 def label(extracted: list) -> dict:

@@ -1,0 +1,121 @@
+{
+  "packet_id": "P014",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "clinic",
+      "date": "2025-04-22",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2025-04-22\nPatient: synthetic case P014, 51-year-old male.\n\nProblems:\n- type 2 diabetes\nKnown chronic kidney disease stage 3a.\nHistory of gastro-oesophageal reflux disease.\n\nAllergies: nil known.\n\nMedications:\n- insulin glargine 16 units ON\n- atorvastatin 20mg nocte\n- salbutamol inhaler 100 mcg, 2 puffs PRN\n- amlodipine 5mg daily"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "pharmacy",
+      "date": "2025-08-03",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-08-03\nPatient: synthetic case P014, 51-year-old male.\n\n\nMedications:\n- insulin glargine 16 units ON\n- atorvastatin 20mg ON\n- salbutamol inhaler 100 mcg, 2 puffs when required\n- amlodipine 5 mg daily"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "discharge",
+      "date": "2026-04-24",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-04-24\nPatient: synthetic case P014, 51-year-old male.\n\nProblems:\n- type 2 diabetes\nHistory of chronic kidney disease stage 3a.\nKnown gastro-oesophageal reflux disease.\n- essential hypertension\n\nNKDA\n\nMedications:\n- insulin glargine 16 units ON\n- warfarin 3mg OD as per INR\n- salbutamol inhaler stopped on 2026-04-24\n- amlodipine 5mg o.d."
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "type 2 diabetes",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "essential hypertension",
+        "status": "supported",
+        "sources": [
+          "D3"
+        ]
+      },
+      {
+        "name": "hyperlipidaemia",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "nkda",
+      "allergen": null,
+      "reaction": null
+    },
+    "medications": [
+      {
+        "drug": "insulin glargine",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "insulin glargine 16 units at night",
+          "D2": "insulin glargine 16 units at night",
+          "D3": "insulin glargine 16 units at night"
+        }
+      },
+      {
+        "drug": "warfarin",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D3": "warfarin 3 mg once daily, dose by INR"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night"
+        }
+      },
+      {
+        "drug": "salbutamol inhaler",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D2": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D3": "salbutamol inhaler stopped on 2026-04-24"
+        }
+      },
+      {
+        "drug": "amlodipine",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "amlodipine 5 mg once daily",
+          "D2": "amlodipine 5 mg once daily",
+          "D3": "amlodipine 5 mg once daily"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

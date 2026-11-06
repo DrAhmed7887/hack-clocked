@@ -1,0 +1,113 @@
+{
+  "packet_id": "P016",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "discharge",
+      "date": "2024-08-28",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2024-08-28\nPatient: synthetic case P016, 45-year-old male.\n\nProblems:\nHistory of essential hypertension.\nKnown hypothyroidism.\n\nAllergy: latex (contact dermatitis).\n\nMedications:\n- levothyroxine 50 mcg OD before breakfast\n- bisoprolol 2.5mg daily\n- metformin 500mg BD\n- insulin glargine 16 units ON"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "pharmacy",
+      "date": "2024-12-29",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2024-12-29\nPatient: synthetic case P016, 45-year-old male.\n\n\nAllergies: latex (contact dermatitis)\n\nMedications:\n- levothyroxine 50 mcg OD before breakfast\n- bisoprolol 2.5 mg daily\n- metformin 500 mg BD\n- insulin glargine 16 units nocte"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "clinic",
+      "date": "2026-02-28",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2026-02-28\nPatient: synthetic case P016, 45-year-old male.\n\nProblems:\n- essential hypertension\nKnown gastro-oesophageal reflux disease.\n- hypothyroidism\n\nAllergic to latex - causes contact dermatitis.\n\nMedications:\n- levothyroxine 50 micrograms mane, before food\n- bisoprolol stopped on 2026-02-28\n- atorvastatin 20mg ON\n- insulin glargine 16 units nocte"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "essential hypertension",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "supported",
+        "sources": [
+          "D3"
+        ]
+      },
+      {
+        "name": "hypothyroidism",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D3"
+        ]
+      },
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "known",
+      "allergen": "latex",
+      "reaction": "contact dermatitis"
+    },
+    "medications": [
+      {
+        "drug": "levothyroxine",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "levothyroxine 50 micrograms once daily before breakfast",
+          "D2": "levothyroxine 50 micrograms once daily before breakfast",
+          "D3": "levothyroxine 50 micrograms once daily before breakfast"
+        }
+      },
+      {
+        "drug": "bisoprolol",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "bisoprolol 2.5 mg once daily",
+          "D2": "bisoprolol 2.5 mg once daily",
+          "D3": "bisoprolol stopped on 2026-02-28"
+        }
+      },
+      {
+        "drug": "metformin",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "metformin 500 mg twice daily",
+          "D2": "metformin 500 mg twice daily"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D3": "atorvastatin 20 mg at night"
+        }
+      },
+      {
+        "drug": "insulin glargine",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "insulin glargine 16 units at night",
+          "D2": "insulin glargine 16 units at night",
+          "D3": "insulin glargine 16 units at night"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

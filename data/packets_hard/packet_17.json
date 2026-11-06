@@ -1,0 +1,117 @@
+{
+  "packet_id": "P017",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "clinic",
+      "date": "2024-11-22",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2024-11-22\nPatient: synthetic case P017, 80-year-old female.\n\nProblems:\nnone recorded.\n\nMedications:\n- warfarin 3 mg OD as per INR\n- amlodipine 5mg o.d.\n- levothyroxine 50 micrograms mane, before food\n- insulin glargine 16 units nocte\n- salbutamol inhaler 100 mcg, 2 puffs when required"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "pharmacy",
+      "date": "2025-05-04",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-05-04\nPatient: synthetic case P017, 80-year-old female.\n\n\nMedications:\n- warfarin 3mg OD as per INR\n- amlodipine 5 mg daily\n- levothyroxine 50 mcg mane, before food\n- insulin glargine 16 units ON\n- salbutamol inhaler 100 mcg, 2 puffs PRN"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "discharge",
+      "date": "2025-07-04",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-07-04\nPatient: synthetic case P017, 80-year-old female.\n\nProblems:\nHistory of hypothyroidism.\n\nAllergies: nil known.\n\nMedications:\n- warfarin 3mg OD as per INR\n- amlodipine 5mg OD\n- levothyroxine 50 micrograms mane, before food\n- insulin glargine 16 units ON\n- salbutamol inhaler 100 mcg, 2 puffs PRN"
+    },
+    {
+      "doc_id": "D4",
+      "kind": "gp_letter",
+      "date": "2025-09-23",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2025-09-23\nPaciente: caso sintético P017, 80 años, mujer.\n\nAntecedentes:\n- asma\n\nAlergia: látex (dermatitis de contacto).\n\nTratamiento:\n- amlodipino 10 mg una vez al día\n- levotiroxina 50 microgramos una vez al día en ayunas\n- insulina glargina suspendido el 2025-09-23\n- salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "hypothyroidism",
+        "status": "supported",
+        "sources": [
+          "D3"
+        ]
+      },
+      {
+        "name": "asthma",
+        "status": "supported",
+        "sources": [
+          "D4"
+        ]
+      },
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "conflicting",
+      "allergen": "latex",
+      "reaction": "contact dermatitis"
+    },
+    "medications": [
+      {
+        "drug": "warfarin",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "warfarin 3 mg once daily, dose by INR",
+          "D2": "warfarin 3 mg once daily, dose by INR",
+          "D3": "warfarin 3 mg once daily, dose by INR"
+        }
+      },
+      {
+        "drug": "amlodipine",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "amlodipine 5 mg once daily",
+          "D2": "amlodipine 5 mg once daily",
+          "D3": "amlodipine 5 mg once daily",
+          "D4": "amlodipine 10 mg once daily"
+        }
+      },
+      {
+        "drug": "levothyroxine",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "levothyroxine 50 micrograms once daily before breakfast",
+          "D2": "levothyroxine 50 micrograms once daily before breakfast",
+          "D3": "levothyroxine 50 micrograms once daily before breakfast",
+          "D4": "levothyroxine 50 micrograms once daily before breakfast"
+        }
+      },
+      {
+        "drug": "insulin glargine",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "insulin glargine 16 units at night",
+          "D2": "insulin glargine 16 units at night",
+          "D3": "insulin glargine 16 units at night",
+          "D4": "insulin glargine stopped on 2025-09-23"
+        }
+      },
+      {
+        "drug": "salbutamol inhaler",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D2": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D3": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D4": "salbutamol inhaler 100 micrograms, 2 puffs as needed"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

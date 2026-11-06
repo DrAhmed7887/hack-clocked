@@ -1,0 +1,108 @@
+{
+  "packet_id": "P018",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "pharmacy",
+      "date": "2025-05-30",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-05-30\nPatient: synthetic case P018, 70-year-old male.\n\n\nMedications:\n- amlodipine 5mg o.d.\n- insulin glargine 16 units ON\n- warfarin 3mg OD as per INR\n- bisoprolol 2.5 mg o.d."
+    },
+    {
+      "doc_id": "D2",
+      "kind": "gp_letter",
+      "date": "2025-11-29",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2025-11-29\nPaciente: caso sintético P018, 70 años, varón.\n\nAntecedentes:\n- diabetes mellitus tipo 2\n- fibrilación auricular\n- enfermedad por reflujo gastroesofágico\n- hiperlipidemia\n\nSin alergias medicamentosas conocidas.\n\nTratamiento:\n- amlodipino suspendido el 2025-11-29\n- atorvastatina 20 mg por la noche\n- warfarina 5 mg una vez al día según INR\n- bisoprolol 2.5 mg una vez al día"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "type 2 diabetes",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "atrial fibrillation",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "hyperlipidaemia",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "asthma",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "nkda",
+      "allergen": null,
+      "reaction": null
+    },
+    "medications": [
+      {
+        "drug": "amlodipine",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "amlodipine 5 mg once daily",
+          "D2": "amlodipine stopped on 2025-11-29"
+        }
+      },
+      {
+        "drug": "insulin glargine",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "insulin glargine 16 units at night"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D2": "atorvastatin 20 mg at night"
+        }
+      },
+      {
+        "drug": "warfarin",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "warfarin 3 mg once daily, dose by INR",
+          "D2": "warfarin 5 mg once daily, dose by INR"
+        }
+      },
+      {
+        "drug": "bisoprolol",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "bisoprolol 2.5 mg once daily",
+          "D2": "bisoprolol 2.5 mg once daily"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

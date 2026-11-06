@@ -1,0 +1,130 @@
+{
+  "packet_id": "P002",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "discharge",
+      "date": "2024-06-19",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2024-06-19\nPatient: synthetic case P002, 80-year-old female.\n\nProblems:\nKnown chronic kidney disease stage 3a.\nHistory of essential hypertension.\n- hyperlipidaemia\n\nMedications:\n- metformin 500mg bd\n- levothyroxine 50 mcg OD before breakfast\n- omeprazole 20mg daily\n- atorvastatin 20 mg ON\n- salbutamol inhaler 100 micrograms, 2 puffs when required"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "gp_letter",
+      "date": "2025-06-01",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2025-06-01\nPaciente: caso sintético P002, 80 años, mujer.\n\nAntecedentes:\n- enfermedad renal crónica estadio 3a\n- hipertensión arterial esencial\n- hiperlipidemia\n\nSin alergias medicamentosas conocidas.\n\nTratamiento:\n- metformina 500 mg cada 12 horas\n- levotiroxina 50 microgramos una vez al día en ayunas\n- omeprazol 20 mg una vez al día\n- atorvastatina 20 mg por la noche\n- salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "clinic",
+      "date": "2025-07-20",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2025-07-20\nPatient: synthetic case P002, 80-year-old female.\n\nProblems:\nHistory of chronic kidney disease stage 3a.\nKnown essential hypertension.\nHistory of hyperlipidaemia.\n\nAllergies: nil known.\n\nMedications:\n- metformin 500 mg b.i.d.\n- levothyroxine 50 mcg mane, before food\n- omeprazole 20 mg daily\n- atorvastatin 20mg nocte\n- salbutamol inhaler 100 mcg, 2 puffs when required"
+    },
+    {
+      "doc_id": "D4",
+      "kind": "pharmacy",
+      "date": "2025-09-16",
+      "text": "Community pharmacy dispensing record, Valencia\nDate: 2025-09-16\nPatient: synthetic case P002, 80-year-old female.\n\n\nNo known drug allergies.\n\nMedications:\n- metformin 500mg b.i.d.\n- levothyroxine 75 micrograms OD before breakfast\n- omeprazole stopped on 2025-09-16\n- salbutamol inhaler 100 mcg, 2 puffs when required"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "essential hypertension",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "hyperlipidaemia",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "asthma",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "nkda",
+      "allergen": null,
+      "reaction": null
+    },
+    "medications": [
+      {
+        "drug": "metformin",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "metformin 500 mg twice daily",
+          "D2": "metformin 500 mg twice daily",
+          "D3": "metformin 500 mg twice daily",
+          "D4": "metformin 500 mg twice daily"
+        }
+      },
+      {
+        "drug": "levothyroxine",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "levothyroxine 50 micrograms once daily before breakfast",
+          "D2": "levothyroxine 50 micrograms once daily before breakfast",
+          "D3": "levothyroxine 50 micrograms once daily before breakfast",
+          "D4": "levothyroxine 75 micrograms once daily before breakfast"
+        }
+      },
+      {
+        "drug": "omeprazole",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "omeprazole 20 mg once daily",
+          "D2": "omeprazole 20 mg once daily",
+          "D3": "omeprazole 20 mg once daily",
+          "D4": "omeprazole stopped on 2025-09-16"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night",
+          "D3": "atorvastatin 20 mg at night"
+        }
+      },
+      {
+        "drug": "salbutamol inhaler",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D2": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D3": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D4": "salbutamol inhaler 100 micrograms, 2 puffs as needed"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

@@ -1,0 +1,103 @@
+{
+  "packet_id": "P009",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "discharge",
+      "date": "2026-03-26",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-03-26\nPatient: synthetic case P009, 75-year-old male.\n\nProblems:\nHistory of chronic kidney disease stage 3a.\nHistory of asthma.\nKnown essential hypertension.\n\nNo known drug allergies.\n\nMedications:\n- salbutamol inhaler 100 mcg, 2 puffs when required\n- amlodipine 5mg daily\n- levothyroxine 50 micrograms mane, before food\n- insulin glargine 16 units ON\n- atorvastatin 20mg ON"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "clinic",
+      "date": "2026-06-13",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2026-06-13\nPatient: synthetic case P009, 75-year-old male.\n\nProblems:\nKnown essential hypertension.\n\nAllergic to latex - causes contact dermatitis.\n\nMedications:\n- salbutamol inhaler 100 micrograms, 2 puffs when required\n- levothyroxine 75 mcg OD before breakfast\n- insulin glargine stopped on 2026-06-13\n- atorvastatin 20mg ON"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "supported",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "name": "asthma",
+        "status": "supported",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "name": "essential hypertension",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2"
+        ]
+      },
+      {
+        "name": "atrial fibrillation",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "conflicting",
+      "allergen": "latex",
+      "reaction": "contact dermatitis"
+    },
+    "medications": [
+      {
+        "drug": "salbutamol inhaler",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D2": "salbutamol inhaler 100 micrograms, 2 puffs as needed"
+        }
+      },
+      {
+        "drug": "amlodipine",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "amlodipine 5 mg once daily"
+        }
+      },
+      {
+        "drug": "levothyroxine",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "levothyroxine 50 micrograms once daily before breakfast",
+          "D2": "levothyroxine 75 micrograms once daily before breakfast"
+        }
+      },
+      {
+        "drug": "insulin glargine",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "insulin glargine 16 units at night",
+          "D2": "insulin glargine stopped on 2026-06-13"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

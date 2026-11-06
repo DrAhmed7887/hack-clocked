@@ -1,0 +1,115 @@
+{
+  "packet_id": "P020",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "clinic",
+      "date": "2025-03-19",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2025-03-19\nPatient: synthetic case P020, 45-year-old male.\n\nProblems:\nHistory of chronic kidney disease stage 3a.\nKnown hyperlipidaemia.\n- atrial fibrillation\n\nAllergy: penicillin (rash).\n\nMedications:\n- levothyroxine 50 mcg mane, before food\n- amlodipine 5mg OD\n- lisinopril 10 mg OD\n- warfarin 3mg OD as per INR"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "gp_letter",
+      "date": "2025-11-01",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2025-11-01\nPaciente: caso sintético P020, 45 años, varón.\n\nAntecedentes:\n- enfermedad renal crónica estadio 3a\n- fibrilación auricular\n\nAlergia: penicilina (exantema).\n\nTratamiento:\n- levotiroxina 50 microgramos una vez al día en ayunas\n- amlodipino 5 mg una vez al día\n- lisinopril 10 mg una vez al día\n- warfarina 3 mg una vez al día según INR"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "discharge",
+      "date": "2025-12-19",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-12-19\nPatient: synthetic case P020, 45-year-old male.\n\nProblems:\nKnown chronic kidney disease stage 3a.\nHistory of atrial fibrillation.\n\nAllergies: penicillin (rash)\n\nMedications:\n- atorvastatin 20mg ON\n- levothyroxine 75 mcg OD before breakfast\n- amlodipine 5 mg OD\n- warfarin 3 mg OD as per INR"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "hyperlipidaemia",
+        "status": "supported",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "name": "atrial fibrillation",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "known",
+      "allergen": "penicillin",
+      "reaction": "rash"
+    },
+    "medications": [
+      {
+        "drug": "atorvastatin",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D3": "atorvastatin 20 mg at night"
+        }
+      },
+      {
+        "drug": "levothyroxine",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "levothyroxine 50 micrograms once daily before breakfast",
+          "D2": "levothyroxine 50 micrograms once daily before breakfast",
+          "D3": "levothyroxine 75 micrograms once daily before breakfast"
+        }
+      },
+      {
+        "drug": "amlodipine",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "amlodipine 5 mg once daily",
+          "D2": "amlodipine 5 mg once daily",
+          "D3": "amlodipine 5 mg once daily"
+        }
+      },
+      {
+        "drug": "lisinopril",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily",
+          "D2": "lisinopril 10 mg once daily"
+        }
+      },
+      {
+        "drug": "warfarin",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "warfarin 3 mg once daily, dose by INR",
+          "D2": "warfarin 3 mg once daily, dose by INR",
+          "D3": "warfarin 3 mg once daily, dose by INR"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

@@ -1,0 +1,115 @@
+{
+  "packet_id": "P005",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "gp_letter",
+      "date": "2025-06-05",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2025-06-05\nPaciente: caso sintético P005, 50 años, mujer.\n\nAntecedentes:\n- diabetes mellitus tipo 2\n- enfermedad por reflujo gastroesofágico\n\nAlergia: látex (dermatitis de contacto).\n\nTratamiento:\n- bisoprolol 2.5 mg una vez al día\n- salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda\n- amlodipino 5 mg una vez al día\n- atorvastatina 20 mg por la noche"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "discharge",
+      "date": "2025-12-08",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-12-08\nPatient: synthetic case P005, 50-year-old female.\n\nProblems:\nKnown type 2 diabetes.\nKnown atrial fibrillation.\nHistory of gastro-oesophageal reflux disease.\n\nAllergies: nil known.\n\nMedications:\n- bisoprolol 2.5mg daily\n- salbutamol inhaler 100 micrograms, 2 puffs PRN\n- amlodipine 5mg o.d.\n- atorvastatin 20 mg nocte"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "clinic",
+      "date": "2026-05-08",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2026-05-08\nPatient: synthetic case P005, 50-year-old female.\n\nProblems:\nHistory of type 2 diabetes.\n- gastro-oesophageal reflux disease\n\nMedications:\n- salbutamol inhaler stopped on 2026-05-08\n- insulin glargine 16 units ON\n- amlodipine 10mg o.d.\n- atorvastatin 20 mg ON"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "type 2 diabetes",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "atrial fibrillation",
+        "status": "supported",
+        "sources": [
+          "D2"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "hypothyroidism",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "conflicting",
+      "allergen": "latex",
+      "reaction": "contact dermatitis"
+    },
+    "medications": [
+      {
+        "drug": "bisoprolol",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "bisoprolol 2.5 mg once daily",
+          "D2": "bisoprolol 2.5 mg once daily"
+        }
+      },
+      {
+        "drug": "salbutamol inhaler",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D2": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+          "D3": "salbutamol inhaler stopped on 2026-05-08"
+        }
+      },
+      {
+        "drug": "insulin glargine",
+        "label": "new_start",
+        "status": "conflicting",
+        "per_doc": {
+          "D3": "insulin glargine 16 units at night"
+        }
+      },
+      {
+        "drug": "amlodipine",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "amlodipine 5 mg once daily",
+          "D2": "amlodipine 5 mg once daily",
+          "D3": "amlodipine 10 mg once daily"
+        }
+      },
+      {
+        "drug": "atorvastatin",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "atorvastatin 20 mg at night",
+          "D2": "atorvastatin 20 mg at night",
+          "D3": "atorvastatin 20 mg at night"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}

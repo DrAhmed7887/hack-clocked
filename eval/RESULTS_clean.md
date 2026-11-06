@@ -1,4 +1,4 @@
-# G1 results (20 synthetic packets, 61 documents)
+# G1 results, clean set (20 synthetic packets, 61 documents)
 
 Produced by `python3 eval/score.py`. Synthetic data only.
 
@@ -6,8 +6,9 @@ Produced by `python3 eval/score.py`. Synthetic data only.
 - Allergy conflicts flagged: **5/5**
 - Medication labels correct: **100/100**
 - Medication discrepancies flagged (any non-consistent label): **65/65**
+- Problems found: **57/57**
 - Invented medications: **0**; invented problems: **0**; missed problems: **0**
-- Clocked credits used (this run, excluding cached calls): 476
+- Clocked credits charged when these calls were first made: 497
 
 | Medication label | correct |
 |---|---|

@@ -35,7 +35,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 34
+  "problems_total": 2,
+  "credits": 36
  },
  {
   "packet": "P002",
@@ -73,6 +74,7 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
+  "problems_total": 3,
   "credits": 36
  },
  {
@@ -111,7 +113,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 29
+  "problems_total": 4,
+  "credits": 27
  },
  {
   "packet": "P004",
@@ -149,7 +152,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 15
+  "problems_total": 3,
+  "credits": 16
  },
  {
   "packet": "P005",
@@ -187,7 +191,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 26
+  "problems_total": 3,
+  "credits": 24
  },
  {
   "packet": "P006",
@@ -225,7 +230,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 20
+  "problems_total": 2,
+  "credits": 22
  },
  {
   "packet": "P007",
@@ -263,7 +269,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 20
+  "problems_total": 2,
+  "credits": 22
  },
  {
   "packet": "P008",
@@ -301,7 +308,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 25
+  "problems_total": 4,
+  "credits": 24
  },
  {
   "packet": "P009",
@@ -339,6 +347,7 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
+  "problems_total": 3,
   "credits": 18
  },
  {
@@ -377,7 +386,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 23
+  "problems_total": 2,
+  "credits": 24
  },
  {
   "packet": "P011",
@@ -415,7 +425,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 30
+  "problems_total": 3,
+  "credits": 32
  },
  {
   "packet": "P012",
@@ -453,7 +464,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 21
+  "problems_total": 2,
+  "credits": 24
  },
  {
   "packet": "P013",
@@ -491,7 +503,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 21
+  "problems_total": 3,
+  "credits": 24
  },
  {
   "packet": "P014",
@@ -529,7 +542,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 25
+  "problems_total": 4,
+  "credits": 24
  },
  {
   "packet": "P015",
@@ -567,7 +581,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 21
+  "problems_total": 2,
+  "credits": 24
  },
  {
   "packet": "P016",
@@ -605,7 +620,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 21
+  "problems_total": 3,
+  "credits": 24
  },
  {
   "packet": "P017",
@@ -643,7 +659,8 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 29
+  "problems_total": 2,
+  "credits": 33
  },
  {
   "packet": "P018",
@@ -681,6 +698,7 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
+  "problems_total": 4,
   "credits": 15
  },
  {
@@ -719,6 +737,7 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
+  "problems_total": 3,
   "credits": 22
  },
  {
@@ -757,6 +776,7 @@
   "invented_meds": [],
   "missed_problems": [],
   "invented_problems": [],
-  "credits": 25
+  "problems_total": 3,
+  "credits": 26
  }
 ]

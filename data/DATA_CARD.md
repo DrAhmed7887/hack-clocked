@@ -27,3 +27,6 @@ Each packet has an answer key (`truth`) used only for scoring, never sent to any
 
 ## Reproduce
 `python3 data/generate.py` (seed `20261107`) regenerates the identical files.
+
+## Hard set (`data/packets_hard/`, `python3 data/make_hard.py`, seed 20261108)
+Same 20 answer keys, realistic wording: prescriber shorthand (BD, OD, nocte, PRN), "500mg"/"mcg", allergy variants ("NKDA", "Allergic to … - causes …"), problem lines as "History of …" or bullets, and every Valencia GP letter rewritten in Spanish. The facts and labels are unchanged; only the wording differs.

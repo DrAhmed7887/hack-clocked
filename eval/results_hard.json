@@ -1,0 +1,790 @@
+[
+ {
+  "packet": "P001",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "atorvastatin",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "bisoprolol",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "metformin",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "warfarin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "omeprazole",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 2,
+  "credits": 37
+ },
+ {
+  "packet": "P002",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "metformin",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "levothyroxine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "omeprazole",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "atorvastatin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 36
+ },
+ {
+  "packet": "P003",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "lisinopril",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "omeprazole",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "warfarin",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "levothyroxine",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [
+   "atrial fibrillation"
+  ],
+  "invented_problems": [],
+  "problems_total": 4,
+  "credits": 28
+ },
+ {
+  "packet": "P004",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "levothyroxine",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "lisinopril",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "metformin",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "atorvastatin",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 18
+ },
+ {
+  "packet": "P005",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "bisoprolol",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "salbutamol inhaler",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "insulin glargine",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "amlodipine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "atorvastatin",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 26
+ },
+ {
+  "packet": "P006",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "omeprazole",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "levothyroxine",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "metformin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "amlodipine",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 2,
+  "credits": 24
+ },
+ {
+  "packet": "P007",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "metformin",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "amlodipine",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "insulin glargine",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "salbutamol inhaler",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "lisinopril",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 2,
+  "credits": 23
+ },
+ {
+  "packet": "P008",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "amlodipine",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "lisinopril",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "omeprazole",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "insulin glargine",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 4,
+  "credits": 27
+ },
+ {
+  "packet": "P009",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "amlodipine",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "levothyroxine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "insulin glargine",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "atorvastatin",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 17
+ },
+ {
+  "packet": "P010",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "lisinopril",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "atorvastatin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "levothyroxine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 2,
+  "credits": 25
+ },
+ {
+  "packet": "P011",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "insulin glargine",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "bisoprolol",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "lisinopril",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "atorvastatin",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "levothyroxine",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 33
+ },
+ {
+  "packet": "P012",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "metformin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "amlodipine",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "warfarin",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "lisinopril",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 2,
+  "credits": 24
+ },
+ {
+  "packet": "P013",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "bisoprolol",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "insulin glargine",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "atorvastatin",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "amlodipine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "lisinopril",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [
+   "asthma"
+  ],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 24
+ },
+ {
+  "packet": "P014",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "insulin glargine",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "warfarin",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "atorvastatin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "salbutamol inhaler",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "amlodipine",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 4,
+  "credits": 24
+ },
+ {
+  "packet": "P015",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "levothyroxine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "lisinopril",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "salbutamol inhaler",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "warfarin",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 2,
+  "credits": 24
+ },
+ {
+  "packet": "P016",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "levothyroxine",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "bisoprolol",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "metformin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "atorvastatin",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "insulin glargine",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [
+   "gastro-oesophageal reflux disease"
+  ],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 24
+ },
+ {
+  "packet": "P017",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "warfarin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "amlodipine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "levothyroxine",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "insulin glargine",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 2,
+  "credits": 34
+ },
+ {
+  "packet": "P018",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "amlodipine",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "insulin glargine",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "atorvastatin",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "warfarin",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 4,
+  "credits": 18
+ },
+ {
+  "packet": "P019",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "lisinopril",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "omeprazole",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "warfarin",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "atorvastatin",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 25
+ },
+ {
+  "packet": "P020",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "atorvastatin",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "levothyroxine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "amlodipine",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "lisinopril",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "warfarin",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [
+   "hyperlipidaemia"
+  ],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 26
+ }
+]

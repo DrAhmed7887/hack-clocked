@@ -1,0 +1,126 @@
+{
+  "packet_id": "P003",
+  "seed": 20261107,
+  "synthetic": true,
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "clinic",
+      "date": "2024-06-12",
+      "text": "Outpatient clinic note, Alexandria\nDate: 2024-06-12\nPatient: synthetic case P003, 40-year-old female.\n\nProblems:\nKnown atrial fibrillation.\n- gastro-oesophageal reflux disease\nKnown hypothyroidism.\nKnown chronic kidney disease stage 3a.\n\nMedications:\n- lisinopril 10mg daily\n- bisoprolol 2.5mg OD\n- omeprazole 20mg o.d.\n- warfarin 3mg OD as per INR\n- levothyroxine 50 micrograms OD before breakfast"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "gp_letter",
+      "date": "2025-01-29",
+      "text": "Informe de derivación, centro de atención primaria, Valencia\nFecha: 2025-01-29\nPaciente: caso sintético P003, 40 años, mujer.\n\nAntecedentes:\n- enfermedad por reflujo gastroesofágico\n- hipotiroidismo\n- enfermedad renal crónica estadio 3a\n\nTratamiento:\n- lisinopril 10 mg una vez al día\n- bisoprolol 2.5 mg una vez al día\n- omeprazol 20 mg una vez al día\n- warfarina 3 mg una vez al día según INR\n- levotiroxina 50 microgramos una vez al día en ayunas"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "discharge",
+      "date": "2025-09-09",
+      "text": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-09-09\nPatient: synthetic case P003, 40-year-old female.\n\nProblems:\nHistory of gastro-oesophageal reflux disease.\nHistory of hypothyroidism.\n- chronic kidney disease stage 3a\n\nMedications:\n- lisinopril stopped on 2025-09-09\n- bisoprolol 2.5mg OD\n- warfarin 5mg OD as per INR\n- levothyroxine 50 mcg mane, before food"
+    }
+  ],
+  "truth": {
+    "problems": [
+      {
+        "name": "atrial fibrillation",
+        "status": "supported",
+        "sources": [
+          "D1"
+        ]
+      },
+      {
+        "name": "gastro-oesophageal reflux disease",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "hypothyroidism",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "chronic kidney disease stage 3a",
+        "status": "supported",
+        "sources": [
+          "D1",
+          "D2",
+          "D3"
+        ]
+      },
+      {
+        "name": "type 2 diabetes",
+        "status": "not_found",
+        "sources": [],
+        "note": "decoy: never mentioned"
+      }
+    ],
+    "allergy": {
+      "state": "no_info",
+      "allergen": null,
+      "reaction": null
+    },
+    "medications": [
+      {
+        "drug": "lisinopril",
+        "label": "stopped",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "lisinopril 10 mg once daily",
+          "D2": "lisinopril 10 mg once daily",
+          "D3": "lisinopril stopped on 2025-09-09"
+        }
+      },
+      {
+        "drug": "bisoprolol",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "bisoprolol 2.5 mg once daily",
+          "D2": "bisoprolol 2.5 mg once daily",
+          "D3": "bisoprolol 2.5 mg once daily"
+        }
+      },
+      {
+        "drug": "omeprazole",
+        "label": "possible_omission",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "omeprazole 20 mg once daily",
+          "D2": "omeprazole 20 mg once daily"
+        }
+      },
+      {
+        "drug": "warfarin",
+        "label": "dose_differs",
+        "status": "conflicting",
+        "per_doc": {
+          "D1": "warfarin 3 mg once daily, dose by INR",
+          "D2": "warfarin 3 mg once daily, dose by INR",
+          "D3": "warfarin 5 mg once daily, dose by INR"
+        }
+      },
+      {
+        "drug": "levothyroxine",
+        "label": "consistent",
+        "status": "supported",
+        "per_doc": {
+          "D1": "levothyroxine 50 micrograms once daily before breakfast",
+          "D2": "levothyroxine 50 micrograms once daily before breakfast",
+          "D3": "levothyroxine 50 micrograms once daily before breakfast"
+        }
+      }
+    ]
+  },
+  "variant": "hard"
+}
