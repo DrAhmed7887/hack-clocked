@@ -68,8 +68,10 @@ def write_and_verify(handoff: dict, packet: dict) -> dict:
         draft = call("fill", {"text": sheet, "fields": {"handoff": {
             "type": "generate", "description": "The written handoff", "max_tokens": 400}},
             "instructions": ("Rewrite these items as a clear handoff for the receiving clinician, one sentence per item, "
-                             "in the same order. Keep every quoted record text exactly as quoted and say which record it "
-                             "comes from. Do not recommend any treatment, dose or action. Do not add any fact.")})
+                             "in the same order. Start each sentence with the medicine name (or 'Allergy conflict') and "
+                             "what changed, in plain words: stopped, dose differs, missing from the newest record, or new. "
+                             "Then give the evidence: keep every quoted record text exactly as quoted and say which record "
+                             "it comes from. Do not recommend any treatment, dose or action. Do not add any fact.")})
         text = (draft["fields"]["handoff"].get("value") or "").strip()
         credits += int(draft.get("_credits") or 0)
         check = call("grounding", {"documents": [{"id": d["doc_id"], "text": d["text"]} for d in docs], "answer": text,
@@ -102,7 +104,8 @@ def write_and_verify(handoff: dict, packet: dict) -> dict:
     if handoff["allergy_state"] == "no_info":  # R3 + R7a: stated by comparison, not by text
         added.append({"sentence": "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
                       "verdict": None, "established_by": "record comparison (rule R3)"})
-    final = kept + added
+    # R6: allergy statements always come first.
+    final = sorted(kept + added, key=lambda r: 0 if re.search(r"allerg|alerg", r["sentence"].lower()) else 1)
     known = set(handoff["medications"])
     named = {d for d in set(nz.DRUG_SYNONYMS.values()) if _names(d, " ".join(r["sentence"].lower() for r in final))}
     return {"items": [s for _, s in items], "kept": kept, "added": added, "removed": removed, "final": final,

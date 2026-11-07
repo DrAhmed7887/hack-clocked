@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Handoff P017</title><style>:root{--bg:#f6f5f1;--card:#fff;--ink:#1d1d1b;--muted:#5d5d58;--line:#e2e0d8;--ok:#1f7a4d;--okbg:#e6f3ec;--warn:#9a5b00;--warnbg:#fdf0dc;--info:#2b5c9e;--infobg:#e7eef9;--red:#a4161a;--redbg:#fde8e8}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--card:#1f1f1c;--ink:#ecebe6;--muted:#a8a69e;--line:#34332e;--ok:#7fd1a5;--okbg:#173225;--warn:#f0b65a;--warnbg:#3a2a10;--info:#9cbcf0;--infobg:#1b2a42;--red:#ff9d9d;--redbg:#3d1416}}
+*{box-sizing:border-box;min-width:0}html,body{overflow-x:hidden}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:16px}a{color:var(--info)}h1{font-size:1.4rem;margin:.3rem 0}h2{font-size:1.05rem;margin:1.5rem 0 .5rem}
+.step{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:.5rem 0}
+.banner{background:var(--redbg);border:2px solid var(--red);color:var(--red);border-radius:12px;padding:12px 14px;margin:1rem 0}.banner ul{color:var(--ink);margin:.5rem 0 0;padding-left:1rem}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin:.4rem 0;padding:.55rem .8rem}summary{cursor:pointer;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+details ul{margin:.5rem 0 .2rem;padding-left:1rem}li{margin:.3rem 0}.src{display:block;font-size:.8rem;color:var(--muted)}
+q{display:block;font-family:ui-monospace,Menlo,monospace;font-size:.86rem;quotes:"\201C" "\201D";overflow-wrap:anywhere}
+.chip{font-size:.74rem;font-weight:600;border-radius:999px;padding:.1rem .55rem;white-space:nowrap}.ok{color:var(--ok);background:var(--okbg)}.warn{color:var(--warn);background:var(--warnbg)}.info{color:var(--info);background:var(--infobg)}.bad{color:var(--red);background:var(--redbg)}
+.n{color:var(--muted);font-size:.8rem;margin-left:auto}.foot{font-size:.85rem;color:var(--muted);margin-top:1.6rem}.sent{margin:.55rem 0}.sent .chip{margin-right:.35rem}
+nav{display:flex;gap:1rem;font-size:.9rem;margin-bottom:.6rem}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid var(--line);padding:.45rem .3rem;text-align:left;font-size:.92rem}</style></head><body><main><nav><a href="../index.html">All patients</a><a href="../method.html">How it works</a></nav><div class="step">Synthetic patient P017</div>
+<h1>Evidence-linked handoff</h1>
+<p>Every fact links to the exact words in a source record. Conflicts are shown side by side, never resolved for you.</p>
+<div class="card"><strong>4 records</strong><ul><li>Clinic note, 2024-11-22</li><li>Pharmacy record, 2025-05-04</li><li>Discharge summary, 2025-07-04</li><li>GP letter, 2025-09-23 · Spanish</li></ul></div>
+<div class='banner'><strong>Allergy conflict.</strong> One record lists an allergy, another says no known drug allergies. Check with the patient before prescribing.<ul><li><span class='src'>Discharge summary, 2025-07-04</span><q>nil known.</q></li><li><span class='src'>GP letter, 2025-09-23 · Spanish</span><q>látex (dermatitis de contacto)</q></li></ul></div>
+<h2>Written handoff</h2><div class="card"><div class='sent'><span class='chip ok'>Verified in the records</span><br>Allergy conflict new: the discharge summary of 2025-07-04 says &#x27;nil known.</div><div class='sent'><span class='chip ok'>Verified in the records</span><br>&#x27; and the GP letter of 2025-09-23 says &#x27;látex (dermatitis de contacto)&#x27;.</div><div class='sent'><span class='chip ok'>Verified in the records</span><br>Amlodipine dose differs: the clinic note of 2024-11-22 says &#x27;amlodipine 5mg o.d.&#x27;, the pharmacy record of 2025-05-04 says &#x27;amlodipine 5 mg daily&#x27;, the discharge summary of 2025-07-04 says &#x27;amlodipine 5mg OD&#x27;, and the GP letter of 2025-09-23 says &#x27;amlodipino 10 mg una vez al día&#x27;.</div><div class='sent'><span class='chip ok'>Verified in the records</span><br>Insulin glargine stopped: the clinic note of 2024-11-22 says &#x27;insulin glargine 16 units nocte&#x27;, the pharmacy record of 2025-05-04 says &#x27;insulin glargine 16 units ON&#x27;, the discharge summary of 2025-07-04 says &#x27;insulin glargine 16 units ON&#x27;, and the GP letter of 2025-09-23 says &#x27;insulina glargina suspendido el 2025-09-23&#x27;.</div><div class='sent'><span class='chip info'>Established by comparing records</span><br>Warfarin missing from the newest record: the clinic note of 2024-11-22 says &#x27;warfarin 3 mg OD as per INR&#x27;, the pharmacy record of 2025-05-04 says &#x27;warfarin 3mg OD as per INR&#x27;, and the discharge summary of 2025-07-04 says &#x27;warfarin 3mg OD as per INR&#x27;</div></div>
+<h2>Allergies &amp; intolerances</h2><div class="card">Conflicting: see the alert above.</div>
+<h2>Medications</h2><details open><summary><span class='chip warn'>Missing from newest record</span>Warfarin</summary><ul><li><span class='src'>Clinic note, 2024-11-22</span><q>warfarin 3 mg OD as per INR</q></li><li><span class='src'>Pharmacy record, 2025-05-04</span><q>warfarin 3mg OD as per INR</q></li><li><span class='src'>Discharge summary, 2025-07-04</span><q>warfarin 3mg OD as per INR</q></li><li><span class='src'>GP letter, 2025-09-23 · Spanish</span><em>not listed</em></li></ul></details><details open><summary><span class='chip warn'>Dose or timing differs</span>Amlodipine</summary><ul><li><span class='src'>Clinic note, 2024-11-22</span><q>amlodipine 5mg o.d.</q></li><li><span class='src'>Pharmacy record, 2025-05-04</span><q>amlodipine 5 mg daily</q></li><li><span class='src'>Discharge summary, 2025-07-04</span><q>amlodipine 5mg OD</q></li><li><span class='src'>GP letter, 2025-09-23 · Spanish</span><q>amlodipino 10 mg una vez al día</q></li></ul></details><details><summary><span class='chip info'>Recorded as stopped</span>Insulin glargine</summary><ul><li><span class='src'>Clinic note, 2024-11-22</span><q>insulin glargine 16 units nocte</q></li><li><span class='src'>Pharmacy record, 2025-05-04</span><q>insulin glargine 16 units ON</q></li><li><span class='src'>Discharge summary, 2025-07-04</span><q>insulin glargine 16 units ON</q></li><li><span class='src'>GP letter, 2025-09-23 · Spanish</span><q>insulina glargina suspendido el 2025-09-23</q></li></ul></details><details><summary><span class='chip ok'>Same in all records</span>Levothyroxine</summary><ul><li><span class='src'>Clinic note, 2024-11-22</span><q>levothyroxine 50 micrograms mane, before food</q></li><li><span class='src'>Pharmacy record, 2025-05-04</span><q>levothyroxine 50 mcg mane, before food</q></li><li><span class='src'>Discharge summary, 2025-07-04</span><q>levothyroxine 50 micrograms mane, before food</q></li><li><span class='src'>GP letter, 2025-09-23 · Spanish</span><q>levotiroxina 50 microgramos una vez al día en ayunas</q></li></ul></details><details><summary><span class='chip ok'>Same in all records</span>Salbutamol inhaler</summary><ul><li><span class='src'>Clinic note, 2024-11-22</span><q>salbutamol inhaler 100 mcg, 2 puffs when required</q></li><li><span class='src'>Pharmacy record, 2025-05-04</span><q>salbutamol inhaler 100 mcg, 2 puffs PRN</q></li><li><span class='src'>Discharge summary, 2025-07-04</span><q>salbutamol inhaler 100 mcg, 2 puffs PRN</q></li><li><span class='src'>GP letter, 2025-09-23 · Spanish</span><q>salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda</q></li></ul></details>
+<h2>Problems</h2><details><summary><span class='chip ok'>Supported</span>Asthma<span class='n'>1 record</span></summary><ul><li><span class='src'>GP letter, 2025-09-23 · Spanish</span><q>asma</q></li></ul></details><details><summary><span class='chip ok'>Supported</span>Hypothyroidism<span class='n'>1 record</span></summary><ul><li><span class='src'>Discharge summary, 2025-07-04</span><q>History of hypothyroidism.</q></li></ul></details>
+<h2>The source records</h2><details><summary>Clinic note, 2024-11-22</summary><pre style='white-space:pre-wrap;font-size:.85rem'>Outpatient clinic note, Alexandria
+Date: 2024-11-22
+Patient: synthetic case P017, 80-year-old female.
+
+Problems:
+none recorded.
+
+Medications:
+- warfarin 3 mg OD as per INR
+- amlodipine 5mg o.d.
+- levothyroxine 50 micrograms mane, before food
+- insulin glargine 16 units nocte
+- salbutamol inhaler 100 mcg, 2 puffs when required</pre></details><details><summary>Pharmacy record, 2025-05-04</summary><pre style='white-space:pre-wrap;font-size:.85rem'>Community pharmacy dispensing record, Valencia
+Date: 2025-05-04
+Patient: synthetic case P017, 80-year-old female.
+
+
+Medications:
+- warfarin 3mg OD as per INR
+- amlodipine 5 mg daily
+- levothyroxine 50 mcg mane, before food
+- insulin glargine 16 units ON
+- salbutamol inhaler 100 mcg, 2 puffs PRN</pre></details><details><summary>Discharge summary, 2025-07-04</summary><pre style='white-space:pre-wrap;font-size:.85rem'>Discharge summary, internal medicine ward, Cairo (translated to English)
+Date: 2025-07-04
+Patient: synthetic case P017, 80-year-old female.
+
+Problems:
+History of hypothyroidism.
+
+Allergies: nil known.
+
+Medications:
+- warfarin 3mg OD as per INR
+- amlodipine 5mg OD
+- levothyroxine 50 micrograms mane, before food
+- insulin glargine 16 units ON
+- salbutamol inhaler 100 mcg, 2 puffs PRN</pre></details><details><summary>GP letter, 2025-09-23 · Spanish</summary><pre style='white-space:pre-wrap;font-size:.85rem'>Informe de derivación, centro de atención primaria, Valencia
+Fecha: 2025-09-23
+Paciente: caso sintético P017, 80 años, mujer.
+
+Antecedentes:
+- asma
+
+Alergia: látex (dermatitis de contacto).
+
+Tratamiento:
+- amlodipino 10 mg una vez al día
+- levotiroxina 50 microgramos una vez al día en ayunas
+- insulina glargina suspendido el 2025-09-23
+- salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda</pre></details>
+<p class="foot">Decision support for a clinician, not a diagnosis or a prescription. Synthetic records only, no real
+patients. Facts copied by Clocked Extract; labels set by fixed, physician-signed rules; written handoff drafted by
+Clocked Fill and checked sentence by sentence by Clocked Verify against the original records.</p></main></body></html>

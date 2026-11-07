@@ -1,0 +1,536 @@
+[
+ {
+  "packet": "P001",
+  "missed": [],
+  "removed": [
+   "Allergy conflict new: the pharmacy record of 2025-04-17 says 'sulfonamides (hives)' and the GP letter of 2025-12-25 says 'No known drug allergies."
+  ],
+  "final": [
+   [
+    "Allergy conflict: the pharmacy record of 2025-04-17 says 'sulfonamides (hives)'; the GP letter of 2025-12-25 says 'No known drug allergies.'.",
+    "added by rules (R7b)",
+    "contradicted"
+   ],
+   [
+    "Atorvastatin stopped: the GP letter of 2025-12-25 says 'atorvastatin stopped on 2025-12-25'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Bisoprolol dose differs: the GP letter of 2025-12-25 says 'bisoprolol 5 mg once daily' whereas the clinic note of 2024-08-15 says 'bisoprolol 2.5 mg once daily', the discharge summary of 2025-01-11 says 'bisoprolol 2.5 mg once daily', and the pharmacy record of 2025-04-17 says 'bisoprolol 2.5 mg once daily'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Warfarin missing from the newest record: the GP letter of 2025-12-25 does not list it, although the clinic note of 2024-08-15 says 'warfarin 3 mg once daily, dose by INR', the discharge summary of 2025-01-11 says 'warfarin 3 mg once daily, dose by INR', and the pharmacy record of 2025-04-17 says 'warfarin 3 mg once daily, dose by INR'",
+    "record comparison (rule R4): warfarin absent from the newest record",
+    "not_stated"
+   ]
+  ]
+ },
+ {
+  "packet": "P002",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Atorvastatin is missing from the newest record: 'atorvastatin 20 mg at night' from the discharge summary of 2024-06-19, 'atorvastatin 20 mg at night' from the GP letter of 2025-06-01, and 'atorvastatin 20 mg at night' from the clinic note of 2025-07-20.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Levothyroxine dose differs: 'levothyroxine 50 micrograms once daily before breakfast' from the discharge summary of 2024-06-19, 'levothyroxine 50 micrograms once daily before breakfast' from the GP letter of 2025-06-01, 'levothyroxine 50 micrograms once daily before breakfast' from the clinic note of 2025-07-20, and 'levothyroxine 75 micrograms once daily before breakfast' from the pharmacy record of 2025-09-16.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Omeprazole stopped: 'omeprazole 20 mg once daily' from the discharge summary of 2024-06-19, 'omeprazole 20 mg once daily' from the GP letter of 2025-06-01, 'omeprazole 20 mg once daily' from the clinic note of 2025-07-20, and 'omeprazole stopped on 2025-09-16' from the pharmacy record of 2025-09-16",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P003",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ],
+   [
+    "Lisinopril stopped: 'lisinopril stopped on 2025-09-09' from the discharge summary of 2025-09-09.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Omeprazole missing from the newest record: 'omeprazole 20 mg once daily' from the clinic note of 2024-06-12 and 'omeprazole 20 mg once daily' from the GP letter of 2025-01-29.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Warfarin dose differs: 'warfarin 3 mg once daily, dose by INR' from the clinic note of 2024-06-12 and 'warfarin 3 mg once daily, dose by INR' from the GP letter of 2025-01-29 and 'warfarin 5 mg once daily, dose by INR' from the discharge summary of 2025-09-09",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P004",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Levothyroxine is new: 'levothyroxine 50 micrograms once daily before breakfast' from the GP letter of 2026-03-16.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Lisinopril is missing from the newest record: 'lisinopril 10 mg once daily' from the pharmacy record of 2025-02-15.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Metformin dose differs: 'metformin 500 mg twice daily' from the pharmacy record of 2025-02-15 and 'metformin 1000 mg twice daily' from the GP letter of 2026-03-16",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P005",
+  "missed": [],
+  "removed": [
+   "Allergy conflict: the GP letter of 2025-06-05 says 'latex (contact dermatitis)' and the discharge summary of 2025-12-08 says 'No known drug allergies."
+  ],
+  "final": [
+   [
+    "Allergy conflict: the GP letter of 2025-06-05 says 'latex (contact dermatitis)'; the discharge summary of 2025-12-08 says 'No known drug allergies.'.",
+    "added by rules (R7b)",
+    "contradicted"
+   ],
+   [
+    "Amlodipine dose differs: the GP letter of 2025-06-05 says 'amlodipine 5 mg once daily', the discharge summary of 2025-12-08 says 'amlodipine 5 mg once daily', and the clinic note of 2026-05-08 says 'amlodipine 10 mg once daily'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Bisoprolol is missing from the newest record: the GP letter of 2025-06-05 says 'bisoprolol 2.5 mg once daily' and the discharge summary of 2025-12-08 says 'bisoprolol 2.5 mg once daily'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Insulin glargine is new: the clinic note of 2026-05-08 says 'insulin glargine 16 units at night'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Salbutamol inhaler stopped: the GP letter of 2025-06-05 says 'salbutamol inhaler 100 micrograms, 2 puffs as needed', the discharge summary of 2025-12-08 says 'salbutamol inhaler 100 micrograms, 2 puffs as needed', and the clinic note of 2026-05-08 says 'salbutamol inhaler stopped on 2026-05-08'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P006",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Amlodipine stopped, 'amlodipine stopped on 2025-12-03' from the GP letter of 2025-12-03.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Levothyroxine new, 'levothyroxine 50 micrograms once daily before breakfast' from the GP letter of 2025-12-03.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Metformin missing from the newest record, 'metformin 500 mg twice daily' from the discharge summary of 2025-07-08 and 'metformin 500 mg twice daily' from the pharmacy record of 2025-10-10.",
+    "record comparison (rule R4): metformin absent from the newest record",
+    "not_stated"
+   ],
+   [
+    "Omeprazole dose differs, 'omeprazole 20 mg once daily' from the discharge summary of 2025-07-08, 'omeprazole 20 mg once daily' from the pharmacy record of 2025-10-10, and 'omeprazole 40 mg once daily' from the GP letter of 2025-12-03",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P007",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ],
+   [
+    "Amlodipine missing from the newest record: 'amlodipine 5 mg once daily' from the clinic note of 2025-03-15 and 'amlodipine 5 mg once daily' from the GP letter of 2026-04-16.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Insulin glargine stopped: 'insulin glargine 16 units at night' from the clinic note of 2025-03-15, 'insulin glargine 16 units at night' from the GP letter of 2026-04-16, and 'insulin glargine stopped on 2026-08-01' from the pharmacy record of 2026-08-01.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Salbutamol inhaler new: 'salbutamol inhaler 100 micrograms, 2 puffs as needed' from the pharmacy record of 2026-08-01",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P008",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Amlodipine stopped, 'amlodipine 5 mg once daily' from the GP letter of 2024-09-19, 'amlodipine 5 mg once daily' from the discharge summary of 2025-08-23, and 'amlodipine stopped on 2026-02-26' from the pharmacy record of 2026-02-26.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Lisinopril dose differs, 'lisinopril 10 mg once daily' from the GP letter of 2024-09-19, 'lisinopril 10 mg once daily' from the discharge summary of 2025-08-23, and 'lisinopril 20 mg once daily' from the pharmacy record of 2026-02-26.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Omeprazole new, 'omeprazole 20 mg once daily' from the pharmacy record of 2026-02-26",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P009",
+  "missed": [],
+  "removed": [
+   "Allergy conflict new, the discharge summary of 2026-03-26 says 'No known drug allergies.",
+   "Levothyroxine dose differs, the discharge summary of 2026-03-26 says 'levothyroxine 50 micrograms once daily before breakfast' and the clinic note of 2026-06-13 says 'levothyroxine 75 micrograms once daily before breakfast'"
+  ],
+  "final": [
+   [
+    "Allergy conflict: the discharge summary of 2026-03-26 says 'No known drug allergies.'; the clinic note of 2026-06-13 says 'latex (contact dermatitis)'.",
+    "added by rules (R7b)",
+    "contradicted"
+   ],
+   [
+    "' and the clinic note of 2026-06-13 says 'latex (contact dermatitis)'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Amlodipine missing from the newest record, the discharge summary of 2026-03-26 says 'amlodipine 5 mg once daily' and the clinic note of 2026-06-13 does not list it.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Insulin glargine stopped, the discharge summary of 2026-03-26 says 'insulin glargine 16 units at night' and the clinic note of 2026-06-13 says 'insulin glargine stopped on 2026-06-13'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Levothyroxine differs between records: the discharge summary of 2026-03-26 says 'levothyroxine 50 micrograms once daily before breakfast'; the clinic note of 2026-06-13 says 'levothyroxine 75 micrograms once daily before breakfast'.",
+    "added by rules (R7b)",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P010",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Atorvastatin is missing from the newest record, as the discharge summary of 2025-05-19 says 'atorvastatin 20 mg at night' and the pharmacy record of 2025-07-05 says 'atorvastatin 20 mg at night'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Levothyroxine dose differs, as the discharge summary of 2025-05-19 says 'levothyroxine 50 micrograms once daily before breakfast', the pharmacy record of 2025-07-05 says 'levothyroxine 50 micrograms once daily before breakfast', and the GP letter of 2025-12-23 says 'levothyroxine 75 micrograms once daily before breakfast'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Lisinopril stopped, as the discharge summary of 2025-05-19 says 'lisinopril 10 mg once daily', the pharmacy record of 2025-07-05 says 'lisinopril 10 mg once daily', and the GP letter of 2025-12-23 says 'lisinopril stopped on 2025-12-23'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P011",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ],
+   [
+    "Atorvastatin stopped: 'atorvastatin stopped on 2026-05-04' from the discharge summary of 2026-05-04.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Bisoprolol new: 'bisoprolol 2.5 mg once daily' from the discharge summary of 2026-05-04.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Lisinopril missing from the newest record: 'lisinopril 10 mg once daily' from the clinic note of 2024-12-10, 'lisinopril 10 mg once daily' from the GP letter of 2025-07-22, and 'lisinopril 10 mg once daily' from the pharmacy record of 2026-01-31",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P012",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Amlodipine is new: 'amlodipine 5 mg once daily' from the pharmacy record of 2025-12-01.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Lisinopril dose differs: 'lisinopril 10 mg once daily' from the discharge summary of 2024-06-06, 'lisinopril 10 mg once daily' from the clinic note of 2024-09-16, and 'lisinopril 20 mg once daily' from the pharmacy record of 2025-12-01.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Metformin is missing from the newest record: 'metformin 500 mg twice daily' from the discharge summary of 2024-06-06 and 'metformin 500 mg twice daily' from the clinic note of 2024-09-16.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Warfarin stopped: 'warfarin 3 mg once daily, dose by INR' from the discharge summary of 2024-06-06, 'warfarin 3 mg once daily, dose by INR' from the clinic note of 2024-09-16, and 'warfarin stopped on 2025-12-01' from the pharmacy record of 2025-12-01",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P013",
+  "missed": [],
+  "removed": [
+   "Allergy conflict new: the discharge summary of 2024-04-14 says 'latex (contact dermatitis)' and the GP letter of 2024-04-15 says 'No known drug allergies."
+  ],
+  "final": [
+   [
+    "Allergy conflict: the discharge summary of 2024-04-14 says 'latex (contact dermatitis)'; the GP letter of 2024-04-15 says 'No known drug allergies.'.",
+    "added by rules (R7b)",
+    "contradicted"
+   ],
+   [
+    "Amlodipine dose differs: the discharge summary of 2024-04-14 says 'amlodipine 5 mg once daily', the GP letter of 2024-04-15 says 'amlodipine 5 mg once daily', and the pharmacy record of 2025-09-17 says 'amlodipine 10 mg once daily'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Atorvastatin stopped: the discharge summary of 2024-04-14 says 'atorvastatin 20 mg at night', the GP letter of 2024-04-15 says 'atorvastatin 20 mg at night', and the pharmacy record of 2025-09-17 says 'atorvastatin stopped on 2025-09-17'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Insulin glargine new: the pharmacy record of 2025-09-17 says 'insulin glargine 16 units at night'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P014",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Atorvastatin is missing from the newest record, as the clinic note of 2025-04-22 says 'atorvastatin 20 mg at night' and the pharmacy record of 2025-08-03 says 'atorvastatin 20 mg at night'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Salbutamol inhaler stopped, as the discharge summary of 2026-04-24 says 'salbutamol inhaler stopped on 2026-04-24'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Warfarin is new, as the discharge summary of 2026-04-24 says 'warfarin 3 mg once daily, dose by INR'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P015",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ],
+   [
+    "Levothyroxine dose differs: 'levothyroxine 50 micrograms once daily before breakfast' from the clinic note of 2024-08-19, 'levothyroxine 50 micrograms once daily before breakfast' from the pharmacy record of 2024-12-07, and 'levothyroxine 75 micrograms once daily before breakfast' from the discharge summary of 2024-12-26.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Lisinopril stopped: 'lisinopril 10 mg once daily' from the clinic note of 2024-08-19, 'lisinopril 10 mg once daily' from the pharmacy record of 2024-12-07, and 'lisinopril stopped on 2024-12-26' from the discharge summary of 2024-12-26.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Salbutamol inhaler new: 'salbutamol inhaler 100 micrograms, 2 puffs as needed' from the discharge summary of 2024-12-26",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P016",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Atorvastatin new: 'atorvastatin 20 mg at night' from the clinic note of 2026-02-28.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Bisoprolol stopped: 'bisoprolol stopped on 2026-02-28' from the clinic note of 2026-02-28.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Metformin missing from the newest record: 'metformin 500 mg twice daily' from the discharge summary of 2024-08-28 and 'metformin 500 mg twice daily' from the pharmacy record of 2024-12-29",
+    "record comparison (rule R4): metformin absent from the newest record",
+    "not_stated"
+   ]
+  ]
+ },
+ {
+  "packet": "P017",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Allergy conflict new: the discharge summary of 2025-07-04 says 'No known drug allergies.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "' and the GP letter of 2025-09-23 says 'latex (contact dermatitis)'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Amlodipine dose differs: the clinic note of 2024-11-22 says 'amlodipine 5 mg once daily', the pharmacy record of 2025-05-04 says 'amlodipine 5 mg once daily', the discharge summary of 2025-07-04 says 'amlodipine 5 mg once daily', and the GP letter of 2025-09-23 says 'amlodipine 10 mg once daily'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Insulin glargine stopped: the GP letter of 2025-09-23 says 'insulin glargine stopped on 2025-09-23'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Warfarin missing from the newest record: the clinic note of 2024-11-22 says 'warfarin 3 mg once daily, dose by INR', the pharmacy record of 2025-05-04 says 'warfarin 3 mg once daily, dose by INR', and the discharge summary of 2025-07-04 says 'warfarin 3 mg once daily, dose by INR'",
+    "record comparison (rule R4): warfarin absent from the newest record",
+    "not_stated"
+   ]
+  ]
+ },
+ {
+  "packet": "P018",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Amlodipine stopped, 'amlodipine 5 mg once daily' from the pharmacy record of 2025-05-30 and 'amlodipine stopped on 2025-11-29' from the GP letter of 2025-11-29.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Atorvastatin new, 'atorvastatin 20 mg at night' from the GP letter of 2025-11-29.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Insulin glargine missing from the newest record, 'insulin glargine 16 units at night' from the pharmacy record of 2025-05-30.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Warfarin dose differs, 'warfarin 3 mg once daily, dose by INR' from the pharmacy record of 2025-05-30 and 'warfarin 5 mg once daily, dose by INR' from the GP letter of 2025-11-29",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P019",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ],
+   [
+    "Atorvastatin dose differs: 'atorvastatin 20 mg at night' from the discharge summary of 2024-12-09, 'atorvastatin 20 mg at night' from the pharmacy record of 2025-05-15, and 'atorvastatin 40 mg at night' from the GP letter of 2025-07-20.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Lisinopril is missing from the newest record: 'lisinopril 10 mg once daily' from the discharge summary of 2024-12-09 and 'lisinopril 10 mg once daily' from the pharmacy record of 2025-05-15.",
+    "record comparison (rule R4): lisinopril absent from the newest record",
+    "not_stated"
+   ],
+   [
+    "Omeprazole stopped: 'omeprazole 20 mg once daily' from the discharge summary of 2024-12-09, 'omeprazole 20 mg once daily' from the pharmacy record of 2025-05-15, and 'omeprazole stopped on 2025-07-20' from the GP letter of 2025-07-20.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Warfarin is new: 'warfarin 3 mg once daily, dose by INR' from the GP letter of 2025-07-20",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P020",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Atorvastatin is new: 'atorvastatin 20 mg at night' from the discharge summary of 2025-12-19.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Levothyroxine dose differs: 'levothyroxine 50 micrograms once daily before breakfast' from the clinic note of 2025-03-19, 'levothyroxine 50 micrograms once daily before breakfast' from the GP letter of 2025-11-01, and 'levothyroxine 75 micrograms once daily before breakfast' from the discharge summary of 2025-12-19.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Lisinopril is missing from the newest record: 'lisinopril 10 mg once daily' from the clinic note of 2025-03-19 and 'lisinopril 10 mg once daily' from the GP letter of 2025-11-01",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ }
+]
