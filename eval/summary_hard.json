@@ -1,0 +1,540 @@
+[
+ {
+  "packet": "P001",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The pharmacy record of 2025-04-17 states 'sulfonamides (hives)' while the GP letter of 2025-12-25 states 'Sin alergias medicamentosas conocidas.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-08-15 states 'atorvastatin 20mg ON', the discharge summary of 2025-01-11 states 'atorvastatin 20 mg ON', the pharmacy record of 2025-04-17 states 'atorvastatin 20 mg ON', and the GP letter of 2025-12-25 states 'atorvastatina suspendido el 2025-12-25'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-08-15 states 'bisoprolol 2.5mg o.d.', the discharge summary of 2025-01-11 states 'bisoprolol 2.5 mg o.d.', the pharmacy record of 2025-04-17 states 'bisoprolol 2.5mg OD', and the GP letter of 2025-12-25 states 'bisoprolol 5 mg una vez al día'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-08-15 states 'warfarin 3 mg OD as per INR', the discharge summary of 2025-01-11 states 'warfarin 3 mg OD as per INR', and the pharmacy record of 2025-04-17 states 'warfarin 3mg OD as per INR', but it is not mentioned in the GP letter of 2025-12-25",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P002",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "Atorvastatin is noted in the discharge summary of 2024-06-19 as 'atorvastatin 20 mg ON', the GP letter of 2025-06-01 as 'atorvastatina 20 mg por la noche', and the clinic note of 2025-07-20 as 'atorvastatin 20mg nocte', but is absent from the pharmacy record of 2025-09-16.",
+    "record comparison (rule R4): atorvastatin absent from the newest record",
+    "not_stated"
+   ],
+   [
+    "Levothyroxine is recorded in the discharge summary of 2024-06-19 as 'levothyroxine 50 mcg OD before breakfast', the GP letter of 2025-06-01 as 'levotiroxina 50 microgramos una vez al día en ayunas', the clinic note of 2025-07-20 as 'levothyroxine 50 mcg mane, before food', and the pharmacy record of 2025-09-16 as 'levothyroxine 75 micrograms OD before breakfast'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Omeprazole is listed in the discharge summary of 2024-06-19 as 'omeprazole 20mg daily', the GP letter of 2025-06-01 as 'omeprazol 20 mg una vez al día', the clinic note of 2025-07-20 as 'omeprazole 20 mg daily', and the pharmacy record of 2025-09-16 as 'omeprazole stopped on 2025-09-16",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P003",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The clinic note of 2024-06-12 says 'lisinopril 10mg daily', the GP letter of 2025-01-29 says 'lisinopril 10 mg una vez al día', and the discharge summary of 2025-09-09 says 'lisinopril stopped on 2025-09-09'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-06-12 says 'omeprazole 20mg o.d.' and the GP letter of 2025-01-29 says 'omeprazol 20 mg una vez al día', but it is not in the discharge summary of 2025-09-09.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-06-12 says 'warfarin 3mg OD as per INR', the GP letter of 2025-01-29 says 'warfarina 3 mg una vez al día según INR', and the discharge summary of 2025-09-09 says 'warfarin 5mg OD as per INR'",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ]
+  ]
+ },
+ {
+  "packet": "P004",
+  "missed": [],
+  "removed": [
+   "The pharmacy record of 2025-02-15 states 'metformin 500 mg b.i.d.', whereas the GP letter of 2026-03-16 states 'metformina 1000 mg cada 12 horas'"
+  ],
+  "final": [
+   [
+    "The GP letter of 2026-03-16 states 'levotiroxina 50 microgramos una vez al día en ayunas'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The pharmacy record of 2025-02-15 states 'lisinopril 10mg o.d.', but this is not mentioned in the GP letter of 2026-03-16.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Metformin differs between records: the pharmacy record of 2025-02-15 says 'metformin 500 mg b.i.d.'; the GP letter of 2026-03-16 says 'metformina 1000 mg cada 12 horas'.",
+    "added by rules (R7b)",
+    "not_stated"
+   ]
+  ]
+ },
+ {
+  "packet": "P005",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The GP letter of 2025-06-05 states 'látex (dermatitis de contacto)' while the discharge summary of 2025-12-08 states 'nil known.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Amlodipine is recorded as 'amlodipino 5 mg una vez al día' in the GP letter of 2025-06-05, 'amlodipine 5mg o.d.' in the discharge summary of 2025-12-08, and 'amlodipine 10mg o.d.' in the clinic note of 2026-05-08.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Bisoprolol is listed as 'bisoprolol 2.5 mg una vez al día' in the GP letter of 2025-06-05 and 'bisoprolol 2.5mg daily' in the discharge summary of 2025-12-08, but is not in the clinic note of 2026-05-08.",
+    "record comparison (rule R4): bisoprolol absent from the newest record",
+    "not_stated"
+   ],
+   [
+    "The clinic note of 2026-05-08 states 'insulin glargine 16 units ON'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The GP letter of 2025-06-05 states 'salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda', the discharge summary of 2025-12-08 states 'salbutamol inhaler 100 micrograms, 2 puffs PRN', and the clinic note of 2026-05-08 states 'salbutamol inhaler stopped on 2026-05-08'",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Allergy conflict: the GP letter of 2025-06-05 says 'látex (dermatitis de contacto)'; the discharge summary of 2025-12-08 says 'nil known.'.",
+    "added by rules (R7b)",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P006",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The discharge summary of 2025-07-08 says 'amlodipine 5 mg daily', the pharmacy record of 2025-10-10 says 'amlodipine 5 mg o.d.', and the GP letter of 2025-12-03 says 'amlodipino suspendido el 2025-12-03'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The GP letter of 2025-12-03 says 'levotiroxina 50 microgramos una vez al día en ayunas'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2025-07-08 says 'metformin 500mg BD' and the pharmacy record of 2025-10-10 says 'metformin 500mg BD'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2025-07-08 says 'omeprazole 20mg OD', the pharmacy record of 2025-10-10 says 'omeprazole 20 mg o.d.', and the GP letter of 2025-12-03 says 'omeprazol 40 mg una vez al día'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P007",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The clinic note of 2025-03-15 states 'amlodipine 5mg OD' and the GP letter of 2026-04-16 states 'amlodipino 5 mg una vez al día', but it is not in the pharmacy record of 2026-08-01.",
+    "record comparison (rule R4): amlodipine absent from the newest record",
+    "not_stated"
+   ],
+   [
+    "The clinic note of 2025-03-15 states 'insulin glargine 16 units nocte', the GP letter of 2026-04-16 states 'insulina glargina 16 unidades por la noche', and the pharmacy record of 2026-08-01 states 'insulin glargine stopped on 2026-08-01'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The pharmacy record of 2026-08-01 states 'salbutamol inhaler 100 mcg, 2 puffs PRN'",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ]
+  ]
+ },
+ {
+  "packet": "P008",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The GP letter of 2024-09-19 says 'amlodipino 5 mg una vez al día', the discharge summary of 2025-08-23 says 'amlodipine 5mg OD', and the pharmacy record of 2026-02-26 says 'amlodipine stopped on 2026-02-26'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The GP letter of 2024-09-19 says 'lisinopril 10 mg una vez al día', the discharge summary of 2025-08-23 says 'lisinopril 10mg OD', and the pharmacy record of 2026-02-26 says 'lisinopril 20mg daily'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The pharmacy record of 2026-02-26 says 'omeprazole 20mg OD'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P009",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The discharge summary of 2026-03-26 says 'No known drug allergies.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "' while the clinic note of 2026-06-13 says 'latex - causes contact dermatitis'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2026-03-26 says 'amlodipine 5mg daily' but it is not listed in the clinic note of 2026-06-13.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2026-03-26 says 'insulin glargine 16 units ON' while the clinic note of 2026-06-13 says 'insulin glargine stopped on 2026-06-13'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2026-03-26 says 'levothyroxine 50 micrograms mane, before food' and the clinic note of 2026-06-13 says 'levothyroxine 75 mcg OD before breakfast'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P010",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The discharge summary of 2025-05-19 says 'atorvastatin 20 mg nocte' and the pharmacy record of 2025-07-05 says 'atorvastatin 20 mg nocte', but the GP letter of 2025-12-23 does not list it.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2025-05-19 says 'levothyroxine 50 micrograms OD before breakfast', the pharmacy record of 2025-07-05 says 'levothyroxine 50 mcg OD before breakfast', and the GP letter of 2025-12-23 says 'levotiroxina 75 microgramos una vez al día en ayunas'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2025-05-19 says 'lisinopril 10mg OD', the pharmacy record of 2025-07-05 says 'lisinopril 10mg o.d.', and the GP letter of 2025-12-23 says 'lisinopril suspendido el 2025-12-23'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P011",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The clinic note of 2024-12-10 says 'atorvastatin 20 mg ON', the GP letter of 2025-07-22 says 'atorvastatina 20 mg por la noche', the pharmacy record of 2026-01-31 says 'atorvastatin 20mg nocte', and the discharge summary of 2026-05-04 says 'atorvastatin stopped on 2026-05-04'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2026-05-04 says 'bisoprolol 2.5mg o.d.'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-12-10 says 'lisinopril 10mg o.d.', the GP letter of 2025-07-22 says 'lisinopril 10 mg una vez al día', and the pharmacy record of 2026-01-31 says 'lisinopril 10 mg daily'",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ]
+  ]
+ },
+ {
+  "packet": "P012",
+  "missed": [],
+  "removed": [
+   "The discharge summary of 2024-06-06 says 'lisinopril 10mg daily', the clinic note of 2024-09-16 says 'lisinopril 10mg OD', and the pharmacy record of 2025-12-01 says 'lisinopril 20mg OD'."
+  ],
+  "final": [
+   [
+    "The pharmacy record of 2025-12-01 lists 'amlodipine 5mg o.d.'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2024-06-06 says 'metformin 500mg b.i.d.' and the clinic note of 2024-09-16 says 'metformin 500mg bd', but it is not in the pharmacy record of 2025-12-01.",
+    "record comparison (rule R4): metformin absent from the newest record",
+    "not_stated"
+   ],
+   [
+    "The discharge summary of 2024-06-06 says 'warfarin 3mg OD as per INR', the clinic note of 2024-09-16 says 'warfarin 3mg OD as per INR', and the pharmacy record of 2025-12-01 says 'warfarin stopped on 2025-12-01'",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Lisinopril differs between records: the discharge summary of 2024-06-06 says 'lisinopril 10mg daily'; the clinic note of 2024-09-16 says 'lisinopril 10mg OD'; the pharmacy record of 2025-12-01 says 'lisinopril 20mg OD'.",
+    "added by rules (R7b)",
+    "not_stated"
+   ]
+  ]
+ },
+ {
+  "packet": "P013",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The discharge summary of 2024-04-14 states 'latex - causes contact dermatitis' while the GP letter of 2024-04-15 states 'Sin alergias medicamentosas conocidas.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2024-04-14 states 'amlodipine 5mg daily', the GP letter of 2024-04-15 states 'amlodipino 5 mg una vez al día', and the pharmacy record of 2025-09-17 states 'amlodipine 10mg o.d.'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2024-04-14 states 'atorvastatin 20mg nocte', the GP letter of 2024-04-15 states 'atorvastatina 20 mg por la noche', and the pharmacy record of 2025-09-17 states 'atorvastatin stopped on 2025-09-17'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The pharmacy record of 2025-09-17 states 'insulin glargine 16 units ON'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P014",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The clinic note of 2025-04-22 says 'atorvastatin 20mg nocte' and the pharmacy record of 2025-08-03 says 'atorvastatin 20mg ON', but this is not in the discharge summary of 2026-04-24.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2025-04-22 says 'salbutamol inhaler 100 mcg, 2 puffs PRN', the pharmacy record of 2025-08-03 says 'salbutamol inhaler 100 mcg, 2 puffs when required', and the discharge summary of 2026-04-24 says 'salbutamol inhaler stopped on 2026-04-24'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2026-04-24 says 'warfarin 3mg OD as per INR'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P015",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The clinic note of 2024-08-19 says 'levothyroxine 50 micrograms OD before breakfast', the pharmacy record of 2024-12-07 says 'levothyroxine 50 mcg OD before breakfast', and the discharge summary of 2024-12-26 says 'levothyroxine 75 micrograms mane, before food'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-08-19 says 'lisinopril 10 mg o.d.', the pharmacy record of 2024-12-07 says 'lisinopril 10mg o.d.', and the discharge summary of 2024-12-26 says 'lisinopril stopped on 2024-12-26'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2024-12-26 says 'salbutamol inhaler 100 micrograms, 2 puffs PRN'",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ]
+  ]
+ },
+ {
+  "packet": "P016",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The clinic note of 2026-02-28 states 'atorvastatin 20mg ON'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2024-08-28 says 'bisoprolol 2.5mg daily', the pharmacy record of 2024-12-29 says 'bisoprolol 2.5 mg daily', and the clinic note of 2026-02-28 says 'bisoprolol stopped on 2026-02-28'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The discharge summary of 2024-08-28 says 'metformin 500mg BD' and the pharmacy record of 2024-12-29 says 'metformin 500 mg BD'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P017",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The discharge summary of 2025-07-04 states 'nil known.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "' regarding allergies, while the GP letter of 2025-09-23 states 'látex (dermatitis de contacto)'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-11-22 states 'amlodipine 5mg o.d.', the pharmacy record of 2025-05-04 states 'amlodipine 5 mg daily', the discharge summary of 2025-07-04 states 'amlodipine 5mg OD', and the GP letter of 2025-09-23 states 'amlodipino 10 mg una vez al día'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-11-22 states 'insulin glargine 16 units nocte', the pharmacy record of 2025-05-04 states 'insulin glargine 16 units ON', the discharge summary of 2025-07-04 states 'insulin glargine 16 units ON', and the GP letter of 2025-09-23 states 'insulina glargina suspendido el 2025-09-23'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2024-11-22 states 'warfarin 3 mg OD as per INR', the pharmacy record of 2025-05-04 states 'warfarin 3mg OD as per INR', and the discharge summary of 2025-07-04 states 'warfarin 3mg OD as per INR', but it is not in the GP letter of 2025-09-23",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ },
+ {
+  "packet": "P018",
+  "missed": [],
+  "removed": [
+   "The pharmacy record of 2025-05-30 says 'warfarin 3mg OD as per INR' and the GP letter of 2025-11-29 says 'warfarina 5 mg una vez al día según INR'"
+  ],
+  "final": [
+   [
+    "The pharmacy record of 2025-05-30 says 'amlodipine 5mg o.d.' and the GP letter of 2025-11-29 says 'amlodipino suspendido el 2025-11-29'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The GP letter of 2025-11-29 says 'atorvastatina 20 mg por la noche'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The pharmacy record of 2025-05-30 says 'insulin glargine 16 units ON' but it is not in the GP letter of 2025-11-29.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Warfarin differs between records: the pharmacy record of 2025-05-30 says 'warfarin 3mg OD as per INR'; the GP letter of 2025-11-29 says 'warfarina 5 mg una vez al día según INR'.",
+    "added by rules (R7b)",
+    "not_stated"
+   ]
+  ]
+ },
+ {
+  "packet": "P019",
+  "missed": [],
+  "removed": [
+   "The discharge summary of 2024-12-09 says 'atorvastatin 20mg ON', the pharmacy record of 2025-05-15 says 'atorvastatin 20mg nocte', and the GP letter of 2025-07-20 says 'atorvastatina 40 mg por la noche'."
+  ],
+  "final": [
+   [
+    "The discharge summary of 2024-12-09 says 'lisinopril 10 mg OD' and the pharmacy record of 2025-05-15 says 'lisinopril 10mg OD', but it is not in the GP letter of 2025-07-20.",
+    "record comparison (rule R4): lisinopril absent from the newest record",
+    "not_stated"
+   ],
+   [
+    "The discharge summary of 2024-12-09 says 'omeprazole 20 mg o.d.', the pharmacy record of 2025-05-15 says 'omeprazole 20mg daily', and the GP letter of 2025-07-20 says 'omeprazol suspendido el 2025-07-20'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The GP letter of 2025-07-20 says 'warfarina 3 mg una vez al día según INR'",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "Atorvastatin differs between records: the discharge summary of 2024-12-09 says 'atorvastatin 20mg ON'; the pharmacy record of 2025-05-15 says 'atorvastatin 20mg nocte'; the GP letter of 2025-07-20 says 'atorvastatina 40 mg por la noche'.",
+    "added by rules (R7b)",
+    "not_stated"
+   ],
+   [
+    "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
+    "record comparison (rule R3)",
+    null
+   ]
+  ]
+ },
+ {
+  "packet": "P020",
+  "missed": [],
+  "removed": [],
+  "final": [
+   [
+    "The discharge summary of 2025-12-19 lists 'atorvastatin 20mg ON'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2025-03-19 states 'levothyroxine 50 mcg mane, before food', the GP letter of 2025-11-01 states 'levotiroxina 50 microgramos una vez al día en ayunas', and the discharge summary of 2025-12-19 states 'levothyroxine 75 mcg OD before breakfast'.",
+    "text evidence",
+    "supported"
+   ],
+   [
+    "The clinic note of 2025-03-19 lists 'lisinopril 10 mg OD' and the GP letter of 2025-11-01 lists 'lisinopril 10 mg una vez al día'",
+    "text evidence",
+    "supported"
+   ]
+  ]
+ }
+]
