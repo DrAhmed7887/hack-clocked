@@ -1,0 +1,1595 @@
+{
+ "total": 151.623,
+ "scenes": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "dur": 18.736,
+   "voice_at": 0.35,
+   "voice_len": 17.786,
+   "cues": {
+    "gp_box": 2.15,
+    "pharm_in": 4.588,
+    "pharm_box": 6.376,
+    "fan": 8.872,
+    "sheet": 13.307
+   },
+   "words": [
+    {
+     "text": "The",
+     "start": 0.35,
+     "end": 0.513
+    },
+    {
+     "text": "newest",
+     "start": 0.571,
+     "end": 0.861
+    },
+    {
+     "text": "letter",
+     "start": 0.919,
+     "end": 1.139
+    },
+    {
+     "text": "says:",
+     "start": 1.198,
+     "end": 1.708
+    },
+    {
+     "text": "no",
+     "start": 2.15,
+     "end": 2.44
+    },
+    {
+     "text": "known",
+     "start": 2.509,
+     "end": 2.858
+    },
+    {
+     "text": "drug",
+     "start": 2.939,
+     "end": 3.183
+    },
+    {
+     "text": "allergies.",
+     "start": 3.264,
+     "end": 4.1
+    },
+    {
+     "text": "The",
+     "start": 4.425,
+     "end": 4.541
+    },
+    {
+     "text": "pharmacy",
+     "start": 4.588,
+     "end": 5.04
+    },
+    {
+     "text": "record",
+     "start": 5.122,
+     "end": 5.47
+    },
+    {
+     "text": "says:",
+     "start": 5.528,
+     "end": 6.05
+    },
+    {
+     "text": "sulfonamides,",
+     "start": 6.376,
+     "end": 7.56
+    },
+    {
+     "text": "hives.",
+     "start": 7.769,
+     "end": 8.489
+    },
+    {
+     "text": "Four",
+     "start": 8.872,
+     "end": 9.162
+    },
+    {
+     "text": "records,",
+     "start": 9.232,
+     "end": 9.975
+    },
+    {
+     "text": "three",
+     "start": 10.184,
+     "end": 10.486
+    },
+    {
+     "text": "cities,",
+     "start": 10.544,
+     "end": 11.182
+    },
+    {
+     "text": "two",
+     "start": 11.426,
+     "end": 11.716
+    },
+    {
+     "text": "languages.",
+     "start": 11.832,
+     "end": 12.691
+    },
+    {
+     "text": "The",
+     "start": 13.133,
+     "end": 13.249
+    },
+    {
+     "text": "handoff,",
+     "start": 13.307,
+     "end": 14.015
+    },
+    {
+     "text": "the",
+     "start": 14.34,
+     "end": 14.445
+    },
+    {
+     "text": "summary",
+     "start": 14.491,
+     "end": 14.921
+    },
+    {
+     "text": "the",
+     "start": 14.99,
+     "end": 15.06
+    },
+    {
+     "text": "next",
+     "start": 15.106,
+     "end": 15.315
+    },
+    {
+     "text": "doctor",
+     "start": 15.362,
+     "end": 15.675
+    },
+    {
+     "text": "reads,",
+     "start": 15.733,
+     "end": 16.279
+    },
+    {
+     "text": "has",
+     "start": 16.604,
+     "end": 16.801
+    },
+    {
+     "text": "to",
+     "start": 16.871,
+     "end": 16.941
+    },
+    {
+     "text": "carry",
+     "start": 17.01,
+     "end": 17.312
+    },
+    {
+     "text": "both.",
+     "start": 17.393,
+     "end": 18.136
+    }
+   ]
+  },
+  {
+   "id": "protect",
+   "start": 18.736,
+   "dur": 10.192,
+   "voice_at": 19.086,
+   "voice_len": 9.242,
+   "cues": {
+    "title": 19.504,
+    "hits": 24.171
+   },
+   "words": [
+    {
+     "text": "Clocked",
+     "start": 19.086,
+     "end": 19.446
+    },
+    {
+     "text": "Protect",
+     "start": 19.504,
+     "end": 19.841
+    },
+    {
+     "text": "screens",
+     "start": 19.875,
+     "end": 20.328
+    },
+    {
+     "text": "each",
+     "start": 20.41,
+     "end": 20.584
+    },
+    {
+     "text": "record",
+     "start": 20.653,
+     "end": 20.99
+    },
+    {
+     "text": "for",
+     "start": 21.025,
+     "end": 21.129
+    },
+    {
+     "text": "names",
+     "start": 21.199,
+     "end": 21.571
+    },
+    {
+     "text": "and",
+     "start": 21.78,
+     "end": 21.965
+    },
+    {
+     "text": "ID",
+     "start": 22.081,
+     "end": 22.372
+    },
+    {
+     "text": "numbers",
+     "start": 22.546,
+     "end": 22.882
+    },
+    {
+     "text": "first.",
+     "start": 22.952,
+     "end": 23.533
+    },
+    {
+     "text": "It",
+     "start": 23.974,
+     "end": 24.113
+    },
+    {
+     "text": "finds",
+     "start": 24.171,
+     "end": 24.519
+    },
+    {
+     "text": "only",
+     "start": 24.601,
+     "end": 24.798
+    },
+    {
+     "text": "the",
+     "start": 24.845,
+     "end": 24.914
+    },
+    {
+     "text": "synthetic",
+     "start": 24.961,
+     "end": 25.46
+    },
+    {
+     "text": "case",
+     "start": 25.506,
+     "end": 25.773
+    },
+    {
+     "text": "code,",
+     "start": 25.82,
+     "end": 26.273
+    },
+    {
+     "text": "so",
+     "start": 26.598,
+     "end": 26.749
+    },
+    {
+     "text": "the",
+     "start": 26.807,
+     "end": 26.876
+    },
+    {
+     "text": "rest",
+     "start": 26.934,
+     "end": 27.213
+    },
+    {
+     "text": "can",
+     "start": 27.422,
+     "end": 27.596
+    },
+    {
+     "text": "run.",
+     "start": 27.666,
+     "end": 28.328
+    }
+   ]
+  },
+  {
+   "id": "extract",
+   "start": 28.928,
+   "dur": 9.031,
+   "voice_at": 29.278,
+   "voice_len": 8.081,
+   "cues": {
+    "title": 29.731,
+    "lift_allergy": 31.449,
+    "lift_meds": 32.192,
+    "offsets": 34.99
+   },
+   "words": [
+    {
+     "text": "Clocked",
+     "start": 29.278,
+     "end": 29.661
+    },
+    {
+     "text": "Extract",
+     "start": 29.731,
+     "end": 30.288
+    },
+    {
+     "text": "copies",
+     "start": 30.613,
+     "end": 31.089
+    },
+    {
+     "text": "each",
+     "start": 31.17,
+     "end": 31.368
+    },
+    {
+     "text": "allergy",
+     "start": 31.449,
+     "end": 31.937
+    },
+    {
+     "text": "and",
+     "start": 32.018,
+     "end": 32.122
+    },
+    {
+     "text": "medication",
+     "start": 32.192,
+     "end": 32.773
+    },
+    {
+     "text": "line",
+     "start": 32.842,
+     "end": 33.121
+    },
+    {
+     "text": "word",
+     "start": 33.167,
+     "end": 33.492
+    },
+    {
+     "text": "for",
+     "start": 33.55,
+     "end": 33.667
+    },
+    {
+     "text": "word,",
+     "start": 33.725,
+     "end": 34.282
+    },
+    {
+     "text": "with",
+     "start": 34.607,
+     "end": 34.781
+    },
+    {
+     "text": "its",
+     "start": 34.828,
+     "end": 34.944
+    },
+    {
+     "text": "exact",
+     "start": 34.99,
+     "end": 35.35
+    },
+    {
+     "text": "position",
+     "start": 35.408,
+     "end": 35.872
+    },
+    {
+     "text": "in",
+     "start": 36.256,
+     "end": 36.395
+    },
+    {
+     "text": "the",
+     "start": 36.441,
+     "end": 36.511
+    },
+    {
+     "text": "record.",
+     "start": 36.569,
+     "end": 37.359
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "start": 37.959,
+   "dur": 13.814,
+   "voice_at": 38.309,
+   "voice_len": 12.864,
+   "cues": {
+    "title": 39.064,
+    "chips": 41.49,
+    "warfarin": 46.181
+   },
+   "words": [
+    {
+     "text": "Then",
+     "start": 38.309,
+     "end": 38.588
+    },
+    {
+     "text": "fixed",
+     "start": 38.704,
+     "end": 39.006
+    },
+    {
+     "text": "rules,",
+     "start": 39.064,
+     "end": 39.633
+    },
+    {
+     "text": "signed",
+     "start": 39.876,
+     "end": 40.283
+    },
+    {
+     "text": "by",
+     "start": 40.341,
+     "end": 40.468
+    },
+    {
+     "text": "a",
+     "start": 40.527,
+     "end": 40.55
+    },
+    {
+     "text": "physician,",
+     "start": 40.596,
+     "end": 41.246
+    },
+    {
+     "text": "label",
+     "start": 41.49,
+     "end": 41.85
+    },
+    {
+     "text": "every",
+     "start": 41.931,
+     "end": 42.21
+    },
+    {
+     "text": "item.",
+     "start": 42.291,
+     "end": 42.825
+    },
+    {
+     "text": "No",
+     "start": 43.336,
+     "end": 43.545
+    },
+    {
+     "text": "model",
+     "start": 43.638,
+     "end": 43.893
+    },
+    {
+     "text": "decides",
+     "start": 43.963,
+     "end": 44.555
+    },
+    {
+     "text": "a",
+     "start": 44.729,
+     "end": 44.845
+    },
+    {
+     "text": "label.",
+     "start": 44.927,
+     "end": 45.484
+    },
+    {
+     "text": "Warfarin:",
+     "start": 46.181,
+     "end": 47.086
+    },
+    {
+     "text": "in",
+     "start": 47.69,
+     "end": 47.829
+    },
+    {
+     "text": "three",
+     "start": 47.922,
+     "end": 48.224
+    },
+    {
+     "text": "records,",
+     "start": 48.317,
+     "end": 49.095
+    },
+    {
+     "text": "missing",
+     "start": 49.536,
+     "end": 49.919
+    },
+    {
+     "text": "from",
+     "start": 50.035,
+     "end": 50.209
+    },
+    {
+     "text": "the",
+     "start": 50.256,
+     "end": 50.325
+    },
+    {
+     "text": "newest.",
+     "start": 50.395,
+     "end": 51.173
+    }
+   ]
+  },
+  {
+   "id": "fill",
+   "start": 51.773,
+   "dur": 7.266,
+   "voice_at": 52.123,
+   "voice_len": 6.316,
+   "cues": {
+    "title": 52.611,
+    "type": 55.803
+   },
+   "words": [
+    {
+     "text": "Clocked",
+     "start": 52.123,
+     "end": 52.529
+    },
+    {
+     "text": "Fill",
+     "start": 52.611,
+     "end": 52.959
+    },
+    {
+     "text": "drafts",
+     "start": 53.284,
+     "end": 53.679
+    },
+    {
+     "text": "one",
+     "start": 53.76,
+     "end": 54.004
+    },
+    {
+     "text": "sentence",
+     "start": 54.085,
+     "end": 54.549
+    },
+    {
+     "text": "per",
+     "start": 54.584,
+     "end": 54.724
+    },
+    {
+     "text": "finding.",
+     "start": 54.782,
+     "end": 55.42
+    },
+    {
+     "text": "This",
+     "start": 55.803,
+     "end": 56.024
+    },
+    {
+     "text": "is",
+     "start": 56.094,
+     "end": 56.186
+    },
+    {
+     "text": "its",
+     "start": 56.256,
+     "end": 56.384
+    },
+    {
+     "text": "sentence",
+     "start": 56.419,
+     "end": 57.057
+    },
+    {
+     "text": "about",
+     "start": 57.173,
+     "end": 57.487
+    },
+    {
+     "text": "the",
+     "start": 57.522,
+     "end": 57.603
+    },
+    {
+     "text": "allergy.",
+     "start": 57.673,
+     "end": 58.439
+    }
+   ]
+  },
+  {
+   "id": "verify",
+   "start": 59.039,
+   "dur": 12.81,
+   "voice_at": 59.389,
+   "voice_len": 10.96,
+   "cues": {
+    "title": 59.853,
+    "scan": 64.23,
+    "stamp": 67.934,
+    "remove": 69.374
+   },
+   "words": [
+    {
+     "text": "Clocked",
+     "start": 59.389,
+     "end": 59.772
+    },
+    {
+     "text": "Verify",
+     "start": 59.853,
+     "end": 60.446
+    },
+    {
+     "text": "checks",
+     "start": 60.538,
+     "end": 60.84
+    },
+    {
+     "text": "it",
+     "start": 60.887,
+     "end": 60.968
+    },
+    {
+     "text": "against",
+     "start": 61.038,
+     "end": 61.374
+    },
+    {
+     "text": "the",
+     "start": 61.421,
+     "end": 61.49
+    },
+    {
+     "text": "original",
+     "start": 61.548,
+     "end": 61.932
+    },
+    {
+     "text": "records.",
+     "start": 62.001,
+     "end": 62.756
+    },
+    {
+     "text": "The",
+     "start": 63.197,
+     "end": 63.313
+    },
+    {
+     "text": "sentence",
+     "start": 63.371,
+     "end": 63.766
+    },
+    {
+     "text": "asserts",
+     "start": 63.801,
+     "end": 64.172
+    },
+    {
+     "text": "two",
+     "start": 64.23,
+     "end": 64.474
+    },
+    {
+     "text": "things",
+     "start": 64.59,
+     "end": 64.973
+    },
+    {
+     "text": "that",
+     "start": 65.02,
+     "end": 65.148
+    },
+    {
+     "text": "disagree,",
+     "start": 65.194,
+     "end": 66.042
+    },
+    {
+     "text": "so",
+     "start": 66.483,
+     "end": 66.657
+    },
+    {
+     "text": "Verify",
+     "start": 66.75,
+     "end": 67.307
+    },
+    {
+     "text": "marks",
+     "start": 67.423,
+     "end": 67.737
+    },
+    {
+     "text": "it",
+     "start": 67.783,
+     "end": 67.876
+    },
+    {
+     "text": "contradicted,",
+     "start": 67.934,
+     "end": 68.77
+    },
+    {
+     "text": "and",
+     "start": 69.048,
+     "end": 69.199
+    },
+    {
+     "text": "it",
+     "start": 69.257,
+     "end": 69.316
+    },
+    {
+     "text": "comes",
+     "start": 69.374,
+     "end": 69.652
+    },
+    {
+     "text": "out.",
+     "start": 69.722,
+     "end": 70.349
+    }
+   ]
+  },
+  {
+   "id": "rebuild",
+   "start": 71.849,
+   "dur": 14.4,
+   "voice_at": 72.199,
+   "voice_len": 13.05,
+   "cues": {
+    "quotes": 72.884,
+    "check": 77.319,
+    "stamps": 79.56,
+    "realcard": 81.568
+   },
+   "words": [
+    {
+     "text": "The",
+     "start": 72.199,
+     "end": 72.35
+    },
+    {
+     "text": "rules",
+     "start": 72.42,
+     "end": 72.803
+    },
+    {
+     "text": "rebuild",
+     "start": 72.884,
+     "end": 73.348
+    },
+    {
+     "text": "it",
+     "start": 73.395,
+     "end": 73.476
+    },
+    {
+     "text": "from",
+     "start": 73.534,
+     "end": 73.685
+    },
+    {
+     "text": "the",
+     "start": 73.732,
+     "end": 73.801
+    },
+    {
+     "text": "two",
+     "start": 73.836,
+     "end": 74.022
+    },
+    {
+     "text": "exact",
+     "start": 74.091,
+     "end": 74.44
+    },
+    {
+     "text": "quotes,",
+     "start": 74.509,
+     "end": 75.113
+    },
+    {
+     "text": "and",
+     "start": 75.322,
+     "end": 75.473
+    },
+    {
+     "text": "Clocked",
+     "start": 75.543,
+     "end": 75.856
+    },
+    {
+     "text": "Verify",
+     "start": 75.926,
+     "end": 76.564
+    },
+    {
+     "text": "checks",
+     "start": 76.889,
+     "end": 77.226
+    },
+    {
+     "text": "each",
+     "start": 77.319,
+     "end": 77.54
+    },
+    {
+     "text": "quote",
+     "start": 77.609,
+     "end": 78.062
+    },
+    {
+     "text": "on",
+     "start": 78.213,
+     "end": 78.376
+    },
+    {
+     "text": "its",
+     "start": 78.422,
+     "end": 78.55
+    },
+    {
+     "text": "own.",
+     "start": 78.619,
+     "end": 79.049
+    },
+    {
+     "text": "Both",
+     "start": 79.56,
+     "end": 79.92
+    },
+    {
+     "text": "are",
+     "start": 80.094,
+     "end": 80.28
+    },
+    {
+     "text": "supported.",
+     "start": 80.303,
+     "end": 80.965
+    },
+    {
+     "text": "The",
+     "start": 81.406,
+     "end": 81.51
+    },
+    {
+     "text": "conflict",
+     "start": 81.568,
+     "end": 82.033
+    },
+    {
+     "text": "stays",
+     "start": 82.102,
+     "end": 82.427
+    },
+    {
+     "text": "on",
+     "start": 82.474,
+     "end": 82.543
+    },
+    {
+     "text": "the",
+     "start": 82.578,
+     "end": 82.648
+    },
+    {
+     "text": "page,",
+     "start": 82.694,
+     "end": 83.31
+    },
+    {
+     "text": "never",
+     "start": 83.635,
+     "end": 83.867
+    },
+    {
+     "text": "resolved",
+     "start": 83.925,
+     "end": 84.401
+    },
+    {
+     "text": "for",
+     "start": 84.459,
+     "end": 84.575
+    },
+    {
+     "text": "you.",
+     "start": 84.645,
+     "end": 85.249
+    }
+   ]
+  },
+  {
+   "id": "quiet",
+   "start": 86.249,
+   "dur": 9.82,
+   "voice_at": 86.599,
+   "voice_len": 8.87,
+   "cues": {
+    "lines": 89.142,
+    "collapse": 93.252
+   },
+   "words": [
+    {
+     "text": "It",
+     "start": 86.599,
+     "end": 86.762
+    },
+    {
+     "text": "also",
+     "start": 86.82,
+     "end": 87.191
+    },
+    {
+     "text": "knows",
+     "start": 87.261,
+     "end": 87.597
+    },
+    {
+     "text": "when",
+     "start": 87.656,
+     "end": 87.818
+    },
+    {
+     "text": "to",
+     "start": 87.864,
+     "end": 87.923
+    },
+    {
+     "text": "stay",
+     "start": 87.981,
+     "end": 88.19
+    },
+    {
+     "text": "quiet.",
+     "start": 88.259,
+     "end": 88.817
+    },
+    {
+     "text": "Metformin,",
+     "start": 89.142,
+     "end": 89.908
+    },
+    {
+     "text": "written",
+     "start": 90.024,
+     "end": 90.314
+    },
+    {
+     "text": "four",
+     "start": 90.384,
+     "end": 90.593
+    },
+    {
+     "text": "ways",
+     "start": 90.651,
+     "end": 90.906
+    },
+    {
+     "text": "in",
+     "start": 90.964,
+     "end": 91.046
+    },
+    {
+     "text": "shorthand",
+     "start": 91.104,
+     "end": 91.684
+    },
+    {
+     "text": "and",
+     "start": 91.963,
+     "end": 92.16
+    },
+    {
+     "text": "Spanish:",
+     "start": 92.241,
+     "end": 92.926
+    },
+    {
+     "text": "same",
+     "start": 93.252,
+     "end": 93.553
+    },
+    {
+     "text": "dose,",
+     "start": 93.6,
+     "end": 94.099
+    },
+    {
+     "text": "no",
+     "start": 94.424,
+     "end": 94.598
+    },
+    {
+     "text": "flag.",
+     "start": 94.691,
+     "end": 95.469
+    }
+   ]
+  },
+  {
+   "id": "compare",
+   "start": 96.069,
+   "dur": 12.931,
+   "voice_at": 96.419,
+   "voice_len": 11.981,
+   "cues": {
+    "title": 96.895,
+    "count": 101.69,
+    "zero": 106.462
+   },
+   "words": [
+    {
+     "text": "Clocked",
+     "start": 96.419,
+     "end": 96.825
+    },
+    {
+     "text": "Compare,",
+     "start": 96.895,
+     "end": 97.65
+    },
+    {
+     "text": "run",
+     "start": 97.928,
+     "end": 98.16
+    },
+    {
+     "text": "separately",
+     "start": 98.277,
+     "end": 98.799
+    },
+    {
+     "text": "on",
+     "start": 98.88,
+     "end": 98.973
+    },
+    {
+     "text": "the",
+     "start": 99.02,
+     "end": 99.089
+    },
+    {
+     "text": "raw",
+     "start": 99.147,
+     "end": 99.345
+    },
+    {
+     "text": "records,",
+     "start": 99.426,
+     "end": 100.099
+    },
+    {
+     "text": "independently",
+     "start": 100.343,
+     "end": 101.086
+    },
+    {
+     "text": "flagged",
+     "start": 101.144,
+     "end": 101.574
+    },
+    {
+     "text": "25",
+     "start": 101.69,
+     "end": 102.375
+    },
+    {
+     "text": "of",
+     "start": 102.491,
+     "end": 102.561
+    },
+    {
+     "text": "the",
+     "start": 102.607,
+     "end": 102.677
+    },
+    {
+     "text": "39",
+     "start": 102.735,
+     "end": 103.292
+    },
+    {
+     "text": "conflicts",
+     "start": 103.362,
+     "end": 103.896
+    },
+    {
+     "text": "the",
+     "start": 103.942,
+     "end": 104.012
+    },
+    {
+     "text": "rules",
+     "start": 104.07,
+     "end": 104.383
+    },
+    {
+     "text": "found,",
+     "start": 104.453,
+     "end": 104.952
+    },
+    {
+     "text": "and",
+     "start": 105.277,
+     "end": 105.44
+    },
+    {
+     "text": "surfaced",
+     "start": 105.533,
+     "end": 106.078
+    },
+    {
+     "text": "none",
+     "start": 106.462,
+     "end": 106.822
+    },
+    {
+     "text": "the",
+     "start": 106.868,
+     "end": 106.961
+    },
+    {
+     "text": "rules",
+     "start": 107.031,
+     "end": 107.39
+    },
+    {
+     "text": "had",
+     "start": 107.448,
+     "end": 107.576
+    },
+    {
+     "text": "missed.",
+     "start": 107.646,
+     "end": 108.4
+    }
+   ]
+  },
+  {
+   "id": "absence",
+   "start": 109.0,
+   "dur": 13.396,
+   "voice_at": 109.35,
+   "voice_len": 12.446,
+   "cues": {
+    "lisinopril": 112.682,
+    "unknown": 117.349
+   },
+   "words": [
+    {
+     "text": "Verify",
+     "start": 109.35,
+     "end": 110.0
+    },
+    {
+     "text": "cannot",
+     "start": 110.093,
+     "end": 110.407
+    },
+    {
+     "text": "prove",
+     "start": 110.476,
+     "end": 110.871
+    },
+    {
+     "text": "that",
+     "start": 110.906,
+     "end": 111.033
+    },
+    {
+     "text": "something",
+     "start": 111.08,
+     "end": 111.393
+    },
+    {
+     "text": "is",
+     "start": 111.451,
+     "end": 111.533
+    },
+    {
+     "text": "missing,",
+     "start": 111.602,
+     "end": 112.171
+    },
+    {
+     "text": "so",
+     "start": 112.45,
+     "end": 112.601
+    },
+    {
+     "text": "absences",
+     "start": 112.682,
+     "end": 113.228
+    },
+    {
+     "text": "are",
+     "start": 113.274,
+     "end": 113.367
+    },
+    {
+     "text": "established",
+     "start": 113.402,
+     "end": 113.936
+    },
+    {
+     "text": "by",
+     "start": 113.971,
+     "end": 114.087
+    },
+    {
+     "text": "comparing",
+     "start": 114.157,
+     "end": 114.656
+    },
+    {
+     "text": "records,",
+     "start": 114.737,
+     "end": 115.376
+    },
+    {
+     "text": "and",
+     "start": 115.527,
+     "end": 115.677
+    },
+    {
+     "text": "labelled",
+     "start": 115.759,
+     "end": 116.119
+    },
+    {
+     "text": "that",
+     "start": 116.142,
+     "end": 116.281
+    },
+    {
+     "text": "way.",
+     "start": 116.339,
+     "end": 116.746
+    },
+    {
+     "text": "No",
+     "start": 117.349,
+     "end": 117.616
+    },
+    {
+     "text": "allergy",
+     "start": 117.732,
+     "end": 118.243
+    },
+    {
+     "text": "in",
+     "start": 118.325,
+     "end": 118.441
+    },
+    {
+     "text": "any",
+     "start": 118.51,
+     "end": 118.696
+    },
+    {
+     "text": "record",
+     "start": 118.777,
+     "end": 119.242
+    },
+    {
+     "text": "means",
+     "start": 119.358,
+     "end": 119.671
+    },
+    {
+     "text": "unknown,",
+     "start": 119.741,
+     "end": 120.438
+    },
+    {
+     "text": "not",
+     "start": 120.821,
+     "end": 121.018
+    },
+    {
+     "text": "none.",
+     "start": 121.111,
+     "end": 121.796
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "start": 122.396,
+   "dur": 21.848,
+   "voice_at": 122.746,
+   "voice_len": 20.898,
+   "cues": {
+    "n54": 126.705,
+    "n100": 130.072,
+    "n5": 131.941,
+    "n70": 135.169,
+    "n55": 140.486,
+    "n0": 142.123
+   },
+   "words": [
+    {
+     "text": "On",
+     "start": 122.746,
+     "end": 122.92
+    },
+    {
+     "text": "twenty",
+     "start": 122.967,
+     "end": 123.326
+    },
+    {
+     "text": "synthetic",
+     "start": 123.396,
+     "end": 123.872
+    },
+    {
+     "text": "patients:",
+     "start": 123.93,
+     "end": 124.673
+    },
+    {
+     "text": "medication",
+     "start": 124.998,
+     "end": 125.614
+    },
+    {
+     "text": "labels",
+     "start": 125.683,
+     "end": 126.09
+    },
+    {
+     "text": "went",
+     "start": 126.159,
+     "end": 126.368
+    },
+    {
+     "text": "from",
+     "start": 126.426,
+     "end": 126.589
+    },
+    {
+     "text": "54",
+     "start": 126.705,
+     "end": 127.32
+    },
+    {
+     "text": "of",
+     "start": 127.367,
+     "end": 127.425
+    },
+    {
+     "text": "100",
+     "start": 127.506,
+     "end": 127.994
+    },
+    {
+     "text": "before",
+     "start": 128.319,
+     "end": 128.667
+    },
+    {
+     "text": "normalisation",
+     "start": 128.714,
+     "end": 129.549
+    },
+    {
+     "text": "to",
+     "start": 129.875,
+     "end": 129.991
+    },
+    {
+     "text": "100",
+     "start": 130.072,
+     "end": 130.525
+    },
+    {
+     "text": "of",
+     "start": 130.56,
+     "end": 130.618
+    },
+    {
+     "text": "100.",
+     "start": 130.687,
+     "end": 131.337
+    },
+    {
+     "text": "5",
+     "start": 131.941,
+     "end": 132.266
+    },
+    {
+     "text": "of",
+     "start": 132.347,
+     "end": 132.417
+    },
+    {
+     "text": "5",
+     "start": 132.533,
+     "end": 132.858
+    },
+    {
+     "text": "allergy",
+     "start": 132.974,
+     "end": 133.369
+    },
+    {
+     "text": "conflicts.",
+     "start": 133.427,
+     "end": 134.251
+    },
+    {
+     "text": "All",
+     "start": 134.762,
+     "end": 135.041
+    },
+    {
+     "text": "70",
+     "start": 135.169,
+     "end": 135.529
+    },
+    {
+     "text": "discrepancies",
+     "start": 135.587,
+     "end": 136.26
+    },
+    {
+     "text": "named",
+     "start": 136.318,
+     "end": 136.655
+    },
+    {
+     "text": "in",
+     "start": 136.701,
+     "end": 136.771
+    },
+    {
+     "text": "the",
+     "start": 136.817,
+     "end": 136.887
+    },
+    {
+     "text": "handoff,",
+     "start": 136.933,
+     "end": 137.584
+    },
+    {
+     "text": "where",
+     "start": 137.793,
+     "end": 138.013
+    },
+    {
+     "text": "Fill",
+     "start": 138.06,
+     "end": 138.315
+    },
+    {
+     "text": "and",
+     "start": 138.396,
+     "end": 138.501
+    },
+    {
+     "text": "Verify",
+     "start": 138.559,
+     "end": 139.058
+    },
+    {
+     "text": "alone",
+     "start": 139.116,
+     "end": 139.697
+    },
+    {
+     "text": "reached",
+     "start": 139.906,
+     "end": 140.277
+    },
+    {
+     "text": "55.",
+     "start": 140.486,
+     "end": 141.38
+    },
+    {
+     "text": "No",
+     "start": 141.763,
+     "end": 142.007
+    },
+    {
+     "text": "invented",
+     "start": 142.123,
+     "end": 142.622
+    },
+    {
+     "text": "medicines.",
+     "start": 142.692,
+     "end": 143.644
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "start": 144.244,
+   "dur": 7.379,
+   "voice_at": 144.594,
+   "voice_len": 3.529,
+   "cues": {
+    "line": 144.594
+   },
+   "words": [
+    {
+     "text": "Every",
+     "start": 144.594,
+     "end": 144.907
+    },
+    {
+     "text": "sentence",
+     "start": 144.977,
+     "end": 145.407
+    },
+    {
+     "text": "verified,",
+     "start": 145.453,
+     "end": 146.173
+    },
+    {
+     "text": "or",
+     "start": 146.417,
+     "end": 146.568
+    },
+    {
+     "text": "labelled",
+     "start": 146.649,
+     "end": 147.032
+    },
+    {
+     "text": "for",
+     "start": 147.079,
+     "end": 147.171
+    },
+    {
+     "text": "what",
+     "start": 147.206,
+     "end": 147.334
+    },
+    {
+     "text": "it",
+     "start": 147.38,
+     "end": 147.45
+    },
+    {
+     "text": "is.",
+     "start": 147.508,
+     "end": 148.123
+    }
+   ]
+  }
+ ]
+}

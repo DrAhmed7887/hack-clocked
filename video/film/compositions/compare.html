@@ -1,0 +1,49 @@
+<template>
+  <style>
+#root { position: absolute; inset: 0; overflow: hidden; font-family: "Inter", sans-serif; color: #1D1D1B; }
+.all { position: absolute; inset: 0; }
+.card { position: absolute; background: #FFFFFF; border: 1px solid #E2E0D8; border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(29,29,27,0.08); }
+.chip { display: inline-block; font-weight: 700; font-size: 28px; line-height: 1; padding: 9px 18px; border-radius: 999px; white-space: nowrap; }
+.bad { color: #A4161A; background: #FDE8E8; } .ok { color: #1F7A4D; background: #E6F3EC; }
+.warn { color: #9A5B00; background: #FDF0DC; } .info { color: #2B5C9E; background: #E7EEF9; }
+.mono { font-family: "JetBrains Mono", monospace; font-variant-ligatures: none; font-feature-settings: "calt" 0, "liga" 0; }
+.muted { color: #5D5D58; }
+.hide { opacity: 0; }
+</style>
+  <div id="root" data-composition-id="compare" data-width="1920" data-height="1080">
+    <div id="compare-all" class="all clip" data-start="0" data-duration="12.931" data-track-index="1">
+<div id="co-real" class="hide" style="position:absolute;left:160px;top:140px;width:1600px">
+  <div class="muted" style="font-size:30px;margin-bottom:16px">Independent cross-checks on the patient's page (P001)</div>
+  <img src="assets/site/p001_crosschecks.png" style="width:1600px;display:block;border-radius:12px" alt="Cross-checks panel"></div>
+<div id="co-a" class="hide" style="position:absolute;left:160px;top:610px;width:760px">
+  <div id="co-n" style="font-size:120px;font-weight:900;letter-spacing:-0.03em;font-variant-numeric:tabular-nums">0 / 39</div>
+  <div style="font-size:32px;line-height:42px">rule-found conflicts that Compare also flagged, across 20 synthetic patients</div></div>
+<div id="co-b" class="hide" style="position:absolute;left:1000px;top:610px;width:760px">
+  <div style="font-size:120px;font-weight:900;letter-spacing:-0.03em">0</div>
+  <div style="font-size:32px;line-height:42px">conflicts Compare found that no rule explained</div></div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+
+const arrive = (sel, t, from = { y: 28 }) => tl.fromTo(sel, { opacity: 0, ...from }, { opacity: 1, x: 0, y: 0, duration: 0.5, ease: "expo.out" }, t);
+const blurIn = (sel, t, d = 0.2) => tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "expo.out" }, t);
+const leave = (sel, t) => tl.to(sel, { opacity: 0, filter: "blur(6px)", duration: 0.25, ease: "power3.in" }, t);
+const box = (sel, t, c, bg) => tl.fromTo(sel, { boxShadow: "0 0 0 0px " + c, backgroundColor: "rgba(255,255,255,0)" }, { boxShadow: "0 0 0 4px " + c, backgroundColor: bg, duration: 0.3, ease: "power2.out" }, t);
+const stamp = (sel, t) => { tl.set(sel, { opacity: 1 }, t); tl.fromTo(sel, { scale: 1.14 }, { scale: 1, duration: 0.18, ease: "power2.out" }, t); };
+const cam = (sel, t, x, y, s, d = 0.8) => tl.to(sel, { x: x, y: y, scale: s, duration: d, ease: "power2.inOut" }, t);
+const strike = (sel, t, d = 0.35) => tl.fromTo(sel, { scaleX: 0 }, { scaleX: 1, duration: d, ease: "power1.inOut", transformOrigin: "0% 50%" }, t);
+const typeChars = (sel, t0, t1) => { const cs = gsap.utils.toArray(sel); const g = (t1 - t0) / cs.length; cs.forEach((c, i) => tl.set(c, { opacity: 1 }, t0 + i * g)); };
+const count = (sel, t, a, b, d, fmt) => { const o = { v: a }; const el = document.querySelector(sel);
+  tl.fromTo(o, { v: a }, { v: b, duration: d, ease: "power2.out", onUpdate: () => { el.textContent = fmt(Math.round(o.v)); } }, t); };
+
+arrive("#co-real", 0.526, { y: 40 });
+arrive("#co-a", 5.121); count("#co-n", 5.321000000000001, 0, 25, 1.3, v => v + " / 39");
+arrive("#co-b", 10.393);
+
+      window.__timelines["compare"] = tl;
+    })();
+  </script>
+</template>
