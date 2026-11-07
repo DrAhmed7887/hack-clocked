@@ -19,7 +19,7 @@ ES = {v: k for k, v in nz.DRUG_SYNONYMS.items()}
 
 def mentioned(term: str, text: str) -> bool:
     words = [term] + [k for k, v in nz.DRUG_SYNONYMS.items() if v == term]
-    return any(re.search(rf"\b{re.escape(w.split()[0])}\b", text) for w in words)
+    return any(re.search(rf"(?<![a-z]){re.escape(w)}(?![a-z])", text) for w in words)
 
 
 def main() -> None:
@@ -35,6 +35,10 @@ def main() -> None:
             need.append(p["truth"]["allergy"]["allergen"])
         missed = [n for n in need if not mentioned(n, text)
                   and not (n == p["truth"]["allergy"]["allergen"] and re.search(r"allerg|alerg", text))]
+        pre = " ".join(r["sentence"].lower() for r in s["kept"] if "established_by" not in r)
+        fill_missed = [n for n in need if not mentioned(n, pre)
+                       and not (n == p["truth"]["allergy"]["allergen"] and re.search(r"allergy conflict", pre))]
+        tot["fill_covered"] = tot.get("fill_covered", 0) + len(need) - len(fill_missed)
         tot["need"] += len(need)
         tot["covered"] += len(need) - len(missed)
         tot["kept_text"] += sum("established_by" not in r for r in s["kept"])
@@ -50,6 +54,7 @@ def main() -> None:
     lines = [f"# Written handoff results, {variant} set ({len(rows)} packets)", "",
              "Produced by `python3 eval/score_summary.py`. Synthetic data only.", "",
              f"- Discrepancies named in the final text: **{tot['covered']}/{tot['need']}**",
+             f"- Discrepancies named by Fill sentences that Verify supported (before rules R7a/R7b): **{tot['fill_covered']}/{tot['need']}**",
              f"- Generated sentences kept on text evidence (Clocked Verify): **{tot['kept_text']}**",
              f"- Sentences kept on record comparison (rule R7a): **{tot['kept_cmp']}**",
              f"- Sentences added by the rules safety net (R7b): **{tot.get('added', 0)}** (Verify supported {tot.get('added_ok', 0)} of them)",
@@ -59,7 +64,7 @@ def main() -> None:
              "## Not covered", ""] + [f"- {r['packet']}: {r['missed']}" for r in rows if r["missed"]]
     lines += ["", "## Removed sentences", ""] + [f"- {r['packet']}: {x}" for r in rows for x in r["removed"]]
     (ROOT / "eval" / f"SUMMARY_{variant}.md").write_text("\n".join(lines) + "\n")
-    print("\n".join(lines[:12]))
+    print("\n".join(lines[:13]))
 
 
 if __name__ == "__main__":

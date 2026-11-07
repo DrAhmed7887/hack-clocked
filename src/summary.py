@@ -39,7 +39,7 @@ def _items(handoff: dict, docs: list) -> list:
     for drug, m in sorted(handoff["medications"].items()):
         if m["label"] == "consistent":
             continue
-        q = {k: _quote(by_id[k], v[0]) for k, v in m["sources"].items()}
+        q = {k: " / ".join(_quote(by_id[k], sp) for sp in v["spans"]) for k, v in m["sources"].items()}
         listed = "; ".join(f"{name[k]} says '{q[k]}'" for k in q)
         sentence = {
             "possible_omission": f"{drug.capitalize()} is listed in earlier records ({listed}) but not in {name[newest]}.",
@@ -52,10 +52,11 @@ def _items(handoff: dict, docs: list) -> list:
 
 
 def _names(term: str, text: str) -> bool:
+    """Full-name match (review finding 6): 'insulin glargine' never counts as naming 'insulin lispro'."""
     if term == "allergy":
-        return bool(re.search(r"allerg|alerg", text))
+        return bool(re.search(r"allergy conflict|conflicto de alergia", text))
     words = [term] + [k for k, v in nz.DRUG_SYNONYMS.items() if v == term]
-    return any(re.search(rf"\b{re.escape(w.split()[0])}\b", text) for w in words)
+    return any(re.search(rf"(?<![a-z]){re.escape(w)}(?![a-z])", text) for w in words)
 
 
 def write_and_verify(handoff: dict, packet: dict) -> dict:
@@ -78,6 +79,7 @@ def write_and_verify(handoff: dict, packet: dict) -> dict:
                                    "instructions": VERIFY_INSTRUCTIONS, "evidence": "all", "threshold": 0.65})
         credits += int(check.get("_credits") or 0)
         absent = [d for d, m in handoff["medications"].items() if m["label"] == "possible_omission"]
+        template = dict(items)
         for c in check.get("claims", []):
             if c.get("verdict") == "not_a_claim" or c.get("kind") != "claim":
                 continue
@@ -86,9 +88,11 @@ def write_and_verify(handoff: dict, packet: dict) -> dict:
             hit = [d for d in absent if _names(d, row["sentence"].lower())]
             if c.get("verdict") == "supported":
                 kept.append(row)
-            elif hit and c.get("verdict") == "not_stated":  # R7a
-                row["established_by"] = f"record comparison (rule R4): {', '.join(hit)} absent from the newest record"
-                kept.append(row)
+            elif hit and c.get("verdict") == "not_stated":  # R7a: keep the rule-built sentence, never Fill's wording
+                for d in hit:  # (review finding 7: Fill text could carry an invented detail)
+                    if not any(r.get("drug") == d for r in kept):
+                        kept.append({"sentence": template[d], "drug": d, "verdict": c.get("verdict"),
+                                     "established_by": f"record comparison (rule R4): {d} absent from the newest record"})
             else:
                 removed.append(row)
         covered = " ".join(r["sentence"].lower() for r in kept)

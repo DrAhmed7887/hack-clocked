@@ -14,9 +14,13 @@ CACHE = Path(__file__).resolve().parent.parent / "runs" / "raw"
 
 
 def _key() -> str:
-    key = os.environ.get("CLOCKED_API_KEY") or subprocess.run(
-        ["security", "find-generic-password", "-s", "CLOCKED_API_KEY", "-w"],
-        capture_output=True, text=True).stdout.strip()
+    key = os.environ.get("CLOCKED_API_KEY")
+    if not key:
+        try:  # macOS Keychain; absent on Linux (review finding 12)
+            key = subprocess.run(["security", "find-generic-password", "-s", "CLOCKED_API_KEY", "-w"],
+                                 capture_output=True, text=True).stdout.strip()
+        except FileNotFoundError:
+            key = ""
     if not key:
         raise RuntimeError("CLOCKED_API_KEY not set (env or Keychain)")
     return key
@@ -38,7 +42,9 @@ def call(endpoint: str, payload: dict, retries: int = 3) -> dict:
                 data = json.loads(resp.read())
                 data["_credits"] = resp.headers.get("X-Clocked-Credits")
                 CACHE.mkdir(parents=True, exist_ok=True)
-                cached.write_text(json.dumps(data, indent=1))
+                tmp = cached.with_suffix(".tmp")  # atomic: a crash never leaves a half-written cache file
+                tmp.write_text(json.dumps(data, indent=1))
+                tmp.replace(cached)
                 return data
         except urllib.error.HTTPError as err:
             if err.code in (429, 500, 502, 503, 504) and attempt < retries:
@@ -46,4 +52,9 @@ def call(endpoint: str, payload: dict, retries: int = 3) -> dict:
                 continue
             detail = err.read().decode(errors="replace")[:300]  # error body never contains the key
             raise RuntimeError(f"{endpoint} HTTP {err.code}: {detail}") from None
+        except (urllib.error.URLError, TimeoutError) as err:  # network errors retry too (finding 12)
+            if attempt < retries:
+                time.sleep(2 ** attempt)
+                continue
+            raise RuntimeError(f"{endpoint}: network error {type(err).__name__}") from None
     raise RuntimeError(f"{endpoint}: retries exhausted")

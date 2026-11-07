@@ -3,6 +3,7 @@
 Produced by `python3 eval/score_summary.py`. Synthetic data only.
 
 - Discrepancies named in the final text: **70/70**
+- Discrepancies named by Fill sentences that Verify supported (before rules R7a/R7b): **61/70**
 - Generated sentences kept on text evidence (Clocked Verify): **62**
 - Sentences kept on record comparison (rule R7a): **5**
 - Sentences added by the rules safety net (R7b): **5** (Verify supported 1 of them)

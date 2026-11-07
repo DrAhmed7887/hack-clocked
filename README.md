@@ -1,6 +1,6 @@
 # Evidence-Linked Clinical Handoff
 
-**When a patient arrives with records from several countries, the receiving clinician needs to know which facts are supported, which conflict, and which are missing.** This tool reads every record, labels each medication, allergy and problem, quotes the exact source words, and writes a short handoff whose every sentence is checked against the records.
+**When a patient arrives with records from several countries, the receiving clinician needs to know which facts are supported, which conflict, and which are missing.** This tool reads every record, labels each medication, allergy and problem, quotes the exact source words, and writes a short handoff drafted by Clocked Fill and checked sentence by sentence by Clocked Verify. Sentences the checker cannot confirm are removed; absences and gaps are filled from fixed rules and labelled as such.
 
 Built for the Clocked Build Challenge 2026 by a physician (12 years in clinical practice) studying health informatics. **Synthetic records only. Decision support for clinicians, not a diagnosis or a prescription.**
 
@@ -23,7 +23,7 @@ Conflicts are never resolved for the clinician, and the newest record is never a
 | Step | Clocked endpoint | What it does here |
 |---|---|---|
 | 1 | **Extract** (`/clocked/extract`) | Copies problems, allergies and each medication line (as records with `drug`, `dose`, `frequency`, `stopped`, `line`) from every document, with exact character positions. |
-| 2 | (fixed rules) | Normalise prescriber shorthand and Spanish (BD = cada 12 horas = twice daily; metformina = metformin), then label every fact. **No model decides a label.** |
+| 2 | (fixed rules) | Normalise prescriber shorthand and Spanish (BD = cada 12 horas = twice daily; 2,5 mg = 2.5 mg; metformina = metformin), then label every fact. Unrecognised wording is compared as written, never assumed equal. **No model decides a label.** |
 | 3 | **Fill** (`/clocked/fill`, `generate`) | Drafts one sentence per discrepancy, quoting the records. |
 | 4 | **Verify** (`/clocked/grounding`) | Checks each drafted sentence against the **original** records. Unsupported sentences are removed and shown. |
 
@@ -44,7 +44,8 @@ Two sets of 20 synthetic patients (61 records): **clean** wording, and **realist
 | Medication discrepancies flagged | 65/65 | 65/65 |
 | Problems found | 57/57 | 53/57 |
 | Invented medicines or problems | 0 | 0 |
-| Discrepancies named in the written handoff | 70/70 | 70/70 |
+| Discrepancies named by Fill sentences that Verify confirmed | 61/70 | 55/70 |
+| Discrepancies named in the final written handoff (after rules R7a/R7b) | 70/70 | 70/70 |
 | Medicines named in the handoff that are not in the records | 0 | 0 |
 
 Before the shorthand/Spanish normalisation, medication labels on the realistic set were 54/100. The 4 missed problems are extraction misses on mixed-format lists; they are reported, not hidden. These numbers describe this synthetic test set, not real-world accuracy.
@@ -63,6 +64,8 @@ Standard library only (Python 3.9+). The demo site is plain HTML built from reco
 ## Limits
 - Synthetic, English and Spanish records only; drug and problem pairings are random (see [`data/DATA_CARD.md`](data/DATA_CARD.md)).
 - The shorthand and Spanish vocabulary is a fixed list for this data set; unknown terms are shown as written, never guessed.
+- Not yet implemented from the signed rules: immunizations (R1, recommended section) and an explicit "Not found" status per fact (R2); problems are shown only when a record states them.
+- Rule-built sentences (R7b) are made from verbatim quotes, but Clocked Verify confirmed only some of them (3 of 9 on the realistic set); the page shows each verdict.
 - Not a medical device. It does not recommend any drug, dose or action.
 
 ## Licence

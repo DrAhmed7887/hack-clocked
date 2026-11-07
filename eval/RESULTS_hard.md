@@ -8,7 +8,7 @@ Produced by `python3 eval/score.py`. Synthetic data only.
 - Medication discrepancies flagged (any non-consistent label): **65/65**
 - Problems found: **53/57**
 - Invented medications: **0**; invented problems: **0**; missed problems: **4**
-- Clocked credits charged when these calls were first made: 517
+- Clocked credits charged when these calls were first made: 474
 
 | Medication label | correct |
 |---|---|

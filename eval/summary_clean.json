@@ -22,7 +22,7 @@
     "supported"
    ],
    [
-    "Warfarin missing from the newest record: the GP letter of 2025-12-25 does not list it, although the clinic note of 2024-08-15 says 'warfarin 3 mg once daily, dose by INR', the discharge summary of 2025-01-11 says 'warfarin 3 mg once daily, dose by INR', and the pharmacy record of 2025-04-17 says 'warfarin 3 mg once daily, dose by INR'",
+    "Warfarin is listed in earlier records (the clinic note of 2024-08-15 says 'warfarin 3 mg once daily, dose by INR'; the discharge summary of 2025-01-11 says 'warfarin 3 mg once daily, dose by INR'; the pharmacy record of 2025-04-17 says 'warfarin 3 mg once daily, dose by INR') but not in the GP letter of 2025-12-25.",
     "record comparison (rule R4): warfarin absent from the newest record",
     "not_stated"
    ]
@@ -149,7 +149,7 @@
     "supported"
    ],
    [
-    "Metformin missing from the newest record, 'metformin 500 mg twice daily' from the discharge summary of 2025-07-08 and 'metformin 500 mg twice daily' from the pharmacy record of 2025-10-10.",
+    "Metformin is listed in earlier records (the discharge summary of 2025-07-08 says 'metformin 500 mg twice daily'; the pharmacy record of 2025-10-10 says 'metformin 500 mg twice daily') but not in the GP letter of 2025-12-03.",
     "record comparison (rule R4): metformin absent from the newest record",
     "not_stated"
    ],
@@ -414,7 +414,7 @@
     "supported"
    ],
    [
-    "Metformin missing from the newest record: 'metformin 500 mg twice daily' from the discharge summary of 2024-08-28 and 'metformin 500 mg twice daily' from the pharmacy record of 2024-12-29",
+    "Metformin is listed in earlier records (the discharge summary of 2024-08-28 says 'metformin 500 mg twice daily'; the pharmacy record of 2024-12-29 says 'metformin 500 mg twice daily') but not in the clinic note of 2026-02-28.",
     "record comparison (rule R4): metformin absent from the newest record",
     "not_stated"
    ]
@@ -446,7 +446,7 @@
     "supported"
    ],
    [
-    "Warfarin missing from the newest record: the clinic note of 2024-11-22 says 'warfarin 3 mg once daily, dose by INR', the pharmacy record of 2025-05-04 says 'warfarin 3 mg once daily, dose by INR', and the discharge summary of 2025-07-04 says 'warfarin 3 mg once daily, dose by INR'",
+    "Warfarin is listed in earlier records (the clinic note of 2024-11-22 says 'warfarin 3 mg once daily, dose by INR'; the pharmacy record of 2025-05-04 says 'warfarin 3 mg once daily, dose by INR'; the discharge summary of 2025-07-04 says 'warfarin 3 mg once daily, dose by INR') but not in the GP letter of 2025-09-23.",
     "record comparison (rule R4): warfarin absent from the newest record",
     "not_stated"
    ]
@@ -495,7 +495,7 @@
     "supported"
    ],
    [
-    "Lisinopril is missing from the newest record: 'lisinopril 10 mg once daily' from the discharge summary of 2024-12-09 and 'lisinopril 10 mg once daily' from the pharmacy record of 2025-05-15.",
+    "Lisinopril is listed in earlier records (the discharge summary of 2024-12-09 says 'lisinopril 10 mg once daily'; the pharmacy record of 2025-05-15 says 'lisinopril 10 mg once daily') but not in the GP letter of 2025-07-20.",
     "record comparison (rule R4): lisinopril absent from the newest record",
     "not_stated"
    ],

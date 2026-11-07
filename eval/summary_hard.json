@@ -66,7 +66,7 @@
     "supported"
    ],
    [
-    "Omeprazole missing from the newest record: 'omeprazole 20mg o.d.' from the clinic note of 2024-06-12 and 'omeprazol 20 mg una vez al día' from the GP letter of 2025-01-29.",
+    "Omeprazole is listed in earlier records (the clinic note of 2024-06-12 says 'omeprazole 20mg o.d.'; the GP letter of 2025-01-29 says 'omeprazol 20 mg una vez al día') but not in the discharge summary of 2025-09-09.",
     "record comparison (rule R4): omeprazole absent from the newest record",
     "not_stated"
    ],
@@ -119,7 +119,7 @@
     "supported"
    ],
    [
-    "Bisoprolol missing from the newest record: the GP letter of 2025-06-05 says 'bisoprolol 2.5 mg una vez al día' and the discharge summary of 2025-12-08 says 'bisoprolol 2.5mg daily'.",
+    "Bisoprolol is listed in earlier records (the GP letter of 2025-06-05 says 'bisoprolol 2.5 mg una vez al día'; the discharge summary of 2025-12-08 says 'bisoprolol 2.5mg daily') but not in the clinic note of 2026-05-08.",
     "record comparison (rule R4): bisoprolol absent from the newest record",
     "not_stated"
    ],
@@ -153,7 +153,7 @@
     "supported"
    ],
    [
-    "Metformin missing from the newest record, 'metformin 500mg BD' from the discharge summary of 2025-07-08 and 'metformin 500mg BD' from the pharmacy record of 2025-10-10.",
+    "Metformin is listed in earlier records (the discharge summary of 2025-07-08 says 'metformin 500mg BD'; the pharmacy record of 2025-10-10 says 'metformin 500mg BD') but not in the GP letter of 2025-12-03.",
     "record comparison (rule R4): metformin absent from the newest record",
     "not_stated"
    ],
@@ -419,7 +419,7 @@
     "supported"
    ],
    [
-    "Metformin is missing from the newest record: 'metformin 500mg BD' from the discharge summary of 2024-08-28 and 'metformin 500 mg BD' from the pharmacy record of 2024-12-29",
+    "Metformin is listed in earlier records (the discharge summary of 2024-08-28 says 'metformin 500mg BD'; the pharmacy record of 2024-12-29 says 'metformin 500 mg BD') but not in the clinic note of 2026-02-28.",
     "record comparison (rule R4): metformin absent from the newest record",
     "not_stated"
    ]
@@ -451,7 +451,7 @@
     "supported"
    ],
    [
-    "Warfarin missing from the newest record: the clinic note of 2024-11-22 says 'warfarin 3 mg OD as per INR', the pharmacy record of 2025-05-04 says 'warfarin 3mg OD as per INR', and the discharge summary of 2025-07-04 says 'warfarin 3mg OD as per INR'",
+    "Warfarin is listed in earlier records (the clinic note of 2024-11-22 says 'warfarin 3 mg OD as per INR'; the pharmacy record of 2025-05-04 says 'warfarin 3mg OD as per INR'; the discharge summary of 2025-07-04 says 'warfarin 3mg OD as per INR') but not in the GP letter of 2025-09-23.",
     "record comparison (rule R4): warfarin absent from the newest record",
     "not_stated"
    ]
@@ -497,7 +497,7 @@
     null
    ],
    [
-    "Lisinopril is missing from the newest record: 'lisinopril 10 mg OD' from the discharge summary of 2024-12-09 and 'lisinopril 10mg OD' from the pharmacy record of 2025-05-15.",
+    "Lisinopril is listed in earlier records (the discharge summary of 2024-12-09 says 'lisinopril 10 mg OD'; the pharmacy record of 2025-05-15 says 'lisinopril 10mg OD') but not in the GP letter of 2025-07-20.",
     "record comparison (rule R4): lisinopril absent from the newest record",
     "not_stated"
    ],

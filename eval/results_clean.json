@@ -36,7 +36,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 2,
-  "credits": 36
+  "credits": 32
  },
  {
   "packet": "P002",
@@ -75,7 +75,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 3,
-  "credits": 36
+  "credits": 32
  },
  {
   "packet": "P003",
@@ -114,7 +114,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 4,
-  "credits": 27
+  "credits": 24
  },
  {
   "packet": "P004",
@@ -153,7 +153,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 3,
-  "credits": 16
+  "credits": 14
  },
  {
   "packet": "P005",
@@ -192,7 +192,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 3,
-  "credits": 24
+  "credits": 21
  },
  {
   "packet": "P006",
@@ -231,7 +231,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 2,
-  "credits": 22
+  "credits": 20
  },
  {
   "packet": "P007",
@@ -270,7 +270,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 2,
-  "credits": 22
+  "credits": 21
  },
  {
   "packet": "P008",
@@ -309,7 +309,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 4,
-  "credits": 24
+  "credits": 23
  },
  {
   "packet": "P009",
@@ -348,7 +348,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 3,
-  "credits": 18
+  "credits": 17
  },
  {
   "packet": "P010",
@@ -387,7 +387,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 2,
-  "credits": 24
+  "credits": 22
  },
  {
   "packet": "P011",
@@ -426,7 +426,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 3,
-  "credits": 32
+  "credits": 29
  },
  {
   "packet": "P012",
@@ -465,7 +465,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 2,
-  "credits": 24
+  "credits": 21
  },
  {
   "packet": "P013",
@@ -504,7 +504,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 3,
-  "credits": 24
+  "credits": 21
  },
  {
   "packet": "P014",
@@ -543,7 +543,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 4,
-  "credits": 24
+  "credits": 22
  },
  {
   "packet": "P015",
@@ -582,7 +582,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 2,
-  "credits": 24
+  "credits": 21
  },
  {
   "packet": "P016",
@@ -621,7 +621,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 3,
-  "credits": 24
+  "credits": 22
  },
  {
   "packet": "P017",
@@ -660,7 +660,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 2,
-  "credits": 33
+  "credits": 31
  },
  {
   "packet": "P018",
@@ -699,7 +699,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 4,
-  "credits": 15
+  "credits": 14
  },
  {
   "packet": "P019",
@@ -738,7 +738,7 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 3,
-  "credits": 22
+  "credits": 20
  },
  {
   "packet": "P020",
@@ -777,6 +777,6 @@
   "missed_problems": [],
   "invented_problems": [],
   "problems_total": 3,
-  "credits": 26
+  "credits": 23
  }
 ]
