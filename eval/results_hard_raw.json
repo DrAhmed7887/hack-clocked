@@ -1,0 +1,918 @@
+[
+ {
+  "packet": "P001",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "atorvastatin",
+    "stopped",
+    "possible_omission"
+   ],
+   [
+    "bisoprolol",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "metformin",
+    "consistent",
+    "possible_omission"
+   ],
+   [
+    "warfarin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "omeprazole",
+    "consistent",
+    "possible_omission"
+   ]
+  ],
+  "invented_meds": [
+   "atorvastatina",
+   "metformina",
+   "omeprazol"
+  ],
+  "missed_problems": [],
+  "invented_problems": [
+   "enfermedad renal cr\u00f3nica estadio 3a"
+  ],
+  "problems_total": 2,
+  "credits": 34
+ },
+ {
+  "packet": "P002",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "metformin",
+    "consistent",
+    "dose_differs"
+   ],
+   [
+    "levothyroxine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "omeprazole",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "atorvastatin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "metformina",
+   "levotiroxina",
+   "omeprazol",
+   "atorvastatina",
+   "salbutamol"
+  ],
+  "missed_problems": [],
+  "invented_problems": [
+   "enfermedad renal cr\u00f3nica estadio 3a",
+   "hiperlipidemia",
+   "hipertensi\u00f3n arterial esencial"
+  ],
+  "problems_total": 3,
+  "credits": 33
+ },
+ {
+  "packet": "P003",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "lisinopril",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "dose_differs"
+   ],
+   [
+    "omeprazole",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "warfarin",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "levothyroxine",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "omeprazol",
+   "warfarina",
+   "levotiroxina"
+  ],
+  "missed_problems": [
+   "atrial fibrillation"
+  ],
+  "invented_problems": [
+   "enfermedad por reflujo gastroesof\u00e1gico",
+   "enfermedad renal cr\u00f3nica estadio 3a",
+   "hipotiroidismo"
+  ],
+  "problems_total": 4,
+  "credits": 27
+ },
+ {
+  "packet": "P004",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "levothyroxine",
+    "new_start",
+    "MISSING"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "possible_omission"
+   ],
+   [
+    "lisinopril",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "metformin",
+    "dose_differs",
+    "possible_omission"
+   ],
+   [
+    "atorvastatin",
+    "consistent",
+    "possible_omission"
+   ]
+  ],
+  "invented_meds": [
+   "levotiroxina",
+   "salbutamol",
+   "metformina",
+   "atorvastatina"
+  ],
+  "missed_problems": [
+   "atrial fibrillation",
+   "hyperlipidaemia",
+   "type 2 diabetes"
+  ],
+  "invented_problems": [
+   "diabetes mellitus tipo 2",
+   "fibrilaci\u00f3n auricular",
+   "hiperlipidemia"
+  ],
+  "problems_total": 3,
+  "credits": 16
+ },
+ {
+  "packet": "P005",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "bisoprolol",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "salbutamol inhaler",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "insulin glargine",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "amlodipine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "atorvastatin",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "salbutamol",
+   "amlodipino",
+   "atorvastatina"
+  ],
+  "missed_problems": [],
+  "invented_problems": [
+   "diabetes mellitus tipo 2",
+   "enfermedad por reflujo gastroesof\u00e1gico"
+  ],
+  "problems_total": 3,
+  "credits": 23
+ },
+ {
+  "packet": "P006",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "omeprazole",
+    "dose_differs",
+    "possible_omission"
+   ],
+   [
+    "levothyroxine",
+    "new_start",
+    "MISSING"
+   ],
+   [
+    "metformin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "amlodipine",
+    "stopped",
+    "possible_omission"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "omeprazol",
+   "levotiroxina",
+   "amlodipino"
+  ],
+  "missed_problems": [],
+  "invented_problems": [
+   "fibrilaci\u00f3n auricular",
+   "hipertensi\u00f3n arterial esencial"
+  ],
+  "problems_total": 2,
+  "credits": 22
+ },
+ {
+  "packet": "P007",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "metformin",
+    "consistent",
+    "dose_differs"
+   ],
+   [
+    "amlodipine",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "insulin glargine",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "salbutamol inhaler",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "lisinopril",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "metformina",
+   "amlodipino",
+   "insulina glargina"
+  ],
+  "missed_problems": [],
+  "invented_problems": [
+   "asma",
+   "diabetes mellitus tipo 2"
+  ],
+  "problems_total": 2,
+  "credits": 23
+ },
+ {
+  "packet": "P008",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "amlodipine",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "lisinopril",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "omeprazole",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "insulin glargine",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "amlodipino",
+   "insulina glargina",
+   "salbutamol"
+  ],
+  "missed_problems": [],
+  "invented_problems": [
+   "diabetes mellitus tipo 2",
+   "fibrilaci\u00f3n auricular",
+   "hiperlipidemia"
+  ],
+  "problems_total": 4,
+  "credits": 25
+ },
+ {
+  "packet": "P009",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "dose_differs"
+   ],
+   [
+    "amlodipine",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "levothyroxine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "insulin glargine",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "atorvastatin",
+    "consistent",
+    "consistent"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 16
+ },
+ {
+  "packet": "P010",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "lisinopril",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "possible_omission"
+   ],
+   [
+    "atorvastatin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "levothyroxine",
+    "dose_differs",
+    "possible_omission"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "salbutamol",
+   "levotiroxina"
+  ],
+  "missed_problems": [],
+  "invented_problems": [
+   "hipertensi\u00f3n arterial esencial",
+   "hipotiroidismo"
+  ],
+  "problems_total": 2,
+  "credits": 25
+ },
+ {
+  "packet": "P011",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "insulin glargine",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "bisoprolol",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "lisinopril",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "atorvastatin",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "levothyroxine",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "insulina glargina",
+   "atorvastatina",
+   "levotiroxina"
+  ],
+  "missed_problems": [
+   "atrial fibrillation"
+  ],
+  "invented_problems": [
+   "enfermedad por reflujo gastroesof\u00e1gico",
+   "fibrilaci\u00f3n auricular"
+  ],
+  "problems_total": 3,
+  "credits": 30
+ },
+ {
+  "packet": "P012",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "metformin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "amlodipine",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "warfarin",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "lisinopril",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 2,
+  "credits": 21
+ },
+ {
+  "packet": "P013",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "bisoprolol",
+    "consistent",
+    "dose_differs"
+   ],
+   [
+    "insulin glargine",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "atorvastatin",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "amlodipine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "lisinopril",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "atorvastatina",
+   "amlodipino"
+  ],
+  "missed_problems": [
+   "asthma",
+   "atrial fibrillation"
+  ],
+  "invented_problems": [
+   "fibrilaci\u00f3n auricular",
+   "hipertensi\u00f3n arterial esencial"
+  ],
+  "problems_total": 3,
+  "credits": 22
+ },
+ {
+  "packet": "P014",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "insulin glargine",
+    "consistent",
+    "consistent"
+   ],
+   [
+    "warfarin",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "atorvastatin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "salbutamol inhaler",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "amlodipine",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 4,
+  "credits": 22
+ },
+ {
+  "packet": "P015",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "levothyroxine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "lisinopril",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "salbutamol inhaler",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "dose_differs"
+   ],
+   [
+    "warfarin",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [],
+  "invented_problems": [],
+  "problems_total": 2,
+  "credits": 22
+ },
+ {
+  "packet": "P016",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "levothyroxine",
+    "consistent",
+    "dose_differs"
+   ],
+   [
+    "bisoprolol",
+    "stopped",
+    "stopped"
+   ],
+   [
+    "metformin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "atorvastatin",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "insulin glargine",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [],
+  "missed_problems": [
+   "gastro-oesophageal reflux disease"
+  ],
+  "invented_problems": [],
+  "problems_total": 3,
+  "credits": 21
+ },
+ {
+  "packet": "P017",
+  "allergy": [
+   "conflicting",
+   "conflicting"
+  ],
+  "meds": [
+   [
+    "warfarin",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "amlodipine",
+    "dose_differs",
+    "possible_omission"
+   ],
+   [
+    "levothyroxine",
+    "consistent",
+    "possible_omission"
+   ],
+   [
+    "insulin glargine",
+    "stopped",
+    "possible_omission"
+   ],
+   [
+    "salbutamol inhaler",
+    "consistent",
+    "possible_omission"
+   ]
+  ],
+  "invented_meds": [
+   "amlodipino",
+   "levotiroxina",
+   "insulina glargina",
+   "salbutamol"
+  ],
+  "missed_problems": [
+   "asthma"
+  ],
+  "invented_problems": [
+   "asma"
+  ],
+  "problems_total": 2,
+  "credits": 31
+ },
+ {
+  "packet": "P018",
+  "allergy": [
+   "nkda",
+   "nkda"
+  ],
+  "meds": [
+   [
+    "amlodipine",
+    "stopped",
+    "possible_omission"
+   ],
+   [
+    "insulin glargine",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "atorvastatin",
+    "new_start",
+    "MISSING"
+   ],
+   [
+    "warfarin",
+    "dose_differs",
+    "possible_omission"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "amlodipino",
+   "atorvastatina",
+   "warfarina"
+  ],
+  "missed_problems": [
+   "atrial fibrillation",
+   "gastro-oesophageal reflux disease",
+   "hyperlipidaemia",
+   "type 2 diabetes"
+  ],
+  "invented_problems": [
+   "diabetes mellitus tipo 2",
+   "enfermedad por reflujo gastroesof\u00e1gico",
+   "fibrilaci\u00f3n auricular",
+   "hiperlipidemia"
+  ],
+  "problems_total": 4,
+  "credits": 16
+ },
+ {
+  "packet": "P019",
+  "allergy": [
+   "no_info",
+   "no_info"
+  ],
+  "meds": [
+   [
+    "lisinopril",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "omeprazole",
+    "stopped",
+    "possible_omission"
+   ],
+   [
+    "warfarin",
+    "new_start",
+    "MISSING"
+   ],
+   [
+    "atorvastatin",
+    "dose_differs",
+    "possible_omission"
+   ],
+   [
+    "bisoprolol",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "omeprazol",
+   "warfarina",
+   "atorvastatina"
+  ],
+  "missed_problems": [
+   "hypothyroidism"
+  ],
+  "invented_problems": [
+   "enfermedad renal cr\u00f3nica estadio 3a",
+   "hiperlipidemia",
+   "hipotiroidismo"
+  ],
+  "problems_total": 3,
+  "credits": 22
+ },
+ {
+  "packet": "P020",
+  "allergy": [
+   "known",
+   "known"
+  ],
+  "meds": [
+   [
+    "atorvastatin",
+    "new_start",
+    "new_start"
+   ],
+   [
+    "levothyroxine",
+    "dose_differs",
+    "dose_differs"
+   ],
+   [
+    "amlodipine",
+    "consistent",
+    "dose_differs"
+   ],
+   [
+    "lisinopril",
+    "possible_omission",
+    "possible_omission"
+   ],
+   [
+    "warfarin",
+    "consistent",
+    "dose_differs"
+   ]
+  ],
+  "invented_meds": [
+   "levotiroxina",
+   "amlodipino",
+   "warfarina"
+  ],
+  "missed_problems": [
+   "hyperlipidaemia"
+  ],
+  "invented_problems": [
+   "enfermedad renal cr\u00f3nica estadio 3a",
+   "fibrilaci\u00f3n auricular"
+  ],
+  "problems_total": 3,
+  "credits": 23
+ }
+]

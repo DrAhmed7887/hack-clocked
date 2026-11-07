@@ -30,7 +30,7 @@ Conflicts are never resolved for the clinician, and the newest record is never a
 | 5 | **Compare** (`/clocked/compare`) | An independent conflict detector on the raw records. Its conflicts are matched against the rules' findings, and any conflict no rule explains is shown to the clinician. |
 
 Five Clocked endpoints are used: Protect, Extract, Fill, Verify and Compare. Two safety rules came out of testing:
-- **Absences are established by comparison (R7a).** Verify removed the true sentence "warfarin is missing from the newest record" as *not stated*: a text checker cannot prove that something is missing. Such sentences are kept, marked "established by comparing records".
+- **Absences are established by comparison (R7a).** In an early test run, Verify removed the true sentence "warfarin is missing from the newest record" as *not stated*: a text checker cannot prove that something is missing. Such sentences are now kept, marked "established by comparing records". (Whether Verify accepts a given wording varies from run to run; the rule covers the cases it does not.)
 - **A rules safety net (R7b).** Any discrepancy the draft leaves out is added from the rules as a sentence built only from verbatim quotes, with Verify's verdict shown beside it.
 
 The clinical rules (R1–R9, R7a, R7b) were reviewed and signed by the physician author before they became code.
@@ -54,7 +54,7 @@ Two sets of 20 synthetic patients (61 records): **clean** wording, and **realist
 | Rule-found dose/stop/allergy conflicts also flagged by Compare | 24/39 | 25/39 |
 | Compare conflicts no rule explained | 0 | 0 |
 
-Before the shorthand/Spanish normalisation, medication labels on the realistic set were 54/100. The 4 missed problems are extraction misses on mixed-format lists; they are reported, not hidden. These numbers describe this synthetic test set, not real-world accuracy.
+Without the shorthand/Spanish normalisation, medication labels on the realistic set are 54/100 (reproduce with `HANDOFF_NO_NORMALIZE=1 python3 eval/score.py 0 hard`, same recorded responses). The 4 missed problems are extraction misses on mixed-format lists; they are reported, not hidden. These numbers describe this synthetic test set, not real-world accuracy.
 
 ## Run it
 ```bash

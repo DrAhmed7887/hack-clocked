@@ -50,8 +50,8 @@ def patient_page(packet: dict, h: dict, s: dict, x: dict = None) -> str:
     st = h["allergy_state"]
     alg = "".join(f"<li><span class='src'>{esc(src(k))}</span><q>{esc('; '.join(v))}</q></li>"
                   for k, v in h["allergy_sources"].items())
-    banner = ("<div class='banner'><strong>Allergy conflict.</strong> One record lists an allergy, another says no known "
-              f"drug allergies. Check with the patient before prescribing.<ul>{alg}</ul></div>") if st == "conflicting" else ""
+    banner = ("<div class='banner'><strong>Allergy conflict.</strong> One record lists an allergy; another says there are "
+              f"no known drug allergies. Both are quoted below.<ul>{alg}</ul></div>") if st == "conflicting" else ""
     allergy_card = {"conflicting": "Conflicting: see the alert above.",
                     "known": f"Allergy recorded in every record that mentions allergies.<ul>{alg}</ul>",
                     "nkda": f"No known drug allergies, as stated in:<ul>{alg}</ul>",

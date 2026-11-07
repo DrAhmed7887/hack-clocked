@@ -65,6 +65,7 @@ Clocked Verify. Sentences the checker cannot confirm are removed; absences and g
 contact details, birth dates and ID numbers before anything else runs, and <strong>Clocked Compare</strong> looks for
 conflicts across the raw records on its own, so its findings can be matched against the rules.</p>
 <h2>Measured results on realistic wording (20 synthetic patients, shorthand + Spanish)</h2>{md_numbers(ROOT / 'eval' / 'RESULTS_hard.md')}
+<h2>The same records without shorthand and Spanish normalisation (baseline)</h2>{md_numbers(ROOT / 'eval' / 'RESULTS_hard_raw.md')}
 <h2>Written handoff</h2>{md_numbers(ROOT / 'eval' / 'SUMMARY_hard.md')}
 <h2>Cross-checks</h2>{md_numbers(ROOT / 'eval' / 'CROSSCHECK_hard.md')}
 <p class="foot">Numbers come from <code>eval/score.py</code> and <code>eval/score_summary.py</code> in the repository. Synthetic data: they describe this test set, not real-world accuracy.</p>"""

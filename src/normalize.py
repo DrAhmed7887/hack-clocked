@@ -5,7 +5,12 @@ Unknown terms pass through unchanged and are shown as written; they are never gu
 wording is compared as written, so two different unknown phrasings never silently count as the same regimen.
 Shorthand meanings are standard prescribing abbreviations, signed off by Ahmed as rule R9 (EVIDENCE.md).
 """
+import os
 import re
+
+# Baseline switch for the evaluation only: HANDOFF_NO_NORMALIZE=1 compares names and regimens as written (lower-cased),
+# which reproduces the pre-R9 behaviour so the effect of normalisation can be measured by a script.
+RAW = os.environ.get("HANDOFF_NO_NORMALIZE") == "1"
 
 DRUG_SYNONYMS = {
     "metformina": "metformin", "amlodipino": "amlodipine", "atorvastatina": "atorvastatin",
@@ -49,12 +54,12 @@ FILLER = {"and", "y", "with", "con", "take", "tomar", "tablet", "tablets", "dose
 
 def drug(name: str) -> str:
     n = re.sub(r"\s+", " ", (name or "").strip().lower())
-    return DRUG_SYNONYMS.get(n, n)
+    return n if RAW else DRUG_SYNONYMS.get(n, n)
 
 
 def problem(name: str) -> str:
     n = re.sub(r"^(known|history of|antecedente de)\s+", "", (name or "").strip().lower()).strip(" .-")
-    return PROBLEM_SYNONYMS.get(n, n)
+    return n if RAW else PROBLEM_SYNONYMS.get(n, n)
 
 
 def _number(raw: str) -> str:
@@ -65,6 +70,8 @@ def _number(raw: str) -> str:
 def regimen(line: str, drug_name: str) -> str:
     """'metformin 500mg bd' -> '500 mg | 2/day'. Strength and frequency are compared, wording is not."""
     original = line or ""
+    if RAW:
+        return re.sub(r"[\s,.;:-]+", " ", original.lower().replace(drug_name, " ")).strip()
     night_on = bool(re.search(r"(?<![A-Za-z])ON(?![A-Za-z])", original))  # UK shorthand, capitals only
     text = original.lower()
     for raw in sorted([drug_name] + [k for k, v in DRUG_SYNONYMS.items() if v == drug_name], key=len, reverse=True):

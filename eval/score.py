@@ -33,12 +33,13 @@ def score_packet(packet: dict) -> dict:
 
 def main() -> None:
     variant = sys.argv[2] if len(sys.argv) > 2 else "clean"
+    suffix = "_raw" if __import__("os").environ.get("HANDOFF_NO_NORMALIZE") == "1" else ""
     folder = "packets" if variant == "clean" else "packets_hard"
     files = sorted((ROOT / "data" / folder).glob("packet_*.json"))
     if len(sys.argv) > 1 and int(sys.argv[1]) > 0:
         files = files[: int(sys.argv[1])]
     results = [score_packet(json.loads(f.read_text())) for f in files]
-    (ROOT / "eval" / f"results_{variant}.json").write_text(json.dumps(results, indent=1))
+    (ROOT / "eval" / f"results_{variant}{suffix}.json").write_text(json.dumps(results, indent=1))
 
     allergy_ok = sum(r["allergy"][0] == r["allergy"][1] for r in results)
     conf = Counter((r["allergy"][0], r["allergy"][1]) for r in results)
@@ -51,7 +52,7 @@ def main() -> None:
     nonconsistent = [m for m in med if m[1] != "consistent"]
     flagged = sum(m[2] not in ("consistent", "MISSING") for m in nonconsistent)
     lines = [
-        f"# G1 results, {variant} set ({len(results)} synthetic packets, {sum(len(json.loads(f.read_text())['documents']) for f in files)} documents)",
+        f"# G1 results, {variant} set{' WITHOUT normalisation (baseline)' if suffix else ''} ({len(results)} synthetic packets, {sum(len(json.loads(f.read_text())['documents']) for f in files)} documents)",
         "", "Produced by `python3 eval/score.py`. Synthetic data only.", "",
         f"- Allergy state correct: **{allergy_ok}/{len(results)}**",
         f"- Allergy conflicts flagged: **{caught}/{len(allergy_conflicts)}**",
@@ -71,7 +72,7 @@ def main() -> None:
              if r["invented_meds"] or r["invented_problems"] or r["missed_problems"]]
     lines += ["", "## Invented / missed", ""] + [f"- {p}: invented meds {a}, invented problems {b}, missed problems {c}"
                                                     for p, a, b, c in extra]
-    (ROOT / "eval" / f"RESULTS_{variant}.md").write_text("\n".join(lines) + "\n")
+    (ROOT / "eval" / f"RESULTS_{variant}{suffix}.md").write_text("\n".join(lines) + "\n")
     print("\n".join(lines[:12]))
 
 
