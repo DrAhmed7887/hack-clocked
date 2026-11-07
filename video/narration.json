@@ -1,0 +1,25 @@
+{
+  "voice_id": "onwK4e9ZLuTAKqWW03F9",
+  "voice_name": "Daniel (ElevenLabs premade, neutral broadcaster; not an imitation of the author)",
+  "model_id": "eleven_multilingual_v2",
+  "shots": [
+    {"id": "S1", "text": "A patient arrives with four records from three cities, in two languages. The pharmacy record says: allergic to sulfonamides. The newest letter, in Spanish, says: no known drug allergies.",
+     "cues": [["sulfonamides", "box_pharm"], ["newest", "scroll_to_gp"], ["no known", "box_gp"]]},
+    {"id": "S2", "text": "This is for the receiving clinician: what is supported, what conflicts, what is missing.",
+     "cues": [["receiving", "box_row"]]},
+    {"id": "S3", "text": "Clocked Protect screens the records for names and ID numbers first. The conflict leads the page, quoted from both records, never resolved for you.",
+     "cues": [["Protect", "rail_protect"], ["conflict", "pushin_banner"]]},
+    {"id": "S4", "text": "Clocked Extract copies each medication line word for word, from every record. Physician-signed rules set every label; no model decides one. Warfarin: in three records, missing from the newest. Bisoprolol: two point five milligrams, then five.",
+     "cues": [["Extract", "rail_extract"], ["Physician-signed", "rail_rules"], ["Warfarin", "box_warfarin"], ["Bisoprolol", "box_bisoprolol"]]},
+    {"id": "S5", "text": "Clocked Fill drafts one sentence per discrepancy, and Clocked Verify checks each one against the original records. This allergy draft was removed: a sentence holding two disagreeing records reads as contradicted. So the rules rebuilt it from both exact quotes, and Verify checked each quote alone.",
+     "cues": [["Fill", "rail_fill"], ["Verify", "rail_verify_box_verified"], ["removed", "open_removed"], ["rebuilt", "box_rebuilt"]]},
+    {"id": "S6", "text": "It also stays quiet. Metformin, written four ways in shorthand and Spanish: same dose, no flag. Before this normalisation, medication labels were 54 of 100.",
+     "cues": [["Metformin", "pushin_metformin"], ["Before", "tag_baseline"]]},
+    {"id": "S7", "text": "Clocked Compare, run separately on the raw records, independently flagged 25 of the 39 conflicts the rules found.",
+     "cues": [["Compare", "box_compare"]]},
+    {"id": "S8", "text": "Verify cannot prove that something is missing, so absences are established by comparing records, and labelled that way. No allergy in any record means unknown, not none.",
+     "cues": [["absences", "box_lisinopril"], ["unknown", "box_unknown"]]},
+    {"id": "S9", "text": "On twenty synthetic patients: 100 of 100 medication labels, 5 of 5 allergy conflicts, all 70 discrepancies named in the handoff, where Fill and Verify alone reached 55. No invented medicines.",
+     "cues": [["100", "box_m100"], ["5 of 5", "box_m5"], ["70", "box_m70"], ["55", "box_m55"], ["invented", "box_m0"]]}
+  ]
+}
