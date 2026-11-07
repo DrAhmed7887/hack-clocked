@@ -9,7 +9,7 @@ Produced by `python3 eval/score_summary.py`. Synthetic data only.
 - Sentences added by the rules safety net (R7b): **9** (Verify supported 9 of them)
 - Generated sentences removed as unsupported: **9**
 - Medicines named in the final text that are not in the records: **0**
-- Clocked credits (Fill + Verify, as charged when first run): 613
+- Clocked credits (Fill + Verify, as charged when first run): 610
 
 ## Not covered
 

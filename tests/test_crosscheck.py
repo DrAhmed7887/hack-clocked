@@ -5,7 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 from crosscheck import ALLOWED, match_conflicts  # noqa: E402
-from summary import split_attributions  # noqa: E402
+from summary import _items  # noqa: E402
 
 HANDOFF = {"allergy_state": "conflicting",
            "medications": {"bisoprolol": {"label": "dose_differs"}, "warfarin": {"label": "possible_omission"},
@@ -42,14 +42,45 @@ class ProtectAllowList(unittest.TestCase):
         self.assertFalse(ALLOWED.match("synthetic case P001, Maria Lopez"))
 
 
-class AttributionSplit(unittest.TestCase):
-    def test_conflict_sentence_is_verified_one_record_at_a_time(self):
-        s = ("Allergy conflict: the pharmacy record of 2025-04-17 says 'sulfonamides (hives)'; "
-             "the GP letter of 2025-12-25 says 'Sin alergias medicamentosas conocidas.'.")
-        parts = split_attributions(s)
-        self.assertEqual(len(parts), 2)
-        self.assertIn("pharmacy record of 2025-04-17 says 'sulfonamides (hives)'", parts[0])
+class StructuralClaims(unittest.TestCase):  # claims are built from quote lists, never parsed back (PR#2 #8)
+    def test_one_claim_per_record_even_with_apostrophes(self):
+        docs = [{"doc_id": "A", "kind": "pharmacy", "date": "2025-04-17", "text": "it's fine; take 5 mg"},
+                {"doc_id": "B", "kind": "gp_letter", "date": "2025-12-25", "text": "x 10 mg"}]
+        h = {"allergy_state": "known", "allergy_sources": {},
+             "medications": {"x": {"label": "dose_differs", "sources": {"A": {"spans": [[0, 20]]}, "B": {"spans": [[0, 7]]}}}}}
+        items, claims = _items(h, docs)
+        self.assertEqual(len(claims["x"]), 2)
+        self.assertIn("it's fine; take 5 mg", claims["x"][0])
+
+
+class CompareShapes(unittest.TestCase):
+    def test_value_conflict_on_an_omitted_drug_is_not_hidden(self):  # PR#2 #4
+        h = {"allergy_state": "known", "medications": {"warfarin": {"label": "possible_omission"}}}
+        cmp = {"conflicts": [0], "pairs": [{"a": "D1", "b": "D2", "conflicts": [finding("warfarin 3 mg OD", "warfarin 5 mg OD")]}]}
+        self.assertEqual(len(match_conflicts(cmp, h)["compare_only"]), 1)
+
+    def test_bad_shape_fails_loudly(self):  # PR#2 #5
+        with self.assertRaises(RuntimeError):
+            match_conflicts({"conflicts": [0]}, {"allergy_state": "known", "medications": {}})
 
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class GateFailsClosed(unittest.TestCase):  # PR#2 #1, #2 (no API call: Protect is simulated)
+    def run_gate(self, response):
+        import crosscheck
+        real = crosscheck.call
+        crosscheck.call = lambda endpoint, payload: response
+        try:
+            return crosscheck.privacy_gate({"documents": [{"doc_id": "D1", "text": "x"}]})
+        finally:
+            crosscheck.call = real
+
+    def test_malformed_response_does_not_pass(self):
+        self.assertFalse(self.run_gate({"error": "oops"})["passed"])
+
+    def test_label_value_with_wrong_type_does_not_pass(self):
+        self.assertFalse(self.run_gate({"entities": [{"type": "phone", "value": "P001"}]})["passed"])
+        self.assertTrue(self.run_gate({"entities": [{"type": "person", "value": "caso sintético P001"}]})["passed"])

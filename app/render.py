@@ -82,7 +82,8 @@ def patient_page(packet: dict, h: dict, s: dict, x: dict = None) -> str:
         if "R7b" in r["established_by"]:
             v = r.get("verdict") or "not checked"
             if v == "supported":
-                return "<span class='chip info'>Added by rules</span><span class='chip ok'>Each quote verified</span>"
+                extra = "<span class='chip info'>Absence by comparing records</span>" if r.get("absence_by_rules") else ""
+                return f"<span class='chip info'>Added by rules</span><span class='chip ok'>Each quote verified</span>{extra}"
             return (f"<span class='chip info'>Added by rules</span><span class='chip {'ok' if v == 'supported' else 'warn'}'>"
                     f"Verify: {esc(v.replace('_', ' '))}</span>")
         return "<span class='chip info'>Established by comparing records</span>"
