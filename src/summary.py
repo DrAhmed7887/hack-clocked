@@ -51,6 +51,17 @@ def _items(handoff: dict, docs: list) -> list:
     return items
 
 
+ATTRIBUTION = re.compile(r"the ([a-z ]+? of \d{4}-\d{2}-\d{2}) says '(.+?)'(?=;|\)|\.?$|, |\s*but)", re.I)
+
+
+def split_attributions(sentence: str) -> list:
+    """'X: the A of D1 says 'p'; the B of D2 says 'q'.' -> ["The A of D1 says 'p'.", "The B of D2 says 'q'."]
+    A conflict sentence is verified one record at a time: as a whole, Verify can call it 'contradicted' because the
+    records contradict each other, which is exactly the conflict being reported."""
+    parts = [f"The {m.group(1)} says '{m.group(2).rstrip('.')}'." for m in ATTRIBUTION.finditer(sentence)]
+    return parts or [sentence]
+
+
 def _names(term: str, text: str) -> bool:
     """Full-name match (review finding 6): 'insulin glargine' never counts as naming 'insulin lispro'."""
     if term == "allergy":
@@ -97,14 +108,20 @@ def write_and_verify(handoff: dict, packet: dict) -> dict:
                 removed.append(row)
         covered = " ".join(r["sentence"].lower() for r in kept)
         missing = [(t, s) for t, s in items if not _names(t, covered)]
-        if missing:  # R7b safety net
+        if missing:  # R7b safety net: each record's quoted words verified as a separate claim
+            parts = {s: split_attributions(s) for _, s in missing}
+            claims = [c for ps in parts.values() for c in ps][:30]
             net = call("grounding", {"documents": [{"id": d["doc_id"], "text": d["text"]} for d in docs],
-                                     "answer": " ".join(s for _, s in missing), "claims": [s for _, s in missing][:30],
+                                     "answer": " ".join(claims), "claims": claims,
                                      "instructions": VERIFY_INSTRUCTIONS, "evidence": "all", "threshold": 0.65})
             credits += int(net.get("_credits") or 0)
             verdicts = {c["claim"]: c.get("verdict") for c in net.get("claims", [])}
             for t, s in missing:
-                added.append({"sentence": s, "verdict": verdicts.get(s), "established_by": "added by rules (R7b)"})
+                vs = [verdicts.get(c) for c in parts[s]]
+                verdict = "supported" if vs and all(v == "supported" for v in vs) else next(
+                    (v for v in vs if v not in (None, "supported")), None)
+                added.append({"sentence": s, "verdict": verdict, "parts": dict(zip(parts[s], vs)),
+                              "established_by": "added by rules (R7b)"})
     if handoff["allergy_state"] == "no_info":  # R3 + R7a: stated by comparison, not by text
         added.append({"sentence": "No record mentions allergies: allergy status is unknown, not 'no allergies'.",
                       "verdict": None, "established_by": "record comparison (rule R3)"})
