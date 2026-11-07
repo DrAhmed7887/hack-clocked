@@ -1,7 +1,7 @@
 # Evidence-Linked Clinical Handoff: research pack
 
 Checked 7 Nov 2026 by Claude through PubMed (NCBI) and the HL7 IPS guide. Every public number must come from a row here.
-Status: **clinical rules R1–R9 signed off by Ahmed, 7 Nov 2026.**
+Status: **clinical rules R1–R9, R7a and R7b signed off by Ahmed, 7 Nov 2026.**
 
 ## A. Evidence
 
@@ -29,8 +29,8 @@ Not used (unverified, keep out of public material): a "best possible medication 
 | R5 | Conflicts are never resolved automatically. The newest document is not assumed correct; both versions are shown with their dates and sources, and the clinician decides. | E5 (critical errors); design | ✅ 7 Nov 2026 |
 | R6 | Any allergy conflict appears at the top of the handoff, highlighted, before anything else. | E4; clinical judgement | ✅ 7 Nov 2026 |
 | R7 | Every sentence in the generated handoff is checked against the sources (Clocked Verify/grounding). An unsupported sentence is removed and listed as "removed: not supported by any source". | E5, E6 | ✅ 7 Nov 2026 |
-| R7a | Exception to R7 for absences: a text checker cannot prove that something is missing. A sentence saying a medicine is absent from the newest record (R4 "possible omission"), or that no record mentions allergies (R3), is kept and marked "established by record comparison", not removed. | Found 7 Nov: Clocked Verify removed the correct "warfarin is missing from the newest record" sentence as not_stated. | ☐ |
-| R7b | Safety net: any discrepancy the generated text does not name is added from the rules as a sentence built only from verbatim quotes, marked "added by rules", with Clocked Verify's verdict shown beside it. The written handoff can never name fewer discrepancies than the structured view. | Found 7 Nov: generated text named 60/70 discrepancies before this rule, 70/70 after. | ☐ |
+| R7a | Exception to R7 for absences: a text checker cannot prove that something is missing. A sentence saying a medicine is absent from the newest record (R4 "possible omission"), or that no record mentions allergies (R3), is kept and marked "established by record comparison", not removed. | Found 7 Nov: Clocked Verify removed the correct "warfarin is missing from the newest record" sentence as not_stated. | ✅ 7 Nov 2026 |
+| R7b | Safety net: any discrepancy the generated text does not name is added from the rules as a sentence built only from verbatim quotes, marked "added by rules", with Clocked Verify's verdict shown beside it. The written handoff can never name fewer discrepancies than the structured view. | Found 7 Nov: generated text named 60/70 discrepancies before this rule, 70/70 after. | ✅ 7 Nov 2026 |
 | R8 | The app is decision support for a clinician, not a diagnosis or a prescription. It never suggests which medication or dose is right. | design; safety | ✅ 7 Nov 2026 |
 | R9 | Prescriber shorthand and Spanish terms are mapped to one meaning before comparing: BD / b.i.d. / cada 12 horas = twice daily; OD / o.d. / daily / una vez al día = once daily; nocte / ON / por la noche = at night; PRN / when required / a demanda = as needed; mane before food / en ayunas = morning, fasting; mcg = micrograms = microgramos. Spanish drug and problem names map to the English generic (fixed list in `src/normalize.py`). A term not on the list is shown as written, never guessed. | Standard prescribing abbreviations; Ahmed's clinical judgement. Added 7 Nov after G1 (realistic wording broke matching: 54/100 → 100/100 after this rule). | ✅ 7 Nov 2026 |
 
