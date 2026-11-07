@@ -4,6 +4,10 @@
 
 Built for the Clocked Build Challenge 2026 by a physician (12 years in clinical practice) studying health informatics. **Synthetic records only. Decision support for clinicians, not a diagnosis or a prescription.**
 
+## See it
+- **Live demo:** https://drahmed7887.github.io/hack-clocked/ (static site built from recorded Clocked responses; start with patient P001).
+- **Demo film (2:32):** [`site/film.mp4`](site/film.mp4), also playable on the demo's home page. It follows one allergy sentence through Protect, Extract, the rules, Fill and Verify. The film's source is in [`video/film/`](video/film/).
+
 ## Why
 - Medication history errors at hospital admission occur in up to 67% of cases ([Tam et al., CMAJ 2005](https://doi.org/10.1503/cmaj.045311)).
 - AI summaries of outside-facility records: thoroughness was rated low in 45% and 40% contained errors, about half of them treatment-impacting ([Park et al., Ann Surg Oncol 2026](https://doi.org/10.1245/s10434-026-20170-w)).
