@@ -1,0 +1,234 @@
+{
+ "voice_id": "onwK4e9ZLuTAKqWW03F9",
+ "voice_name": "Daniel (ElevenLabs premade, neutral broadcaster; not an imitation of the author)",
+ "model_id": "eleven_multilingual_v2",
+ "scenes": [
+  {
+   "id": "hook",
+   "text": "The newest letter says: no known drug allergies. The pharmacy record says: sulfonamides, hives. Four records, three cities, two languages. The handoff, the summary the next doctor reads, has to carry both.",
+   "cues": [
+    [
+     "no known",
+     "gp_box"
+    ],
+    [
+     "pharmacy",
+     "pharm_in"
+    ],
+    [
+     "sulfonamides",
+     "pharm_box"
+    ],
+    [
+     "Four records",
+     "fan"
+    ],
+    [
+     "handoff",
+     "sheet"
+    ]
+   ]
+  },
+  {
+   "id": "protect",
+   "text": "Clocked Protect screens each record for names and ID numbers first. It finds only the synthetic case code, so the rest can run.",
+   "cues": [
+    [
+     "Protect",
+     "title"
+    ],
+    [
+     "finds",
+     "hits"
+    ]
+   ]
+  },
+  {
+   "id": "extract",
+   "text": "Clocked Extract copies each allergy and medication line word for word, with its exact position in the record.",
+   "cues": [
+    [
+     "Extract",
+     "title"
+    ],
+    [
+     "allergy",
+     "lift_allergy"
+    ],
+    [
+     "medication",
+     "lift_meds"
+    ],
+    [
+     "exact position",
+     "offsets"
+    ]
+   ]
+  },
+  {
+   "id": "rules",
+   "text": "Then fixed rules, signed by a physician, label every item. No model decides a label. Warfarin: in three records, missing from the newest.",
+   "cues": [
+    [
+     "rules",
+     "title"
+    ],
+    [
+     "label every",
+     "chips"
+    ],
+    [
+     "Warfarin",
+     "warfarin"
+    ]
+   ]
+  },
+  {
+   "id": "fill",
+   "text": "Clocked Fill drafts one sentence per finding. This is its sentence about the allergy.",
+   "cues": [
+    [
+     "Fill",
+     "title"
+    ],
+    [
+     "This is",
+     "type"
+    ]
+   ]
+  },
+  {
+   "id": "verify",
+   "text": "Clocked Verify checks it against the original records. The sentence asserts two things that disagree, so Verify marks it contradicted, and it comes out.",
+   "cues": [
+    [
+     "Verify",
+     "title"
+    ],
+    [
+     "two things",
+     "scan"
+    ],
+    [
+     "contradicted",
+     "stamp"
+    ],
+    [
+     "comes out",
+     "remove"
+    ]
+   ],
+   "tail": 1.5
+  },
+  {
+   "id": "rebuild",
+   "text": "The rules rebuild it from the two exact quotes, and Clocked Verify checks each quote on its own. Both are supported. The conflict stays on the page, never resolved for you.",
+   "cues": [
+    [
+     "rebuild",
+     "quotes"
+    ],
+    [
+     "each quote",
+     "check"
+    ],
+    [
+     "Both",
+     "stamps"
+    ],
+    [
+     "conflict stays",
+     "realcard"
+    ]
+   ],
+   "tail": 1.0
+  },
+  {
+   "id": "quiet",
+   "text": "It also knows when to stay quiet. Metformin, written four ways in shorthand and Spanish: same dose, no flag.",
+   "cues": [
+    [
+     "Metformin",
+     "lines"
+    ],
+    [
+     "same dose",
+     "collapse"
+    ]
+   ]
+  },
+  {
+   "id": "compare",
+   "text": "Clocked Compare, run separately on the raw records, independently flagged 25 of the 39 conflicts the rules found, and surfaced none the rules had missed.",
+   "cues": [
+    [
+     "Compare",
+     "title"
+    ],
+    [
+     "25",
+     "count"
+    ],
+    [
+     "none",
+     "zero"
+    ]
+   ]
+  },
+  {
+   "id": "absence",
+   "text": "Verify cannot prove that something is missing, so absences are established by comparing records, and labelled that way. No allergy in any record means unknown, not none.",
+   "cues": [
+    [
+     "absences",
+     "lisinopril"
+    ],
+    [
+     "No allergy",
+     "unknown"
+    ]
+   ]
+  },
+  {
+   "id": "numbers",
+   "text": "On twenty synthetic patients: medication labels went from 54 of 100 before normalisation to 100 of 100. 5 of 5 allergy conflicts. All 70 discrepancies named in the handoff, where Fill and Verify alone reached 55. No invented medicines.",
+   "cues": [
+    [
+     "54",
+     "n54"
+    ],
+    [
+     "100 of 100",
+     "n100"
+    ],
+    [
+     "5 of 5",
+     "n5"
+    ],
+    [
+     "70",
+     "n70"
+    ],
+    [
+     "55",
+     "n55"
+    ],
+    [
+     "invented",
+     "n0"
+    ]
+   ]
+  },
+  {
+   "id": "end",
+   "text": "Every sentence verified, or labelled for what it is.",
+   "cues": [
+    [
+     "Every",
+     "line"
+    ]
+   ],
+   "tail": 3.5
+  }
+ ]
+}
