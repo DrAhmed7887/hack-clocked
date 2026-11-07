@@ -33,12 +33,13 @@ def main() -> None:
         p = json.loads(f.read_text())
         h = build(p)
         s = write_and_verify(h, p)
-        (SITE / "p" / f"{p['packet_id']}.html").write_text(patient_page(p, h, s))
+        pid = re.sub(r"[^A-Za-z0-9_-]", "", p["packet_id"])  # safe filename (review: packet_id unescaped)
+        (SITE / "p" / f"{pid}.html").write_text(patient_page(p, h, s))
         flags = sum(m["label"] != "consistent" for m in h["medications"].values())
         alert = {"conflicting": "<span class='chip bad'>Allergy conflict</span>",
                  "no_info": "<span class='chip warn'>No allergy info</span>"}.get(h["allergy_state"], "")
         langs = " · includes Spanish" if any(d["kind"] == "gp_letter" for d in p["documents"]) else ""
-        rows += (f"<tr><td><a href='p/{p['packet_id']}.html'>{p['packet_id']}</a></td><td>{len(p['documents'])} records{langs}</td>"
+        rows += (f"<tr><td><a href='p/{pid}.html'>{esc(pid)}</a></td><td>{len(p['documents'])} records{langs}</td>"
                  f"<td>{alert} <span class='chip {'warn' if flags else 'ok'}'>{flags} medication flag{'s' if flags != 1 else ''}</span></td></tr>")
     index = f"""<div class="step">Clocked Build Challenge 2026</div><h1>Evidence-Linked Clinical Handoff</h1>
 <p>When a patient arrives with records from several countries, the receiving clinician needs to know which facts are

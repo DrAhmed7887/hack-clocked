@@ -1,0 +1,30 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Rule tests (offline, no API key)
+        run: python -m unittest discover -s tests -v
+      - name: Synthetic data is reproducible
+        run: |
+          python data/generate.py
+          python data/make_hard.py
+          git diff --exit-code data/packets data/packets_hard
+      - name: Secret scan (whole history)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

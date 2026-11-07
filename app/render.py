@@ -63,8 +63,8 @@ def patient_page(packet: dict, h: dict, s: dict) -> str:
         text, tone = LABEL[m["label"]]
         rows = ""
         for d in by_date:
-            per = next((x for x in ex[d["doc_id"]]["medications"] if x["drug"] == drug), None)
-            cell = f"<q>{esc(quote(d, per['span']))}</q>" if per else "<em>not listed</em>"
+            per = [x for x in ex[d["doc_id"]]["medications"] if x["drug"] == drug]  # every line, not just the first
+            cell = "".join(f"<q>{esc(quote(d, x['span']))}</q>" for x in per) if per else "<em>not listed</em>"
             rows += f"<li><span class='src'>{esc(src(d['doc_id']))}</span>{cell}</li>"
         meds += (f"<details{' open' if tone == 'warn' else ''}><summary><span class='chip {tone}'>{text}</span>"
                  f"{esc(drug.capitalize())}</summary><ul>{rows}</ul></details>")
@@ -93,6 +93,8 @@ def patient_page(packet: dict, h: dict, s: dict) -> str:
                    f"({len(s['removed'])})</summary><ul>"
                    + "".join(f"<li>{esc(r['sentence'])} <span class='src'>Verify: {esc(r['verdict'])}</span></li>"
                              for r in s["removed"]) + "</ul></details>")
+    warn = "".join(f"<li>{esc(w)}</li>" for w in h.get("warnings", []))
+    warn_box = f"<div class='banner'><strong>Extraction warnings.</strong><ul>{warn}</ul></div>" if warn else ""
     record_list = "".join(f"<li>{esc(src(d['doc_id']))}</li>" for d in by_date)
     raw = "".join(f"<details><summary>{esc(src(d['doc_id']))}</summary><pre style='white-space:pre-wrap;font-size:.85rem'>"
                   f"{esc(d['text'])}</pre></details>" for d in by_date)
@@ -100,7 +102,7 @@ def patient_page(packet: dict, h: dict, s: dict) -> str:
 <h1>Evidence-linked handoff</h1>
 <p>Every fact links to the exact words in a source record. Conflicts are shown side by side, never resolved for you.</p>
 <div class="card"><strong>{len(docs)} records</strong><ul>{record_list}</ul></div>
-{banner}
+{banner}{warn_box}
 <h2>Written handoff</h2><div class="card">{summary}{removed}</div>
 <h2>Allergies &amp; intolerances</h2><div class="card">{allergy_card}</div>
 <h2>Medications</h2>{meds}
