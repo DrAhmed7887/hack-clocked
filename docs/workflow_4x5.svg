@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1D1D1B"/></marker></defs>
+<rect width="1080" height="1350" fill="#F6F5F1"/>
+<text x="36" y="62" font-size="40" font-weight="800" fill="#1D1D1B" letter-spacing="-0.5">Evidence-Linked Clinical Handoff: how it works</text>
+<text x="36" y="105.5" font-size="25" fill="#5D5D58">Five Clocked endpoints, each with one job.</text>
+<text x="36" y="143.0" font-size="25" fill="#5D5D58">Every sentence verified, or labelled for what it is.</text>
+<rect x="36.0" y="176.0" width="486.0" height="264.0" rx="16" fill="#FFFFFF" stroke="#E2E0D8" stroke-width="1.5"/>
+<rect x="56.0" y="196.0" width="86.9" height="33" rx="16.5" fill="#ECEAE3"/>
+<text x="68.0" y="216.0" font-size="17" font-weight="700" letter-spacing="0.5" fill="#5D5D58">INPUT</text>
+<text x="56.0" y="271.0" font-size="28" font-weight="800" fill="#1D1D1B">4 records, 2 languages</text>
+<text x="56.0" y="310.04" font-size="22" fill="#1D1D1B">Clinic note, discharge summary,</text>
+<text x="56.0" y="339.08000000000004" font-size="22" fill="#1D1D1B">pharmacy record, Spanish GP letter.</text>
+<rect x="56.0" y="378.0" width="446.0" height="42.0" rx="8" fill="#F6F5F1"/>
+<text x="68.0" y="404.0" font-size="20" font-weight="600" fill="#5D5D58">synthetic patient P001</text>
+<rect x="558.0" y="176.0" width="486.0" height="264.0" rx="16" fill="#FFFFFF" stroke="#E2E0D8" stroke-width="1.5"/>
+<rect x="578.0" y="196.0" width="300.76" height="33" rx="16.5" fill="#1D1D1B"/>
+<text x="590.0" y="216.0" font-size="17" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">CLOCKED PROTECT · /pii</text>
+<text x="578.0" y="271.0" font-size="28" font-weight="800" fill="#1D1D1B">Privacy gate</text>
+<text x="578.0" y="310.04" font-size="22" fill="#1D1D1B">Any real name or ID found: the run</text>
+<text x="578.0" y="339.08000000000004" font-size="22" fill="#1D1D1B">stops.</text>
+<rect x="578.0" y="378.0" width="446.0" height="42.0" rx="8" fill="#F6F5F1"/>
+<text x="590.0" y="404.0" font-size="20" font-weight="600" fill="#5D5D58">found only: synthetic case P001</text>
+<rect x="36.0" y="464.0" width="486.0" height="264.0" rx="16" fill="#FFFFFF" stroke="#E2E0D8" stroke-width="1.5"/>
+<rect x="56.0" y="484.0" width="212.7" height="33" rx="16.5" fill="#1D1D1B"/>
+<text x="68.0" y="504.0" font-size="17" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">CLOCKED EXTRACT</text>
+<text x="56.0" y="559.0" font-size="28" font-weight="800" fill="#1D1D1B">Copy facts word for word</text>
+<text x="56.0" y="598.04" font-size="22" fill="#1D1D1B">Each fact copied with its exact</text>
+<text x="56.0" y="627.0799999999999" font-size="22" fill="#1D1D1B">position.</text>
+<rect x="56.0" y="666.0" width="446.0" height="42.0" rx="8" fill="#F6F5F1"/>
+<text x="68.0" y="692.0" font-size="20" font-weight="600" fill="#5D5D58">&#x27;sulfonamides (hives)&#x27; [127, 147]</text>
+<rect x="558.0" y="464.0" width="486.0" height="264.0" rx="16" fill="#FFFFFF" stroke="#E2E0D8" stroke-width="1.5"/>
+<rect x="578.0" y="484.0" width="300.76" height="33" rx="16.5" fill="#FDF0DC"/>
+<text x="590.0" y="504.0" font-size="17" font-weight="700" letter-spacing="0.5" fill="#9A5B00">PHYSICIAN-SIGNED RULES</text>
+<text x="578.0" y="559.0" font-size="28" font-weight="800" fill="#1D1D1B">Label every fact</text>
+<text x="578.0" y="598.04" font-size="22" fill="#1D1D1B">Same, dose differs, missing, stopped,</text>
+<text x="578.0" y="627.0799999999999" font-size="22" fill="#1D1D1B">allergy conflict.</text>
+<rect x="578.0" y="666.0" width="446.0" height="42.0" rx="8" fill="#F6F5F1"/>
+<text x="590.0" y="692.0" font-size="20" font-weight="600" fill="#5D5D58">→ Allergy conflict</text>
+<rect x="36.0" y="752.0" width="486.0" height="264.0" rx="16" fill="#FFFFFF" stroke="#E2E0D8" stroke-width="1.5"/>
+<rect x="56.0" y="772.0" width="174.96" height="33" rx="16.5" fill="#1D1D1B"/>
+<text x="68.0" y="792.0" font-size="17" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">CLOCKED FILL</text>
+<text x="56.0" y="847.0" font-size="28" font-weight="800" fill="#1D1D1B">Draft the handoff</text>
+<text x="56.0" y="886.04" font-size="22" fill="#1D1D1B">One sentence per discrepancy.</text>
+<rect x="56.0" y="954.0" width="446.0" height="42.0" rx="8" fill="#F6F5F1"/>
+<text x="68.0" y="980.0" font-size="20" font-weight="600" fill="#5D5D58">draft: &#x27;Allergy conflict new: …&#x27;</text>
+<rect x="558.0" y="752.0" width="486.0" height="264.0" rx="16" fill="#FFFFFF" stroke="#E2E0D8" stroke-width="1.5"/>
+<rect x="578.0" y="772.0" width="363.65999999999997" height="33" rx="16.5" fill="#1D1D1B"/>
+<text x="590.0" y="792.0" font-size="17" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">CLOCKED VERIFY · /grounding</text>
+<text x="578.0" y="847.0" font-size="28" font-weight="800" fill="#1D1D1B">Check every sentence</text>
+<text x="578.0" y="886.04" font-size="22" fill="#1D1D1B">Unsupported sentences removed;</text>
+<text x="578.0" y="915.0799999999999" font-size="22" fill="#1D1D1B">conflicts rebuilt from exact quotes.</text>
+<rect x="578.0" y="928.0" width="446.0" height="68.0" rx="8" fill="#F6F5F1"/>
+<text x="590.0" y="954.0" font-size="20" font-weight="600" fill="#5D5D58">contradicted 0.40 → rebuilt, 2/2</text>
+<text x="590.0" y="980.0" font-size="20" font-weight="600" fill="#5D5D58">supported</text>
+<rect x="36.0" y="1040.0" width="486.0" height="264.0" rx="16" fill="#FFFFFF" stroke="#E2E0D8" stroke-width="1.5"/>
+<rect x="56.0" y="1060.0" width="212.7" height="33" rx="16.5" fill="#1D1D1B"/>
+<text x="68.0" y="1080.0" font-size="17" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">CLOCKED COMPARE</text>
+<text x="56.0" y="1135.0" font-size="28" font-weight="800" fill="#1D1D1B">Independent cross-check</text>
+<text x="56.0" y="1174.04" font-size="22" fill="#1D1D1B">Runs on raw records; unexplained</text>
+<text x="56.0" y="1203.08" font-size="22" fill="#1D1D1B">conflicts shown.</text>
+<rect x="56.0" y="1242.0" width="446.0" height="42.0" rx="8" fill="#F6F5F1"/>
+<text x="68.0" y="1268.0" font-size="20" font-weight="600" fill="#5D5D58">also flagged: allergy, bisoprolol</text>
+<rect x="558.0" y="1040.0" width="486.0" height="264.0" rx="16" fill="#E6F3EC" stroke="#1F7A4D" stroke-width="2"/>
+<rect x="578.0" y="1060.0" width="363.65999999999997" height="33" rx="16.5" fill="#1F7A4D"/>
+<text x="590.0" y="1080.0" font-size="17" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">FOR THE RECEIVING CLINICIAN</text>
+<text x="578.0" y="1135.0" font-size="28" font-weight="800" fill="#1D1D1B">Evidence-linked handoff</text>
+<text x="578.0" y="1174.04" font-size="22" fill="#1D1D1B">Allergy first; every fact quoted;</text>
+<text x="578.0" y="1203.08" font-size="22" fill="#1D1D1B">never resolved for you.</text>
+<rect x="578.0" y="1216.0" width="446.0" height="68.0" rx="8" fill="#F6F5F1"/>
+<text x="590.0" y="1242.0" font-size="20" font-weight="600" fill="#1F7A4D">20 patients: 70/70 named, 0 invented</text>
+<text x="590.0" y="1268.0" font-size="20" font-weight="600" fill="#1F7A4D">medicines</text>
+<line x1="528.0" y1="308.0" x2="550.0" y2="308.0" stroke="#1D1D1B" stroke-width="3" marker-end="url(#ah)" stroke-linecap="round"/>
+<path d="M801.0,444.0 L801.0,452.0 L279.0,452.0 L279.0,456.0" fill="none" stroke="#1D1D1B" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+<line x1="528.0" y1="596.0" x2="550.0" y2="596.0" stroke="#1D1D1B" stroke-width="3" marker-end="url(#ah)" stroke-linecap="round"/>
+<path d="M801.0,732.0 L801.0,740.0 L279.0,740.0 L279.0,744.0" fill="none" stroke="#1D1D1B" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+<line x1="528.0" y1="884.0" x2="550.0" y2="884.0" stroke="#1D1D1B" stroke-width="3" marker-end="url(#ah)" stroke-linecap="round"/>
+<path d="M801.0,1020.0 L801.0,1028.0 L279.0,1028.0 L279.0,1032.0" fill="none" stroke="#1D1D1B" stroke-width="3" stroke-linejoin="round" marker-end="url(#ah)"/>
+<line x1="528.0" y1="1172.0" x2="550.0" y2="1172.0" stroke="#1D1D1B" stroke-width="3" marker-end="url(#ah)" stroke-linecap="round"/>
+<text x="36" y="1333.0" font-size="20" fill="#5D5D58">Synthetic records only · decision support, not a prescription · github.com/DrAhmed7887/hack-clocked</text>
+</svg>

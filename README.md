@@ -5,6 +5,8 @@
 Built for the Clocked Build Challenge 2026 by a physician (12 years in clinical practice) studying health informatics. **Synthetic records only. Decision support for clinicians, not a diagnosis or a prescription.**
 
 ## See it
+![How it works: records → Clocked Protect → Extract → physician-signed rules → Fill → Verify → Compare → evidence-linked handoff](docs/workflow.png)
+
 - **Live demo:** https://drahmed7887.github.io/hack-clocked/ (static site built from recorded Clocked responses; start with patient P001).
 - **Demo film (2:32):** [on YouTube](https://youtu.be/Bjk8wvfwo-s), or [`site/film.mp4`](site/film.mp4), also playable on the demo's home page. It follows one allergy sentence through Protect, Extract, the rules, Fill and Verify. The film's source is in [`video/film/`](video/film/).
 
