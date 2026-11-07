@@ -38,7 +38,7 @@ def quote(doc, span) -> str:
     return "".join(list(doc["text"])[span[0]:span[1]]).strip().lstrip("-–• ").strip()
 
 
-def patient_page(packet: dict, h: dict, s: dict) -> str:
+def patient_page(packet: dict, h: dict, s: dict, x: dict = None) -> str:
     docs = {d["doc_id"]: d for d in packet["documents"]}
     ex = {e["doc_id"]: e for e in h["extracted"]}
     by_date = sorted(docs.values(), key=lambda d: d["date"])
@@ -81,6 +81,9 @@ def patient_page(packet: dict, h: dict, s: dict) -> str:
             return "<span class='chip ok'>Verified in the records</span>"
         if "R7b" in r["established_by"]:
             v = r.get("verdict") or "not checked"
+            if v == "supported":
+                extra = "<span class='chip info'>Absence by comparing records</span>" if r.get("absence_by_rules") else ""
+                return f"<span class='chip info'>Added by rules</span><span class='chip ok'>Each quote verified</span>{extra}"
             return (f"<span class='chip info'>Added by rules</span><span class='chip {'ok' if v == 'supported' else 'warn'}'>"
                     f"Verify: {esc(v.replace('_', ' '))}</span>")
         return "<span class='chip info'>Established by comparing records</span>"
@@ -95,6 +98,22 @@ def patient_page(packet: dict, h: dict, s: dict) -> str:
                              for r in s["removed"]) + "</ul></details>")
     warn = "".join(f"<li>{esc(w)}</li>" for w in h.get("warnings", []))
     warn_box = f"<div class='banner'><strong>Extraction warnings.</strong><ul>{warn}</ul></div>" if warn else ""
+    cross = ""
+    if x:
+        g, c = x["privacy"], x["compare"]
+        gate = ("<span class='chip ok'>Privacy gate passed</span> Clocked Protect found no names, contact details, birth "
+                "dates or ID numbers (only the synthetic case label).") if g["passed"] else (
+                "<span class='chip bad'>Privacy gate failed</span> Identifiers found; records must be de-identified first.")
+        flagged = ", ".join(esc(i) for i in c["also_flagged_by_compare"]) or "none"
+        missing = [i for i in c["rule_items"] if i not in c["also_flagged_by_compare"]]
+        extra = "".join(f"<li><span class='src'>{esc(' vs '.join(o['between']))}</span><q>{esc((o['a'] or '')[:160])}</q>"
+                        f"<q>{esc((o['b'] or '')[:160])}</q></li>" for o in c["compare_only"])
+        cross = (f"<h2>Independent cross-checks</h2><div class='card'><p>{gate}</p>"
+                 f"<p><strong>Clocked Compare</strong>, run separately on the raw records, also flagged: {flagged}"
+                 f"{'; not flagged by Compare: ' + ', '.join(esc(i) for i in missing) if missing else ''}.</p>"
+                 + (f"<details><summary><span class='chip warn'>Compare only</span>Conflicts no rule explained "
+                    f"({len(c['compare_only'])}): review</summary><ul>{extra}</ul></details>" if extra else "")
+                 + "</div>")
     record_list = "".join(f"<li>{esc(src(d['doc_id']))}</li>" for d in by_date)
     raw = "".join(f"<details><summary>{esc(src(d['doc_id']))}</summary><pre style='white-space:pre-wrap;font-size:.85rem'>"
                   f"{esc(d['text'])}</pre></details>" for d in by_date)
@@ -107,6 +126,7 @@ def patient_page(packet: dict, h: dict, s: dict) -> str:
 <h2>Allergies &amp; intolerances</h2><div class="card">{allergy_card}</div>
 <h2>Medications</h2>{meds}
 <h2>Problems</h2>{probs or '<div class="card">No problems listed in any record.</div>'}
+{cross}
 <h2>The source records</h2>{raw}
 <p class="foot">Decision support for a clinician, not a diagnosis or a prescription. Synthetic records only, no real
 patients. Facts copied by Clocked Extract; labels set by fixed, physician-signed rules; written handoff drafted by

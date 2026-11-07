@@ -9,7 +9,7 @@
    [
     "Allergy conflict: the pharmacy record of 2025-04-17 says 'sulfonamides (hives)'; the GP letter of 2025-12-25 says 'Sin alergias medicamentosas conocidas.'.",
     "added by rules (R7b)",
-    "contradicted"
+    "supported"
    ],
    [
     "Atorvastatin stopped: the GP letter of 2025-12-25 says 'atorvastatina suspendido el 2025-12-25' while the pharmacy record of 2025-04-17 says 'atorvastatin 20 mg ON'.",
@@ -97,7 +97,7 @@
    [
     "Metformin differs between records: the pharmacy record of 2025-02-15 says 'metformin 500 mg b.i.d.'; the GP letter of 2026-03-16 says 'metformina 1000 mg cada 12 horas'.",
     "added by rules (R7b)",
-    "not_stated"
+    "supported"
    ]
   ]
  },
@@ -160,7 +160,7 @@
    [
     "Omeprazole differs between records: the discharge summary of 2025-07-08 says 'omeprazole 20mg OD'; the pharmacy record of 2025-10-10 says 'omeprazole 20 mg o.d.'; the GP letter of 2025-12-03 says 'omeprazol 40 mg una vez al día'.",
     "added by rules (R7b)",
-    "not_stated"
+    "supported"
    ]
   ]
  },
@@ -321,7 +321,7 @@
    [
     "Lisinopril differs between records: the discharge summary of 2024-06-06 says 'lisinopril 10mg daily'; the clinic note of 2024-09-16 says 'lisinopril 10mg OD'; the pharmacy record of 2025-12-01 says 'lisinopril 20mg OD'.",
     "added by rules (R7b)",
-    "not_stated"
+    "supported"
    ]
   ]
  },
@@ -514,7 +514,7 @@
    [
     "Atorvastatin differs between records: the discharge summary of 2024-12-09 says 'atorvastatin 20mg ON'; the pharmacy record of 2025-05-15 says 'atorvastatin 20mg nocte'; the GP letter of 2025-07-20 says 'atorvastatina 40 mg por la noche'.",
     "added by rules (R7b)",
-    "not_stated"
+    "supported"
    ]
   ]
  },
@@ -538,7 +538,7 @@
    [
     "Levothyroxine differs between records: the clinic note of 2025-03-19 says 'levothyroxine 50 mcg mane, before food'; the GP letter of 2025-11-01 says 'levotiroxina 50 microgramos una vez al día en ayunas'; the discharge summary of 2025-12-19 says 'levothyroxine 75 mcg OD before breakfast'.",
     "added by rules (R7b)",
-    "contradicted"
+    "supported"
    ]
   ]
  }

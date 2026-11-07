@@ -25,9 +25,11 @@ Conflicts are never resolved for the clinician, and the newest record is never a
 | 1 | **Extract** (`/clocked/extract`) | Copies problems, allergies and each medication line (as records with `drug`, `dose`, `frequency`, `stopped`, `line`) from every document, with exact character positions. |
 | 2 | (fixed rules) | Normalise prescriber shorthand and Spanish (BD = cada 12 horas = twice daily; 2,5 mg = 2.5 mg; metformina = metformin), then label every fact. Unrecognised wording is compared as written, never assumed equal. **No model decides a label.** |
 | 3 | **Fill** (`/clocked/fill`, `generate`) | Drafts one sentence per discrepancy, quoting the records. |
-| 4 | **Verify** (`/clocked/grounding`) | Checks each drafted sentence against the **original** records. Unsupported sentences are removed and shown. |
+| 4 | **Verify** (`/clocked/grounding`) | Checks each drafted sentence against the **original** records. Unsupported sentences are removed and shown. A conflict sentence is checked one record at a time, because as a whole it is "contradicted" by design. |
+| 0 | **Protect** (`/clocked/pii`) | Privacy gate before anything else runs: each record is scanned for names, contact details, birth dates and ID numbers. Only the synthetic case label is allow-listed; any other hit stops processing. |
+| 5 | **Compare** (`/clocked/compare`) | An independent conflict detector on the raw records. Its conflicts are matched against the rules' findings, and any conflict no rule explains is shown to the clinician. |
 
-Two safety rules came out of testing:
+Five Clocked endpoints are used: Protect, Extract, Fill, Verify and Compare. Two safety rules came out of testing:
 - **Absences are established by comparison (R7a).** Verify removed the true sentence "warfarin is missing from the newest record" as *not stated*: a text checker cannot prove that something is missing. Such sentences are kept, marked "established by comparing records".
 - **A rules safety net (R7b).** Any discrepancy the draft leaves out is added from the rules as a sentence built only from verbatim quotes, with Verify's verdict shown beside it.
 
@@ -46,7 +48,11 @@ Two sets of 20 synthetic patients (61 records): **clean** wording, and **realist
 | Invented medicines or problems | 0 | 0 |
 | Discrepancies named by Fill sentences that Verify confirmed | 61/70 | 55/70 |
 | Discrepancies named in the final written handoff (after rules R7a/R7b) | 70/70 | 70/70 |
+| Rule-built sentences (R7b) confirmed by Verify, one record at a time | 5/5 | 9/9 |
 | Medicines named in the handoff that are not in the records | 0 | 0 |
+| Privacy gate (Protect) passed | 20/20 | 20/20 |
+| Rule-found dose/stop/allergy conflicts also flagged by Compare | 24/39 | 25/39 |
+| Compare conflicts no rule explained | 0 | 0 |
 
 Before the shorthand/Spanish normalisation, medication labels on the realistic set were 54/100. The 4 missed problems are extraction misses on mixed-format lists; they are reported, not hidden. These numbers describe this synthetic test set, not real-world accuracy.
 
@@ -57,6 +63,7 @@ python3 data/generate.py && python3 data/make_hard.py   # synthetic data (seeded
 export CLOCKED_API_KEY=...                       # your own key; never commit it
 python3 eval/score.py 0 hard                     # Extract + rules, scored
 python3 eval/score_summary.py hard               # Fill + Verify, scored
+python3 eval/score_crosscheck.py hard            # Protect + Compare, scored
 python3 app/build_site.py                        # static site in site/
 ```
 Standard library only (Python 3.9+). The demo site is plain HTML built from recorded Clocked responses: no API key reaches the browser.
@@ -65,7 +72,7 @@ Standard library only (Python 3.9+). The demo site is plain HTML built from reco
 - Synthetic, English and Spanish records only; drug and problem pairings are random (see [`data/DATA_CARD.md`](data/DATA_CARD.md)).
 - The shorthand and Spanish vocabulary is a fixed list for this data set; unknown terms are shown as written, never guessed.
 - Not yet implemented from the signed rules: immunizations (R1, recommended section) and an explicit "Not found" status per fact (R2); problems are shown only when a record states them.
-- Rule-built sentences (R7b) are made from verbatim quotes, but Clocked Verify confirmed only some of them (3 of 9 on the realistic set); the page shows each verdict.
+- Clocked Compare, used as an independent check, found 24–25 of the 39 rule-found conflicts on its own; it is a corroborating signal, not the source of the labels.
 - Not a medical device. It does not recommend any drug, dose or action.
 
 ## Licence
