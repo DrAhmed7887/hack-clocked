@@ -46,12 +46,15 @@ def main() -> None:
         langs = " · includes Spanish" if any(d["kind"] == "gp_letter" for d in p["documents"]) else ""
         rows += (f"<tr><td><a href='p/{pid}.html'>{esc(pid)}</a></td><td>{len(p['documents'])} records{langs}</td>"
                  f"<td>{alert} <span class='chip {'warn' if flags else 'ok'}'>{flags} medication flag{'s' if flags != 1 else ''}</span></td></tr>")
+    film = ('<div class="card"><video src="film.mp4" controls preload="metadata" style="width:100%;border-radius:8px"></video>'
+            '<p class="foot">Demo film, 2:32: one allergy sentence through Protect, Extract, the rules, Fill and Verify.</p></div>'
+            if (SITE / "film.mp4").exists() else "")
     index = f"""<div class="step">Clocked Build Challenge 2026</div><h1>Evidence-Linked Clinical Handoff</h1>
 <p>When a patient arrives with records from several countries, the receiving clinician needs to know which facts are
 supported, which conflict, and which are missing. This tool reads every record, labels each medication, allergy and
 problem, quotes the exact source words, and writes a short handoff drafted by Clocked Fill and checked sentence by sentence by
 Clocked Verify. Sentences the checker cannot confirm are removed; absences and gaps are filled from fixed rules and labelled.</p>
-<p>Pick a synthetic patient. Each has 2 to 4 records from Cairo, Alexandria and Valencia; Valencia GP letters are in Spanish.</p>
+{film}<p>Pick a synthetic patient. Each has 2 to 4 records from Cairo, Alexandria and Valencia; Valencia GP letters are in Spanish.</p>
 <div class="card"><table><tr><th>Patient</th><th>Records</th><th>Flags</th></tr>{rows}</table></div>
 <p class="foot">Synthetic records only, no real patients. Decision support for clinicians, not a diagnosis or a prescription.</p>"""
     (SITE / "index.html").write_text(page("Evidence-Linked Clinical Handoff", index).replace('href="../', 'href="'))
