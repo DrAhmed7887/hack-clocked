@@ -1,0 +1,39 @@
+<template>
+  <style>
+#root { position: absolute; inset: 0; overflow: hidden; font-family: "Inter", sans-serif; color: #F3F5F8; }
+.lab { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 28px; letter-spacing: 0.14em; text-transform: uppercase; color: #E8A33D; }
+.ttl { font-weight: 900; font-size: 56px; line-height: 1.06; letter-spacing: -0.025em; color: #FFFFFF; }
+.sub { font-weight: 400; font-size: 30px; line-height: 1.3; color: #AEB6C4; }
+.cap { position: absolute; left: 84px; top: 772px; width: 912px; padding-left: 26px; border-left: 4px solid #E8A33D; }
+.cap .ttl { margin-top: 12px; } .cap .sub { margin-top: 14px; }
+.panel { position: absolute; left: 60px; top: 128px; width: 960px; height: 600px; border-radius: 22px; overflow: hidden;
+  background: #F6F5F1; border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: 0 34px 90px rgba(0,0,0,0.6), 0 0 120px #E8A33D22; }
+.cam { position: absolute; inset: 0; transform-origin: 50% 40%; }
+.cam video { position: absolute; left: 0; top: 0; width: 960px; height: 600px; object-fit: cover; }
+  </style>
+  <div id="root" data-composition-id="verify" data-width="1080" data-height="1080">
+    <div id="verify-panel" class="panel">
+      <div id="verify-cam" class="cam" data-layout-allow-overflow>
+        <video id="verify-vid" class="clip" src="assets/clips/verify.mp4" data-start="0" data-duration="5.8" data-media-start="0.6" data-track-index="1" muted playsinline></video>
+      </div>
+    </div>
+    <div id="verify-cap" class="cap">
+      <div id="verify-lab" class="lab">03 · Verify</div>
+      <div id="verify-ttl" class="ttl">Every sentence checked</div>
+      <div id="verify-sub" class="sub">A sentence the checker contradicts is removed</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      const rise = (sel, t, d = 0.5, y = 26) => tl.fromTo(sel, { opacity: 0, y: y, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: d, ease: "expo.out" }, t);
+      const leave = (sel, t) => tl.to(sel, { opacity: 0, y: -14, filter: "blur(6px)", duration: 0.28, ease: "power3.in" }, t);
+      tl.fromTo("#verify-panel", { opacity: 0, y: 44, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "expo.out" }, 0);
+      tl.fromTo("#verify-cam", { scale: 1 }, { scale: 1.06, duration: 5.5, ease: "none" }, 0);
+      rise("#verify-lab", 0.15, 0.45, 14); rise("#verify-ttl", 0.25); rise("#verify-sub", 0.42);
+      leave("#verify-panel", 5.48); leave("#verify-cap", 5.48);
+      window.__timelines["verify"] = tl;
+    })();
+  </script>
+</template>

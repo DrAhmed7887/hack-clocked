@@ -1,0 +1,589 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 2 has 5 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ahmedzayed/Projects/hack-clocked/video/teaser/compositions/frame.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 9
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 4,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5,
+        "selector": "#records-cam",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 45.67,
+          "top": 121.35,
+          "right": 1034.33,
+          "bottom": 738.48,
+          "width": 988.66,
+          "height": 617.14
+        },
+        "containerSelector": "#records-panel",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 60,
+          "top": 128,
+          "right": 1020,
+          "bottom": 728,
+          "width": 960,
+          "height": 600
+        },
+        "overflow": {
+          "left": 14.33,
+          "right": 14.33,
+          "top": 6.65,
+          "bottom": 10.48
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/records.html",
+        "bbox": {
+          "x": 45.67,
+          "y": 121.35,
+          "width": 988.66,
+          "height": 617.14
+        },
+        "firstSeen": 5,
+        "lastSeen": 5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 8.333,
+        "selector": "#conflict-cam",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 54.68,
+          "top": 125.84,
+          "right": 1025.32,
+          "bottom": 731.74,
+          "width": 970.65,
+          "height": 605.89
+        },
+        "containerSelector": "#conflict-panel",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 60,
+          "top": 128,
+          "right": 1020,
+          "bottom": 728,
+          "width": 960,
+          "height": 600
+        },
+        "overflow": {
+          "left": 5.32,
+          "right": 5.32,
+          "top": 2.16,
+          "bottom": 3.74
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/conflict.html",
+        "bbox": {
+          "x": 54.68,
+          "y": 125.84,
+          "width": 970.65,
+          "height": 605.89
+        },
+        "firstSeen": 8.333,
+        "lastSeen": 11.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          8.333,
+          11.667
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 15,
+        "selector": "#verify-cam",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 44.28,
+          "top": 120.65,
+          "right": 1035.72,
+          "bottom": 739.52,
+          "width": 991.43,
+          "height": 618.87
+        },
+        "containerSelector": "#verify-panel",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 60,
+          "top": 128,
+          "right": 1020,
+          "bottom": 728,
+          "width": 960,
+          "height": 600
+        },
+        "overflow": {
+          "left": 15.72,
+          "right": 15.72,
+          "top": 7.35,
+          "bottom": 11.52
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/verify.html",
+        "bbox": {
+          "x": 44.28,
+          "y": 120.65,
+          "width": 991.43,
+          "height": 618.87
+        },
+        "firstSeen": 15,
+        "lastSeen": 15,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          15
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 21.667,
+        "selector": "#meds-cam",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 35.04,
+          "top": 116.04,
+          "right": 1044.96,
+          "bottom": 746.45,
+          "width": 1009.92,
+          "height": 630.41
+        },
+        "containerSelector": "#meds-panel",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 60,
+          "top": 128,
+          "right": 1020,
+          "bottom": 728,
+          "width": 960,
+          "height": 600
+        },
+        "overflow": {
+          "left": 24.96,
+          "right": 24.96,
+          "top": 11.96,
+          "bottom": 18.45
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/meds.html",
+        "bbox": {
+          "x": 35.04,
+          "y": 116.04,
+          "width": 1009.92,
+          "height": 630.41
+        },
+        "firstSeen": 21.667,
+        "lastSeen": 21.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21.667
+        ]
+      }
+    ],
+    "duration": 30,
+    "samples": [
+      1.667,
+      5,
+      8.333,
+      11.667,
+      15,
+      18.333,
+      21.667,
+      25,
+      28.333
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 4,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.667,
+      8.333,
+      15,
+      21.667,
+      28.333
+    ],
+    "checked": 15,
+    "passed": 15
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 8,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"Clocked Build Challenge 2026\" renders at 22 px for 2.13 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Clocked Build Challenge 2026",
+        "selector": "#intro-k",
+        "dataAttributes": {},
+        "sourceFile": "compositions/intro.html",
+        "bbox": {
+          "x": 96,
+          "y": 336.53,
+          "width": 468.17,
+          "height": 29
+        },
+        "time": 0.5,
+        "times": [
+          0.5
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 2.125,
+        "elements": [
+          {
+            "selector": "#intro-k",
+            "text": "Clocked Build Challenge 2026",
+            "fontPx": 22,
+            "time": 0.5,
+            "seconds": 2.125
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 6 text elements stay under it for 0.5 s or more, the smallest \"01 / 05\" at 20 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "01 / 05",
+        "selector": "#frame-c1",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frame.html",
+        "bbox": {
+          "x": 914.39,
+          "y": 58,
+          "width": 103.61,
+          "height": 26
+        },
+        "time": 2.625,
+        "times": [
+          2.625,
+          3.75,
+          7.5,
+          11.875,
+          17.625,
+          22.5
+        ],
+        "fontPx": 20,
+        "floorPx": 28,
+        "seconds": 4.875,
+        "elements": [
+          {
+            "selector": "#frame-c1",
+            "text": "01 / 05",
+            "fontPx": 20,
+            "time": 2.625,
+            "seconds": 4.875
+          },
+          {
+            "selector": "#frame-brand > div:nth-of-type(2)",
+            "text": "Clocked · Evidence-linked handoff",
+            "fontPx": 20,
+            "time": 3.75,
+            "seconds": 26.25
+          },
+          {
+            "selector": "#frame-c2",
+            "text": "02 / 05",
+            "fontPx": 20,
+            "time": 7.5,
+            "seconds": 4.375
+          },
+          {
+            "selector": "#frame-c3",
+            "text": "03 / 05",
+            "fontPx": 20,
+            "time": 11.875,
+            "seconds": 5.75
+          },
+          {
+            "selector": "#frame-c4",
+            "text": "04 / 05",
+            "fontPx": 20,
+            "time": 17.625,
+            "seconds": 4.875
+          },
+          {
+            "selector": "#frame-c5",
+            "text": "05 / 05",
+            "fontPx": 20,
+            "time": 22.5,
+            "seconds": 4
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"01 · Records\" renders at 22 px for 3.63 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "01 · Records",
+        "selector": "#records-lab",
+        "dataAttributes": {},
+        "sourceFile": "compositions/records.html",
+        "bbox": {
+          "x": 114,
+          "y": 774.32,
+          "width": 200.64,
+          "height": 29
+        },
+        "time": 3.75,
+        "times": [
+          3.75
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 3.625,
+        "elements": [
+          {
+            "selector": "#records-lab",
+            "text": "01 · Records",
+            "fontPx": 22,
+            "time": 3.75,
+            "seconds": 3.625
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"02 · Conflict\" renders at 22 px for 4.13 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "02 · Conflict",
+        "selector": "#conflict-lab",
+        "dataAttributes": {},
+        "sourceFile": "compositions/conflict.html",
+        "bbox": {
+          "x": 114,
+          "y": 778.53,
+          "width": 217.38,
+          "height": 29
+        },
+        "time": 7.625,
+        "times": [
+          7.625
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 4.125,
+        "elements": [
+          {
+            "selector": "#conflict-lab",
+            "text": "02 · Conflict",
+            "fontPx": 22,
+            "time": 7.625,
+            "seconds": 4.125
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"03 · Verify\" renders at 22 px for 5.63 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "03 · Verify",
+        "selector": "#verify-lab",
+        "dataAttributes": {},
+        "sourceFile": "compositions/verify.html",
+        "bbox": {
+          "x": 114,
+          "y": 778.53,
+          "width": 183.92,
+          "height": 29
+        },
+        "time": 12,
+        "times": [
+          12
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 5.625,
+        "elements": [
+          {
+            "selector": "#verify-lab",
+            "text": "03 · Verify",
+            "fontPx": 22,
+            "time": 12,
+            "seconds": 5.625
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"04 · Medications\" renders at 22 px for 4.50 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "04 · Medications",
+        "selector": "#meds-lab",
+        "dataAttributes": {},
+        "sourceFile": "compositions/meds.html",
+        "bbox": {
+          "x": 114,
+          "y": 774.32,
+          "width": 267.53,
+          "height": 29
+        },
+        "time": 17.875,
+        "times": [
+          17.875
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 4.5,
+        "elements": [
+          {
+            "selector": "#meds-lab",
+            "text": "04 · Medications",
+            "fontPx": 22,
+            "time": 17.875,
+            "seconds": 4.5
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"05 · Results\" renders at 22 px for 3.75 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "05 · Results",
+        "selector": "#results-lab",
+        "dataAttributes": {},
+        "sourceFile": "compositions/results.html",
+        "bbox": {
+          "x": 114,
+          "y": 778.53,
+          "width": 200.64,
+          "height": 29
+        },
+        "time": 22.625,
+        "times": [
+          22.625
+        ],
+        "fontPx": 22,
+        "floorPx": 28,
+        "seconds": 3.75,
+        "elements": [
+          {
+            "selector": "#results-lab",
+            "text": "05 · Results",
+            "fontPx": 22,
+            "time": 22.625,
+            "seconds": 3.75
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"Synthetic records only · decision support, no...\" renders at 24 px for 2.50 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Synthetic records only · decision support, not a diagnosis",
+        "selector": "#end-f",
+        "dataAttributes": {},
+        "sourceFile": "compositions/end.html",
+        "bbox": {
+          "x": 96,
+          "y": 674.56,
+          "width": 650.52,
+          "height": 29
+        },
+        "time": 27.5,
+        "times": [
+          27.5
+        ],
+        "fontPx": 24,
+        "floorPx": 28,
+        "seconds": 2.5,
+        "elements": [
+          {
+            "selector": "#end-f",
+            "text": "Synthetic records only · decision support, not a diagnosis",
+            "fontPx": 24,
+            "time": 27.5,
+            "seconds": 2.5
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 240
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

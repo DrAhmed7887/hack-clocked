@@ -1,0 +1,179 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 2 has 5 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/ahmedzayed/Projects/hack-clocked/video/teaser/compositions/frame.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 9
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 8.333,
+        "selector": "#conflict-sub",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 114,
+          "top": 904.03,
+          "right": 615.5,
+          "bottom": 940.03,
+          "width": 501.5,
+          "height": 36
+        },
+        "containerSelector": "#conflict-cap",
+        "text": "Both sources quoted word for word",
+        "fixHint": "Text is 502px x 36px inside 912px x 161px and overflows by up to 7px; increase the container height to at least ~168px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 84,
+          "top": 772,
+          "right": 996,
+          "bottom": 933.36,
+          "width": 912,
+          "height": 161.36
+        },
+        "overflow": {
+          "bottom": 6.67
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/conflict.html",
+        "bbox": {
+          "x": 114,
+          "y": 904.03,
+          "width": 501.5,
+          "height": 36
+        },
+        "firstSeen": 8.333,
+        "lastSeen": 8.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          8.333
+        ]
+      }
+    ],
+    "duration": 30,
+    "samples": [
+      1.667,
+      5,
+      8.333,
+      11.667,
+      15,
+      18.333,
+      21.667,
+      25,
+      28.333
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.667,
+      8.333,
+      15,
+      21.667,
+      28.333
+    ],
+    "checked": 12,
+    "passed": 12
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"Synthetic records only · decision support, not a diagnosis\" (8 words) is on screen 2.14 s (±0.01 s), under the 2.17 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "Synthetic records only · decision support, not a diagnosis",
+        "selector": "#end-f",
+        "dataAttributes": {},
+        "sourceFile": "compositions/end.html",
+        "bbox": {
+          "x": 96,
+          "y": 679.41,
+          "width": 758.94,
+          "height": 34
+        },
+        "time": 27.867,
+        "words": 8,
+        "seconds": 2.137,
+        "floorSeconds": 2.175
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 240
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "size": 1080,
+  "accent": "#E8A33D",
+  "brand": "Clocked · Evidence-linked handoff",
+  "intro": {
+    "duration": 3.0,
+    "kicker": "Clocked Build Challenge 2026",
+    "title": "Evidence-Linked\nClinical Handoff",
+    "sub": "Records · Conflicts · Proof"
+  },
+  "scenes": [
+    {
+      "id": "records",
+      "clip": "assets/clips/records.mp4",
+      "mediaStart": 0,
+      "duration": 4.8,
+      "clicks": [
+        1.5
+      ],
+      "label": "Records",
+      "title": "Four records. Two languages.",
+      "sub": "Cairo, Alexandria and a Spanish GP letter"
+    },
+    {
+      "id": "conflict",
+      "clip": "assets/clips/conflict.mp4",
+      "mediaStart": 0,
+      "duration": 4.4,
+      "clicks": [],
+      "label": "Conflict",
+      "title": "Conflicts shown, not resolved",
+      "sub": "Both sources quoted word for word"
+    },
+    {
+      "id": "verify",
+      "clip": "assets/clips/verify.mp4",
+      "mediaStart": 0.6,
+      "duration": 5.8,
+      "clicks": [
+        3.7
+      ],
+      "label": "Verify",
+      "title": "Every sentence checked",
+      "sub": "A sentence the checker contradicts is removed"
+    },
+    {
+      "id": "meds",
+      "clip": "assets/clips/meds.mp4",
+      "mediaStart": 0,
+      "duration": 4.8,
+      "clicks": [
+        1.9
+      ],
+      "label": "Medications",
+      "title": "Every dose traced to its source",
+      "sub": "Warfarin: missing from the newest letter"
+    },
+    {
+      "id": "results",
+      "duration": 4.0,
+      "numbers": [
+        {
+          "value": "100/100",
+          "label": "medication labels correct"
+        },
+        {
+          "value": "5/5",
+          "label": "allergy conflicts flagged"
+        }
+      ],
+      "label": "Results",
+      "title": "Measured, not claimed",
+      "sub": "20 synthetic patients, re-run from scripts"
+    }
+  ],
+  "end": {
+    "duration": 3.2,
+    "title": "Evidence-Linked\nClinical Handoff",
+    "url": "drahmed7887.github.io/hack-clocked",
+    "foot": "Synthetic records only · decision support, not a diagnosis"
+  },
+  "music": {
+    "src": "assets/audio/music.mp3",
+    "start": 120,
+    "volume": 1.0
+  },
+  "sfx": {
+    "click": "assets/audio/tick.mp3",
+    "caption": "assets/audio/pop.mp3",
+    "volumeClick": 0.6,
+    "volumeCaption": 0.25
+  }
+}
