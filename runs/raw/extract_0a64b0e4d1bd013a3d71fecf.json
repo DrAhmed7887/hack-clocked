@@ -1,0 +1,342 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "penicillin (rash)"
+   ],
+   "items": [
+    {
+     "value": "penicillin (rash)",
+     "start": 210,
+     "end": 227,
+     "confidence": 0.9999999996741886,
+     "p_verify": 0.9999999996741886
+    }
+   ],
+   "confidence": 0.9999999996741886
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known chronic kidney disease stage 3a.",
+    "Known hyperlipidaemia.",
+    "Known atrial fibrillation."
+   ],
+   "items": [
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 111,
+     "end": 149,
+     "confidence": 0.9999999996799964,
+     "p_verify": 0.9999999996799964
+    },
+    {
+     "value": "Known hyperlipidaemia.",
+     "start": 150,
+     "end": 172,
+     "confidence": 0.9999999990469122,
+     "p_verify": 0.9999999990469122
+    },
+    {
+     "value": "Known atrial fibrillation.",
+     "start": 173,
+     "end": 199,
+     "confidence": 0.9999999995066033,
+     "p_verify": 0.9999999995066033
+    }
+   ],
+   "confidence": 0.9999999990469122
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 10 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "line": "warfarin 3 mg once daily, dose by INR",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 243,
+     "end": 301,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 245,
+       "end": 258,
+       "confidence": 0.9999999997768767,
+       "p_verify": 0.9999999997768767
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 259,
+       "end": 272,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 273,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 245,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 301,
+     "end": 330,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 303,
+       "end": 313,
+       "confidence": 0.9999999996706217,
+       "p_verify": 0.9999999996706217
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 314,
+       "end": 318,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 319,
+       "end": 329,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg once daily",
+       "start": 303,
+       "end": 329,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.988,
+       "p_blank": 0.988
+      }
+     }
+    },
+    {
+     "start": 330,
+     "end": 360,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 332,
+       "end": 342,
+       "confidence": 0.9999999996088762,
+       "p_verify": 0.9999999996088762
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 343,
+       "end": 348,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 349,
+       "end": 359,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg once daily",
+       "start": 332,
+       "end": 359,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 360,
+     "end": 399,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 362,
+       "end": 370,
+       "confidence": 0.9999999993701554,
+       "p_verify": 0.9999999993701554
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 371,
+       "end": 375,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 376,
+       "end": 386,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3 mg once daily, dose by INR",
+       "start": 362,
+       "end": 399,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 193,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 84,
+    "locate": 0,
+    "verify": 25,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 193,
+  "server_ms": 377
+ },
+ "_credits": "8"
+}

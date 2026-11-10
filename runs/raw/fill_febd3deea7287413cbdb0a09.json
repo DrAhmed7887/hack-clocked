@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "No allergies are mentioned in any records. Levothyroxine dose or timing differs between the clinic note of 2024-08-19, the pharmacy record of 2024-12-07, and the discharge summary of 2024-12-26. Lisinopril was stopped in the discharge summary of 2024-12-26 compared to the clinic note of 2024-08-19 and the pharmacy record of 2024-12-07. Salbutamol inhaler 100 micrograms, 2 puffs PRN is new in the discharge summary of 2024-12-26",
+   "confidence": 0.7465071615332459,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 16,
+  "generate_ms": 461,
+  "total_ms": 486,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 656,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "19"
+}

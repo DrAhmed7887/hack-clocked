@@ -1,0 +1,275 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "atrial fibrillation",
+    "essential hypertension"
+   ],
+   "items": [
+    {
+     "value": "atrial fibrillation",
+     "start": 134,
+     "end": 153,
+     "confidence": 0.999999995318607,
+     "p_verify": 0.999999995318607
+    },
+    {
+     "value": "essential hypertension",
+     "start": 161,
+     "end": 183,
+     "confidence": 0.9999999979662921,
+     "p_verify": 0.9999999979662921
+    }
+   ],
+   "confidence": 0.999999995318607
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "40 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "amlodipine",
+     "frequency": null,
+     "stopped": "stopped on 2025-12-03"
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 199,
+     "end": 229,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 201,
+       "end": 211,
+       "confidence": 0.9999999995073767,
+       "p_verify": 0.9999999995073767
+      },
+      "dose": {
+       "value": "40 mg",
+       "start": 212,
+       "end": 217,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 218,
+       "end": 228,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 229,
+     "end": 287,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 231,
+       "end": 244,
+       "confidence": 0.9999999997188718,
+       "p_verify": 0.9999999997188718
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 245,
+       "end": 258,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 259,
+       "end": 269,
+       "p_start": 1,
+       "p_close": 0.98,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.98
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.977,
+       "p_blank": 0.977
+      }
+     }
+    },
+    {
+     "start": 287,
+     "end": 322,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 289,
+       "end": 299,
+       "confidence": 0.9999999919294636,
+       "p_verify": 0.9999999919294636
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.986,
+       "p_blank": 0.986
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.893,
+       "p_blank": 0.893
+      },
+      "stopped": {
+       "value": "stopped on 2025-12-03",
+       "start": 300,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 322,
+     "end": 352,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 324,
+       "end": 334,
+       "confidence": 0.9999999996814393,
+       "p_verify": 0.9999999996814393
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 335,
+       "end": 341,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 342,
+       "end": 352,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 181,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 80,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 3,
+    "point": 35,
+    "resolve": 11,
+    "extend": 0,
+    "contest": 25,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 76,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 181,
+  "server_ms": 184
+ },
+ "_credits": "8"
+}

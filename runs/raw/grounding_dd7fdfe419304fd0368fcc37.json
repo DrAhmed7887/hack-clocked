@@ -1,0 +1,119 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9975,
+ "ungrounded": 0.0025,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D2",
+   "share": 0.355,
+   "share_of_answer": 0.3542,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.3385,
+   "share_of_answer": 0.3377,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.3064,
+   "share_of_answer": 0.3057,
+   "claims": [
+    0
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The clinic note of 2025-03-19 says 'levothyroxine 50 mcg mane, before food'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3065,
+   "supported": 0.9978,
+   "contradicted": 0.0007,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9979,
+    "D2": 0.0013,
+    "D3": 0.0009
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 mcg mane, before food",
+    "start": 245,
+    "end": 283,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The GP letter of 2025-11-01 says 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3548,
+   "supported": 0.9977,
+   "contradicted": 0.0008,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.9984,
+    "D3": 0.001
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+    "start": 252,
+    "end": 304,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2025-12-19 says 'levothyroxine 75 mcg OD before breakfast'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3387,
+   "supported": 0.997,
+   "contradicted": 0.0012,
+   "not_stated": 0.001,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.001,
+    "D2": 0.0009,
+    "D3": 0.9982
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "levothyroxine 75 mcg OD before breakfast",
+    "start": 289,
+    "end": 329,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.997
+ },
+ "timing": {
+  "read_ms": 116,
+  "total_ms": 118
+ },
+ "_credits": "5"
+}

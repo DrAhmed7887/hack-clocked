@@ -1,0 +1,143 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7387,
+ "ungrounded": 0.2613,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.8483,
+   "share_of_answer": 0.6267,
+   "claims": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.1016,
+   "share_of_answer": 0.0751,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0501,
+   "share_of_answer": 0.037,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Amlodipine stopped, 'amlodipine stopped on 2025-12-03' from the GP letter of 2025-12-03.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1422,
+   "supported": 0.9971,
+   "contradicted": 0.0013,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0011,
+    "D2": 0.001,
+    "D3": 0.9979
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "amlodipine stopped on 2025-12-03",
+    "start": 289,
+    "end": 321,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Levothyroxine new, 'levothyroxine 50 micrograms once daily before breakfast' from the GP letter of 2025-12-03.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1777,
+   "supported": 0.9971,
+   "contradicted": 0.0013,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0009,
+    "D2": 0.0009,
+    "D3": 0.9982
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "levothyroxine 50 micrograms once daily before breakfast",
+    "start": 231,
+    "end": 286,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Metformin missing from the newest record, 'metformin 500 mg twice daily' from the discharge summary of 2025-07-08 and 'metformin 500 mg twice daily' from the pharmacy record of 2025-10-10.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3037,
+   "supported": 0.3988,
+   "contradicted": 0.0479,
+   "not_stated": 0.5295,
+   "not_a_claim": 0.0239,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.0371,
+    "D2": 0.0653,
+    "D3": 0.8977
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "metformin 500 mg twice daily",
+    "start": 280,
+    "end": 308,
+    "confidence": 0.995
+   }
+  },
+  {
+   "claim": "Omeprazole dose differs, 'omeprazole 20 mg once daily' from the discharge summary of 2025-07-08, 'omeprazole 20 mg once daily' from the pharmacy record of 2025-10-10, and 'omeprazole 40 mg once daily' from the GP letter of 2025-12-03",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3764,
+   "supported": 0.7935,
+   "contradicted": 0.0657,
+   "not_stated": 0.0851,
+   "not_a_claim": 0.0557,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.1078,
+    "D2": 0.2238,
+    "D3": 0.6684
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazole 40 mg once daily",
+    "start": 201,
+    "end": 228,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.3988
+ },
+ "timing": {
+  "read_ms": 150,
+  "total_ms": 153
+ },
+ "_credits": "6"
+}

@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The GP letter of 2025-06-05 says 'l\u00e1tex (dermatitis de contacto)' but the discharge summary of 2025-12-08 says 'nil known.'. Amlodipine dose differs between the GP letter of 2025-06-05, the discharge summary of 2025-12-08, and the clinic note of 2026-05-08. Bisoprolol is missing from the clinic note of 2026-05-08 compared to the GP letter of 2025-06-05 and the discharge summary of 2025-12-08. Insulin glargine '16 units ON' is new in the clinic note of 2026-05-08. Salbutamol inhaler was stopped in the clinic note of 2026-05-08 according to the GP letter of 2025-06-05 and the discharge summary of 2025-12-08",
+   "confidence": 0.8796532024666569,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 629,
+  "total_ms": 657,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 704,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "26"
+}

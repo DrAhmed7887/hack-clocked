@@ -1,0 +1,93 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9976,
+ "ungrounded": 0.0024,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.5494,
+   "share_of_answer": 0.5481,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.4498,
+   "share_of_answer": 0.4487,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.0008,
+   "share_of_answer": 0.0008,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The GP letter of 2025-06-05 says 'l\u00e1tex (dermatitis de contacto)'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.55,
+   "supported": 0.9976,
+   "contradicted": 0.0007,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.001,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9983,
+    "D2": 0.001,
+    "D3": 0.0007
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "l\u00e1tex (dermatitis de contacto).",
+    "start": 219,
+    "end": 250,
+    "confidence": 0.989
+   }
+  },
+  {
+   "claim": "The discharge summary of 2025-12-08 says 'nil known.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.45,
+   "supported": 0.9975,
+   "contradicted": 0.0009,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.9983,
+    "D3": 0.001
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "Allergies: nil known.",
+    "start": 248,
+    "end": 269,
+    "confidence": 0.993
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.9975
+ },
+ "timing": {
+  "read_ms": 75,
+  "total_ms": 77
+ },
+ "_credits": "3"
+}

@@ -1,0 +1,306 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "nocte",
+     "line": "insulin glargine 16 units nocte",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "daily",
+     "line": "lisinopril 10 mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "20mg",
+     "drug": "atorvastatin",
+     "frequency": "nocte",
+     "line": "atorvastatin 20mg nocte",
+     "stopped": null
+    },
+    {
+     "dose": "50 mcg",
+     "drug": "levothyroxine",
+     "frequency": "OD before breakfast",
+     "line": "levothyroxine 50 mcg OD before breakfast",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 127,
+     "end": 161,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 129,
+       "end": 145,
+       "confidence": 0.9999999995207574,
+       "p_verify": 0.9999999995207574
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 146,
+       "end": 154,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "nocte",
+       "start": 155,
+       "end": 160,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units nocte",
+       "start": 129,
+       "end": 160,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    },
+    {
+     "start": 161,
+     "end": 186,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 163,
+       "end": 173,
+       "confidence": 0.9999999997081563,
+       "p_verify": 0.9999999997081563
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 174,
+       "end": 179,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 180,
+       "end": 185,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg daily",
+       "start": 163,
+       "end": 185,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.979,
+       "p_blank": 0.979
+      }
+     }
+    },
+    {
+     "start": 186,
+     "end": 212,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 188,
+       "end": 200,
+       "confidence": 0.9999999996110371,
+       "p_verify": 0.9999999996110371
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 201,
+       "end": 205,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "nocte",
+       "start": 206,
+       "end": 211,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20mg nocte",
+       "start": 188,
+       "end": 211,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 212,
+     "end": 254,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 214,
+       "end": 227,
+       "confidence": 0.9999999994857969,
+       "p_verify": 0.9999999994857969
+      },
+      "dose": {
+       "value": "50 mcg",
+       "start": 228,
+       "end": 234,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD before breakfast",
+       "start": 235,
+       "end": 254,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 mcg OD before breakfast",
+       "start": 214,
+       "end": 254,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 158,
+  "forwards": {
+   "fields": [
+    4,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 4,
+    "branches": 1,
+    "generate": 60,
+    "locate": 0,
+    "verify": 14,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 29,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 76,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 158,
+  "server_ms": 550
+ },
+ "_credits": "7"
+}

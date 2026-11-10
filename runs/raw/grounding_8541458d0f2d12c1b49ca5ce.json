@@ -1,0 +1,67 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.18,
+ "ungrounded": 0.82,
+ "verdict": "contradicted",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.5878,
+   "share_of_answer": 0.1058,
+   "claims": []
+  },
+  {
+   "id": "D4",
+   "share": 0.25,
+   "share_of_answer": 0.045,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.1052,
+   "share_of_answer": 0.0189,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.057,
+   "share_of_answer": 0.0103,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict: the pharmacy record of 2025-04-17 says 'sulfonamides (hives)'; the GP letter of 2025-12-25 says 'No known drug allergies.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 1,
+   "supported": 0.18,
+   "contradicted": 0.7665,
+   "not_stated": 0.0315,
+   "not_a_claim": 0.0221,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.057,
+    "D2": 0.1052,
+    "D3": 0.5878,
+    "D4": 0.25
+   },
+   "source": null
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.18
+ },
+ "timing": {
+  "read_ms": 86,
+  "total_ms": 87
+ },
+ "_credits": "3"
+}

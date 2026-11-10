@@ -1,0 +1,280 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "asthma",
+    "type 2 diabetes"
+   ],
+   "items": [
+    {
+     "value": "asthma",
+     "start": 119,
+     "end": 125,
+     "confidence": 0.9999999937983952,
+     "p_verify": 0.9999999937983952
+    },
+    {
+     "value": "type 2 diabetes",
+     "start": 133,
+     "end": 148,
+     "confidence": 0.9999999956024037,
+     "p_verify": 0.9999999956024037
+    }
+   ],
+   "confidence": 0.9999999937983952
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 164,
+     "end": 195,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 166,
+       "end": 175,
+       "confidence": 0.9999999997959181,
+       "p_verify": 0.9999999997959181
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 176,
+       "end": 182,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 183,
+       "end": 194,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 195,
+     "end": 224,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 197,
+       "end": 207,
+       "confidence": 0.9999999995487918,
+       "p_verify": 0.9999999995487918
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 208,
+       "end": 212,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 213,
+       "end": 223,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.99,
+       "p_blank": 0.99
+      }
+     }
+    },
+    {
+     "start": 224,
+     "end": 261,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 226,
+       "end": 242,
+       "confidence": 0.9999999996884454,
+       "p_verify": 0.9999999996884454
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 243,
+       "end": 251,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 252,
+       "end": 260,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 261,
+     "end": 290,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 263,
+       "end": 273,
+       "confidence": 0.9999999995898332,
+       "p_verify": 0.9999999995898332
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 274,
+       "end": 279,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 280,
+       "end": 290,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 171,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 79,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 32,
+    "resolve": 10,
+    "extend": 0,
+    "contest": 20,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 66,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 171,
+  "server_ms": 289
+ },
+ "_credits": "7"
+}

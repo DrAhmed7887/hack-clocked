@@ -1,0 +1,376 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "sulfonamides (hives)"
+   ],
+   "items": [
+    {
+     "value": "sulfonamides (hives)",
+     "start": 125,
+     "end": 145,
+     "confidence": 0.999999999516952,
+     "p_verify": 0.999999999516952
+    }
+   ],
+   "confidence": 0.999999999516952
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": null,
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "line": "metformin 500 mg twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "line": "warfarin 3 mg once daily, dose by INR",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "line": "omeprazole 20 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 161,
+     "end": 191,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 163,
+       "end": 175,
+       "confidence": 0.9999999997379536,
+       "p_verify": 0.9999999997379536
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 176,
+       "end": 181,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 182,
+       "end": 190,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.499,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 163,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0,
+       "rejected_value": "atorvastatin 20 mg at night",
+       "rejected_p_verify": 0.001,
+       "reason": "verification_rejected"
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 191,
+     "end": 222,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 193,
+       "end": 203,
+       "confidence": 0.9999999997434799,
+       "p_verify": 0.9999999997434799
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 204,
+       "end": 210,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 211,
+       "end": 221,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 193,
+       "end": 221,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.992,
+       "p_blank": 0.992
+      }
+     }
+    },
+    {
+     "start": 222,
+     "end": 253,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 224,
+       "end": 233,
+       "confidence": 0.9999999997835622,
+       "p_verify": 0.9999999997835622
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 234,
+       "end": 240,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 241,
+       "end": 252,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500 mg twice daily",
+       "start": 224,
+       "end": 252,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 253,
+     "end": 293,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 255,
+       "end": 263,
+       "confidence": 0.9999999993102573,
+       "p_verify": 0.9999999993102573
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 264,
+       "end": 268,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 269,
+       "end": 279,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3 mg once daily, dose by INR",
+       "start": 255,
+       "end": 292,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 293,
+     "end": 322,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 295,
+       "end": 305,
+       "confidence": 0.9999999997868643,
+       "p_verify": 0.9999999997868643
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 306,
+       "end": 311,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 312,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazole 20 mg once daily",
+       "start": 295,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.988,
+       "p_blank": 0.988
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 182,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 60,
+    "locate": 0,
+    "verify": 18,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 44,
+    "resolve": 15,
+    "extend": 0,
+    "contest": 41,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 101,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 182,
+  "server_ms": 591
+ },
+ "_credits": "8"
+}

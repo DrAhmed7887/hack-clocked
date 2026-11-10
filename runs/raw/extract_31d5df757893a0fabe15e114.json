@@ -1,0 +1,306 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "bd",
+     "line": "metformin 500 mg bd",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "insulin glargine",
+     "frequency": "stopped on 2026-08-01",
+     "line": "insulin glargine stopped on 2026-08-01",
+     "stopped": "stopped on 2026-08-01"
+    },
+    {
+     "dose": "100 mcg",
+     "drug": "salbutamol inhaler",
+     "frequency": "PRN",
+     "line": "salbutamol inhaler 100 mcg, 2 puffs PRN",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "daily",
+     "line": "lisinopril 10 mg daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 129,
+     "end": 151,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 131,
+       "end": 140,
+       "confidence": 0.9999999995276478,
+       "p_verify": 0.9999999995276478
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 141,
+       "end": 147,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "bd",
+       "start": 148,
+       "end": 150,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500 mg bd",
+       "start": 131,
+       "end": 150,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 0.997,
+       "confidence": 0.997
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 151,
+     "end": 192,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 153,
+       "end": 169,
+       "confidence": 0.9999999875559943,
+       "p_verify": 0.9999999875559943
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      },
+      "frequency": {
+       "value": "stopped on 2026-08-01",
+       "start": 170,
+       "end": 191,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 0.903,
+       "confidence": 0.903
+      },
+      "line": {
+       "value": "insulin glargine stopped on 2026-08-01",
+       "start": 153,
+       "end": 191,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2026-08-01",
+       "start": 170,
+       "end": 191,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 192,
+     "end": 234,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 194,
+       "end": 212,
+       "confidence": 0.9999999991665443,
+       "p_verify": 0.9999999991665443
+      },
+      "dose": {
+       "value": "100 mcg",
+       "start": 213,
+       "end": 220,
+       "p_start": 1,
+       "p_close": 0.999,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "frequency": {
+       "value": "PRN",
+       "start": 230,
+       "end": 233,
+       "p_start": 0.953,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.953
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 mcg, 2 puffs PRN",
+       "start": 194,
+       "end": 233,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    },
+    {
+     "start": 234,
+     "end": 258,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 236,
+       "end": 246,
+       "confidence": 0.9999999996215785,
+       "p_verify": 0.9999999996215785
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 247,
+       "end": 252,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 253,
+       "end": 258,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg daily",
+       "start": 236,
+       "end": 258,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 154,
+  "forwards": {
+   "fields": [
+    4,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 46,
+    "locate": 0,
+    "verify": 14,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 11,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 90,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 154,
+  "server_ms": 157
+ },
+ "_credits": "7"
+}

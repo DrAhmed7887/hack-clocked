@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "No allergy conflicts were identified. Metformin 500mg b.i.d. in the discharge summary of 2024-06-06 and metformin 500mg bd in the clinic note of 2024-09-16 is missing from the pharmacy record of 2025-12-01. Lisinopril 10mg daily in the discharge summary of 2024-06-06 and lisinopril 10mg OD in the clinic note of 2024-09-16 differs from lisinopril 20mg OD in the pharmacy record of 2025-12-01. Amlodipine 5mg o.d. is new in the pharmacy record of 2025-12-01. Warfarin was stopped in the pharmacy record of 2025-12-01 compared to the discharge summary of 2024-06-06 and the clinic note of 2024-09-16",
+   "confidence": 0.5821283253536426,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 687,
+  "total_ms": 714,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 704,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "28"
+}

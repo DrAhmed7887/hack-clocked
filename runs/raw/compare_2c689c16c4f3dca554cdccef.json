@@ -1,0 +1,157 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D1",
+    "D2"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "same",
+   "related": 0.9932,
+   "probabilities": {
+    "same": 0.9086,
+    "overlapping": 0.0698,
+    "conflicting": 0.0149,
+    "unrelated": 0.0068
+   },
+   "duplicates": [],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9924,
+   "probabilities": {
+    "same": 0.0088,
+    "overlapping": 0.0474,
+    "conflicting": 0.9363,
+    "unrelated": 0.0076
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9949,
+      "date_or_version": 0.0012,
+      "rule_or_condition": 0.0011,
+      "scope": 0.0008,
+      "name": 0.001,
+      "no_conflict": 0.0011
+     },
+     "confidence": 0.9989,
+     "a": {
+      "document": "D1",
+      "quote": "- atorvastatin 20 mg at night",
+      "start": 309,
+      "end": 338,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "GP referral letter, primary care centre, Valencia\nDate: 2025-07-20\nPatient: synthetic case P019, 42-year-old female.\n\nProblems:\nKnown hypothyroidism.\nKnown hyperlipidaemia.\nKnown chronic kidney disease stage 3a.\n\nMedications:\n- omeprazole stopped on 2025-07-20\n- warfarin 3 mg once daily, dose by INR\n- atorvastatin 40 mg at night\n- bisoprolol 2.5 mg once daily",
+      "start": 0,
+      "end": 361,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9933,
+   "probabilities": {
+    "same": 0.0069,
+    "overlapping": 0.1024,
+    "conflicting": 0.884,
+    "unrelated": 0.0067
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9941,
+      "date_or_version": 0.0013,
+      "rule_or_condition": 0.0014,
+      "scope": 0.0009,
+      "name": 0.0011,
+      "no_conflict": 0.0012
+     },
+     "confidence": 0.9988,
+     "a": {
+      "document": "D2",
+      "quote": "- atorvastatin 20 mg at night",
+      "start": 189,
+      "end": 218,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "GP referral letter, primary care centre, Valencia\nDate: 2025-07-20\nPatient: synthetic case P019, 42-year-old female.\n\nProblems:\nKnown hypothyroidism.\nKnown hyperlipidaemia.\nKnown chronic kidney disease stage 3a.\n\nMedications:\n- omeprazole stopped on 2025-07-20\n- warfarin 3 mg once daily, dose by INR\n- atorvastatin 40 mg at night\n- bisoprolol 2.5 mg once daily",
+      "start": 0,
+      "end": 361,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [],
+ "conflicts": [
+  1,
+  2
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 25,
+  "passage_reads": 1,
+  "passages_ms": 66,
+  "passages": 4,
+  "counterparts_ms": 93,
+  "kinds_ms": 30
+ },
+ "timing": {
+  "read_ms": 214,
+  "total_ms": 216
+ },
+ "_credits": "9"
+}

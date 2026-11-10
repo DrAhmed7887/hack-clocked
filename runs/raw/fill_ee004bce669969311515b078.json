@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The discharge summary of 2024-12-09 says 'atorvastatin 20mg ON', the pharmacy record of 2025-05-15 says 'atorvastatin 20mg nocte', and the GP letter of 2025-07-20 says 'atorvastatina 40 mg por la noche'.\nThe discharge summary of 2024-12-09 says 'lisinopril 10 mg OD' and the pharmacy record of 2025-05-15 says 'lisinopril 10mg OD', but it is not in the GP letter of 2025-07-20.\nThe discharge summary of 2024-12-09 says 'omeprazole 20 mg o.d.', the pharmacy record of 2025-05-15 says 'omeprazole 20mg daily', and the GP letter of 2025-07-20 says 'omeprazol suspendido el 2025-07-20'.\nThe GP letter of 2025-07-20 says 'warfarina 3 mg una vez al d\u00eda seg\u00fan INR'",
+   "confidence": 0.9723683231085253,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 680,
+  "total_ms": 706,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 400,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "28"
+}

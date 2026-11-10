@@ -1,0 +1,53 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.2203,
+ "ungrounded": 0.7797,
+ "verdict": "ungrounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.5349,
+   "share_of_answer": 0.1178,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.4651,
+   "share_of_answer": 0.1024,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Metformin differs between records: the pharmacy record of 2025-02-15 says 'metformin 500 mg b.i.d.'; the GP letter of 2026-03-16 says 'metformina 1000 mg cada 12 horas'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 1,
+   "supported": 0.2203,
+   "contradicted": 0.1578,
+   "not_stated": 0.4759,
+   "not_a_claim": 0.146,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.5349,
+    "D2": 0.4651
+   },
+   "source": null
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.2203
+ },
+ "timing": {
+  "read_ms": 83,
+  "total_ms": 85
+ },
+ "_credits": "4"
+}

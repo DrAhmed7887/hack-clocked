@@ -1,0 +1,117 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8688,
+ "ungrounded": 0.1312,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.8728,
+   "share_of_answer": 0.7583,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0758,
+   "share_of_answer": 0.0659,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0514,
+   "share_of_answer": 0.0447,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Amlodipine stopped, 'amlodipine 5 mg once daily' from the GP letter of 2024-09-19, 'amlodipine 5 mg once daily' from the discharge summary of 2025-08-23, and 'amlodipine stopped on 2026-02-26' from the pharmacy record of 2026-02-26.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4218,
+   "supported": 0.9596,
+   "contradicted": 0.0155,
+   "not_stated": 0.0108,
+   "not_a_claim": 0.0141,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0062,
+    "D2": 0.0115,
+    "D3": 0.9824
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "amlodipine stopped on 2026-02-26",
+    "start": 160,
+    "end": 192,
+    "confidence": 0.96
+   }
+  },
+  {
+   "claim": "Lisinopril dose differs, 'lisinopril 10 mg once daily' from the GP letter of 2024-09-19, 'lisinopril 10 mg once daily' from the discharge summary of 2025-08-23, and 'lisinopril 20 mg once daily' from the pharmacy record of 2026-02-26.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4255,
+   "supported": 0.7323,
+   "contradicted": 0.0555,
+   "not_stated": 0.0573,
+   "not_a_claim": 0.1548,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.135,
+    "D2": 0.1961,
+    "D3": 0.6689
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10 mg once daily",
+    "start": 275,
+    "end": 302,
+    "confidence": 0.981
+   }
+  },
+  {
+   "claim": "Omeprazole new, 'omeprazole 20 mg once daily' from the pharmacy record of 2026-02-26",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1527,
+   "supported": 0.9977,
+   "contradicted": 0.001,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0006,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.0008,
+    "D3": 0.9987
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazole 20 mg once daily",
+    "start": 225,
+    "end": 252,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.7323
+ },
+ "timing": {
+  "read_ms": 129,
+  "total_ms": 131
+ },
+ "_credits": "5"
+}

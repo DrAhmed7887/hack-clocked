@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Amlodipine stopped, 'amlodipine stopped on 2026-02-26' from the pharmacy record of 2026-02-26.\nLisinopril dose differs, 'lisinopril 10 mg una vez al d\u00eda' from the GP letter of 2024-09-19, 'lisinopril 10mg OD' from the discharge summary of 2025-08-23, and 'lisinopril 20mg daily' from the pharmacy record of 2026-02-26.\nOmeprazole new, 'omeprazole 20mg OD' from the pharmacy record of 2026-02-26",
+   "confidence": 0.9687785271704531,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 417,
+  "total_ms": 437,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 352,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "17"
+}

@@ -1,0 +1,119 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5885,
+ "ungrounded": 0.4115,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D2",
+   "share": 0.7082,
+   "share_of_answer": 0.4168,
+   "claims": [
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.2918,
+   "share_of_answer": 0.1717,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The pharmacy record of 2025-02-15 and the GP letter of 2026-03-16 both list a latex allergy.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2022,
+   "supported": 0.6496,
+   "contradicted": 0.0572,
+   "not_stated": 0.1873,
+   "not_a_claim": 0.1059,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7158,
+    "D2": 0.2842
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "Allergic to latex - causes contact dermatitis.",
+    "start": 114,
+    "end": 160,
+    "confidence": 0.962
+   }
+  },
+  {
+   "claim": "Lisinopril 10mg o.d. from the pharmacy record of 2025-02-15 is missing from the GP letter of 2026-03-16.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2286,
+   "supported": 0.555,
+   "contradicted": 0.0777,
+   "not_stated": 0.3362,
+   "not_a_claim": 0.0311,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0877,
+    "D2": 0.9123
+   },
+   "source": "D2"
+  },
+  {
+   "claim": "Metformin dose or timing differs between the pharmacy record of 2025-02-15 which says '500 mg b.i.d.' and the GP letter of 2026-03-16 which says '1000 mg cada 12 horas'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3714,
+   "supported": 0.3604,
+   "contradicted": 0.1315,
+   "not_stated": 0.4553,
+   "not_a_claim": 0.0528,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.4949,
+    "D2": 0.5051
+   },
+   "source": null
+  },
+  {
+   "claim": "Levotiroxina 50 microgramos una vez al d\u00eda en ayunas is new in the GP letter of 2026-03-16",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1978,
+   "supported": 0.993,
+   "contradicted": 0.0033,
+   "not_stated": 0.0023,
+   "not_a_claim": 0.0015,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0015,
+    "D2": 0.9985
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+    "start": 267,
+    "end": 319,
+    "confidence": 0.998
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1,
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.3604
+ },
+ "timing": {
+  "read_ms": 131,
+  "total_ms": 133
+ },
+ "_credits": "5"
+}

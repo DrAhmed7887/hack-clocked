@@ -1,0 +1,154 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5583,
+ "ungrounded": 0.4417,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9709,
+   "share_of_answer": 0.5421,
+   "claims": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0157,
+   "share_of_answer": 0.0088,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0133,
+   "share_of_answer": 0.0074,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "No allergy conflicts were identified.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0623,
+   "supported": 0.0175,
+   "contradicted": 0.0089,
+   "not_stated": 0.9214,
+   "not_a_claim": 0.0522,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3045,
+    "D2": 0.3351,
+    "D3": 0.3603
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "Allergic to latex - causes contact dermatitis.",
+    "start": 175,
+    "end": 221,
+    "confidence": 0.998
+   }
+  },
+  {
+   "claim": "Metformin 500mg b.i.d. in the discharge summary of 2024-06-06 and metformin 500mg bd in the clinic note of 2024-09-16 is missing from the pharmacy record of 2025-12-01.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2828,
+   "supported": 0.3501,
+   "contradicted": 0.0145,
+   "not_stated": 0.6218,
+   "not_a_claim": 0.0136,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.0174,
+    "D2": 0.0274,
+    "D3": 0.9552
+   },
+   "source": null
+  },
+  {
+   "claim": "Lisinopril 10mg daily in the discharge summary of 2024-06-06 and lisinopril 10mg OD in the clinic note of 2024-09-16 differs from lisinopril 20mg OD in the pharmacy record of 2025-12-01.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3131,
+   "supported": 0.377,
+   "contradicted": 0.0655,
+   "not_stated": 0.5435,
+   "not_a_claim": 0.0141,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.0426,
+    "D2": 0.0453,
+    "D3": 0.9121
+   },
+   "source": null
+  },
+  {
+   "claim": "Amlodipine 5mg o.d. is new in the pharmacy record of 2025-12-01.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1077,
+   "supported": 0.9949,
+   "contradicted": 0.0021,
+   "not_stated": 0.0021,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.001,
+    "D2": 0.0012,
+    "D3": 0.9978
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "amlodipine 5mg o.d.",
+    "start": 177,
+    "end": 196,
+    "confidence": 0.934
+   }
+  },
+  {
+   "claim": "Warfarin was stopped in the pharmacy record of 2025-12-01 compared to the discharge summary of 2024-06-06 and the clinic note of 2024-09-16",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.234,
+   "supported": 0.9955,
+   "contradicted": 0.002,
+   "not_stated": 0.0016,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0011,
+    "D2": 0.001,
+    "D3": 0.9979
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarin stopped on 2025-12-01",
+    "start": 199,
+    "end": 229,
+    "confidence": 0.996
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1,
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.0175
+ },
+ "timing": {
+  "read_ms": 174,
+  "total_ms": 176
+ },
+ "_credits": "7"
+}

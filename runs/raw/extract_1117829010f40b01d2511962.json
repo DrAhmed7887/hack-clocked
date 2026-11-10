@@ -1,0 +1,386 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "hypothyroidism",
+    "essential hypertension"
+   ],
+   "items": [
+    {
+     "value": "hypothyroidism",
+     "start": 157,
+     "end": 171,
+     "confidence": 0.9999999936988764,
+     "p_verify": 0.9999999936988764
+    },
+    {
+     "value": "essential hypertension",
+     "start": 179,
+     "end": 201,
+     "confidence": 0.9999999958761603,
+     "p_verify": 0.9999999958761603
+    }
+   ],
+   "confidence": 0.9999999936988764
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 10 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": "atorvastatin 20 mg at night",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 217,
+     "end": 247,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 219,
+       "end": 229,
+       "confidence": 0.9999999998278275,
+       "p_verify": 0.9999999998278275
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 230,
+       "end": 235,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 236,
+       "end": 246,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg once daily",
+       "start": 219,
+       "end": 246,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 247,
+     "end": 302,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 249,
+       "end": 267,
+       "confidence": 0.999999999839092,
+       "p_verify": 0.999999999839092
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 268,
+       "end": 282,
+       "p_start": 1,
+       "p_close": 0.881,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.881
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 292,
+       "end": 301,
+       "p_start": 0.989,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.989
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 249,
+       "end": 301,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 302,
+     "end": 332,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 304,
+       "end": 316,
+       "confidence": 0.9999999997284466,
+       "p_verify": 0.9999999997284466
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 317,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 323,
+       "end": 331,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.499,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin",
+         "start": 304,
+         "p_verify": 0.928
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg at night",
+       "start": 304,
+       "end": 331,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 332,
+     "end": 390,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 334,
+       "end": 347,
+       "confidence": 0.9999999998119085,
+       "p_verify": 0.9999999998119085
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 348,
+       "end": 361,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 362,
+       "end": 389,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 334,
+       "end": 389,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 390,
+     "end": 420,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 392,
+       "end": 402,
+       "confidence": 0.999999999685085,
+       "p_verify": 0.999999999685085
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 403,
+       "end": 409,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 410,
+       "end": 420,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 392,
+       "end": 420,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 191,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 63,
+    "locate": 0,
+    "verify": 18,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 46,
+    "resolve": 17,
+    "extend": 0,
+    "contest": 41,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 105,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 191,
+  "server_ms": 488
+ },
+ "_credits": "8"
+}

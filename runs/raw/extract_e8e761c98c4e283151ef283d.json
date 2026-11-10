@@ -1,0 +1,334 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 184,
+   "end": 208,
+   "confidence": 0.9999999996389741,
+   "p_verify": 0.9999999996389741
+  },
+  "problems": {
+   "value": [
+    "Known essential hypertension.",
+    "Known atrial fibrillation."
+   ],
+   "items": [
+    {
+     "value": "Known essential hypertension.",
+     "start": 126,
+     "end": 155,
+     "confidence": 0.999999999857264,
+     "p_verify": 0.999999999857264
+    },
+    {
+     "value": "Known atrial fibrillation.",
+     "start": 156,
+     "end": 182,
+     "confidence": 0.9999999998704951,
+     "p_verify": 0.9999999998704951
+    }
+   ],
+   "confidence": 0.999999999857264
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": "atorvastatin 20 mg at night",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 10 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 223,
+     "end": 254,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 225,
+       "end": 235,
+       "confidence": 0.9999999997295035,
+       "p_verify": 0.9999999997295035
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 236,
+       "end": 242,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 243,
+       "end": 253,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 225,
+       "end": 253,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 254,
+     "end": 284,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 256,
+       "end": 268,
+       "confidence": 0.9999999998340099,
+       "p_verify": 0.9999999998340099
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 269,
+       "end": 274,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 275,
+       "end": 283,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.498,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 256,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg at night",
+       "start": 256,
+       "end": 283,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 284,
+     "end": 313,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 286,
+       "end": 296,
+       "confidence": 0.9999999997893372,
+       "p_verify": 0.9999999997893372
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 297,
+       "end": 301,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 302,
+       "end": 312,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg once daily",
+       "start": 286,
+       "end": 312,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.987,
+       "p_blank": 0.987
+      }
+     }
+    },
+    {
+     "start": 313,
+     "end": 342,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 315,
+       "end": 325,
+       "confidence": 0.9999999996155602,
+       "p_verify": 0.9999999996155602
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 326,
+       "end": 331,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 332,
+       "end": 342,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg once daily",
+       "start": 315,
+       "end": 342,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 160,
+  "forwards": {
+   "fields": [
+    4,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 3,
+    "generate": 54,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 1,
+    "point": 33,
+    "resolve": 14,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 80,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 160,
+  "server_ms": 165
+ },
+ "_credits": "7"
+}

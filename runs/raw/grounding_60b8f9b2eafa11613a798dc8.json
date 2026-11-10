@@ -1,0 +1,60 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5839,
+ "ungrounded": 0.4161,
+ "verdict": "ungrounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.895,
+   "share_of_answer": 0.5226,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.075,
+   "share_of_answer": 0.0438,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.03,
+   "share_of_answer": 0.0175,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict: the discharge summary of 2024-04-14 says 'latex - causes contact dermatitis'; the GP letter of 2024-04-15 says 'Sin alergias medicamentosas conocidas.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 1,
+   "supported": 0.5839,
+   "contradicted": 0.3397,
+   "not_stated": 0.046,
+   "not_a_claim": 0.0303,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.895,
+    "D2": 0.075,
+    "D3": 0.03
+   },
+   "source": "D1"
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.5839
+ },
+ "timing": {
+  "read_ms": 66,
+  "total_ms": 67
+ },
+ "_credits": "3"
+}

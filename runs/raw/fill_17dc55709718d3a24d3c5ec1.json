@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The pharmacy record of 2025-02-15 and the GP letter of 2026-03-16 both list a latex allergy. Lisinopril 10mg o.d. from the pharmacy record of 2025-02-15 is missing from the GP letter of 2026-03-16. Metformin dose or timing differs between the pharmacy record of 2025-02-15 which says '500 mg b.i.d.' and the GP letter of 2026-03-16 which says '1000 mg cada 12 horas'. Levotiroxina 50 microgramos una vez al d\u00eda en ayunas is new in the GP letter of 2026-03-16",
+   "confidence": 0.9054832769399642,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 16,
+  "generate_ms": 513,
+  "total_ms": 537,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 576,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "21"
+}

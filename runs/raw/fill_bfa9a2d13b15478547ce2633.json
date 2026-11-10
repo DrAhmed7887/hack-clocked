@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The discharge summary of 2024-04-14 notes 'latex - causes contact dermatitis' while the GP letter of 2024-04-15 says 'Sin alergias medicamentosas conocidas.'. Amlodipine dose differs between the discharge summary of 2024-04-14, the GP letter of 2024-04-15, and the pharmacy record of 2025-09-17. Atorvastatin was 'atorvastatin stopped on 2025-09-17' according to the pharmacy record of 2025-09-17, which differs from the discharge summary of 2024-04-14 and the GP letter of 2024-04-15. Insulin glargine 'insulin glargine 16 units ON' is new in the pharmacy record of 2025-09-17",
+   "confidence": 0.9309339947967924,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 593,
+  "total_ms": 623,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 688,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "25"
+}

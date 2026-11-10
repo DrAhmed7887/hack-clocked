@@ -24,6 +24,16 @@ jobs:
           python data/generate.py
           python data/make_hard.py
           git diff --exit-code data/packets data/packets_hard
+      - name: Evals reproduce from the recorded Clocked responses (no key)
+        run: |
+          python eval/score.py 0 clean
+          python eval/score.py 0 hard
+          HANDOFF_NO_NORMALIZE=1 python eval/score.py 0 hard
+          python eval/score_summary.py clean
+          python eval/score_summary.py hard
+          python eval/score_crosscheck.py clean
+          python eval/score_crosscheck.py hard
+          git diff --exit-code eval
       - name: Secret scan (whole history)
         uses: gitleaks/gitleaks-action@v2
         env:

@@ -1,0 +1,166 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7254,
+ "ungrounded": 0.2746,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D4",
+   "share": 0.7371,
+   "share_of_answer": 0.5347,
+   "claims": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.1321,
+   "share_of_answer": 0.0958,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0924,
+   "share_of_answer": 0.067,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0384,
+   "share_of_answer": 0.0279,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2025-07-04 says 'nil known.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0836,
+   "supported": 0.9926,
+   "contradicted": 0.0028,
+   "not_stated": 0.0028,
+   "not_a_claim": 0.0018,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0016,
+    "D2": 0.0017,
+    "D3": 0.994,
+    "D4": 0.0027
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "Allergies: nil known.",
+    "start": 179,
+    "end": 200,
+    "confidence": 0.995
+   }
+  },
+  {
+   "claim": "' while the GP letter of 2025-09-23 says 'l\u00e1tex (dermatitis de contacto)'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.119,
+   "supported": 0.9764,
+   "contradicted": 0.0118,
+   "not_stated": 0.0064,
+   "not_a_claim": 0.0053,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0031,
+    "D2": 0.0042,
+    "D3": 0.0037,
+    "D4": 0.989
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "Alergia: l\u00e1tex (dermatitis de contacto).",
+    "start": 149,
+    "end": 189,
+    "confidence": 0.998
+   }
+  },
+  {
+   "claim": "Amlodipine dose or timing differs between the clinic note of 2024-11-22, pharmacy record of 2025-05-04, discharge summary of 2025-07-04, and GP letter of 2025-09-23.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2653,
+   "supported": 0.2431,
+   "contradicted": 0.181,
+   "not_stated": 0.5233,
+   "not_a_claim": 0.0525,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.2029,
+    "D2": 0.113,
+    "D3": 0.1266,
+    "D4": 0.5576
+   },
+   "source": null
+  },
+  {
+   "claim": "Insulin glargine was stopped in the GP letter of 2025-09-23 compared to the clinic note of 2024-11-22, pharmacy record of 2025-05-04, and discharge summary of 2025-07-04.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2733,
+   "supported": 0.9795,
+   "contradicted": 0.0074,
+   "not_stated": 0.0088,
+   "not_a_claim": 0.0042,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0038,
+    "D2": 0.0039,
+    "D3": 0.0022,
+    "D4": 0.9901
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "insulina glargina suspendido el 2025-09-23",
+    "start": 295,
+    "end": 337,
+    "confidence": 0.986
+   }
+  },
+  {
+   "claim": "Warfarin is missing from the GP letter of 2025-09-23 but was in the clinic note of 2024-11-22, pharmacy record of 2025-05-04, and discharge summary of 2025-07-04",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2588,
+   "supported": 0.7498,
+   "contradicted": 0.0258,
+   "not_stated": 0.2023,
+   "not_a_claim": 0.0221,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.27,
+    "D2": 0.0975,
+    "D3": 0.0214,
+    "D4": 0.611
+   },
+   "source": "D4"
+  }
+ ],
+ "unsupported_claims": [
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.2431
+ },
+ "timing": {
+  "read_ms": 192,
+  "total_ms": 195
+ },
+ "_credits": "8"
+}

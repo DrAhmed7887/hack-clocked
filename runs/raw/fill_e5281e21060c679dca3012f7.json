@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The discharge summary of 2025-12-19 lists 'atorvastatin 20mg ON'. The clinic note of 2025-03-19 states 'levothyroxine 50 mcg mane, before food', the GP letter of 2025-11-01 states 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas', and the discharge summary of 2025-12-19 states 'levothyroxine 75 mcg OD before breakfast'. The clinic note of 2025-03-19 lists 'lisinopril 10 mg OD' and the GP letter of 2025-11-01 lists 'lisinopril 10 mg una vez al d\u00eda'",
+   "confidence": 0.9729355489787627,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 443,
+  "total_ms": 463,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 320,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "18"
+}

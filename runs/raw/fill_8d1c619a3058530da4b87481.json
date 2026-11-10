@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "No allergy conflicts were identified. Atorvastatin 20 mg ON is missing from the pharmacy record of 2025-09-16 compared to the discharge summary of 2024-06-19, the GP letter of 2025-06-01, and the clinic note of 2025-07-20. Levothyroxine 75 micrograms OD before breakfast in the pharmacy record of 2025-09-16 differs from the discharge summary of 2024-06-19, the GP letter of 2025-06-01, and the clinic note of 2025-07-20. Omeprazole was stopped on 2025-09-16 according to the pharmacy record of 2025-09-16, whereas it was listed in the discharge summary of 2024-06-19, the GP letter of 2025-06-01, and the clinic note of 2025-07-20",
+   "confidence": 0.957757725005718,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 22,
+  "generate_ms": 758,
+  "total_ms": 790,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 944,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "31"
+}

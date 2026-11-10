@@ -1,0 +1,313 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "line": "insulin glargine 16 units at night",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": "atorvastatin 20 mg at night",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 5 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 127,
+     "end": 164,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 129,
+       "end": 145,
+       "confidence": 0.9999999996445059,
+       "p_verify": 0.9999999996445059
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 146,
+       "end": 154,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 155,
+       "end": 163,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units at night",
+       "start": 129,
+       "end": 163,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 0.996,
+       "confidence": 0.996
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 164,
+     "end": 194,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 166,
+       "end": 178,
+       "confidence": 0.9999999995372231,
+       "p_verify": 0.9999999995372231
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 179,
+       "end": 184,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 185,
+       "end": 193,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.497,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 166,
+         "p_verify": 0.764
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg at night",
+       "start": 166,
+       "end": 193,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 194,
+     "end": 249,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 196,
+       "end": 214,
+       "confidence": 0.9999999994599513,
+       "p_verify": 0.9999999994599513
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 215,
+       "end": 229,
+       "p_start": 1,
+       "p_close": 0.993,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.993
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 239,
+       "end": 248,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 196,
+       "end": 248,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.988,
+       "p_blank": 0.988
+      }
+     }
+    },
+    {
+     "start": 249,
+     "end": 277,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 251,
+       "end": 261,
+       "confidence": 0.9999999995466906,
+       "p_verify": 0.9999999995466906
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 262,
+       "end": 266,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 267,
+       "end": 277,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg once daily",
+       "start": 251,
+       "end": 277,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 165,
+  "forwards": {
+   "fields": [
+    4,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 5,
+    "branches": 1,
+    "generate": 62,
+    "locate": 0,
+    "verify": 14,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 14,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 80,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 165,
+  "server_ms": 356
+ },
+ "_credits": "7"
+}

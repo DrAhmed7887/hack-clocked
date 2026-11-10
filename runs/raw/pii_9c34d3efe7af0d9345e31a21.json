@@ -1,0 +1,42 @@
+{
+ "model": "clocked-1.0",
+ "entities": [
+  {
+   "type": "person",
+   "value": "synthetic case P016",
+   "start": 99,
+   "end": 118,
+   "confidence": 0.502,
+   "source": "model",
+   "mentions": 1
+  }
+ ],
+ "counts": {
+  "person": 1
+ },
+ "threshold": 0.5,
+ "instructions_used": "default",
+ "mentions": {
+  "candidates": 0,
+  "variants": 0,
+  "reads": 0,
+  "verified": 0,
+  "occurrences": {
+   "read": 0,
+   "kept": 0
+  },
+  "rejected": {},
+  "spans": 0,
+  "ms": 0
+ },
+ "checks": {
+  "trimmed": 0,
+  "split": 0,
+  "rejected": {}
+ },
+ "timing": {
+  "read_ms": 121,
+  "total_ms": 122
+ },
+ "_credits": "5"
+}

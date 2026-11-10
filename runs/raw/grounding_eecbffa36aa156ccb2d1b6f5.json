@@ -1,0 +1,158 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.6774,
+ "ungrounded": 0.3226,
+ "verdict": "contradicted",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D2",
+   "share": 0.6021,
+   "share_of_answer": 0.4078,
+   "claims": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.3979,
+   "share_of_answer": 0.2695,
+   "claims": [
+    2
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict new, the discharge summary of 2026-03-26 says 'No known drug allergies.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1207,
+   "supported": 0.3823,
+   "contradicted": 0.5293,
+   "not_stated": 0.0355,
+   "not_a_claim": 0.0528,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.7478,
+    "D2": 0.2522
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "No known drug allergies.",
+    "start": 233,
+    "end": 257,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "' and the clinic note of 2026-06-13 says 'latex (contact dermatitis)'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.096,
+   "supported": 0.9951,
+   "contradicted": 0.0024,
+   "not_stated": 0.0012,
+   "not_a_claim": 0.0013,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0013,
+    "D2": 0.9987
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "latex (contact dermatitis).",
+    "start": 151,
+    "end": 178,
+    "confidence": 0.998
+   }
+  },
+  {
+   "claim": "Amlodipine missing from the newest record, the discharge summary of 2026-03-26 says 'amlodipine 5 mg once daily' and the clinic note of 2026-06-13 does not list it.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.225,
+   "supported": 0.8128,
+   "contradicted": 0.055,
+   "not_stated": 0.0923,
+   "not_a_claim": 0.0399,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9453,
+    "D2": 0.0547
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "amlodipine 5 mg once daily",
+    "start": 329,
+    "end": 355,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Insulin glargine stopped, the discharge summary of 2026-03-26 says 'insulin glargine 16 units at night' and the clinic note of 2026-06-13 says 'insulin glargine stopped on 2026-06-13'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2524,
+   "supported": 0.9762,
+   "contradicted": 0.0093,
+   "not_stated": 0.0105,
+   "not_a_claim": 0.0039,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0059,
+    "D2": 0.9941
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D1",
+    "quote": "insulin glargine 16 units at night",
+    "start": 416,
+    "end": 450,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Levothyroxine dose differs, the discharge summary of 2026-03-26 says 'levothyroxine 50 micrograms once daily before breakfast' and the clinic note of 2026-06-13 says 'levothyroxine 75 micrograms once daily before breakfast'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3059,
+   "supported": 0.3479,
+   "contradicted": 0.4845,
+   "not_stated": 0.0838,
+   "not_a_claim": 0.0838,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.5694,
+    "D2": 0.4306
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 micrograms once daily before breakfast",
+    "start": 358,
+    "end": 413,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  4
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 4,
+  "supported": 0.3479
+ },
+ "timing": {
+  "read_ms": 156,
+  "total_ms": 158
+ },
+ "_credits": "7"
+}

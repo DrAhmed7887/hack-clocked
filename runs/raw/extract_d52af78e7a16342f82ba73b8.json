@@ -1,0 +1,321 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- hyperlipidaemia\nHistory of chronic kidney disease stage 3a."
+   ],
+   "items": [
+    {
+     "value": "- hyperlipidaemia\nHistory of chronic kidney disease stage 3a.",
+     "start": 173,
+     "end": 234,
+     "confidence": 0.9999442749955714,
+     "p_verify": 0.9999442749955714
+    }
+   ],
+   "confidence": 0.9999442749955714
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "OD",
+     "line": null,
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "o.d",
+     "line": "omeprazole 20 mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": "20mg",
+     "drug": "atorvastatin",
+     "frequency": "ON",
+     "line": "atorvastatin 20mg ON",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "OD",
+     "line": "bisoprolol 2.5 mg OD",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 249,
+     "end": 271,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 251,
+       "end": 261,
+       "confidence": 0.9999999995813853,
+       "p_verify": 0.9999999995813853
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 262,
+       "end": 267,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 268,
+       "end": 270,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": null,
+       "confidence": 0.965,
+       "p_blank": 0,
+       "rejected_value": "lisinopril 10 mg OD",
+       "rejected_p_verify": 0.035,
+       "reason": "verification_rejected"
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 271,
+     "end": 295,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 273,
+       "end": 283,
+       "confidence": 0.9999999997813998,
+       "p_verify": 0.9999999997813998
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 284,
+       "end": 289,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d",
+       "start": 290,
+       "end": 293,
+       "p_start": 1,
+       "p_close": 0.672,
+       "p_point": 0.493,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "omeprazole 20 mg o.d.",
+         "start": 273,
+         "p_verify": 0.999
+        }
+       ],
+       "confidence": 0.672
+      },
+      "line": {
+       "value": "omeprazole 20 mg o.d.",
+       "start": 273,
+       "end": 294,
+       "p_start": 1,
+       "p_close": 0.98,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.98
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 295,
+     "end": 318,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 297,
+       "end": 309,
+       "confidence": 0.9999999998332367,
+       "p_verify": 0.9999999998332367
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 310,
+       "end": 314,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 315,
+       "end": 317,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20mg ON",
+       "start": 297,
+       "end": 317,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 318,
+     "end": 340,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 320,
+       "end": 330,
+       "confidence": 0.9999999997247675,
+       "p_verify": 0.9999999997247675
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 331,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 338,
+       "end": 340,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg OD",
+       "start": 320,
+       "end": 340,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 163,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 60,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 14,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 79,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 163,
+  "server_ms": 260
+ },
+ "_credits": "7"
+}

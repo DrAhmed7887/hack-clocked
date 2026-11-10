@@ -1,0 +1,117 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8699,
+ "ungrounded": 0.1301,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.8671,
+   "share_of_answer": 0.7543,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0869,
+   "share_of_answer": 0.0756,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0461,
+   "share_of_answer": 0.0401,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Levothyroxine dose differs: 'levothyroxine 50 micrograms once daily before breakfast' from the clinic note of 2024-08-19, 'levothyroxine 50 micrograms once daily before breakfast' from the pharmacy record of 2024-12-07, and 'levothyroxine 75 micrograms once daily before breakfast' from the discharge summary of 2024-12-26.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4764,
+   "supported": 0.7396,
+   "contradicted": 0.045,
+   "not_stated": 0.152,
+   "not_a_claim": 0.0634,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.2066,
+    "D2": 0.1034,
+    "D3": 0.69
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "levothyroxine 75 micrograms once daily before breakfast",
+    "start": 195,
+    "end": 250,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril stopped: 'lisinopril 10 mg once daily' from the clinic note of 2024-08-19, 'lisinopril 10 mg once daily' from the pharmacy record of 2024-12-07, and 'lisinopril stopped on 2024-12-26' from the discharge summary of 2024-12-26.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3481,
+   "supported": 0.984,
+   "contradicted": 0.0091,
+   "not_stated": 0.0038,
+   "not_a_claim": 0.0032,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0079,
+    "D2": 0.0103,
+    "D3": 0.9818
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10 mg once daily",
+    "start": 242,
+    "end": 269,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Salbutamol inhaler new: 'salbutamol inhaler 100 micrograms, 2 puffs as needed' from the discharge summary of 2024-12-26",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1755,
+   "supported": 0.9978,
+   "contradicted": 0.001,
+   "not_stated": 0.0006,
+   "not_a_claim": 0.0006,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0005,
+    "D2": 0.0006,
+    "D3": 0.9988
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+    "start": 288,
+    "end": 340,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.7396
+ },
+ "timing": {
+  "read_ms": 138,
+  "total_ms": 141
+ },
+ "_credits": "6"
+}

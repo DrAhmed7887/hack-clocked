@@ -32,7 +32,7 @@ Conflicts are never resolved for the clinician, and the newest record is never a
 | 1 | **Extract** (`/clocked/extract`) | Copies problems, allergies and each medication line (as records with `drug`, `dose`, `frequency`, `stopped`, `line`) from every document, with exact character positions. |
 | 2 | (fixed rules) | Normalise prescriber shorthand and Spanish (BD = cada 12 horas = twice daily; 2,5 mg = 2.5 mg; metformina = metformin), then label every fact. Unrecognised wording is compared as written, never assumed equal. **No model decides a label.** |
 | 3 | **Fill** (`/clocked/fill`, `generate`) | Drafts one sentence per discrepancy, quoting the records. |
-| 4 | **Verify** (`/clocked/grounding`) | Checks each drafted sentence against the **original** records. Unsupported sentences are removed and shown. A conflict sentence is checked one record at a time, because as a whole it is "contradicted" by design. |
+| 4 | **Verify** (`/clocked/grounding`) | Checks each drafted sentence against the **original** records. Unsupported sentences are removed and shown. A conflict sentence rebuilt by the rules (R7b) is checked one record at a time, because as a whole it is "contradicted" by design. |
 | 0 | **Protect** (`/clocked/pii`) | Privacy gate before anything else runs: each record is scanned for names, contact details, birth dates and ID numbers. Only the synthetic case label is allow-listed; any other hit stops processing. |
 | 5 | **Compare** (`/clocked/compare`) | An independent conflict detector on the raw records. Its conflicts are matched against the rules' findings, and any conflict no rule explains is shown to the clinician. |
 

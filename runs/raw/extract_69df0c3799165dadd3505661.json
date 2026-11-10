@@ -1,0 +1,263 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 116,
+   "end": 140,
+   "confidence": 0.9999999993675317,
+   "p_verify": 0.9999999993675317
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "75 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "omeprazole",
+     "frequency": null,
+     "stopped": "stopped on 2025-09-16"
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 155,
+     "end": 186,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 157,
+       "end": 166,
+       "confidence": 0.9999999993327444,
+       "p_verify": 0.9999999993327444
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 167,
+       "end": 173,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 174,
+       "end": 185,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 186,
+     "end": 244,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 188,
+       "end": 201,
+       "confidence": 0.9999999995414024,
+       "p_verify": 0.9999999995414024
+      },
+      "dose": {
+       "value": "75 micrograms",
+       "start": 202,
+       "end": 215,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 216,
+       "end": 243,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 244,
+     "end": 279,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 246,
+       "end": 256,
+       "confidence": 0.9999999853996089,
+       "p_verify": 0.9999999853996089
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.953,
+       "p_blank": 0.953
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0,
+       "rejected_value": "stopped on 2025-09-16",
+       "rejected_p_verify": 0.002,
+       "reason": "verification_rejected"
+      },
+      "stopped": {
+       "value": "stopped on 2025-09-16",
+       "start": 257,
+       "end": 278,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 279,
+     "end": 333,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 281,
+       "end": 299,
+       "confidence": 0.9999999989549844,
+       "p_verify": 0.9999999989549844
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 300,
+       "end": 314,
+       "p_start": 1,
+       "p_close": 0.992,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.992
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 324,
+       "end": 333,
+       "p_start": 0.994,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.994
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.985,
+       "p_blank": 0.985
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 159,
+  "forwards": {
+   "fields": [
+    4,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 61,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 33,
+    "resolve": 11,
+    "extend": 0,
+    "contest": 25,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 73,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 159,
+  "server_ms": 523
+ },
+ "_credits": "7"
+}

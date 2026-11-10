@@ -1,0 +1,349 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex (contact dermatitis)"
+   ],
+   "items": [
+    {
+     "value": "latex (contact dermatitis)",
+     "start": 209,
+     "end": 235,
+     "confidence": 0.999999999685085,
+     "p_verify": 0.999999999685085
+    }
+   ],
+   "confidence": 0.999999999685085
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known type 2 diabetes.",
+    "Known hyperlipidaemia.",
+    "Known atrial fibrillation."
+   ],
+   "items": [
+    {
+     "value": "Known type 2 diabetes.",
+     "start": 126,
+     "end": 148,
+     "confidence": 0.9999999998674123,
+     "p_verify": 0.9999999998674123
+    },
+    {
+     "value": "Known hyperlipidaemia.",
+     "start": 149,
+     "end": 171,
+     "confidence": 0.9999999997704758,
+     "p_verify": 0.9999999997704758
+    },
+    {
+     "value": "Known atrial fibrillation.",
+     "start": 172,
+     "end": 198,
+     "confidence": 0.9999999997295035,
+     "p_verify": 0.9999999997295035
+    }
+   ],
+   "confidence": 0.9999999997295035
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    },
+    {
+     "dose": "1000 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "line": "metformin 1000 mg twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": "atorvastatin 20 mg at night",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 251,
+     "end": 309,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 253,
+       "end": 266,
+       "confidence": 0.9999999997052851,
+       "p_verify": 0.9999999997052851
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 267,
+       "end": 280,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 281,
+       "end": 308,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 253,
+       "end": 308,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 309,
+     "end": 364,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 311,
+       "end": 329,
+       "confidence": 0.9999999988477994,
+       "p_verify": 0.9999999988477994
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 330,
+       "end": 344,
+       "p_start": 1,
+       "p_close": 0.995,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.995
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 354,
+       "end": 363,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 311,
+       "end": 363,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 364,
+     "end": 396,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 366,
+       "end": 375,
+       "confidence": 0.9999999997086781,
+       "p_verify": 0.9999999997086781
+      },
+      "dose": {
+       "value": "1000 mg",
+       "start": 376,
+       "end": 383,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 384,
+       "end": 395,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 1000 mg twice daily",
+       "start": 366,
+       "end": 395,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 396,
+     "end": 425,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 398,
+       "end": 410,
+       "confidence": 0.9999999997210531,
+       "p_verify": 0.9999999997210531
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 411,
+       "end": 416,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 417,
+       "end": 425,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.498,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 398,
+         "p_verify": 0.999
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg at night",
+       "start": 398,
+       "end": 425,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 172,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 2,
+    "generate": 64,
+    "locate": 0,
+    "verify": 25,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 14,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 79,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 172,
+  "server_ms": 263
+ },
+ "_credits": "7"
+}

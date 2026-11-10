@@ -1,0 +1,133 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9963,
+ "ungrounded": 0.0037,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.5138,
+   "share_of_answer": 0.5119,
+   "claims": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.4862,
+   "share_of_answer": 0.4844,
+   "claims": [
+    1,
+    3
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2026-03-26 says 'No known drug allergies'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2074,
+   "supported": 0.997,
+   "contradicted": 0.0011,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.001,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9987,
+    "D2": 0.0013
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "No known drug allergies.",
+    "start": 233,
+    "end": 257,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The clinic note of 2026-06-13 says 'latex (contact dermatitis)'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1981,
+   "supported": 0.9964,
+   "contradicted": 0.0016,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0011,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.9992
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "latex (contact dermatitis).",
+    "start": 151,
+    "end": 178,
+    "confidence": 0.993
+   }
+  },
+  {
+   "claim": "The discharge summary of 2026-03-26 says 'levothyroxine 50 micrograms once daily before breakfast'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3065,
+   "supported": 0.9961,
+   "contradicted": 0.0014,
+   "not_stated": 0.0011,
+   "not_a_claim": 0.0014,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9984,
+    "D2": 0.0016
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 micrograms once daily before breakfast",
+    "start": 358,
+    "end": 413,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The clinic note of 2026-06-13 says 'levothyroxine 75 micrograms once daily before breakfast'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2879,
+   "supported": 0.9959,
+   "contradicted": 0.002,
+   "not_stated": 0.001,
+   "not_a_claim": 0.001,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0012,
+    "D2": 0.9988
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "levothyroxine 75 micrograms once daily before breakfast",
+    "start": 250,
+    "end": 305,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 3,
+  "supported": 0.9959
+ },
+ "timing": {
+  "read_ms": 122,
+  "total_ms": 124
+ },
+ "_credits": "5"
+}

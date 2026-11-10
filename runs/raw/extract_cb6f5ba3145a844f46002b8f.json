@@ -1,0 +1,371 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "hyperlipidaemia"
+   ],
+   "items": [
+    {
+     "value": "hyperlipidaemia",
+     "start": 227,
+     "end": 242,
+     "confidence": 0.9999999993516369,
+     "p_verify": 0.9999999993516369
+    }
+   ],
+   "confidence": 0.9999999993516369
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500mg",
+     "drug": "metformin",
+     "frequency": "bd",
+     "line": "metformin 500mg bd",
+     "stopped": null
+    },
+    {
+     "dose": "50 mcg",
+     "drug": "levothyroxine",
+     "frequency": "OD before breakfast",
+     "line": "levothyroxine 50 mcg OD before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "20mg",
+     "drug": "omeprazole",
+     "frequency": "daily",
+     "line": "omeprazole 20mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "ON",
+     "line": "atorvastatin 20 mg ON",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "2 puffs when required",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs when required",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 257,
+     "end": 278,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 259,
+       "end": 268,
+       "confidence": 0.9999999996302751,
+       "p_verify": 0.9999999996302751
+      },
+      "dose": {
+       "value": "500mg",
+       "start": 269,
+       "end": 274,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "bd",
+       "start": 275,
+       "end": 277,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500mg bd",
+       "start": 259,
+       "end": 277,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 278,
+     "end": 321,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 280,
+       "end": 293,
+       "confidence": 0.9999999998458757,
+       "p_verify": 0.9999999998458757
+      },
+      "dose": {
+       "value": "50 mcg",
+       "start": 294,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD before breakfast",
+       "start": 301,
+       "end": 320,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 mcg OD before breakfast",
+       "start": 280,
+       "end": 320,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 321,
+     "end": 345,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 323,
+       "end": 333,
+       "confidence": 0.9999999998452735,
+       "p_verify": 0.9999999998452735
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 334,
+       "end": 338,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 339,
+       "end": 344,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazole 20mg daily",
+       "start": 323,
+       "end": 344,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 345,
+     "end": 369,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 347,
+       "end": 359,
+       "confidence": 0.999999999685085,
+       "p_verify": 0.999999999685085
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 360,
+       "end": 365,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 366,
+       "end": 368,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg ON",
+       "start": 347,
+       "end": 368,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 369,
+     "end": 427,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 371,
+       "end": 389,
+       "confidence": 0.9999999993358497,
+       "p_verify": 0.9999999993358497
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 390,
+       "end": 404,
+       "p_start": 1,
+       "p_close": 0.98,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.98
+      },
+      "frequency": {
+       "value": "2 puffs when required",
+       "start": 406,
+       "end": 427,
+       "p_start": 0.991,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.991
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs when required",
+       "start": 371,
+       "end": 427,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 155,
+  "forwards": {
+   "fields": [
+    3,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 36,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 47,
+    "resolve": 15,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 95,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 155,
+  "server_ms": 359
+ },
+ "_credits": "7"
+}

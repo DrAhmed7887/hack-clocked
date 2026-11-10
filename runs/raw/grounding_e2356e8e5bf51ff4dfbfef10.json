@@ -1,0 +1,133 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8785,
+ "ungrounded": 0.1215,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D2",
+   "share": 0.6965,
+   "share_of_answer": 0.6119,
+   "claims": [
+    0,
+    1,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.3035,
+   "share_of_answer": 0.2666,
+   "claims": [
+    2
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Amlodipine stopped, 'amlodipine 5 mg once daily' from the pharmacy record of 2025-05-30 and 'amlodipine stopped on 2025-11-29' from the GP letter of 2025-11-29.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2941,
+   "supported": 0.9494,
+   "contradicted": 0.0184,
+   "not_stated": 0.0129,
+   "not_a_claim": 0.0192,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0094,
+    "D2": 0.9906
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D1",
+    "quote": "amlodipine 5 mg once daily",
+    "start": 129,
+    "end": 155,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Atorvastatin new, 'atorvastatin 20 mg at night' from the GP letter of 2025-11-29.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1489,
+   "supported": 0.996,
+   "contradicted": 0.0019,
+   "not_stated": 0.0011,
+   "not_a_claim": 0.0011,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0011,
+    "D2": 0.9989
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "atorvastatin 20 mg at night",
+    "start": 317,
+    "end": 344,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Insulin glargine missing from the newest record, 'insulin glargine 16 units at night' from the pharmacy record of 2025-05-30.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2298,
+   "supported": 0.9215,
+   "contradicted": 0.0226,
+   "not_stated": 0.0425,
+   "not_a_claim": 0.0134,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9376,
+    "D2": 0.0624
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "insulin glargine 16 units at night",
+    "start": 158,
+    "end": 192,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Warfarin dose differs, 'warfarin 3 mg once daily, dose by INR' from the pharmacy record of 2025-05-30 and 'warfarin 5 mg once daily, dose by INR' from the GP letter of 2025-11-29",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3272,
+   "supported": 0.7312,
+   "contradicted": 0.0964,
+   "not_stated": 0.0648,
+   "not_a_claim": 0.1076,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.273,
+    "D2": 0.727
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D1",
+    "quote": "warfarin 3 mg once daily, dose by INR",
+    "start": 195,
+    "end": 232,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 3,
+  "supported": 0.7312
+ },
+ "timing": {
+  "read_ms": 125,
+  "total_ms": 127
+ },
+ "_credits": "5"
+}

@@ -1,0 +1,119 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9975,
+ "ungrounded": 0.0025,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.3456,
+   "share_of_answer": 0.3448,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.3301,
+   "share_of_answer": 0.3293,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.3242,
+   "share_of_answer": 0.3234,
+   "claims": [
+    0
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2025-07-08 says 'omeprazole 20mg OD'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3246,
+   "supported": 0.9974,
+   "contradicted": 0.0008,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.001,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9975,
+    "D2": 0.0015,
+    "D3": 0.001
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "omeprazole 20mg OD",
+    "start": 247,
+    "end": 265,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The pharmacy record of 2025-10-10 says 'omeprazole 20 mg o.d.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3298,
+   "supported": 0.9977,
+   "contradicted": 0.0007,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.9983,
+    "D3": 0.0011
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "omeprazole 20 mg o.d.",
+    "start": 131,
+    "end": 152,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The GP letter of 2025-12-03 says 'omeprazol 40 mg una vez al d\u00eda'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3455,
+   "supported": 0.9973,
+   "contradicted": 0.0012,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0008,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazol 40 mg una vez al d\u00eda",
+    "start": 214,
+    "end": 244,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.9973
+ },
+ "timing": {
+  "read_ms": 116,
+  "total_ms": 117
+ },
+ "_credits": "5"
+}

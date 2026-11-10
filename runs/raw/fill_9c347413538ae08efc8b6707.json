@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Allergy conflict new, the discharge summary of 2026-03-26 says 'No known drug allergies.' and the clinic note of 2026-06-13 says 'latex (contact dermatitis)'.\nAmlodipine missing from the newest record, the discharge summary of 2026-03-26 says 'amlodipine 5 mg once daily' and the clinic note of 2026-06-13 does not list it.\nInsulin glargine stopped, the discharge summary of 2026-03-26 says 'insulin glargine 16 units at night' and the clinic note of 2026-06-13 says 'insulin glargine stopped on 2026-06-13'.\nLevothyroxine dose differs, the discharge summary of 2026-03-26 says 'levothyroxine 50 micrograms once daily before breakfast' and the clinic note of 2026-06-13 says 'levothyroxine 75 micrograms once daily before breakfast'",
+   "confidence": 0.2805709743325965,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 20,
+  "generate_ms": 602,
+  "total_ms": 627,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 384,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "25"
+}

@@ -1,0 +1,321 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "l\u00e1tex (dermatitis de contacto)"
+   ],
+   "items": [
+    {
+     "value": "l\u00e1tex (dermatitis de contacto)",
+     "start": 158,
+     "end": 188,
+     "confidence": 0.9999999994021547,
+     "p_verify": 0.9999999994021547
+    }
+   ],
+   "confidence": 0.9999999994021547
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- asma"
+   ],
+   "items": [
+    {
+     "value": "- asma",
+     "start": 141,
+     "end": 147,
+     "confidence": 0.9999999994094697,
+     "p_verify": 0.9999999994094697
+    }
+   ],
+   "confidence": 0.9999999994094697
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10 mg",
+     "drug": "amlodipino",
+     "frequency": "una vez al d\u00eda",
+     "line": "amlodipino 10 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "50 microgramos",
+     "drug": "levotiroxina",
+     "frequency": "una vez al d\u00eda en ayunas",
+     "line": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "insulina glargina",
+     "frequency": null,
+     "line": "insulina glargina suspendido el 2025-09-23",
+     "stopped": "suspendido el 2025-09-23"
+    },
+    {
+     "dose": "100 microgramos",
+     "drug": "salbutamol",
+     "frequency": "a demanda",
+     "line": "salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 204,
+     "end": 238,
+     "fields": {
+      "drug": {
+       "value": "amlodipino",
+       "start": 206,
+       "end": 216,
+       "confidence": 0.9999999994747821,
+       "p_verify": 0.9999999994747821
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 217,
+       "end": 222,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 223,
+       "end": 237,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipino 10 mg una vez al d\u00eda",
+       "start": 206,
+       "end": 237,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.992,
+       "p_blank": 0.992
+      }
+     }
+    },
+    {
+     "start": 238,
+     "end": 293,
+     "fields": {
+      "drug": {
+       "value": "levotiroxina",
+       "start": 240,
+       "end": 252,
+       "confidence": 0.9999999997731184,
+       "p_verify": 0.9999999997731184
+      },
+      "dose": {
+       "value": "50 microgramos",
+       "start": 253,
+       "end": 267,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda en ayunas",
+       "start": 268,
+       "end": 292,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+       "start": 240,
+       "end": 292,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.961,
+       "p_blank": 0.961
+      }
+     }
+    },
+    {
+     "start": 293,
+     "end": 338,
+     "fields": {
+      "drug": {
+       "value": "insulina glargina",
+       "start": 295,
+       "end": 312,
+       "confidence": 0.9999999839812175,
+       "p_verify": 0.9999999839812175
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.982,
+       "p_blank": 0.982
+      },
+      "line": {
+       "value": "insulina glargina suspendido el 2025-09-23",
+       "start": 295,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "suspendido el 2025-09-23",
+       "start": 313,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 338,
+     "end": 402,
+     "fields": {
+      "drug": {
+       "value": "salbutamol",
+       "start": 340,
+       "end": 350,
+       "confidence": 0.9999999994624882,
+       "p_verify": 0.9999999994624882
+      },
+      "dose": {
+       "value": "100 microgramos",
+       "start": 361,
+       "end": 376,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "a demanda",
+       "start": 393,
+       "end": 402,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "line": {
+       "value": "salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda",
+       "start": 340,
+       "end": 402,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 220,
+  "forwards": {
+   "fields": [
+    8,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 103,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 1,
+    "point": 33,
+    "resolve": 13,
+    "extend": 14,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 93,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 220,
+  "server_ms": 660
+ },
+ "_credits": "9"
+}

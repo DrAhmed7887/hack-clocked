@@ -1,0 +1,300 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex (contact dermatitis)"
+   ],
+   "items": [
+    {
+     "value": "latex (contact dermatitis)",
+     "start": 214,
+     "end": 240,
+     "confidence": 0.9999999993543711,
+     "p_verify": 0.9999999993543711
+    }
+   ],
+   "confidence": 0.9999999993543711
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "essential hypertension",
+    "gastro-oesophageal reflux disease",
+    "hypothyroidism"
+   ],
+   "items": [
+    {
+     "value": "essential hypertension",
+     "start": 117,
+     "end": 139,
+     "confidence": 0.9999999902615005,
+     "p_verify": 0.9999999902615005
+    },
+    {
+     "value": "gastro-oesophageal reflux disease",
+     "start": 147,
+     "end": 180,
+     "confidence": 0.9999999959009065,
+     "p_verify": 0.9999999959009065
+    },
+    {
+     "value": "hypothyroidism",
+     "start": 188,
+     "end": 202,
+     "confidence": 0.9999999949367773,
+     "p_verify": 0.9999999949367773
+    }
+   ],
+   "confidence": 0.9999999902615005
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "bisoprolol",
+     "frequency": null,
+     "stopped": "stopped on 2026-02-28"
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 256,
+     "end": 314,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 258,
+       "end": 271,
+       "confidence": 0.9999999998294058,
+       "p_verify": 0.9999999998294058
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 272,
+       "end": 285,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 286,
+       "end": 296,
+       "p_start": 1,
+       "p_close": 0.999,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 314,
+     "end": 349,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 316,
+       "end": 326,
+       "confidence": 0.9999999903947875,
+       "p_verify": 0.9999999903947875
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.989,
+       "p_blank": 0.989
+      },
+      "stopped": {
+       "value": "stopped on 2026-02-28",
+       "start": 327,
+       "end": 348,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 349,
+     "end": 379,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 351,
+       "end": 363,
+       "confidence": 0.9999999998640956,
+       "p_verify": 0.9999999998640956
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 364,
+       "end": 369,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 370,
+       "end": 378,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.499,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 351,
+         "p_verify": 0.997
+        }
+       ],
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 379,
+     "end": 415,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 381,
+       "end": 397,
+       "confidence": 0.9999999998640956,
+       "p_verify": 0.9999999998640956
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 398,
+       "end": 406,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 407,
+       "end": 415,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 205,
+  "forwards": {
+   "fields": [
+    7,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 107,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 33,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 24,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 73,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 205,
+  "server_ms": 209
+ },
+ "_credits": "9"
+}

@@ -1,0 +1,119 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9973,
+ "ungrounded": 0.0027,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.359,
+   "share_of_answer": 0.358,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.3318,
+   "share_of_answer": 0.3309,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.3092,
+   "share_of_answer": 0.3084,
+   "claims": [
+    1
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2024-06-06 says 'lisinopril 10mg daily'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3591,
+   "supported": 0.9976,
+   "contradicted": 0.0007,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9977,
+    "D2": 0.0013,
+    "D3": 0.0009
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10mg daily",
+    "start": 292,
+    "end": 313,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The clinic note of 2024-09-16 says 'lisinopril 10mg OD'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3094,
+   "supported": 0.9971,
+   "contradicted": 0.001,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0011,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.001,
+    "D2": 0.997,
+    "D3": 0.002
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "lisinopril 10mg OD",
+    "start": 254,
+    "end": 272,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The pharmacy record of 2025-12-01 says 'lisinopril 20mg OD'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3315,
+   "supported": 0.9974,
+   "contradicted": 0.0011,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0009,
+    "D2": 0.001,
+    "D3": 0.9981
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril 20mg OD",
+    "start": 232,
+    "end": 250,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.9971
+ },
+ "timing": {
+  "read_ms": 111,
+  "total_ms": 113
+ },
+ "_credits": "5"
+}

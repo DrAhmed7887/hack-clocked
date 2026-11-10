@@ -1,0 +1,313 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "o.d.",
+     "line": "omeprazole 20 mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": "500mg",
+     "drug": "metformin",
+     "frequency": "BD",
+     "line": "metformin 500mg BD",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "o.d.",
+     "line": "amlodipine 5 mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": "2.5mg",
+     "drug": "bisoprolol",
+     "frequency": "o.d.",
+     "line": "bisoprolol 2.5mg o.d.",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 129,
+     "end": 153,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 131,
+       "end": 141,
+       "confidence": 0.9999999996411255,
+       "p_verify": 0.9999999996411255
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 142,
+       "end": 147,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 148,
+       "end": 152,
+       "p_start": 1,
+       "p_close": 0.996,
+       "p_point": 0.492,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "omeprazole",
+         "start": 131,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 0.996
+      },
+      "line": {
+       "value": "omeprazole 20 mg o.d.",
+       "start": 131,
+       "end": 152,
+       "p_start": 1,
+       "p_close": 0.932,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.932
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 153,
+     "end": 174,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 155,
+       "end": 164,
+       "confidence": 0.9999999996445059,
+       "p_verify": 0.9999999996445059
+      },
+      "dose": {
+       "value": "500mg",
+       "start": 165,
+       "end": 170,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "BD",
+       "start": 171,
+       "end": 173,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500mg BD",
+       "start": 155,
+       "end": 173,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 174,
+     "end": 197,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 176,
+       "end": 186,
+       "confidence": 0.9999999997295035,
+       "p_verify": 0.9999999997295035
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 187,
+       "end": 191,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 192,
+       "end": 196,
+       "p_start": 1,
+       "p_close": 0.996,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.996
+      },
+      "line": {
+       "value": "amlodipine 5 mg o.d.",
+       "start": 176,
+       "end": 196,
+       "p_start": 1,
+       "p_close": 0.969,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.969
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 197,
+     "end": 220,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 199,
+       "end": 209,
+       "confidence": 0.9999999993909192,
+       "p_verify": 0.9999999993909192
+      },
+      "dose": {
+       "value": "2.5mg",
+       "start": 210,
+       "end": 215,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 216,
+       "end": 220,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5mg o.d.",
+       "start": 199,
+       "end": 220,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 155,
+  "forwards": {
+   "fields": [
+    4,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 60,
+    "locate": 0,
+    "verify": 14,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 32,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 29,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 76,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 155,
+  "server_ms": 271
+ },
+ "_credits": "7"
+}

@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Levothyroxine is new: 'levothyroxine 50 micrograms once daily before breakfast' from the GP letter of 2026-03-16.\nLisinopril is missing from the newest record: 'lisinopril 10 mg once daily' from the pharmacy record of 2025-02-15.\nMetformin dose differs: 'metformin 500 mg twice daily' from the pharmacy record of 2025-02-15 and 'metformin 1000 mg twice daily' from the GP letter of 2026-03-16",
+   "confidence": 0.9828861016919529,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 330,
+  "total_ms": 352,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 288,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "14"
+}

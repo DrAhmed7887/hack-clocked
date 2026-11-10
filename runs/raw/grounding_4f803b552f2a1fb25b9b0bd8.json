@@ -1,0 +1,151 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8553,
+ "ungrounded": 0.1447,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.5212,
+   "share_of_answer": 0.4458,
+   "claims": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.4788,
+   "share_of_answer": 0.4095,
+   "claims": [
+    1,
+    3
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2026-03-26 says 'No known drug allergies.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1144,
+   "supported": 0.9914,
+   "contradicted": 0.0034,
+   "not_stated": 0.002,
+   "not_a_claim": 0.0031,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9975,
+    "D2": 0.0025
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "No known drug allergies.",
+    "start": 243,
+    "end": 267,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "' while the clinic note of 2026-06-13 says 'latex - causes contact dermatitis'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1369,
+   "supported": 0.9938,
+   "contradicted": 0.003,
+   "not_stated": 0.0015,
+   "not_a_claim": 0.0016,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0013,
+    "D2": 0.9987
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "Allergic to latex - causes contact dermatitis.",
+    "start": 142,
+    "end": 188,
+    "confidence": 0.977
+   }
+  },
+  {
+   "claim": "Amlodipine 5mg daily is in the discharge summary of 2026-03-26 but missing from the clinic note of 2026-06-13.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1906,
+   "supported": 0.9106,
+   "contradicted": 0.0377,
+   "not_stated": 0.0368,
+   "not_a_claim": 0.0149,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9669,
+    "D2": 0.0331
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "amlodipine 5mg daily",
+    "start": 336,
+    "end": 356,
+    "confidence": 0.801
+   }
+  },
+  {
+   "claim": "Insulin glargine 16 units ON is recorded as stopped in the clinic note of 2026-06-13 compared to the discharge summary of 2026-03-26.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2305,
+   "supported": 0.97,
+   "contradicted": 0.0129,
+   "not_stated": 0.0127,
+   "not_a_claim": 0.0045,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0041,
+    "D2": 0.9959
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "insulin glargine stopped on 2026-06-13",
+    "start": 307,
+    "end": 345,
+    "confidence": 0.999
+   }
+  },
+  {
+   "claim": "Levothyroxine dose differs between the discharge summary of 2026-03-26 which says '50 micrograms mane, before food' and the clinic note of 2026-06-13 which says '75 mcg OD before breakfast'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3276,
+   "supported": 0.637,
+   "contradicted": 0.2157,
+   "not_stated": 0.0787,
+   "not_a_claim": 0.0685,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7847,
+    "D2": 0.2153
+   },
+   "source": "D1"
+  }
+ ],
+ "unsupported_claims": [
+  4
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 4,
+  "supported": 0.637
+ },
+ "timing": {
+  "read_ms": 140,
+  "total_ms": 142
+ },
+ "_credits": "6"
+}

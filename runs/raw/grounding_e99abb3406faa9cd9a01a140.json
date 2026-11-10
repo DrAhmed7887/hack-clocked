@@ -1,0 +1,136 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7948,
+ "ungrounded": 0.2052,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9552,
+   "share_of_answer": 0.7592,
+   "claims": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0305,
+   "share_of_answer": 0.0242,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0143,
+   "share_of_answer": 0.0114,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "No allergy conflicts were identified.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0877,
+   "supported": 0.4108,
+   "contradicted": 0.0405,
+   "not_stated": 0.5088,
+   "not_a_claim": 0.0399,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.4232,
+    "D2": 0.0616,
+    "D3": 0.5152
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "Allergies: nil known.",
+    "start": 215,
+    "end": 236,
+    "confidence": 0.992
+   }
+  },
+  {
+   "claim": "Atorvastatin 20mg nocte from the clinic note of 2025-04-22 and the pharmacy record of 2025-08-03 is missing from the discharge summary of 2026-04-24.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3531,
+   "supported": 0.5813,
+   "contradicted": 0.0427,
+   "not_stated": 0.3556,
+   "not_a_claim": 0.0204,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0391,
+    "D2": 0.0398,
+    "D3": 0.9211
+   },
+   "source": "D3"
+  },
+  {
+   "claim": "Salbutamol inhaler 100 mcg, 2 puffs PRN from the clinic note of 2025-04-22 and the pharmacy record of 2025-08-03 was stopped in the discharge summary of 2026-04-24.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3886,
+   "supported": 0.9875,
+   "contradicted": 0.0057,
+   "not_stated": 0.0039,
+   "not_a_claim": 0.0029,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0019,
+    "D2": 0.0022,
+    "D3": 0.9959
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler stopped on 2026-04-24",
+    "start": 359,
+    "end": 399,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Warfarin 3mg OD as per INR is new in the discharge summary of 2026-04-24",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1706,
+   "supported": 0.9949,
+   "contradicted": 0.0021,
+   "not_stated": 0.0018,
+   "not_a_claim": 0.0012,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0014,
+    "D2": 0.0009,
+    "D3": 0.9977
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarin 3mg OD as per INR",
+    "start": 330,
+    "end": 356,
+    "confidence": 0.651
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.4108
+ },
+ "timing": {
+  "read_ms": 136,
+  "total_ms": 139
+ },
+ "_credits": "6"
+}

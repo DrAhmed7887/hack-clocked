@@ -1,0 +1,155 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7746,
+ "ungrounded": 0.2254,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.8038,
+   "share_of_answer": 0.6227,
+   "claims": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1721,
+   "share_of_answer": 0.1333,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0241,
+   "share_of_answer": 0.0187,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "No known drug allergies are stated in the discharge summary of 2025-07-08.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1186,
+   "supported": 0.9975,
+   "contradicted": 0.0007,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.001,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9978,
+    "D2": 0.0013,
+    "D3": 0.0009
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "Allergies: nil known.",
+    "start": 209,
+    "end": 230,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Amlodipine was stopped according to the GP letter of 2025-12-03, whereas the discharge summary of 2025-07-08 and pharmacy record of 2025-10-10 list it.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.242,
+   "supported": 0.9571,
+   "contradicted": 0.0187,
+   "not_stated": 0.0142,
+   "not_a_claim": 0.01,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0105,
+    "D2": 0.0141,
+    "D3": 0.9754
+   },
+   "source": "D3"
+  },
+  {
+   "claim": "Metformin is missing from the GP letter of 2025-12-03 compared to the discharge summary of 2025-07-08 and pharmacy record of 2025-10-10.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2179,
+   "supported": 0.1428,
+   "contradicted": 0.0344,
+   "not_stated": 0.8045,
+   "not_a_claim": 0.0183,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.197,
+    "D2": 0.2302,
+    "D3": 0.5727
+   },
+   "source": null
+  },
+  {
+   "claim": "Omeprazole dose differs in the GP letter of 2025-12-03 as \"omeprazol 40 mg una vez al d\u00eda\" compared to the discharge summary of 2025-07-08 and pharmacy record of 2025-10-10.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2772,
+   "supported": 0.9018,
+   "contradicted": 0.0514,
+   "not_stated": 0.0337,
+   "not_a_claim": 0.0131,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0262,
+    "D2": 0.0319,
+    "D3": 0.9419
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazol 40 mg una vez al d\u00eda",
+    "start": 214,
+    "end": 244,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Levotiroxina 50 microgramos una vez al d\u00eda en ayunas is new in the GP letter of 2025-12-03",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1442,
+   "supported": 0.9957,
+   "contradicted": 0.0018,
+   "not_stated": 0.0016,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.001,
+    "D2": 0.001,
+    "D3": 0.9979
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+    "start": 247,
+    "end": 299,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.1428
+ },
+ "timing": {
+  "read_ms": 168,
+  "total_ms": 171
+ },
+ "_credits": "7"
+}

@@ -1,0 +1,280 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex (contact dermatitis)"
+   ],
+   "items": [
+    {
+     "value": "latex (contact dermatitis)",
+     "start": 152,
+     "end": 178,
+     "confidence": 0.9999999997682931,
+     "p_verify": 0.9999999997682931
+    }
+   ],
+   "confidence": 0.9999999997682931
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "asthma"
+   ],
+   "items": [
+    {
+     "value": "asthma",
+     "start": 134,
+     "end": 140,
+     "confidence": 0.9999999380814409,
+     "p_verify": 0.9999999380814409
+    }
+   ],
+   "confidence": 0.9999999380814409
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "insulin glargine",
+     "frequency": null,
+     "stopped": "stopped on 2025-09-23"
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 194,
+     "end": 224,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 196,
+       "end": 206,
+       "confidence": 0.9999999997810565,
+       "p_verify": 0.9999999997810565
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 207,
+       "end": 212,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 213,
+       "end": 223,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 224,
+     "end": 282,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 226,
+       "end": 239,
+       "confidence": 0.9999999998236966,
+       "p_verify": 0.9999999998236966
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 240,
+       "end": 253,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 254,
+       "end": 264,
+       "p_start": 1,
+       "p_close": 0.531,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.531
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.992,
+       "p_blank": 0.992
+      }
+     }
+    },
+    {
+     "start": 282,
+     "end": 323,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 284,
+       "end": 300,
+       "confidence": 0.9999999863969544,
+       "p_verify": 0.9999999863969544
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.99,
+       "p_blank": 0.99
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.557,
+       "p_blank": 0.197,
+       "rejected_value": "stopped on 2025-09-23",
+       "rejected_p_verify": 0.443,
+       "reason": "verification_rejected"
+      },
+      "stopped": {
+       "value": "stopped on 2025-09-23",
+       "start": 301,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 323,
+     "end": 377,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 325,
+       "end": 343,
+       "confidence": 0.9999999993358497,
+       "p_verify": 0.9999999993358497
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 344,
+       "end": 358,
+       "p_start": 1,
+       "p_close": 0.999,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 368,
+       "end": 377,
+       "p_start": 0.974,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.974
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.99,
+       "p_blank": 0.99
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 175,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 78,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 33,
+    "resolve": 11,
+    "extend": 0,
+    "contest": 25,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 72,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 175,
+  "server_ms": 314
+ },
+ "_credits": "8"
+}

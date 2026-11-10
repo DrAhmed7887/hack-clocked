@@ -1,0 +1,334 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "penicillin (rash)"
+   ],
+   "items": [
+    {
+     "value": "penicillin (rash)",
+     "start": 232,
+     "end": 249,
+     "confidence": 0.9999999997590217,
+     "p_verify": 0.9999999997590217
+    }
+   ],
+   "confidence": 0.9999999997590217
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known chronic kidney disease stage 3a.",
+    "History of atrial fibrillation."
+   ],
+   "items": [
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 149,
+     "end": 187,
+     "confidence": 0.9999999991889046,
+     "p_verify": 0.9999999991889046
+    },
+    {
+     "value": "History of atrial fibrillation.",
+     "start": 188,
+     "end": 219,
+     "confidence": 0.9999999995916009,
+     "p_verify": 0.9999999995916009
+    }
+   ],
+   "confidence": 0.9999999991889046
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "20mg",
+     "drug": "atorvastatin",
+     "frequency": "ON",
+     "line": "atorvastatin 20mg ON",
+     "stopped": null
+    },
+    {
+     "dose": "75 mcg",
+     "drug": "levothyroxine",
+     "frequency": "OD before breakfast",
+     "line": "levothyroxine 75 mcg OD before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "OD",
+     "line": "amlodipine 5 mg OD",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "OD",
+     "line": "warfarin 3 mg OD as per INR",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 264,
+     "end": 287,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 266,
+       "end": 278,
+       "confidence": 0.9999999997193116,
+       "p_verify": 0.9999999997193116
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 279,
+       "end": 283,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 284,
+       "end": 286,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20mg ON",
+       "start": 266,
+       "end": 286,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 287,
+     "end": 330,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 289,
+       "end": 302,
+       "confidence": 0.9999999997429094,
+       "p_verify": 0.9999999997429094
+      },
+      "dose": {
+       "value": "75 mcg",
+       "start": 303,
+       "end": 309,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD before breakfast",
+       "start": 310,
+       "end": 329,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 75 mcg OD before breakfast",
+       "start": 289,
+       "end": 329,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 330,
+     "end": 351,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 332,
+       "end": 342,
+       "confidence": 0.9999999996388522,
+       "p_verify": 0.9999999996388522
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 343,
+       "end": 347,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 348,
+       "end": 350,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg OD",
+       "start": 332,
+       "end": 350,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 351,
+     "end": 380,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 353,
+       "end": 361,
+       "confidence": 0.9999999997007398,
+       "p_verify": 0.9999999997007398
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 362,
+       "end": 366,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 367,
+       "end": 369,
+       "p_start": 1,
+       "p_close": 0.958,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.958
+      },
+      "line": {
+       "value": "warfarin 3 mg OD as per INR",
+       "start": 353,
+       "end": 380,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 180,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 82,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 24,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 71,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 180,
+  "server_ms": 184
+ },
+ "_credits": "8"
+}

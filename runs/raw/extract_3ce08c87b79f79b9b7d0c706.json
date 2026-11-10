@@ -1,0 +1,327 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "Sin alergias medicamentosas conocidas.",
+   "start": 199,
+   "end": 237,
+   "confidence": 0.9999999994696063,
+   "p_verify": 0.9999999994696063
+  },
+  "problems": {
+   "value": [
+    "- hipertensi\u00f3n arterial esencial",
+    "- fibrilaci\u00f3n auricular"
+   ],
+   "items": [
+    {
+     "value": "- hipertensi\u00f3n arterial esencial",
+     "start": 141,
+     "end": 173,
+     "confidence": 0.9999999990521851,
+     "p_verify": 0.9999999990521851
+    },
+    {
+     "value": "- fibrilaci\u00f3n auricular",
+     "start": 174,
+     "end": 197,
+     "confidence": 0.9999999995466906,
+     "p_verify": 0.9999999995466906
+    }
+   ],
+   "confidence": 0.9999999990521851
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "una vez al d\u00eda",
+     "line": "bisoprolol 2.5 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatina",
+     "frequency": "por la noche",
+     "line": "atorvastatina 20 mg por la noche",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipino",
+     "frequency": "una vez al d\u00eda",
+     "line": "amlodipino 5 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "una vez al d\u00eda",
+     "line": "lisinopril 10 mg una vez al d\u00eda",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 252,
+     "end": 287,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 254,
+       "end": 264,
+       "confidence": 0.999999999669889,
+       "p_verify": 0.999999999669889
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 265,
+       "end": 271,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 272,
+       "end": 286,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg una vez al d\u00eda",
+       "start": 254,
+       "end": 286,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 287,
+     "end": 322,
+     "fields": {
+      "drug": {
+       "value": "atorvastatina",
+       "start": 289,
+       "end": 302,
+       "confidence": 0.9999999995362772,
+       "p_verify": 0.9999999995362772
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 303,
+       "end": 308,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "por la noche",
+       "start": 309,
+       "end": 321,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "line": {
+       "value": "atorvastatina 20 mg por la noche",
+       "start": 289,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 322,
+     "end": 355,
+     "fields": {
+      "drug": {
+       "value": "amlodipino",
+       "start": 324,
+       "end": 334,
+       "confidence": 0.9999999996832942,
+       "p_verify": 0.9999999996832942
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 335,
+       "end": 339,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 340,
+       "end": 354,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipino 5 mg una vez al d\u00eda",
+       "start": 324,
+       "end": 354,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 355,
+     "end": 388,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 357,
+       "end": 367,
+       "confidence": 0.999999999747168,
+       "p_verify": 0.999999999747168
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 368,
+       "end": 373,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 374,
+       "end": 388,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg una vez al d\u00eda",
+       "start": 357,
+       "end": 388,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 190,
+  "forwards": {
+   "fields": [
+    7,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 88,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 78,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 190,
+  "server_ms": 194
+ },
+ "_credits": "8"
+}

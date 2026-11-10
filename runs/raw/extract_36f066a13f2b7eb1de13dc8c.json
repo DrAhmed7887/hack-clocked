@@ -1,0 +1,279 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex (contact dermatitis)"
+   ],
+   "items": [
+    {
+     "value": "latex (contact dermatitis)",
+     "start": 123,
+     "end": 149,
+     "confidence": 0.9999999996862776,
+     "p_verify": 0.9999999996862776
+    }
+   ],
+   "confidence": 0.9999999996862776
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 165,
+     "end": 220,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 167,
+       "end": 185,
+       "confidence": 0.9999999990203015,
+       "p_verify": 0.9999999990203015
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 186,
+       "end": 200,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 210,
+       "end": 219,
+       "p_start": 0.974,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.974
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.982,
+       "p_blank": 0.982
+      }
+     }
+    },
+    {
+     "start": 220,
+     "end": 250,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 222,
+       "end": 232,
+       "confidence": 0.9999999996373885,
+       "p_verify": 0.9999999996373885
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 233,
+       "end": 238,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 239,
+       "end": 249,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.968,
+       "p_blank": 0.968
+      }
+     }
+    },
+    {
+     "start": 250,
+     "end": 281,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 252,
+       "end": 261,
+       "confidence": 0.999999999685085,
+       "p_verify": 0.999999999685085
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 262,
+       "end": 268,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 269,
+       "end": 280,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.963,
+       "p_blank": 0.963
+      }
+     }
+    },
+    {
+     "start": 281,
+     "end": 310,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 283,
+       "end": 295,
+       "confidence": 0.999999999301155,
+       "p_verify": 0.999999999301155
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 296,
+       "end": 301,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 302,
+       "end": 310,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.499,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 283,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 178,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 77,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 34,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 25,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 75,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 178,
+  "server_ms": 181
+ },
+ "_credits": "8"
+}

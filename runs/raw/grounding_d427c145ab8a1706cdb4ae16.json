@@ -1,0 +1,111 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5631,
+ "ungrounded": 0.4369,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.7993,
+   "share_of_answer": 0.4501,
+   "claims": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1247,
+   "share_of_answer": 0.0702,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.076,
+   "share_of_answer": 0.0428,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin is new, 'atorvastatin 20mg ON' from the discharge summary of 2025-12-19.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1574,
+   "supported": 0.995,
+   "contradicted": 0.002,
+   "not_stated": 0.0018,
+   "not_a_claim": 0.0012,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0012,
+    "D2": 0.001,
+    "D3": 0.9978
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatin 20mg ON",
+    "start": 266,
+    "end": 286,
+    "confidence": 0.999
+   }
+  },
+  {
+   "claim": "Levothyroxine dose differs, 'levothyroxine 50 mcg mane, before food' from the clinic note of 2025-03-19, 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas' from the GP letter of 2025-11-01, and 'levothyroxine 75 mcg OD before breakfast' from the discharge summary of 2025-12-19.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5222,
+   "supported": 0.3527,
+   "contradicted": 0.0413,
+   "not_stated": 0.4894,
+   "not_a_claim": 0.1166,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3381,
+    "D2": 0.1969,
+    "D3": 0.465
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 mcg mane, before food",
+    "start": 245,
+    "end": 283,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril is missing from the newest record, 'lisinopril 10 mg OD' from the clinic note of 2025-03-19 and 'lisinopril 10 mg una vez al d\u00eda' from the GP letter of 2025-11-01",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3204,
+   "supported": 0.6939,
+   "contradicted": 0.0353,
+   "not_stated": 0.2489,
+   "not_a_claim": 0.022,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0348,
+    "D2": 0.0287,
+    "D3": 0.9365
+   },
+   "source": "D3"
+  }
+ ],
+ "unsupported_claims": [
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.3527
+ },
+ "timing": {
+  "read_ms": 118,
+  "total_ms": 119
+ },
+ "_credits": "5"
+}

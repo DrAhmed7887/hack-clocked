@@ -1,0 +1,378 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- gastro-oesophageal reflux disease\nKnown hypothyroidism.\nKnown chronic kidney disease stage 3a."
+   ],
+   "items": [
+    {
+     "value": "- gastro-oesophageal reflux disease\nKnown hypothyroidism.\nKnown chronic kidney disease stage 3a.",
+     "start": 140,
+     "end": 236,
+     "confidence": 0.999875438565051,
+     "p_verify": 0.999875438565051
+    }
+   ],
+   "confidence": 0.999875438565051
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10mg",
+     "drug": "lisinopril",
+     "frequency": "daily",
+     "line": "lisinopril 10mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "2.5mg",
+     "drug": "bisoprolol",
+     "frequency": "OD",
+     "line": "bisoprolol 2.5mg OD",
+     "stopped": null
+    },
+    {
+     "dose": "20mg",
+     "drug": "omeprazole",
+     "frequency": "o.d.",
+     "line": "omeprazole 20mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": "3mg",
+     "drug": "warfarin",
+     "frequency": "OD as per INR",
+     "line": "warfarin 3mg OD as per INR",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "OD before breakfast",
+     "line": "levothyroxine 50 micrograms OD before breakfast",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 251,
+     "end": 275,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 253,
+       "end": 263,
+       "confidence": 0.9999999996737188,
+       "p_verify": 0.9999999996737188
+      },
+      "dose": {
+       "value": "10mg",
+       "start": 264,
+       "end": 268,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 269,
+       "end": 274,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10mg daily",
+       "start": 253,
+       "end": 274,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    },
+    {
+     "start": 275,
+     "end": 297,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 277,
+       "end": 287,
+       "confidence": 0.9999999995603419,
+       "p_verify": 0.9999999995603419
+      },
+      "dose": {
+       "value": "2.5mg",
+       "start": 288,
+       "end": 293,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 294,
+       "end": 296,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5mg OD",
+       "start": 277,
+       "end": 296,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 297,
+     "end": 320,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 299,
+       "end": 309,
+       "confidence": 0.9999999996529563,
+       "p_verify": 0.9999999996529563
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 310,
+       "end": 314,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 315,
+       "end": 319,
+       "p_start": 1,
+       "p_close": 0.995,
+       "p_point": 0.493,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "omeprazole",
+         "start": 299,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 0.995
+      },
+      "line": {
+       "value": "omeprazole 20mg o.d.",
+       "start": 299,
+       "end": 319,
+       "p_start": 1,
+       "p_close": 0.992,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.992
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 320,
+     "end": 349,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 322,
+       "end": 330,
+       "confidence": 0.9999999993520468,
+       "p_verify": 0.9999999993520468
+      },
+      "dose": {
+       "value": "3mg",
+       "start": 331,
+       "end": 334,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD as per INR",
+       "start": 335,
+       "end": 348,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3mg OD as per INR",
+       "start": 322,
+       "end": 348,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 349,
+     "end": 398,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 351,
+       "end": 364,
+       "confidence": 0.9999999995794098,
+       "p_verify": 0.9999999995794098
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 365,
+       "end": 378,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD before breakfast",
+       "start": 379,
+       "end": 398,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms OD before breakfast",
+       "start": 351,
+       "end": 398,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 202,
+  "forwards": {
+   "fields": [
+    6,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 72,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 45,
+    "resolve": 17,
+    "extend": 0,
+    "contest": 41,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 106,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 202,
+  "server_ms": 581
+ },
+ "_credits": "9"
+}

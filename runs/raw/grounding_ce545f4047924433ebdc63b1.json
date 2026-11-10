@@ -1,0 +1,137 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5217,
+ "ungrounded": 0.4783,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.5076,
+   "share_of_answer": 0.2648,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.3504,
+   "share_of_answer": 0.1828,
+   "claims": [
+    3
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.1419,
+   "share_of_answer": 0.074,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy records vary between 'penicilina (exantema)', 'penicillin - causes rash', and 'penicillin (rash)'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1715,
+   "supported": 0.257,
+   "contradicted": 0.0933,
+   "not_stated": 0.5841,
+   "not_a_claim": 0.0657,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.7447,
+    "D2": 0.1045,
+    "D3": 0.1509
+   },
+   "source": null
+  },
+  {
+   "claim": "Amlodipine was 'amlodipino 5 mg una vez al d\u00eda' in the GP letter of 2024-09-19 and 'amlodipine 5mg OD' in the discharge summary of 2025-08-23 but was 'amlodipine stopped on 2026-02-26' in the pharmacy record of 2026-02-26.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3592,
+   "supported": 0.2877,
+   "contradicted": 0.0507,
+   "not_stated": 0.5783,
+   "not_a_claim": 0.0833,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.556,
+    "D2": 0.2635,
+    "D3": 0.1805
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "amlodipino 5 mg una vez al d\u00eda",
+    "start": 258,
+    "end": 288,
+    "confidence": 0.989
+   }
+  },
+  {
+   "claim": "Lisinopril was 'lisinopril 10 mg una vez al d\u00eda' in the GP letter of 2024-09-19 and 'lisinopril 10mg OD' in the discharge summary of 2025-08-23 but is 'lisinopril 20mg daily' in the pharmacy record of 2026-02-26.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.343,
+   "supported": 0.7242,
+   "contradicted": 0.0675,
+   "not_stated": 0.1385,
+   "not_a_claim": 0.0698,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7022,
+    "D2": 0.1695,
+    "D3": 0.1283
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10 mg una vez al d\u00eda",
+    "start": 291,
+    "end": 322,
+    "confidence": 0.987
+   }
+  },
+  {
+   "claim": "Omeprazole is new in the pharmacy record of 2026-02-26 as 'omeprazole 20mg OD'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1262,
+   "supported": 0.9972,
+   "contradicted": 0.0012,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0008,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazole 20mg OD",
+    "start": 220,
+    "end": 238,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.257
+ },
+ "timing": {
+  "read_ms": 161,
+  "total_ms": 164
+ },
+ "_credits": "7"
+}

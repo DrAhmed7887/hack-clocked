@@ -1,0 +1,322 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "Sin alergias medicamentosas conocidas.",
+   "start": 192,
+   "end": 230,
+   "confidence": 0.9999999994725941,
+   "p_verify": 0.9999999994725941
+  },
+  "problems": {
+   "value": [
+    "- hipotiroidismo",
+    "- hipertensi\u00f3n arterial esencial"
+   ],
+   "items": [
+    {
+     "value": "- hipotiroidismo",
+     "start": 141,
+     "end": 157,
+     "confidence": 0.9999999985388912,
+     "p_verify": 0.9999999985388912
+    },
+    {
+     "value": "- hipertensi\u00f3n arterial esencial",
+     "start": 158,
+     "end": 190,
+     "confidence": 0.9999999979133145,
+     "p_verify": 0.9999999979133145
+    }
+   ],
+   "confidence": 0.9999999979133145
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "lisinopril",
+     "frequency": null,
+     "line": "lisinopril suspendido el 2025-12-23",
+     "stopped": "suspendido el 2025-12-23"
+    },
+    {
+     "dose": "100 microgramos",
+     "drug": "salbutamol",
+     "frequency": "2 inhalaciones a demanda",
+     "line": "salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda",
+     "stopped": null
+    },
+    {
+     "dose": "75 microgramos",
+     "drug": "levotiroxina",
+     "frequency": "una vez al d\u00eda en ayunas",
+     "line": "levotiroxina 75 microgramos una vez al d\u00eda en ayunas",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "una vez al d\u00eda",
+     "line": "bisoprolol 2.5 mg una vez al d\u00eda",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 245,
+     "end": 283,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 247,
+       "end": 257,
+       "confidence": 0.9999552069098554,
+       "p_verify": 0.9999552069098554
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.622,
+       "p_blank": 0.622
+      },
+      "line": {
+       "value": "lisinopril suspendido el 2025-12-23",
+       "start": 247,
+       "end": 282,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "suspendido el 2025-12-23",
+       "start": 258,
+       "end": 282,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 283,
+     "end": 348,
+     "fields": {
+      "drug": {
+       "value": "salbutamol",
+       "start": 285,
+       "end": 295,
+       "confidence": 0.9999999995487918,
+       "p_verify": 0.9999999995487918
+      },
+      "dose": {
+       "value": "100 microgramos",
+       "start": 306,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "2 inhalaciones a demanda",
+       "start": 323,
+       "end": 347,
+       "p_start": 0.989,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.989
+      },
+      "line": {
+       "value": "salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda",
+       "start": 285,
+       "end": 347,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    },
+    {
+     "start": 348,
+     "end": 403,
+     "fields": {
+      "drug": {
+       "value": "levotiroxina",
+       "start": 350,
+       "end": 362,
+       "confidence": 0.9999999994747832,
+       "p_verify": 0.9999999994747832
+      },
+      "dose": {
+       "value": "75 microgramos",
+       "start": 363,
+       "end": 377,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda en ayunas",
+       "start": 378,
+       "end": 402,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levotiroxina 75 microgramos una vez al d\u00eda en ayunas",
+       "start": 350,
+       "end": 402,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 403,
+     "end": 437,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 405,
+       "end": 415,
+       "confidence": 0.9999999996739826,
+       "p_verify": 0.9999999996739826
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 416,
+       "end": 422,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 423,
+       "end": 437,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg una vez al d\u00eda",
+       "start": 405,
+       "end": 437,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 211,
+  "forwards": {
+   "fields": [
+    7,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 92,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 34,
+    "resolve": 13,
+    "extend": 14,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 93,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 211,
+  "server_ms": 215
+ },
+ "_credits": "9"
+}

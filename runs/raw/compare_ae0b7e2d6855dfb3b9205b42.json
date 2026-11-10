@@ -1,0 +1,217 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [
+    "D2",
+    "D3"
+   ],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [
+    "D1"
+   ],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [
+    "D1"
+   ],
+   "conflicts": [
+    "D1",
+    "D2"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "overlapping",
+   "related": 0.9927,
+   "probabilities": {
+    "same": 0.2048,
+    "overlapping": 0.7746,
+    "conflicting": 0.0133,
+    "unrelated": 0.0073
+   },
+   "duplicates": [
+    {
+     "kind": "elaborated",
+     "kinds": {
+      "verbatim": 0.1804,
+      "restated": 0.2176,
+      "elaborated": 0.5838,
+      "different": 0.0182
+     },
+     "confidence": 0.626,
+     "a": {
+      "document": "D1",
+      "quote": "Outpatient clinic note, Alexandria",
+      "start": 0,
+      "end": 34,
+      "confidence": 0.626
+     },
+     "b": {
+      "document": "D2",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-08-03\nPatient: synthetic case P014, 51-year-old male.\n\n\nMedications:\n- insulin glargine 16 units at night\n- atorvastatin 20 mg at night\n- salbutamol inhaler 100 micrograms, 2 puffs as needed\n- amlodipine 5 mg once daily",
+      "start": 0,
+      "end": 277,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9926,
+   "probabilities": {
+    "same": 0.005,
+    "overlapping": 0.7879,
+    "conflicting": 0.1997,
+    "unrelated": 0.0074
+   },
+   "duplicates": [
+    {
+     "kind": "elaborated",
+     "kinds": {
+      "verbatim": 0.0126,
+      "restated": 0.0657,
+      "elaborated": 0.8667,
+      "different": 0.055
+     },
+     "confidence": 0.945,
+     "a": {
+      "document": "D1",
+      "quote": "Outpatient clinic note, Alexandria",
+      "start": 0,
+      "end": 34,
+      "confidence": 0.973
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-04-24\nPatient: synthetic case P014, 51-year-old male.\n\nProblems:\nKnown type 2 diabetes.\nKnown chronic kidney disease stage 3a.\nKnown gastro-oesophageal reflux disease.\nKnown essential hypertension.\n\nNo known drug allergies.\n\nMedications:\n- insulin glargine 16 units at night\n- warfarin 3 mg once daily, dose by INR\n- salbutamol inhaler stopped on 2026-04-24\n- amlodipine 5 mg once daily",
+      "start": 0,
+      "end": 470,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": [
+    {
+     "kind": "rule_or_condition",
+     "kinds": {
+      "value": 0.2297,
+      "date_or_version": 0.0244,
+      "rule_or_condition": 0.6723,
+      "scope": 0.0216,
+      "name": 0.0212,
+      "no_conflict": 0.0307
+     },
+     "confidence": 0.9693,
+     "a": {
+      "document": "D1",
+      "quote": "- salbutamol inhaler 100 micrograms, 2 puffs as needed",
+      "start": 321,
+      "end": 375,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-04-24\nPatient: synthetic case P014, 51-year-old male.\n\nProblems:\nKnown type 2 diabetes.\nKnown chronic kidney disease stage 3a.\nKnown gastro-oesophageal reflux disease.\nKnown essential hypertension.\n\nNo known drug allergies.\n\nMedications:\n- insulin glargine 16 units at night\n- warfarin 3 mg once daily, dose by INR\n- salbutamol inhaler stopped on 2026-04-24\n- amlodipine 5 mg once daily",
+      "start": 0,
+      "end": 470,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9938,
+   "probabilities": {
+    "same": 0.0048,
+    "overlapping": 0.5273,
+    "conflicting": 0.4617,
+    "unrelated": 0.0062
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "rule_or_condition",
+     "kinds": {
+      "value": 0.3932,
+      "date_or_version": 0.0244,
+      "rule_or_condition": 0.5048,
+      "scope": 0.0159,
+      "name": 0.0241,
+      "no_conflict": 0.0375
+     },
+     "confidence": 0.9625,
+     "a": {
+      "document": "D2",
+      "quote": "- salbutamol inhaler 100 micrograms, 2 puffs as needed",
+      "start": 194,
+      "end": 248,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-04-24\nPatient: synthetic case P014, 51-year-old male.\n\nProblems:\nKnown type 2 diabetes.\nKnown chronic kidney disease stage 3a.\nKnown gastro-oesophageal reflux disease.\nKnown essential hypertension.\n\nNo known drug allergies.\n\nMedications:\n- insulin glargine 16 units at night\n- warfarin 3 mg once daily, dose by INR\n- salbutamol inhaler stopped on 2026-04-24\n- amlodipine 5 mg once daily",
+      "start": 0,
+      "end": 470,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [
+  0,
+  1
+ ],
+ "conflicts": [
+  1,
+  2
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 29,
+  "passage_reads": 1,
+  "passages_ms": 68,
+  "passages": 5,
+  "counterparts_ms": 129,
+  "kinds_ms": 29
+ },
+ "timing": {
+  "read_ms": 254,
+  "total_ms": 256
+ },
+ "_credits": "10"
+}

@@ -1,0 +1,334 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "hypothyroidism",
+    "hyperlipidaemia",
+    "chronic kidney disease stage 3a"
+   ],
+   "items": [
+    {
+     "value": "hypothyroidism",
+     "start": 134,
+     "end": 148,
+     "confidence": 0.9999999911791159,
+     "p_verify": 0.9999999911791159
+    },
+    {
+     "value": "hyperlipidaemia",
+     "start": 156,
+     "end": 171,
+     "confidence": 0.9999999951403655,
+     "p_verify": 0.9999999951403655
+    },
+    {
+     "value": "chronic kidney disease stage 3a",
+     "start": 179,
+     "end": 210,
+     "confidence": 0.9999999974034761,
+     "p_verify": 0.9999999974034761
+    }
+   ],
+   "confidence": 0.9999999911791159
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "omeprazole",
+     "frequency": null,
+     "line": "omeprazole stopped on 2025-07-20",
+     "stopped": "stopped on 2025-07-20"
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "line": "warfarin 3 mg once daily, dose by INR",
+     "stopped": null
+    },
+    {
+     "dose": "40 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": "atorvastatin 40 mg at night",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 226,
+     "end": 261,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 228,
+       "end": 238,
+       "confidence": 0.9999890340069303,
+       "p_verify": 0.9999890340069303
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.983,
+       "p_blank": 0.983
+      },
+      "line": {
+       "value": "omeprazole stopped on 2025-07-20",
+       "start": 228,
+       "end": 260,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-07-20",
+       "start": 239,
+       "end": 260,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 261,
+     "end": 301,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 263,
+       "end": 271,
+       "confidence": 0.9999999993463311,
+       "p_verify": 0.9999999993463311
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 272,
+       "end": 276,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 277,
+       "end": 287,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3 mg once daily, dose by INR",
+       "start": 263,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.946,
+       "p_blank": 0.946
+      }
+     }
+    },
+    {
+     "start": 301,
+     "end": 331,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 303,
+       "end": 315,
+       "confidence": 0.9999999996529563,
+       "p_verify": 0.9999999996529563
+      },
+      "dose": {
+       "value": "40 mg",
+       "start": 316,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 322,
+       "end": 330,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.499,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 40 mg at night",
+         "start": 303,
+         "p_verify": 0.994
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 40 mg at night",
+       "start": 303,
+       "end": 330,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 331,
+     "end": 361,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 333,
+       "end": 343,
+       "confidence": 0.9999999995737117,
+       "p_verify": 0.9999999995737117
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 344,
+       "end": 350,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 351,
+       "end": 361,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 333,
+       "end": 361,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 190,
+  "forwards": {
+   "fields": [
+    7,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 89,
+    "locate": 0,
+    "verify": 18,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 14,
+    "extend": 0,
+    "contest": 31,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 79,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 190,
+  "server_ms": 469
+ },
+ "_credits": "8"
+}

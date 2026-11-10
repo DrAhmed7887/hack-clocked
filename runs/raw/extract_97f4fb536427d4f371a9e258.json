@@ -1,0 +1,390 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "nil known.",
+   "start": 227,
+   "end": 237,
+   "confidence": 0.9999998371361493,
+   "p_verify": 0.9999998371361493
+  },
+  "problems": {
+   "value": [
+    "History of chronic kidney disease stage 3a.",
+    "Known essential hypertension.",
+    "History of hyperlipidaemia."
+   ],
+   "items": [
+    {
+     "value": "History of chronic kidney disease stage 3a.",
+     "start": 113,
+     "end": 156,
+     "confidence": 0.9999999998108358,
+     "p_verify": 0.9999999998108358
+    },
+    {
+     "value": "Known essential hypertension.",
+     "start": 157,
+     "end": 186,
+     "confidence": 0.9999999996241935,
+     "p_verify": 0.9999999996241935
+    },
+    {
+     "value": "History of hyperlipidaemia.",
+     "start": 187,
+     "end": 214,
+     "confidence": 0.9999999997895073,
+     "p_verify": 0.9999999997895073
+    }
+   ],
+   "confidence": 0.9999999996241935
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "b.i.d",
+     "line": "metformin 500 mg b.i.d.",
+     "stopped": null
+    },
+    {
+     "dose": "50 mcg",
+     "drug": "levothyroxine",
+     "frequency": "mane",
+     "line": "levothyroxine 50 mcg mane, before food",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "daily",
+     "line": "omeprazole 20 mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "20mg",
+     "drug": "atorvastatin",
+     "frequency": "nocte",
+     "line": "atorvastatin 20mg nocte",
+     "stopped": null
+    },
+    {
+     "dose": "100 mcg",
+     "drug": "salbutamol inhaler",
+     "frequency": "2 puffs when required",
+     "line": "salbutamol inhaler 100 mcg, 2 puffs when required",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 252,
+     "end": 278,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 254,
+       "end": 263,
+       "confidence": 0.999999999309821,
+       "p_verify": 0.999999999309821
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 264,
+       "end": 270,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "b.i.d",
+       "start": 271,
+       "end": 276,
+       "p_start": 1,
+       "p_close": 0.679,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.679
+      },
+      "line": {
+       "value": "metformin 500 mg b.i.d.",
+       "start": 254,
+       "end": 277,
+       "p_start": 1,
+       "p_close": 0.927,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.927
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 278,
+     "end": 319,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 280,
+       "end": 293,
+       "confidence": 0.9999999995810467,
+       "p_verify": 0.9999999995810467
+      },
+      "dose": {
+       "value": "50 mcg",
+       "start": 294,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "mane",
+       "start": 301,
+       "end": 305,
+       "p_start": 1,
+       "p_close": 0.977,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.977
+      },
+      "line": {
+       "value": "levothyroxine 50 mcg mane, before food",
+       "start": 280,
+       "end": 318,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 319,
+     "end": 344,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 321,
+       "end": 331,
+       "confidence": 0.9999999995319864,
+       "p_verify": 0.9999999995319864
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 332,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 338,
+       "end": 343,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazole 20 mg daily",
+       "start": 321,
+       "end": 343,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 344,
+     "end": 370,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 346,
+       "end": 358,
+       "confidence": 0.9999999993647213,
+       "p_verify": 0.9999999993647213
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 359,
+       "end": 363,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "nocte",
+       "start": 364,
+       "end": 369,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20mg nocte",
+       "start": 346,
+       "end": 369,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 370,
+     "end": 421,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 372,
+       "end": 390,
+       "confidence": 0.9999999986609109,
+       "p_verify": 0.9999999986609109
+      },
+      "dose": {
+       "value": "100 mcg",
+       "start": 391,
+       "end": 398,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "2 puffs when required",
+       "start": 400,
+       "end": 421,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 mcg, 2 puffs when required",
+       "start": 372,
+       "end": 421,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 215,
+  "forwards": {
+   "fields": [
+    6,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 81,
+    "locate": 0,
+    "verify": 25,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 46,
+    "resolve": 15,
+    "extend": 0,
+    "contest": 41,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 105,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 215,
+  "server_ms": 219
+ },
+ "_credits": "9"
+}

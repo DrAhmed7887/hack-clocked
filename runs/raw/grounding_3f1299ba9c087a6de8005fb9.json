@@ -1,0 +1,119 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.6378,
+ "ungrounded": 0.3622,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.51,
+   "share_of_answer": 0.3253,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.4241,
+   "share_of_answer": 0.2705,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0659,
+   "share_of_answer": 0.042,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Lisinopril stopped: 'lisinopril stopped on 2025-09-09' from the discharge summary of 2025-09-09.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1905,
+   "supported": 0.9974,
+   "contradicted": 0.0011,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0009,
+    "D3": 0.9983
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril stopped on 2025-09-09",
+    "start": 274,
+    "end": 306,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Omeprazole missing from the newest record: 'omeprazole 20mg o.d.' from the clinic note of 2024-06-12 and 'omeprazol 20 mg una vez al d\u00eda' from the GP letter of 2025-01-29.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3393,
+   "supported": 0.3586,
+   "contradicted": 0.0573,
+   "not_stated": 0.5317,
+   "not_a_claim": 0.0524,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.1402,
+    "D2": 0.0727,
+    "D3": 0.7871
+   },
+   "source": null,
+   "evidence": {
+    "document": "D2",
+    "quote": "omeprazol 20 mg una vez al d\u00eda",
+    "start": 322,
+    "end": 352,
+    "confidence": 0.994
+   }
+  },
+  {
+   "claim": "Warfarin dose differs: 'warfarin 3mg OD as per INR' from the clinic note of 2024-06-12, 'warfarina 3 mg una vez al d\u00eda seg\u00fan INR' from the GP letter of 2025-01-29, and 'warfarin 5mg OD as per INR' from the discharge summary of 2025-09-09",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4702,
+   "supported": 0.6938,
+   "contradicted": 0.1226,
+   "not_stated": 0.1049,
+   "not_a_claim": 0.0787,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7765,
+    "D2": 0.1012,
+    "D3": 0.1222
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarin 5mg OD as per INR",
+    "start": 331,
+    "end": 357,
+    "confidence": 0.907
+   }
+  }
+ ],
+ "unsupported_claims": [
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.3586
+ },
+ "timing": {
+  "read_ms": 144,
+  "total_ms": 146
+ },
+ "_credits": "6"
+}

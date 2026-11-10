@@ -1,0 +1,67 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.4006,
+ "ungrounded": 0.5994,
+ "verdict": "ungrounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.3869,
+   "share_of_answer": 0.155,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.3428,
+   "share_of_answer": 0.1373,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.2702,
+   "share_of_answer": 0.1082,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Lisinopril differs between records: the discharge summary of 2024-06-06 says 'lisinopril 10mg daily'; the clinic note of 2024-09-16 says 'lisinopril 10mg OD'; the pharmacy record of 2025-12-01 says 'lisinopril 20mg OD'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 1,
+   "supported": 0.4006,
+   "contradicted": 0.0752,
+   "not_stated": 0.4668,
+   "not_a_claim": 0.0574,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3869,
+    "D2": 0.2702,
+    "D3": 0.3428
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10mg daily",
+    "start": 292,
+    "end": 313,
+    "confidence": 0.81
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.4006
+ },
+ "timing": {
+  "read_ms": 88,
+  "total_ms": 89
+ },
+ "_credits": "4"
+}

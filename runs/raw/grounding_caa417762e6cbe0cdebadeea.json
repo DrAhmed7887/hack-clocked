@@ -1,0 +1,139 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.71,
+ "ungrounded": 0.29,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D4",
+   "share": 0.8426,
+   "share_of_answer": 0.5983,
+   "claims": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0744,
+   "share_of_answer": 0.0528,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0597,
+   "share_of_answer": 0.0424,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.0233,
+   "share_of_answer": 0.0165,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "No allergies are mentioned in any records.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0861,
+   "supported": 0.0093,
+   "contradicted": 0.0056,
+   "not_stated": 0.9804,
+   "not_a_claim": 0.0047,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.2491,
+    "D2": 0.3133,
+    "D3": 0.1978,
+    "D4": 0.2397
+   },
+   "source": null
+  },
+  {
+   "claim": "Atorvastatin was \"stopped on 2026-05-04\" according to the discharge summary of 2026-05-04, whereas the clinic note of 2024-12-10, the GP letter of 2025-07-22, and the pharmacy record of 2026-01-31 list it.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4201,
+   "supported": 0.9674,
+   "contradicted": 0.0122,
+   "not_stated": 0.0152,
+   "not_a_claim": 0.0051,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0081,
+    "D2": 0.006,
+    "D3": 0.0037,
+    "D4": 0.9822
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "atorvastatin stopped on 2026-05-04",
+    "start": 293,
+    "end": 327,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Bisoprolol \"2.5mg o.d.\" is new in the discharge summary of 2026-05-04.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1434,
+   "supported": 0.9977,
+   "contradicted": 0.0008,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0009,
+    "D3": 0.0005,
+    "D4": 0.9979
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "bisoprolol 2.5mg o.d.",
+    "start": 269,
+    "end": 290,
+    "confidence": 0.995
+   }
+  },
+  {
+   "claim": "Lisinopril is missing from the discharge summary of 2026-05-04 but was in the clinic note of 2024-12-10, the GP letter of 2025-07-22, and the pharmacy record of 2026-01-31",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3504,
+   "supported": 0.4557,
+   "contradicted": 0.0527,
+   "not_stated": 0.4724,
+   "not_a_claim": 0.0192,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3084,
+    "D2": 0.2476,
+    "D3": 0.0927,
+    "D4": 0.3513
+   },
+   "source": null
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  3
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.0093
+ },
+ "timing": {
+  "read_ms": 158,
+  "total_ms": 161
+ },
+ "_credits": "7"
+}

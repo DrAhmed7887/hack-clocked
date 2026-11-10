@@ -1,0 +1,93 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9979,
+ "ungrounded": 0.0021,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D2",
+   "share": 0.5192,
+   "share_of_answer": 0.5181,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.48,
+   "share_of_answer": 0.479,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.0008,
+   "share_of_answer": 0.0008,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The GP letter of 2025-06-05 says 'latex (contact dermatitis)'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4806,
+   "supported": 0.9979,
+   "contradicted": 0.0006,
+   "not_stated": 0.0006,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9983,
+    "D2": 0.001,
+    "D3": 0.0007
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "Allergy: latex (contact dermatitis).",
+    "start": 193,
+    "end": 229,
+    "confidence": 0.835
+   }
+  },
+  {
+   "claim": "The discharge summary of 2025-12-08 says 'No known drug allergies'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5194,
+   "supported": 0.998,
+   "contradicted": 0.0007,
+   "not_stated": 0.0006,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0005,
+    "D2": 0.9986,
+    "D3": 0.0009
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "No known drug allergies.",
+    "start": 243,
+    "end": 267,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.9979
+ },
+ "timing": {
+  "read_ms": 83,
+  "total_ms": 85
+ },
+ "_credits": "4"
+}

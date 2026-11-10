@@ -1,0 +1,67 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.2637,
+ "ungrounded": 0.7363,
+ "verdict": "ungrounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.4453,
+   "share_of_answer": 0.1174,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.404,
+   "share_of_answer": 0.1065,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.1507,
+   "share_of_answer": 0.0397,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Omeprazole differs between records: the discharge summary of 2025-07-08 says 'omeprazole 20mg OD'; the pharmacy record of 2025-10-10 says 'omeprazole 20 mg o.d.'; the GP letter of 2025-12-03 says 'omeprazol 40 mg una vez al d\u00eda'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 1,
+   "supported": 0.2637,
+   "contradicted": 0.0763,
+   "not_stated": 0.5808,
+   "not_a_claim": 0.0792,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.404,
+    "D2": 0.1507,
+    "D3": 0.4453
+   },
+   "source": null,
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazol 40 mg una vez al d\u00eda",
+    "start": 214,
+    "end": 244,
+    "confidence": 0.961
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.2637
+ },
+ "timing": {
+  "read_ms": 90,
+  "total_ms": 91
+ },
+ "_credits": "4"
+}

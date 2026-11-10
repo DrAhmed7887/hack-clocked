@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The discharge summary of 2025-07-08 says 'amlodipine 5 mg daily', the pharmacy record of 2025-10-10 says 'amlodipine 5 mg o.d.', and the GP letter of 2025-12-03 says 'amlodipino suspendido el 2025-12-03'. The GP letter of 2025-12-03 says 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas'. The discharge summary of 2025-07-08 says 'metformin 500mg BD' and the pharmacy record of 2025-10-10 says 'metformin 500mg BD'. The discharge summary of 2025-07-08 says 'omeprazole 20mg OD', the pharmacy record of 2025-10-10 says 'omeprazole 20 mg o.d.', and the GP letter of 2025-12-03 says 'omeprazol 40 mg una vez al d\u00eda'",
+   "confidence": 0.6161281992111078,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 616,
+  "total_ms": 643,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 400,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "25"
+}

@@ -1,0 +1,168 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5586,
+ "ungrounded": 0.4414,
+ "verdict": "contradicted",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.541,
+   "share_of_answer": 0.3022,
+   "claims": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.3643,
+   "share_of_answer": 0.2035,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0947,
+   "share_of_answer": 0.0529,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict dose differs: the GP letter of 2025-06-05 says 'l\u00e1tex (dermatitis de contacto)' and the discharge summary of 2025-12-08 says 'nil known.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2054,
+   "supported": 0.3573,
+   "contradicted": 0.543,
+   "not_stated": 0.0738,
+   "not_a_claim": 0.0259,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.6974,
+    "D2": 0.2601,
+    "D3": 0.0424
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "l\u00e1tex (dermatitis de contacto).",
+    "start": 219,
+    "end": 250,
+    "confidence": 0.914
+   }
+  },
+  {
+   "claim": "Amlodipine dose differs: the GP letter of 2025-06-05 says 'amlodipino 5 mg una vez al d\u00eda', the discharge summary of 2025-12-08 says 'amlodipine 5mg o.d.', and the clinic note of 2026-05-08 says 'amlodipine 10mg o.d.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2926,
+   "supported": 0.6403,
+   "contradicted": 0.1152,
+   "not_stated": 0.1086,
+   "not_a_claim": 0.1359,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.689,
+    "D2": 0.1276,
+    "D3": 0.1834
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "amlodipino 5 mg una vez al d\u00eda",
+    "start": 367,
+    "end": 397,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Bisoprolol missing from the newest record: the GP letter of 2025-06-05 says 'bisoprolol 2.5 mg una vez al d\u00eda' and the discharge summary of 2025-12-08 says 'bisoprolol 2.5mg daily'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.243,
+   "supported": 0.1627,
+   "contradicted": 0.0253,
+   "not_stated": 0.7544,
+   "not_a_claim": 0.0575,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.5831,
+    "D2": 0.2449,
+    "D3": 0.1719
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "bisoprolol 2.5 mg una vez al d\u00eda",
+    "start": 267,
+    "end": 299,
+    "confidence": 0.999
+   }
+  },
+  {
+   "claim": "Insulin glargine new: the clinic note of 2026-05-08 says 'insulin glargine 16 units ON'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1181,
+   "supported": 0.9974,
+   "contradicted": 0.0011,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0009,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "insulin glargine 16 units ON",
+    "start": 236,
+    "end": 264,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Salbutamol inhaler stopped: the clinic note of 2026-05-08 says 'salbutamol inhaler stopped on 2026-05-08'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1409,
+   "supported": 0.9974,
+   "contradicted": 0.0011,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0009,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler stopped on 2026-05-08",
+    "start": 193,
+    "end": 233,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1,
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.1627
+ },
+ "timing": {
+  "read_ms": 171,
+  "total_ms": 173
+ },
+ "_credits": "7"
+}

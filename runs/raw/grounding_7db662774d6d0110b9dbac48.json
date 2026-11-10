@@ -1,0 +1,110 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7302,
+ "ungrounded": 0.2698,
+ "verdict": "contradicted",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.5968,
+   "share_of_answer": 0.4358,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.4032,
+   "share_of_answer": 0.2944,
+   "claims": [
+    0
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The GP letter of 2026-03-16 states 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2521,
+   "supported": 0.9957,
+   "contradicted": 0.0019,
+   "not_stated": 0.0011,
+   "not_a_claim": 0.0012,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0011,
+    "D2": 0.9989
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+    "start": 267,
+    "end": 319,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The pharmacy record of 2025-02-15 states 'lisinopril 10mg o.d.', but this is not mentioned in the GP letter of 2026-03-16.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3417,
+   "supported": 0.9877,
+   "contradicted": 0.0036,
+   "not_stated": 0.0054,
+   "not_a_claim": 0.0032,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9949,
+    "D2": 0.0051
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10mg o.d.",
+    "start": 229,
+    "end": 249,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The pharmacy record of 2025-02-15 states 'metformin 500 mg b.i.d.', whereas the GP letter of 2026-03-16 states 'metformina 1000 mg cada 12 horas'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4062,
+   "supported": 0.3488,
+   "contradicted": 0.5332,
+   "not_stated": 0.0732,
+   "not_a_claim": 0.0447,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.704,
+    "D2": 0.296
+   },
+   "source": null,
+   "evidence": {
+    "document": "D2",
+    "quote": "metformina 1000 mg cada 12 horas",
+    "start": 387,
+    "end": 419,
+    "confidence": 0.999
+   }
+  }
+ ],
+ "unsupported_claims": [
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.3488
+ },
+ "timing": {
+  "read_ms": 104,
+  "total_ms": 106
+ },
+ "_credits": "4"
+}

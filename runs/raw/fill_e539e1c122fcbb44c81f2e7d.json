@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Allergy conflict new: the pharmacy record of 2025-04-17 says 'sulfonamides (hives)' and the GP letter of 2025-12-25 says 'Sin alergias medicamentosas conocidas.'.\nAtorvastatin stopped: the GP letter of 2025-12-25 says 'atorvastatina suspendido el 2025-12-25' while the pharmacy record of 2025-04-17 says 'atorvastatin 20 mg ON'.\nBisoprolol dose differs: the GP letter of 2025-12-25 says 'bisoprolol 5 mg una vez al d\u00eda' while the pharmacy record of 2025-04-17 says 'bisoprolol 2.5mg OD'.\nWarfarin missing from the newest record: the GP letter of 2025-12-25 does not list it, but the pharmacy record of 2025-04-17 says 'warfarin 3mg OD as per INR'",
+   "confidence": 0.7412398509797415,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 655,
+  "total_ms": 685,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 528,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "27"
+}

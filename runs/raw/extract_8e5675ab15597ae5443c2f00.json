@@ -1,0 +1,282 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "type 2 diabetes",
+    "gastro-oesophageal reflux disease"
+   ],
+   "items": [
+    {
+     "value": "type 2 diabetes",
+     "start": 119,
+     "end": 134,
+     "confidence": 0.9999999949033209,
+     "p_verify": 0.9999999949033209
+    },
+    {
+     "value": "gastro-oesophageal reflux disease",
+     "start": 142,
+     "end": 175,
+     "confidence": 0.9999999956515229,
+     "p_verify": 0.9999999956515229
+    }
+   ],
+   "confidence": 0.9999999949033209
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "salbutamol inhaler",
+     "frequency": null,
+     "stopped": "stopped on 2026-05-08"
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 191,
+     "end": 234,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 193,
+       "end": 211,
+       "confidence": 0.9999961545964924,
+       "p_verify": 0.9999961545964924
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.965,
+       "p_blank": 0.965
+      },
+      "stopped": {
+       "value": "stopped on 2026-05-08",
+       "start": 212,
+       "end": 233,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 234,
+     "end": 271,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 236,
+       "end": 252,
+       "confidence": 0.9999999998198983,
+       "p_verify": 0.9999999998198983
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 253,
+       "end": 261,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 262,
+       "end": 270,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.99,
+       "p_blank": 0.99
+      }
+     }
+    },
+    {
+     "start": 271,
+     "end": 301,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 273,
+       "end": 283,
+       "confidence": 0.999999999485798,
+       "p_verify": 0.999999999485798
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 284,
+       "end": 289,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 290,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.992,
+       "p_blank": 0.992
+      }
+     }
+    },
+    {
+     "start": 301,
+     "end": 330,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 303,
+       "end": 315,
+       "confidence": 0.9999999998367595,
+       "p_verify": 0.9999999998367595
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 316,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 322,
+       "end": 330,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.993,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 303,
+         "p_verify": 0.032
+        }
+       ],
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 202,
+  "forwards": {
+   "fields": [
+    7,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 102,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 34,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 25,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 74,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 202,
+  "server_ms": 205
+ },
+ "_credits": "9"
+}

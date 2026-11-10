@@ -1,0 +1,328 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [
+    "D3"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [
+    "D3",
+    "D4"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [
+    "D1",
+    "D2"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D4",
+   "duplicates": [],
+   "overlaps": [
+    "D2"
+   ],
+   "conflicts": [
+    "D1",
+    "D2",
+    "D3"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "overlapping",
+   "related": 0.9967,
+   "probabilities": {
+    "same": 0.0038,
+    "overlapping": 0.9842,
+    "conflicting": 0.0086,
+    "unrelated": 0.0033
+   },
+   "duplicates": [],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9941,
+   "probabilities": {
+    "same": 0.0738,
+    "overlapping": 0.906,
+    "conflicting": 0.0143,
+    "unrelated": 0.0059
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.0049,
+      "restated": 0.9826,
+      "elaborated": 0.0071,
+      "different": 0.0054
+     },
+     "confidence": 0.9946,
+     "a": {
+      "document": "D1",
+      "quote": "- insulin glargine 16 units nocte",
+      "start": 166,
+      "end": 199,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2026-01-31\nPatient: synthetic case P011, 56-year-old male.\n\n\nMedications:\n- insulin glargine 16 units nocte\n- lisinopril 10 mg daily\n- atorvastatin 20mg nocte\n- levothyroxine 50 mcg OD before breakfast",
+      "start": 0,
+      "end": 254,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D4",
+   "relation": "overlapping",
+   "related": 0.9969,
+   "probabilities": {
+    "same": 0.0031,
+    "overlapping": 0.972,
+    "conflicting": 0.0218,
+    "unrelated": 0.0031
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.8311,
+      "date_or_version": 0.0361,
+      "rule_or_condition": 0.0677,
+      "scope": 0.0226,
+      "name": 0.0206,
+      "no_conflict": 0.0219
+     },
+     "confidence": 0.9781,
+     "a": {
+      "document": "D1",
+      "quote": "- atorvastatin 20 mg ON",
+      "start": 223,
+      "end": 246,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-05-04\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\n- gastro-oesophageal reflux disease\n- chronic kidney disease stage 3a\n\nMedications:\n- insulin glargine 16 units nocte\n- bisoprolol 2.5mg o.d.\n- atorvastatin stopped on 2026-05-04\n- levothyroxine 50 micrograms OD before breakfast",
+      "start": 0,
+      "end": 377,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9952,
+   "probabilities": {
+    "same": 0.0163,
+    "overlapping": 0.9687,
+    "conflicting": 0.0102,
+    "unrelated": 0.0048
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.0024,
+      "restated": 0.9906,
+      "elaborated": 0.0035,
+      "different": 0.0034
+     },
+     "confidence": 0.9966,
+     "a": {
+      "document": "D2",
+      "quote": "- insulina glargina 16 unidades por la noche",
+      "start": 220,
+      "end": 264,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2026-01-31\nPatient: synthetic case P011, 56-year-old male.\n\n\nMedications:\n- insulin glargine 16 units nocte\n- lisinopril 10 mg daily\n- atorvastatin 20mg nocte\n- levothyroxine 50 mcg OD before breakfast",
+      "start": 0,
+      "end": 254,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D2",
+   "b": "D4",
+   "relation": "overlapping",
+   "related": 0.9952,
+   "probabilities": {
+    "same": 0.0046,
+    "overlapping": 0.9489,
+    "conflicting": 0.0417,
+    "unrelated": 0.0048
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.0191,
+      "restated": 0.6099,
+      "elaborated": 0.088,
+      "different": 0.2831
+     },
+     "confidence": 0.7169,
+     "a": {
+      "document": "D2",
+      "quote": "- enfermedad por reflujo gastroesof\u00e1gico",
+      "start": 141,
+      "end": 181,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-05-04\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\n- gastro-oesophageal reflux disease\n- chronic kidney disease stage 3a\n\nMedications:\n- insulin glargine 16 units nocte\n- bisoprolol 2.5mg o.d.\n- atorvastatin stopped on 2026-05-04\n- levothyroxine 50 micrograms OD before breakfast",
+      "start": 0,
+      "end": 377,
+      "confidence": 0.999
+     }
+    }
+   ],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.8672,
+      "date_or_version": 0.0255,
+      "rule_or_condition": 0.0515,
+      "scope": 0.0153,
+      "name": 0.0176,
+      "no_conflict": 0.0229
+     },
+     "confidence": 0.9771,
+     "a": {
+      "document": "D2",
+      "quote": "- atorvastatina 20 mg por la noche",
+      "start": 299,
+      "end": 333,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-05-04\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\n- gastro-oesophageal reflux disease\n- chronic kidney disease stage 3a\n\nMedications:\n- insulin glargine 16 units nocte\n- bisoprolol 2.5mg o.d.\n- atorvastatin stopped on 2026-05-04\n- levothyroxine 50 micrograms OD before breakfast",
+      "start": 0,
+      "end": 377,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D3",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.992,
+   "probabilities": {
+    "same": 0.0071,
+    "overlapping": 0.4693,
+    "conflicting": 0.5156,
+    "unrelated": 0.008
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.8434,
+      "date_or_version": 0.0331,
+      "rule_or_condition": 0.0655,
+      "scope": 0.0137,
+      "name": 0.0178,
+      "no_conflict": 0.0264
+     },
+     "confidence": 0.9736,
+     "a": {
+      "document": "D3",
+      "quote": "- atorvastatin 20mg nocte",
+      "start": 186,
+      "end": 211,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-05-04\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\n- gastro-oesophageal reflux disease\n- chronic kidney disease stage 3a\n\nMedications:\n- insulin glargine 16 units nocte\n- bisoprolol 2.5mg o.d.\n- atorvastatin stopped on 2026-05-04\n- levothyroxine 50 micrograms OD before breakfast",
+      "start": 0,
+      "end": 377,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [
+  1,
+  3,
+  4
+ ],
+ "conflicts": [
+  2,
+  4,
+  5
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 34,
+  "passage_reads": 1,
+  "passages_ms": 106,
+  "passages": 9,
+  "counterparts_ms": 211,
+  "kinds_ms": 37
+ },
+ "timing": {
+  "read_ms": 387,
+  "total_ms": 390
+ },
+ "_credits": "15"
+}

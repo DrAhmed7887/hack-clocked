@@ -1,0 +1,324 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- asma",
+    "- diabetes mellitus tipo 2"
+   ],
+   "items": [
+    {
+     "value": "- asma",
+     "start": 141,
+     "end": 147,
+     "confidence": 0.9999999993664661,
+     "p_verify": 0.9999999993664661
+    },
+    {
+     "value": "- diabetes mellitus tipo 2",
+     "start": 148,
+     "end": 174,
+     "confidence": 0.9999999994441642,
+     "p_verify": 0.9999999994441642
+    }
+   ],
+   "confidence": 0.9999999993664661
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformina",
+     "frequency": "cada 12 horas",
+     "line": "metformina 500 mg cada 12 horas",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipino",
+     "frequency": "una vez al d\u00eda",
+     "line": "amlodipino 5 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "16 unidades",
+     "drug": "insulina glargina",
+     "frequency": "por la noche",
+     "line": "insulina glargina 16 unidades por la noche",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "una vez al d\u00eda",
+     "line": "lisinopril 10 mg una vez al d\u00eda",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 189,
+     "end": 223,
+     "fields": {
+      "drug": {
+       "value": "metformina",
+       "start": 191,
+       "end": 201,
+       "confidence": 0.9999999994409097,
+       "p_verify": 0.9999999994409097
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 202,
+       "end": 208,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "cada 12 horas",
+       "start": 209,
+       "end": 222,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformina 500 mg cada 12 horas",
+       "start": 191,
+       "end": 222,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 223,
+     "end": 256,
+     "fields": {
+      "drug": {
+       "value": "amlodipino",
+       "start": 225,
+       "end": 235,
+       "confidence": 0.9999999994219231,
+       "p_verify": 0.9999999994219231
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 236,
+       "end": 240,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 241,
+       "end": 255,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipino 5 mg una vez al d\u00eda",
+       "start": 225,
+       "end": 255,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 256,
+     "end": 301,
+     "fields": {
+      "drug": {
+       "value": "insulina glargina",
+       "start": 258,
+       "end": 275,
+       "confidence": 0.9999999994690356,
+       "p_verify": 0.9999999994690356
+      },
+      "dose": {
+       "value": "16 unidades",
+       "start": 276,
+       "end": 287,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "por la noche",
+       "start": 288,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulina glargina 16 unidades por la noche",
+       "start": 258,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 301,
+     "end": 334,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 303,
+       "end": 313,
+       "confidence": 0.9999999996088762,
+       "p_verify": 0.9999999996088762
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 314,
+       "end": 319,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 320,
+       "end": 334,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg una vez al d\u00eda",
+       "start": 303,
+       "end": 334,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.985,
+       "p_blank": 0.985
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 221,
+  "forwards": {
+   "fields": [
+    8,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 119,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 221,
+  "server_ms": 420
+ },
+ "_credits": "9"
+}

@@ -1,0 +1,334 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "penicillin (rash)"
+   ],
+   "items": [
+    {
+     "value": "penicillin (rash)",
+     "start": 202,
+     "end": 219,
+     "confidence": 0.9999999998082829,
+     "p_verify": 0.9999999998082829
+    }
+   ],
+   "confidence": 0.9999999998082829
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known chronic kidney disease stage 3a.",
+    "Known atrial fibrillation."
+   ],
+   "items": [
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 126,
+     "end": 164,
+     "confidence": 0.9999999996832942,
+     "p_verify": 0.9999999996832942
+    },
+    {
+     "value": "Known atrial fibrillation.",
+     "start": 165,
+     "end": 191,
+     "confidence": 0.9999999997088427,
+     "p_verify": 0.9999999997088427
+    }
+   ],
+   "confidence": 0.9999999996832942
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 10 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "line": "warfarin 3 mg once daily, dose by INR",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 235,
+     "end": 293,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 237,
+       "end": 250,
+       "confidence": 0.9999999997682931,
+       "p_verify": 0.9999999997682931
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 251,
+       "end": 264,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 265,
+       "end": 275,
+       "p_start": 1,
+       "p_close": 0.777,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.777
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 237,
+       "end": 292,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 293,
+     "end": 322,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 295,
+       "end": 305,
+       "confidence": 0.9999999996411255,
+       "p_verify": 0.9999999996411255
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 306,
+       "end": 310,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 311,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg once daily",
+       "start": 295,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 322,
+     "end": 352,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 324,
+       "end": 334,
+       "confidence": 0.9999999997247675,
+       "p_verify": 0.9999999997247675
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 335,
+       "end": 340,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 341,
+       "end": 351,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg once daily",
+       "start": 324,
+       "end": 351,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 352,
+     "end": 391,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 354,
+       "end": 362,
+       "confidence": 0.9999999993760886,
+       "p_verify": 0.9999999993760886
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 363,
+       "end": 367,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 368,
+       "end": 378,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3 mg once daily, dose by INR",
+       "start": 354,
+       "end": 391,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 182,
+  "forwards": {
+   "fields": [
+    6,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 81,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 78,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 182,
+  "server_ms": 187
+ },
+ "_credits": "8"
+}

@@ -1,0 +1,341 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "penicillin (rash)"
+   ],
+   "items": [
+    {
+     "value": "penicillin (rash)",
+     "start": 225,
+     "end": 242,
+     "confidence": 0.9999999997923203,
+     "p_verify": 0.9999999997923203
+    }
+   ],
+   "confidence": 0.9999999997923203
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "chronic kidney disease stage 3a",
+    "atrial fibrillation"
+   ],
+   "items": [
+    {
+     "value": "chronic kidney disease stage 3a",
+     "start": 155,
+     "end": 186,
+     "confidence": 0.9999999940987014,
+     "p_verify": 0.9999999940987014
+    },
+    {
+     "value": "atrial fibrillation",
+     "start": 194,
+     "end": 213,
+     "confidence": 0.999999997064283,
+     "p_verify": 0.999999997064283
+    }
+   ],
+   "confidence": 0.9999999940987014
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": "atorvastatin 20 mg at night",
+     "stopped": null
+    },
+    {
+     "dose": "75 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 75 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "line": "warfarin 3 mg once daily, dose by INR",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 258,
+     "end": 288,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 260,
+       "end": 272,
+       "confidence": 0.9999999996526756,
+       "p_verify": 0.9999999996526756
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 273,
+       "end": 278,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 279,
+       "end": 287,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.495,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin",
+         "start": 260,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg at night",
+       "start": 260,
+       "end": 287,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 288,
+     "end": 346,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 290,
+       "end": 303,
+       "confidence": 0.999999999794644,
+       "p_verify": 0.999999999794644
+      },
+      "dose": {
+       "value": "75 micrograms",
+       "start": 304,
+       "end": 317,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 318,
+       "end": 345,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 75 micrograms once daily before breakfast",
+       "start": 290,
+       "end": 345,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 346,
+     "end": 375,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 348,
+       "end": 358,
+       "confidence": 0.9999999997300875,
+       "p_verify": 0.9999999997300875
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 359,
+       "end": 363,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 364,
+       "end": 374,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg once daily",
+       "start": 348,
+       "end": 374,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 375,
+     "end": 414,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 377,
+       "end": 385,
+       "confidence": 0.9999999996238018,
+       "p_verify": 0.9999999996238018
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 386,
+       "end": 390,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 391,
+       "end": 401,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3 mg once daily, dose by INR",
+       "start": 377,
+       "end": 414,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 189,
+  "forwards": {
+   "fields": [
+    7,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 90,
+    "locate": 0,
+    "verify": 18,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 14,
+    "extend": 0,
+    "contest": 29,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 189,
+  "server_ms": 192
+ },
+ "_credits": "8"
+}

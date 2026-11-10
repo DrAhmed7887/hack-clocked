@@ -1,0 +1,321 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex - causes contact dermatitis"
+   ],
+   "items": [
+    {
+     "value": "latex - causes contact dermatitis",
+     "start": 207,
+     "end": 240,
+     "confidence": 0.9999999987400703,
+     "p_verify": 0.9999999987400703
+    }
+   ],
+   "confidence": 0.9999999987400703
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- hypothyroidism"
+   ],
+   "items": [
+    {
+     "value": "- hypothyroidism",
+     "start": 177,
+     "end": 193,
+     "confidence": 0.9999999997258382,
+     "p_verify": 0.9999999997258382
+    }
+   ],
+   "confidence": 0.9999999997258382
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "mane",
+     "line": "levothyroxine 50 micrograms mane, before food",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "bisoprolol",
+     "frequency": null,
+     "line": "bisoprolol stopped on 2026-02-28",
+     "stopped": "stopped on 2026-02-28"
+    },
+    {
+     "dose": "20mg",
+     "drug": "atorvastatin",
+     "frequency": "ON",
+     "line": "atorvastatin 20mg ON",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "nocte",
+     "line": "insulin glargine 16 units nocte",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 256,
+     "end": 304,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 258,
+       "end": 271,
+       "confidence": 0.9999999996884454,
+       "p_verify": 0.9999999996884454
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 272,
+       "end": 285,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "mane",
+       "start": 286,
+       "end": 290,
+       "p_start": 1,
+       "p_close": 0.958,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.958
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms mane, before food",
+       "start": 258,
+       "end": 303,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 304,
+     "end": 339,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 306,
+       "end": 316,
+       "confidence": 0.9999999988945885,
+       "p_verify": 0.9999999988945885
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.986,
+       "p_blank": 0.986
+      },
+      "line": {
+       "value": "bisoprolol stopped on 2026-02-28",
+       "start": 306,
+       "end": 338,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2026-02-28",
+       "start": 317,
+       "end": 338,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 339,
+     "end": 362,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 341,
+       "end": 353,
+       "confidence": 0.9999999998369553,
+       "p_verify": 0.9999999998369553
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 354,
+       "end": 358,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 359,
+       "end": 361,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20mg ON",
+       "start": 341,
+       "end": 361,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 362,
+     "end": 395,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 364,
+       "end": 380,
+       "confidence": 0.9999999997007398,
+       "p_verify": 0.9999999997007398
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 381,
+       "end": 389,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "nocte",
+       "start": 390,
+       "end": 395,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units nocte",
+       "start": 364,
+       "end": 395,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 182,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 79,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 29,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 76,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 182,
+  "server_ms": 185
+ },
+ "_credits": "8"
+}

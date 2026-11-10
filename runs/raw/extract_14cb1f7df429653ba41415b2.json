@@ -1,0 +1,324 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known asthma.",
+    "Known type 2 diabetes."
+   ],
+   "items": [
+    {
+     "value": "Known asthma.",
+     "start": 128,
+     "end": 141,
+     "confidence": 0.9999999998801408,
+     "p_verify": 0.9999999998801408
+    },
+    {
+     "value": "Known type 2 diabetes.",
+     "start": 142,
+     "end": 164,
+     "confidence": 0.999999999829754,
+     "p_verify": 0.999999999829754
+    }
+   ],
+   "confidence": 0.999999999829754
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "line": "metformin 500 mg twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "line": "insulin glargine 16 units at night",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 10 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 179,
+     "end": 210,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 181,
+       "end": 190,
+       "confidence": 0.9999999997109328,
+       "p_verify": 0.9999999997109328
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 191,
+       "end": 197,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 198,
+       "end": 209,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500 mg twice daily",
+       "start": 181,
+       "end": 209,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 210,
+     "end": 239,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 212,
+       "end": 222,
+       "confidence": 0.9999999998092173,
+       "p_verify": 0.9999999998092173
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 223,
+       "end": 227,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 228,
+       "end": 238,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg once daily",
+       "start": 212,
+       "end": 238,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.977,
+       "p_blank": 0.977
+      }
+     }
+    },
+    {
+     "start": 239,
+     "end": 276,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 241,
+       "end": 257,
+       "confidence": 0.9999999998440667,
+       "p_verify": 0.9999999998440667
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 258,
+       "end": 266,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 267,
+       "end": 275,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units at night",
+       "start": 241,
+       "end": 275,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 276,
+     "end": 305,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 278,
+       "end": 288,
+       "confidence": 0.9999999996934872,
+       "p_verify": 0.9999999996934872
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 289,
+       "end": 294,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 295,
+       "end": 305,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg once daily",
+       "start": 278,
+       "end": 305,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.989,
+       "p_blank": 0.989
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 153,
+  "forwards": {
+   "fields": [
+    4,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 2,
+    "generate": 52,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 153,
+  "server_ms": 304
+ },
+ "_credits": "7"
+}

@@ -1,0 +1,306 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 mcg",
+     "drug": "levothyroxine",
+     "frequency": "OD before breakfast",
+     "line": "levothyroxine 50 mcg OD before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "10mg",
+     "drug": "lisinopril",
+     "frequency": "o.d.",
+     "line": "lisinopril 10mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": "2.5mg",
+     "drug": "bisoprolol",
+     "frequency": "daily",
+     "line": "bisoprolol 2.5mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "3mg",
+     "drug": "warfarin",
+     "frequency": "OD as per INR",
+     "line": "warfarin 3mg OD as per INR",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 127,
+     "end": 170,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 129,
+       "end": 142,
+       "confidence": 0.9999999995217657,
+       "p_verify": 0.9999999995217657
+      },
+      "dose": {
+       "value": "50 mcg",
+       "start": 143,
+       "end": 149,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD before breakfast",
+       "start": 150,
+       "end": 169,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 mcg OD before breakfast",
+       "start": 129,
+       "end": 169,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 170,
+     "end": 193,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 172,
+       "end": 182,
+       "confidence": 0.9999999995207574,
+       "p_verify": 0.9999999995207574
+      },
+      "dose": {
+       "value": "10mg",
+       "start": 183,
+       "end": 187,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 188,
+       "end": 192,
+       "p_start": 1,
+       "p_close": 0.998,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.998
+      },
+      "line": {
+       "value": "lisinopril 10mg o.d.",
+       "start": 172,
+       "end": 192,
+       "p_start": 1,
+       "p_close": 0.991,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.991
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.973,
+       "p_blank": 0.973
+      }
+     }
+    },
+    {
+     "start": 193,
+     "end": 218,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 195,
+       "end": 205,
+       "confidence": 0.9999999995462185,
+       "p_verify": 0.9999999995462185
+      },
+      "dose": {
+       "value": "2.5mg",
+       "start": 206,
+       "end": 211,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 212,
+       "end": 217,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5mg daily",
+       "start": 195,
+       "end": 217,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 218,
+     "end": 246,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 220,
+       "end": 228,
+       "confidence": 0.9999999995364968,
+       "p_verify": 0.9999999995364968
+      },
+      "dose": {
+       "value": "3mg",
+       "start": 229,
+       "end": 232,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD as per INR",
+       "start": 233,
+       "end": 246,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3mg OD as per INR",
+       "start": 220,
+       "end": 246,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 141,
+  "forwards": {
+   "fields": [
+    4,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 46,
+    "locate": 0,
+    "verify": 14,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 141,
+  "server_ms": 291
+ },
+ "_credits": "6"
+}

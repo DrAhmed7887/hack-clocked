@@ -1,0 +1,117 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9452,
+ "ungrounded": 0.0548,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9861,
+   "share_of_answer": 0.932,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0078,
+   "share_of_answer": 0.0073,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0062,
+   "share_of_answer": 0.0058,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Amlodipine missing from the newest record: 'amlodipine 5 mg once daily' from the clinic note of 2025-03-15 and 'amlodipine 5 mg once daily' from the GP letter of 2026-04-16.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.318,
+   "supported": 0.8413,
+   "contradicted": 0.0224,
+   "not_stated": 0.114,
+   "not_a_claim": 0.0223,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0181,
+    "D2": 0.0228,
+    "D3": 0.9591
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "amlodipine 5 mg once daily",
+    "start": 197,
+    "end": 223,
+    "confidence": 0.994
+   }
+  },
+  {
+   "claim": "Insulin glargine stopped: 'insulin glargine 16 units at night' from the clinic note of 2025-03-15, 'insulin glargine 16 units at night' from the GP letter of 2026-04-16, and 'insulin glargine stopped on 2026-08-01' from the pharmacy record of 2026-08-01.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4669,
+   "supported": 0.992,
+   "contradicted": 0.0043,
+   "not_stated": 0.002,
+   "not_a_claim": 0.0018,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0018,
+    "D2": 0.0023,
+    "D3": 0.9959
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "insulin glargine stopped on 2026-08-01",
+    "start": 162,
+    "end": 200,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Salbutamol inhaler new: 'salbutamol inhaler 100 micrograms, 2 puffs as needed' from the pharmacy record of 2026-08-01",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2151,
+   "supported": 0.9972,
+   "contradicted": 0.0012,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0008,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+    "start": 203,
+    "end": 255,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.8413
+ },
+ "timing": {
+  "read_ms": 113,
+  "total_ms": 115
+ },
+ "_credits": "5"
+}

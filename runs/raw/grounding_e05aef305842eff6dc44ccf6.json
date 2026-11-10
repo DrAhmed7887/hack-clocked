@@ -1,0 +1,129 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7435,
+ "ungrounded": 0.2565,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6423,
+   "share_of_answer": 0.4775,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.2341,
+   "share_of_answer": 0.174,
+   "claims": [
+    3
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.1236,
+   "share_of_answer": 0.0919,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2024-04-14 states 'latex - causes contact dermatitis' while the GP letter of 2024-04-15 states 'Sin alergias medicamentosas conocidas.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.242,
+   "supported": 0.6745,
+   "contradicted": 0.2632,
+   "not_stated": 0.0312,
+   "not_a_claim": 0.0311,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.894,
+    "D2": 0.07,
+    "D3": 0.036
+   },
+   "source": "D1"
+  },
+  {
+   "claim": "The discharge summary of 2024-04-14 states 'amlodipine 5mg daily', the GP letter of 2024-04-15 states 'amlodipino 5 mg una vez al d\u00eda', and the pharmacy record of 2025-09-17 states 'amlodipine 10mg o.d.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3105,
+   "supported": 0.6994,
+   "contradicted": 0.1025,
+   "not_stated": 0.0722,
+   "not_a_claim": 0.1259,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.68,
+    "D2": 0.2114,
+    "D3": 0.1086
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D2",
+    "quote": "amlodipino 5 mg una vez al d\u00eda",
+    "start": 324,
+    "end": 354,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2024-04-14 states 'atorvastatin 20mg nocte', the GP letter of 2024-04-15 states 'atorvastatina 20 mg por la noche', and the pharmacy record of 2025-09-17 states 'atorvastatin stopped on 2025-09-17'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3394,
+   "supported": 0.7521,
+   "contradicted": 0.0622,
+   "not_stated": 0.1086,
+   "not_a_claim": 0.0771,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7202,
+    "D2": 0.1351,
+    "D3": 0.1447
+   },
+   "source": "D1"
+  },
+  {
+   "claim": "The pharmacy record of 2025-09-17 states 'insulin glargine 16 units ON'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1081,
+   "supported": 0.9973,
+   "contradicted": 0.0012,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0008,
+    "D3": 0.9985
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "insulin glargine 16 units ON",
+    "start": 151,
+    "end": 179,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.6745
+ },
+ "timing": {
+  "read_ms": 156,
+  "total_ms": 158
+ },
+ "_credits": "7"
+}

@@ -1,0 +1,327 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known gastro-oesophageal reflux disease.",
+    "Known hypothyroidism.",
+    "Known chronic kidney disease stage 3a."
+   ],
+   "items": [
+    {
+     "value": "Known gastro-oesophageal reflux disease.",
+     "start": 151,
+     "end": 191,
+     "confidence": 0.9999999997988451,
+     "p_verify": 0.9999999997988451
+    },
+    {
+     "value": "Known hypothyroidism.",
+     "start": 192,
+     "end": 213,
+     "confidence": 0.9999999998314382,
+     "p_verify": 0.9999999998314382
+    },
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 214,
+     "end": 252,
+     "confidence": 0.999999999800222,
+     "p_verify": 0.999999999800222
+    }
+   ],
+   "confidence": 0.9999999997988451
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "lisinopril",
+     "frequency": null,
+     "line": "lisinopril stopped on 2025-09-09",
+     "stopped": "stopped on 2025-09-09"
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "line": "warfarin 5 mg once daily, dose by INR",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 267,
+     "end": 302,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 269,
+       "end": 279,
+       "confidence": 0.99999994935675,
+       "p_verify": 0.99999994935675
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      },
+      "line": {
+       "value": "lisinopril stopped on 2025-09-09",
+       "start": 269,
+       "end": 301,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-09-09",
+       "start": 280,
+       "end": 301,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 302,
+     "end": 333,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 304,
+       "end": 314,
+       "confidence": 0.9999999998359355,
+       "p_verify": 0.9999999998359355
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 315,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 322,
+       "end": 332,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 304,
+       "end": 332,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 333,
+     "end": 373,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 335,
+       "end": 343,
+       "confidence": 0.9999999997357787,
+       "p_verify": 0.9999999997357787
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 344,
+       "end": 348,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 349,
+       "end": 359,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 5 mg once daily, dose by INR",
+       "start": 335,
+       "end": 372,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 373,
+     "end": 430,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 375,
+       "end": 388,
+       "confidence": 0.9999999997571083,
+       "p_verify": 0.9999999997571083
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 389,
+       "end": 402,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 403,
+       "end": 413,
+       "p_start": 1,
+       "p_close": 0.706,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.706
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 375,
+       "end": 430,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 205,
+  "forwards": {
+   "fields": [
+    6,
+    1
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 94,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 12,
+    "contest": 25,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 85,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 205,
+  "server_ms": 572
+ },
+ "_credits": "9"
+}

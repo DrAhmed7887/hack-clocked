@@ -1,0 +1,334 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex (contact dermatitis)"
+   ],
+   "items": [
+    {
+     "value": "latex (contact dermatitis)",
+     "start": 211,
+     "end": 237,
+     "confidence": 0.9999999994219231,
+     "p_verify": 0.9999999994219231
+    }
+   ],
+   "confidence": 0.9999999994219231
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known essential hypertension.",
+    "Known hypothyroidism."
+   ],
+   "items": [
+    {
+     "value": "Known essential hypertension.",
+     "start": 149,
+     "end": 178,
+     "confidence": 0.9999999995466906,
+     "p_verify": 0.9999999995466906
+    },
+    {
+     "value": "Known hypothyroidism.",
+     "start": 179,
+     "end": 200,
+     "confidence": 0.9999999997682931,
+     "p_verify": 0.9999999997682931
+    }
+   ],
+   "confidence": 0.9999999995466906
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "line": "metformin 500 mg twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "line": "insulin glargine 16 units at night",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 253,
+     "end": 311,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 255,
+       "end": 268,
+       "confidence": 0.9999999998070859,
+       "p_verify": 0.9999999998070859
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 269,
+       "end": 282,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 283,
+       "end": 310,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 255,
+       "end": 310,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 311,
+     "end": 342,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 313,
+       "end": 323,
+       "confidence": 0.9999999998623892,
+       "p_verify": 0.9999999998623892
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 324,
+       "end": 330,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 331,
+       "end": 341,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 313,
+       "end": 341,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 342,
+     "end": 373,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 344,
+       "end": 353,
+       "confidence": 0.9999999995391959,
+       "p_verify": 0.9999999995391959
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 354,
+       "end": 360,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 361,
+       "end": 372,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500 mg twice daily",
+       "start": 344,
+       "end": 372,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 373,
+     "end": 409,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 375,
+       "end": 391,
+       "confidence": 0.9999999997519047,
+       "p_verify": 0.9999999997519047
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 392,
+       "end": 400,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 401,
+       "end": 409,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units at night",
+       "start": 375,
+       "end": 409,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 168,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 2,
+    "generate": 64,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 1,
+    "point": 34,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 79,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 168,
+  "server_ms": 173
+ },
+ "_credits": "7"
+}

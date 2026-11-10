@@ -1,0 +1,188 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [
+    "D2"
+   ],
+   "overlaps": [],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [
+    "D1"
+   ],
+   "overlaps": [],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D1",
+    "D2"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "same",
+   "related": 0.9929,
+   "probabilities": {
+    "same": 0.9099,
+    "overlapping": 0.07,
+    "conflicting": 0.0131,
+    "unrelated": 0.0071
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.8917,
+      "restated": 0.0216,
+      "elaborated": 0.0725,
+      "different": 0.0142
+     },
+     "confidence": 0.9858,
+     "a": {
+      "document": "D1",
+      "quote": "Outpatient clinic note, Alexandria",
+      "start": 0,
+      "end": 34,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D2",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2024-12-07\nPatient: synthetic case P015, 44-year-old male.\n\n\nMedications:\n- levothyroxine 50 micrograms once daily before breakfast\n- lisinopril 10 mg once daily\n- bisoprolol 2.5 mg once daily\n- warfarin 3 mg once daily, dose by INR",
+      "start": 0,
+      "end": 285,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9921,
+   "probabilities": {
+    "same": 0.0087,
+    "overlapping": 0.0686,
+    "conflicting": 0.9149,
+    "unrelated": 0.0079
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9937,
+      "date_or_version": 0.0013,
+      "rule_or_condition": 0.0014,
+      "scope": 0.0011,
+      "name": 0.0012,
+      "no_conflict": 0.0012
+     },
+     "confidence": 0.9988,
+     "a": {
+      "document": "D1",
+      "quote": "- levothyroxine 50 micrograms once daily before breakfast",
+      "start": 182,
+      "end": 239,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2024-12-26\nPatient: synthetic case P015, 44-year-old male.\n\nProblems:\nKnown essential hypertension.\n\nMedications:\n- levothyroxine 75 micrograms once daily before breakfast\n- lisinopril stopped on 2024-12-26\n- salbutamol inhaler 100 micrograms, 2 puffs as needed\n- bisoprolol 2.5 mg once daily\n- warfarin 3 mg once daily, dose by INR",
+      "start": 0,
+      "end": 411,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.994,
+   "probabilities": {
+    "same": 0.0056,
+    "overlapping": 0.1268,
+    "conflicting": 0.8615,
+    "unrelated": 0.006
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9946,
+      "date_or_version": 0.0011,
+      "rule_or_condition": 0.0013,
+      "scope": 0.0009,
+      "name": 0.001,
+      "no_conflict": 0.0011
+     },
+     "confidence": 0.9989,
+     "a": {
+      "document": "D2",
+      "quote": "- levothyroxine 50 micrograms once daily before breakfast",
+      "start": 127,
+      "end": 184,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2024-12-26\nPatient: synthetic case P015, 44-year-old male.\n\nProblems:\nKnown essential hypertension.\n\nMedications:\n- levothyroxine 75 micrograms once daily before breakfast\n- lisinopril stopped on 2024-12-26\n- salbutamol inhaler 100 micrograms, 2 puffs as needed\n- bisoprolol 2.5 mg once daily\n- warfarin 3 mg once daily, dose by INR",
+      "start": 0,
+      "end": 411,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [
+  0
+ ],
+ "overlaps": [],
+ "conflicts": [
+  1,
+  2
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 26,
+  "passage_reads": 1,
+  "passages_ms": 66,
+  "passages": 5,
+  "counterparts_ms": 116,
+  "kinds_ms": 29
+ },
+ "timing": {
+  "read_ms": 237,
+  "total_ms": 239
+ },
+ "_credits": "10"
+}

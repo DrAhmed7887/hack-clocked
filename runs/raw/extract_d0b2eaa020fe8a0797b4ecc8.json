@@ -1,0 +1,317 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 168,
+   "end": 192,
+   "confidence": 0.9999999994663875,
+   "p_verify": 0.9999999994663875
+  },
+  "problems": {
+   "value": [
+    "Known chronic kidney disease stage 3a."
+   ],
+   "items": [
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 128,
+     "end": 166,
+     "confidence": 0.9999999997263285,
+     "p_verify": 0.9999999997263285
+    }
+   ],
+   "confidence": 0.9999999997263285
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "atorvastatin",
+     "frequency": null,
+     "line": "atorvastatin stopped on 2025-12-25",
+     "stopped": "stopped on 2025-12-25"
+    },
+    {
+     "dose": "5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "line": "metformin 500 mg twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "line": "omeprazole 20 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 207,
+     "end": 244,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 209,
+       "end": 221,
+       "confidence": 0.9999990289342636,
+       "p_verify": 0.9999990289342636
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.183,
+       "rejected_value": "stopped on 2025-12-25",
+       "rejected_p_verify": 0.001,
+       "reason": "verification_rejected"
+      },
+      "line": {
+       "value": "atorvastatin stopped on 2025-12-25",
+       "start": 209,
+       "end": 243,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-12-25",
+       "start": 222,
+       "end": 243,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 244,
+     "end": 273,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 246,
+       "end": 256,
+       "confidence": 0.9999999998378561,
+       "p_verify": 0.9999999998378561
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 257,
+       "end": 261,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 262,
+       "end": 272,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 5 mg once daily",
+       "start": 246,
+       "end": 272,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 273,
+     "end": 304,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 275,
+       "end": 284,
+       "confidence": 0.9999999995741553,
+       "p_verify": 0.9999999995741553
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 285,
+       "end": 291,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 292,
+       "end": 303,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500 mg twice daily",
+       "start": 275,
+       "end": 303,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.984,
+       "p_blank": 0.984
+      }
+     }
+    },
+    {
+     "start": 304,
+     "end": 333,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 306,
+       "end": 316,
+       "confidence": 0.9999999996608937,
+       "p_verify": 0.9999999996608937
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 317,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 323,
+       "end": 333,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazole 20 mg once daily",
+       "start": 306,
+       "end": 333,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 181,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 78,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 181,
+  "server_ms": 605
+ },
+ "_credits": "8"
+}

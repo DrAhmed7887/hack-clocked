@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The pharmacy record of 2025-04-17 says 'sulfonamides (hives)' while the GP letter of 2025-12-25 says 'Sin alergias medicamentosas conocidas.'. Atorvastatin was stopped in the GP letter of 2025-12-25, whereas the clinic note of 2024-08-15, the discharge summary of 2025-01-11, and the pharmacy record of 2025-04-17 list 'atorvastatin 20mg ON' or 'atorvastatin 20 mg ON'. Bisoprolol dose differs in the GP letter of 2025-12-25 as 'bisoprolol 5 mg una vez al d\u00eda' compared to the clinic note of 2024-08-15, the discharge summary of 2025-01-11, and the pharmacy record of 2025-04-17. Warfarin is missing from the GP letter of 2025-12-25 but was in the clinic note of 2024-08-15, the discharge summary of 2025-01-11, and the pharmacy record of 2025-04-17",
+   "confidence": 0.911422761846554,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 22,
+  "generate_ms": 824,
+  "total_ms": 856,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 880,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "34"
+}

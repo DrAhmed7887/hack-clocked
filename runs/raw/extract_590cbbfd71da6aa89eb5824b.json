@@ -1,0 +1,350 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "penicillin (rash)"
+   ],
+   "items": [
+    {
+     "value": "penicillin (rash)",
+     "start": 248,
+     "end": 265,
+     "confidence": 0.9999999997161355,
+     "p_verify": 0.9999999997161355
+    }
+   ],
+   "confidence": 0.9999999997161355
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known hyperlipidaemia.",
+    "Known type 2 diabetes.",
+    "Known atrial fibrillation.",
+    "Known asthma."
+   ],
+   "items": [
+    {
+     "value": "Known hyperlipidaemia.",
+     "start": 151,
+     "end": 173,
+     "confidence": 0.99999999975503,
+     "p_verify": 0.99999999975503
+    },
+    {
+     "value": "Known type 2 diabetes.",
+     "start": 174,
+     "end": 196,
+     "confidence": 0.9999999997718243,
+     "p_verify": 0.9999999997718243
+    },
+    {
+     "value": "Known atrial fibrillation.",
+     "start": 197,
+     "end": 223,
+     "confidence": 0.9999999996084061,
+     "p_verify": 0.9999999996084061
+    },
+    {
+     "value": "Known asthma.",
+     "start": 224,
+     "end": 237,
+     "confidence": 0.9999999994813986,
+     "p_verify": 0.9999999994813986
+    }
+   ],
+   "confidence": 0.9999999994813986
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 10 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "line": "insulin glargine 16 units at night",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 281,
+     "end": 310,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 283,
+       "end": 293,
+       "confidence": 0.9999999989957955,
+       "p_verify": 0.9999999989957955
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 294,
+       "end": 298,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 299,
+       "end": 309,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg once daily",
+       "start": 283,
+       "end": 309,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 310,
+     "end": 340,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 312,
+       "end": 322,
+       "confidence": 0.9999999995831506,
+       "p_verify": 0.9999999995831506
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 323,
+       "end": 328,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 329,
+       "end": 339,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg once daily",
+       "start": 312,
+       "end": 339,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 340,
+     "end": 377,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 342,
+       "end": 358,
+       "confidence": 0.9999999996120033,
+       "p_verify": 0.9999999996120033
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 359,
+       "end": 367,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 368,
+       "end": 376,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units at night",
+       "start": 342,
+       "end": 376,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 377,
+     "end": 431,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 379,
+       "end": 397,
+       "confidence": 0.999999998309882,
+       "p_verify": 0.999999998309882
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 398,
+       "end": 412,
+       "p_start": 1,
+       "p_close": 0.992,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.992
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 422,
+       "end": 431,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 379,
+       "end": 431,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 192,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 83,
+    "locate": 0,
+    "verify": 25,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 192,
+  "server_ms": 551
+ },
+ "_credits": "8"
+}

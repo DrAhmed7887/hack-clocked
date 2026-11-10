@@ -1,0 +1,306 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "5mg",
+     "drug": "amlodipine",
+     "frequency": "o.d.",
+     "line": "amlodipine 5mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "ON",
+     "line": "insulin glargine 16 units ON",
+     "stopped": null
+    },
+    {
+     "dose": "3mg",
+     "drug": "warfarin",
+     "frequency": "OD as per INR",
+     "line": "warfarin 3mg OD as per INR",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "o.d.",
+     "line": "bisoprolol 2.5 mg o.d.",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 127,
+     "end": 149,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 129,
+       "end": 139,
+       "confidence": 0.9999999997308617,
+       "p_verify": 0.9999999997308617
+      },
+      "dose": {
+       "value": "5mg",
+       "start": 140,
+       "end": 143,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 144,
+       "end": 148,
+       "p_start": 1,
+       "p_close": 0.996,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.996
+      },
+      "line": {
+       "value": "amlodipine 5mg o.d.",
+       "start": 129,
+       "end": 148,
+       "p_start": 1,
+       "p_close": 0.96,
+       "p_point": 1,
+       "p_verify": 0.997,
+       "confidence": 0.96
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 149,
+     "end": 180,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 151,
+       "end": 167,
+       "confidence": 0.9999999998304796,
+       "p_verify": 0.9999999998304796
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 168,
+       "end": 176,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 177,
+       "end": 179,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units ON",
+       "start": 151,
+       "end": 179,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 180,
+     "end": 209,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 182,
+       "end": 190,
+       "confidence": 0.9999999996157423,
+       "p_verify": 0.9999999996157423
+      },
+      "dose": {
+       "value": "3mg",
+       "start": 191,
+       "end": 194,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD as per INR",
+       "start": 195,
+       "end": 208,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3mg OD as per INR",
+       "start": 182,
+       "end": 208,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 209,
+     "end": 233,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 211,
+       "end": 221,
+       "confidence": 0.9999999997414424,
+       "p_verify": 0.9999999997414424
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 222,
+       "end": 228,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 229,
+       "end": 233,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg o.d.",
+       "start": 211,
+       "end": 233,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.988,
+       "p_blank": 0.988
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 159,
+  "forwards": {
+   "fields": [
+    4,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 60,
+    "locate": 0,
+    "verify": 14,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 33,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 31,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 79,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 159,
+  "server_ms": 163
+ },
+ "_credits": "7"
+}

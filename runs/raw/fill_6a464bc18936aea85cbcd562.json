@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "No allergy conflicts were identified. Atorvastatin 20 mg nocte is missing from the GP letter of 2025-12-23 compared to the discharge summary of 2025-05-19 and the pharmacy record of 2025-07-05. Levothyroxine dose differs between the GP letter of 2025-12-23 which says 'levotiroxina 75 microgramos una vez al d\u00eda en ayunas' and the discharge summary of 2025-05-19 and pharmacy record of 2025-07-05. Lisinopril was stopped in the GP letter of 2025-12-23 whereas the discharge summary of 2025-05-19 and pharmacy record of 2025-07-05 list it",
+   "confidence": 0.9522194041518501,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 16,
+  "generate_ms": 623,
+  "total_ms": 645,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 736,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "26"
+}

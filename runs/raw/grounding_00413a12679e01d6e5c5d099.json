@@ -1,0 +1,143 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.4788,
+ "ungrounded": 0.5212,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.7981,
+   "share_of_answer": 0.3822,
+   "claims": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1291,
+   "share_of_answer": 0.0618,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0729,
+   "share_of_answer": 0.0349,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin dose differs: 'atorvastatin 20mg ON' from the discharge summary of 2024-12-09, 'atorvastatin 20mg nocte' from the pharmacy record of 2025-05-15, and 'atorvastatina 40 mg por la noche' from the GP letter of 2025-07-20.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3938,
+   "supported": 0.3196,
+   "contradicted": 0.0461,
+   "not_stated": 0.6017,
+   "not_a_claim": 0.0325,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3851,
+    "D2": 0.1611,
+    "D3": 0.4539
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "atorvastatin 20mg ON",
+    "start": 297,
+    "end": 317,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril is missing from the newest record: 'lisinopril 10 mg OD' from the discharge summary of 2024-12-09 and 'lisinopril 10mg OD' from the pharmacy record of 2025-05-15.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2962,
+   "supported": 0.1479,
+   "contradicted": 0.0341,
+   "not_stated": 0.7882,
+   "not_a_claim": 0.0298,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.2993,
+    "D2": 0.3278,
+    "D3": 0.3729
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10 mg OD",
+    "start": 251,
+    "end": 270,
+    "confidence": 0.627
+   }
+  },
+  {
+   "claim": "Omeprazole stopped: 'omeprazol suspendido el 2025-07-20' from the GP letter of 2025-07-20.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1541,
+   "supported": 0.9973,
+   "contradicted": 0.0011,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0008,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazol suspendido el 2025-07-20",
+    "start": 229,
+    "end": 263,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Warfarin is new: 'warfarina 3 mg una vez al d\u00eda seg\u00fan INR' from the GP letter of 2025-07-20",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1558,
+   "supported": 0.9976,
+   "contradicted": 0.0011,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.0008,
+    "D3": 0.9986
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarina 3 mg una vez al d\u00eda seg\u00fan INR",
+    "start": 266,
+    "end": 305,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.1479
+ },
+ "timing": {
+  "read_ms": 156,
+  "total_ms": 158
+ },
+ "_credits": "7"
+}

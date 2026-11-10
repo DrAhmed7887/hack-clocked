@@ -1,0 +1,326 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex - causes contact dermatitis"
+   ],
+   "items": [
+    {
+     "value": "latex - causes contact dermatitis",
+     "start": 187,
+     "end": 220,
+     "confidence": 0.999999999101058,
+     "p_verify": 0.999999999101058
+    }
+   ],
+   "confidence": 0.999999999101058
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- essential hypertension"
+   ],
+   "items": [
+    {
+     "value": "- essential hypertension",
+     "start": 149,
+     "end": 173,
+     "confidence": 0.9999999995052444,
+     "p_verify": 0.9999999995052444
+    }
+   ],
+   "confidence": 0.9999999995052444
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500mg",
+     "drug": "metformin",
+     "frequency": "b.i.d",
+     "line": "metformin 500mg b.i.d.",
+     "stopped": null
+    },
+    {
+     "dose": "3mg",
+     "drug": "warfarin",
+     "frequency": "OD as per INR",
+     "line": "warfarin 3mg OD as per INR",
+     "stopped": null
+    },
+    {
+     "dose": "10mg",
+     "drug": "lisinopril",
+     "frequency": "daily",
+     "line": "lisinopril 10mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "2 puffs when required",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs when required",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 236,
+     "end": 261,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 238,
+       "end": 247,
+       "confidence": 0.9999999996302751,
+       "p_verify": 0.9999999996302751
+      },
+      "dose": {
+       "value": "500mg",
+       "start": 248,
+       "end": 253,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "b.i.d",
+       "start": 254,
+       "end": 259,
+       "p_start": 1,
+       "p_close": 0.703,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.703
+      },
+      "line": {
+       "value": "metformin 500mg b.i.d.",
+       "start": 238,
+       "end": 260,
+       "p_start": 1,
+       "p_close": 0.964,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.964
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 261,
+     "end": 290,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 263,
+       "end": 271,
+       "confidence": 0.9999999996302751,
+       "p_verify": 0.9999999996302751
+      },
+      "dose": {
+       "value": "3mg",
+       "start": 272,
+       "end": 275,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD as per INR",
+       "start": 276,
+       "end": 289,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3mg OD as per INR",
+       "start": 263,
+       "end": 289,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 290,
+     "end": 314,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 292,
+       "end": 302,
+       "confidence": 0.9999999997612876,
+       "p_verify": 0.9999999997612876
+      },
+      "dose": {
+       "value": "10mg",
+       "start": 303,
+       "end": 307,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 308,
+       "end": 313,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10mg daily",
+       "start": 292,
+       "end": 313,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 314,
+     "end": 372,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 316,
+       "end": 334,
+       "confidence": 0.9999999994251212,
+       "p_verify": 0.9999999994251212
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 335,
+       "end": 349,
+       "p_start": 1,
+       "p_close": 0.999,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "frequency": {
+       "value": "2 puffs when required",
+       "start": 351,
+       "end": 372,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs when required",
+       "start": 316,
+       "end": 372,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 163,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 62,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 78,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 163,
+  "server_ms": 318
+ },
+ "_credits": "7"
+}

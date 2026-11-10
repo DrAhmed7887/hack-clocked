@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Atorvastatin is missing from the newest record: the discharge summary of 2024-06-19 says 'atorvastatin 20 mg ON', the GP letter of 2025-06-01 says 'atorvastatina 20 mg por la noche', and the clinic note of 2025-07-20 says 'atorvastatin 20mg nocte'.\nLevothyroxine dose differs: the discharge summary of 2024-06-19 says 'levothyroxine 50 mcg OD before breakfast', the GP letter of 2025-06-01 says 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas', the clinic note of 2025-07-20 says 'levothyroxine 50 mcg mane, before food', and the pharmacy record of 2025-09-16 says 'levothyroxine 75 micrograms OD before breakfast'.\nOmeprazole stopped: the discharge summary of 2024-06-19 says 'omeprazole 20mg daily', the GP letter of 2025-06-01 says 'omeprazol 20 mg una vez al d\u00eda', the clinic note of 2025-07-20 says 'omeprazole 20 mg daily', and the pharmacy record of 2025-09-16 says 'omeprazole stopped on 2025-09-16'",
+   "confidence": 0.9573142798791999,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 804,
+  "total_ms": 831,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 496,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "33"
+}

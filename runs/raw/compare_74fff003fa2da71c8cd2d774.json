@@ -1,0 +1,188 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [
+    "D2"
+   ],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [
+    "D1"
+   ],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D1",
+    "D2"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "overlapping",
+   "related": 0.9979,
+   "probabilities": {
+    "same": 0.0047,
+    "overlapping": 0.9883,
+    "conflicting": 0.0049,
+    "unrelated": 0.0021
+   },
+   "duplicates": [
+    {
+     "kind": "elaborated",
+     "kinds": {
+      "verbatim": 0.0132,
+      "restated": 0.1082,
+      "elaborated": 0.8515,
+      "different": 0.0271
+     },
+     "confidence": 0.545,
+     "a": {
+      "document": "D1",
+      "quote": "Date: 2024-06-06",
+      "start": 73,
+      "end": 89,
+      "confidence": 0.545
+     },
+     "b": {
+      "document": "D2",
+      "quote": "Outpatient clinic note, Alexandria\nDate: 2024-09-16\nPatient: synthetic case P012, 40-year-old male.\n\nProblems:\nKnown essential hypertension.\nKnown asthma.\n\nAllergy: latex (contact dermatitis).\n\nMedications:\n- metformin 500 mg twice daily\n- warfarin 3 mg once daily, dose by INR\n- lisinopril 10 mg once daily\n- salbutamol inhaler 100 micrograms, 2 puffs as needed",
+      "start": 0,
+      "end": 362,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9955,
+   "probabilities": {
+    "same": 0.0047,
+    "overlapping": 0.015,
+    "conflicting": 0.9758,
+    "unrelated": 0.0045
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "rule_or_condition",
+     "kinds": {
+      "value": 0.3747,
+      "date_or_version": 0.036,
+      "rule_or_condition": 0.5025,
+      "scope": 0.0206,
+      "name": 0.0261,
+      "no_conflict": 0.0401
+     },
+     "confidence": 0.9599,
+     "a": {
+      "document": "D1",
+      "quote": "- warfarin 3 mg once daily, dose by INR",
+      "start": 262,
+      "end": 301,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-12-01\nPatient: synthetic case P012, 40-year-old male.\n\n\nAllergy: latex (contact dermatitis).\n\nMedications:\n- amlodipine 5 mg once daily\n- warfarin stopped on 2025-12-01\n- lisinopril 20 mg once daily\n- salbutamol inhaler 100 micrograms, 2 puffs as needed",
+      "start": 0,
+      "end": 311,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9955,
+   "probabilities": {
+    "same": 0.0051,
+    "overlapping": 0.0225,
+    "conflicting": 0.9679,
+    "unrelated": 0.0045
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "rule_or_condition",
+     "kinds": {
+      "value": 0.3956,
+      "date_or_version": 0.0331,
+      "rule_or_condition": 0.5001,
+      "scope": 0.0167,
+      "name": 0.0203,
+      "no_conflict": 0.0342
+     },
+     "confidence": 0.9658,
+     "a": {
+      "document": "D2",
+      "quote": "- warfarin 3 mg once daily, dose by INR",
+      "start": 238,
+      "end": 277,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-12-01\nPatient: synthetic case P012, 40-year-old male.\n\n\nAllergy: latex (contact dermatitis).\n\nMedications:\n- amlodipine 5 mg once daily\n- warfarin stopped on 2025-12-01\n- lisinopril 20 mg once daily\n- salbutamol inhaler 100 micrograms, 2 puffs as needed",
+      "start": 0,
+      "end": 311,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [
+  0
+ ],
+ "conflicts": [
+  1,
+  2
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 25,
+  "passage_reads": 1,
+  "passages_ms": 66,
+  "passages": 5,
+  "counterparts_ms": 142,
+  "kinds_ms": 23
+ },
+ "timing": {
+  "read_ms": 256,
+  "total_ms": 259
+ },
+ "_credits": "10"
+}

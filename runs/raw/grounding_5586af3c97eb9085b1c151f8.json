@@ -1,0 +1,136 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5654,
+ "ungrounded": 0.4346,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.5668,
+   "share_of_answer": 0.3205,
+   "claims": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.2198,
+   "share_of_answer": 0.1243,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.2134,
+   "share_of_answer": 0.1207,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The pharmacy record of 2025-12-01 lists 'amlodipine 5mg o.d.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0972,
+   "supported": 0.9976,
+   "contradicted": 0.001,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0006,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0009,
+    "D3": 0.9985
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "amlodipine 5mg o.d.",
+    "start": 177,
+    "end": 196,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2024-06-06 says 'lisinopril 10mg daily', the clinic note of 2024-09-16 says 'lisinopril 10mg OD', and the pharmacy record of 2025-12-01 says 'lisinopril 20mg OD'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2931,
+   "supported": 0.3321,
+   "contradicted": 0.0846,
+   "not_stated": 0.5187,
+   "not_a_claim": 0.0645,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.2864,
+    "D2": 0.4109,
+    "D3": 0.3027
+   },
+   "source": null,
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril 20mg OD",
+    "start": 232,
+    "end": 250,
+    "confidence": 0.866
+   }
+  },
+  {
+   "claim": "The discharge summary of 2024-06-06 says 'metformin 500mg b.i.d.' and the clinic note of 2024-09-16 says 'metformin 500mg bd', but it is not in the pharmacy record of 2025-12-01.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.279,
+   "supported": 0.3877,
+   "contradicted": 0.032,
+   "not_stated": 0.5471,
+   "not_a_claim": 0.0332,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3317,
+    "D2": 0.4166,
+    "D3": 0.2517
+   },
+   "source": null
+  },
+  {
+   "claim": "The discharge summary of 2024-06-06 says 'warfarin 3mg OD as per INR', the clinic note of 2024-09-16 says 'warfarin 3mg OD as per INR', and the pharmacy record of 2025-12-01 says 'warfarin stopped on 2025-12-01'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3307,
+   "supported": 0.7951,
+   "contradicted": 0.0736,
+   "not_stated": 0.0607,
+   "not_a_claim": 0.0707,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.23,
+    "D2": 0.1351,
+    "D3": 0.635
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarin stopped on 2025-12-01",
+    "start": 199,
+    "end": 229,
+    "confidence": 0.98
+   }
+  }
+ ],
+ "unsupported_claims": [
+  1,
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.3321
+ },
+ "timing": {
+  "read_ms": 155,
+  "total_ms": 157
+ },
+ "_credits": "6"
+}

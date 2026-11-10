@@ -1,0 +1,117 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7364,
+ "ungrounded": 0.2636,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.8214,
+   "share_of_answer": 0.6049,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.1299,
+   "share_of_answer": 0.0957,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.0487,
+   "share_of_answer": 0.0359,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The clinic note of 2024-06-12 says 'lisinopril 10mg daily', the GP letter of 2025-01-29 says 'lisinopril 10 mg una vez al d\u00eda', and the discharge summary of 2025-09-09 says 'lisinopril stopped on 2025-09-09'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3444,
+   "supported": 0.7777,
+   "contradicted": 0.0402,
+   "not_stated": 0.1305,
+   "not_a_claim": 0.0515,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8938,
+    "D2": 0.0593,
+    "D3": 0.0469
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10mg daily",
+    "start": 253,
+    "end": 274,
+    "confidence": 0.999
+   }
+  },
+  {
+   "claim": "The clinic note of 2024-06-12 says 'omeprazole 20mg o.d.' and the GP letter of 2025-01-29 says 'omeprazol 20 mg una vez al d\u00eda', but it is not in the discharge summary of 2025-09-09.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3013,
+   "supported": 0.6679,
+   "contradicted": 0.0515,
+   "not_stated": 0.1584,
+   "not_a_claim": 0.1222,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7661,
+    "D2": 0.1991,
+    "D3": 0.0349
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "omeprazole 20mg o.d.",
+    "start": 299,
+    "end": 319,
+    "confidence": 0.999
+   }
+  },
+  {
+   "claim": "The clinic note of 2024-06-12 says 'warfarin 3mg OD as per INR', the GP letter of 2025-01-29 says 'warfarina 3 mg una vez al d\u00eda seg\u00fan INR', and the discharge summary of 2025-09-09 says 'warfarin 5mg OD as per INR'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3543,
+   "supported": 0.7546,
+   "contradicted": 0.0541,
+   "not_stated": 0.1109,
+   "not_a_claim": 0.0803,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7906,
+    "D2": 0.1485,
+    "D3": 0.0609
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "warfarin 3mg OD as per INR",
+    "start": 322,
+    "end": 348,
+    "confidence": 0.961
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.6679
+ },
+ "timing": {
+  "read_ms": 153,
+  "total_ms": 155
+ },
+ "_credits": "6"
+}

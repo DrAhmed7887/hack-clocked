@@ -1,0 +1,326 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "penicillin (rash)"
+   ],
+   "items": [
+    {
+     "value": "penicillin (rash)",
+     "start": 210,
+     "end": 227,
+     "confidence": 0.9999999998150242,
+     "p_verify": 0.9999999998150242
+    }
+   ],
+   "confidence": 0.9999999998150242
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "atrial fibrillation"
+   ],
+   "items": [
+    {
+     "value": "atrial fibrillation",
+     "start": 180,
+     "end": 199,
+     "confidence": 0.9999999983205554,
+     "p_verify": 0.9999999983205554
+    }
+   ],
+   "confidence": 0.9999999983205554
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 mcg",
+     "drug": "levothyroxine",
+     "frequency": "mane",
+     "line": "levothyroxine 50 mcg mane, before food",
+     "stopped": null
+    },
+    {
+     "dose": "5mg",
+     "drug": "amlodipine",
+     "frequency": "OD",
+     "line": "amlodipine 5mg OD",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "OD",
+     "line": "lisinopril 10 mg OD",
+     "stopped": null
+    },
+    {
+     "dose": "3mg",
+     "drug": "warfarin",
+     "frequency": "OD",
+     "line": "warfarin 3mg OD as per INR",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 243,
+     "end": 284,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 245,
+       "end": 258,
+       "confidence": 0.9999999998586397,
+       "p_verify": 0.9999999998586397
+      },
+      "dose": {
+       "value": "50 mcg",
+       "start": 259,
+       "end": 265,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "mane",
+       "start": 266,
+       "end": 270,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 mcg mane, before food",
+       "start": 245,
+       "end": 283,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 284,
+     "end": 304,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 286,
+       "end": 296,
+       "confidence": 0.9999999998639857,
+       "p_verify": 0.9999999998639857
+      },
+      "dose": {
+       "value": "5mg",
+       "start": 297,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 301,
+       "end": 303,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5mg OD",
+       "start": 286,
+       "end": 303,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 304,
+     "end": 326,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 306,
+       "end": 316,
+       "confidence": 0.9999999998367595,
+       "p_verify": 0.9999999998367595
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 317,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 323,
+       "end": 325,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg OD",
+       "start": 306,
+       "end": 325,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.989,
+       "p_blank": 0.989
+      }
+     }
+    },
+    {
+     "start": 326,
+     "end": 354,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 328,
+       "end": 336,
+       "confidence": 0.9999999997120579,
+       "p_verify": 0.9999999997120579
+      },
+      "dose": {
+       "value": "3mg",
+       "start": 337,
+       "end": 340,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 341,
+       "end": 343,
+       "p_start": 1,
+       "p_close": 0.995,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.995
+      },
+      "line": {
+       "value": "warfarin 3mg OD as per INR",
+       "start": 328,
+       "end": 354,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 192,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 77,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 44,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 31,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 90,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 192,
+  "server_ms": 424
+ },
+ "_credits": "8"
+}

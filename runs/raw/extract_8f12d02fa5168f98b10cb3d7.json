@@ -1,0 +1,387 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- enfermedad por reflujo gastroesof\u00e1gico",
+    "- hipotiroidismo",
+    "- enfermedad renal cr\u00f3nica estadio 3a"
+   ],
+   "items": [
+    {
+     "value": "- enfermedad por reflujo gastroesof\u00e1gico",
+     "start": 141,
+     "end": 181,
+     "confidence": 0.9999999993256068,
+     "p_verify": 0.9999999993256068
+    },
+    {
+     "value": "- hipotiroidismo",
+     "start": 182,
+     "end": 198,
+     "confidence": 0.9999999993904267,
+     "p_verify": 0.9999999993904267
+    },
+    {
+     "value": "- enfermedad renal cr\u00f3nica estadio 3a",
+     "start": 199,
+     "end": 236,
+     "confidence": 0.9999999993543711,
+     "p_verify": 0.9999999993543711
+    }
+   ],
+   "confidence": 0.9999999993256068
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "una vez al d\u00eda",
+     "line": "lisinopril 10 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "una vez al d\u00eda",
+     "line": "bisoprolol 2.5 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazol",
+     "frequency": "una vez al d\u00eda",
+     "line": "omeprazol 20 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarina",
+     "frequency": "una vez al d\u00eda seg\u00fan INR",
+     "line": "warfarina 3 mg una vez al d\u00eda seg\u00fan INR",
+     "stopped": null
+    },
+    {
+     "dose": "50 microgramos",
+     "drug": "levotiroxina",
+     "frequency": "una vez al d\u00eda en ayunas",
+     "line": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 251,
+     "end": 285,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 253,
+       "end": 263,
+       "confidence": 0.9999999986639665,
+       "p_verify": 0.9999999986639665
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 264,
+       "end": 269,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 270,
+       "end": 284,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg una vez al d\u00eda",
+       "start": 253,
+       "end": 284,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 285,
+     "end": 320,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 287,
+       "end": 297,
+       "confidence": 0.9999999993135564,
+       "p_verify": 0.9999999993135564
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 298,
+       "end": 304,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 305,
+       "end": 319,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg una vez al d\u00eda",
+       "start": 287,
+       "end": 319,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 320,
+     "end": 353,
+     "fields": {
+      "drug": {
+       "value": "omeprazol",
+       "start": 322,
+       "end": 331,
+       "confidence": 0.9999999967950222,
+       "p_verify": 0.9999999967950222
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 332,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 338,
+       "end": 352,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazol 20 mg una vez al d\u00eda",
+       "start": 322,
+       "end": 352,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 353,
+     "end": 395,
+     "fields": {
+      "drug": {
+       "value": "warfarina",
+       "start": 355,
+       "end": 364,
+       "confidence": 0.9999999990187636,
+       "p_verify": 0.9999999990187636
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 365,
+       "end": 369,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda seg\u00fan INR",
+       "start": 370,
+       "end": 394,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarina 3 mg una vez al d\u00eda seg\u00fan INR",
+       "start": 355,
+       "end": 394,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 395,
+     "end": 449,
+     "fields": {
+      "drug": {
+       "value": "levotiroxina",
+       "start": 397,
+       "end": 409,
+       "confidence": 0.9999999987238692,
+       "p_verify": 0.9999999987238692
+      },
+      "dose": {
+       "value": "50 microgramos",
+       "start": 410,
+       "end": 424,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda en ayunas",
+       "start": 425,
+       "end": 449,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+       "start": 397,
+       "end": 449,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 256,
+  "forwards": {
+   "fields": [
+    9,
+    0
+   ],
+   "records": [
+    6,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 118,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 46,
+    "resolve": 13,
+    "extend": 10,
+    "contest": 42,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 114,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     6,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 256,
+  "server_ms": 411
+ },
+ "_credits": "11"
+}

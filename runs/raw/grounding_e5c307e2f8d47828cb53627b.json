@@ -1,0 +1,117 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7402,
+ "ungrounded": 0.2598,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6845,
+   "share_of_answer": 0.5067,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.2344,
+   "share_of_answer": 0.1735,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0812,
+   "share_of_answer": 0.0601,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2025-05-19 says 'atorvastatin 20 mg nocte' and the pharmacy record of 2025-07-05 says 'atorvastatin 20 mg nocte', but the GP letter of 2025-12-23 does not list it.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.287,
+   "supported": 0.6988,
+   "contradicted": 0.0482,
+   "not_stated": 0.2043,
+   "not_a_claim": 0.0487,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.6618,
+    "D2": 0.0475,
+    "D3": 0.2907
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "atorvastatin 20 mg nocte",
+    "start": 309,
+    "end": 333,
+    "confidence": 0.993
+   }
+  },
+  {
+   "claim": "The discharge summary of 2025-05-19 says 'levothyroxine 50 micrograms OD before breakfast', the pharmacy record of 2025-07-05 says 'levothyroxine 50 mcg OD before breakfast', and the GP letter of 2025-12-23 says 'levotiroxina 75 microgramos una vez al d\u00eda en ayunas'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4076,
+   "supported": 0.787,
+   "contradicted": 0.0349,
+   "not_stated": 0.0844,
+   "not_a_claim": 0.0937,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7073,
+    "D2": 0.0884,
+    "D3": 0.2043
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 micrograms OD before breakfast",
+    "start": 336,
+    "end": 383,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2025-05-19 says 'lisinopril 10mg OD', the pharmacy record of 2025-07-05 says 'lisinopril 10mg o.d.', and the GP letter of 2025-12-23 says 'lisinopril suspendido el 2025-12-23'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3053,
+   "supported": 0.7168,
+   "contradicted": 0.0415,
+   "not_stated": 0.1137,
+   "not_a_claim": 0.128,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.6718,
+    "D2": 0.1014,
+    "D3": 0.2268
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10mg OD",
+    "start": 229,
+    "end": 247,
+    "confidence": 0.999
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.6988
+ },
+ "timing": {
+  "read_ms": 153,
+  "total_ms": 155
+ },
+ "_credits": "6"
+}

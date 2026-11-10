@@ -1,0 +1,283 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 209,
+   "end": 233,
+   "confidence": 0.9999999998141706,
+   "p_verify": 0.9999999998141706
+  },
+  "problems": {
+   "value": [
+    "atrial fibrillation",
+    "essential hypertension"
+   ],
+   "items": [
+    {
+     "value": "atrial fibrillation",
+     "start": 157,
+     "end": 176,
+     "confidence": 0.9999999927178691,
+     "p_verify": 0.9999999927178691
+    },
+    {
+     "value": "essential hypertension",
+     "start": 184,
+     "end": 206,
+     "confidence": 0.9999999969995748,
+     "p_verify": 0.9999999969995748
+    }
+   ],
+   "confidence": 0.9999999927178691
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 248,
+     "end": 278,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 250,
+       "end": 260,
+       "confidence": 0.9999999998433404,
+       "p_verify": 0.9999999998433404
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 261,
+       "end": 266,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 267,
+       "end": 277,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 278,
+     "end": 309,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 280,
+       "end": 289,
+       "confidence": 0.9999999996308073,
+       "p_verify": 0.9999999996308073
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 290,
+       "end": 296,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 297,
+       "end": 308,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 309,
+     "end": 338,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 311,
+       "end": 321,
+       "confidence": 0.9999999998337126,
+       "p_verify": 0.9999999998337126
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 322,
+       "end": 326,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 327,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 338,
+     "end": 368,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 340,
+       "end": 350,
+       "confidence": 0.99999999987525,
+       "p_verify": 0.99999999987525
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 351,
+       "end": 357,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 358,
+       "end": 368,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 174,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 79,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 32,
+    "resolve": 10,
+    "extend": 0,
+    "contest": 24,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 69,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 174,
+  "server_ms": 437
+ },
+ "_credits": "7"
+}

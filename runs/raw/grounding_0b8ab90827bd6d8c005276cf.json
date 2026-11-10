@@ -1,0 +1,126 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9372,
+ "ungrounded": 0.0628,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D4",
+   "share": 0.9782,
+   "share_of_answer": 0.9168,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0089,
+   "share_of_answer": 0.0084,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.007,
+   "share_of_answer": 0.0066,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.0058,
+   "share_of_answer": 0.0055,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin stopped: 'atorvastatin stopped on 2026-05-04' from the discharge summary of 2026-05-04.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2309,
+   "supported": 0.9975,
+   "contradicted": 0.0009,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0012,
+    "D3": 0.0006,
+    "D4": 0.9975
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "atorvastatin stopped on 2026-05-04",
+    "start": 313,
+    "end": 347,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Bisoprolol new: 'bisoprolol 2.5 mg once daily' from the discharge summary of 2026-05-04.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2032,
+   "supported": 0.9974,
+   "contradicted": 0.0009,
+   "not_stated": 0.001,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0011,
+    "D3": 0.0006,
+    "D4": 0.9975
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "bisoprolol 2.5 mg once daily",
+    "start": 282,
+    "end": 310,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril missing from the newest record: 'lisinopril 10 mg once daily' from the clinic note of 2024-12-10, 'lisinopril 10 mg once daily' from the GP letter of 2025-07-22, and 'lisinopril 10 mg once daily' from the pharmacy record of 2026-01-31",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5658,
+   "supported": 0.8909,
+   "contradicted": 0.0416,
+   "not_stated": 0.0581,
+   "not_a_claim": 0.0093,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0124,
+    "D2": 0.0156,
+    "D3": 0.0103,
+    "D4": 0.9617
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10 mg once daily",
+    "start": 205,
+    "end": 232,
+    "confidence": 0.98
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.8909
+ },
+ "timing": {
+  "read_ms": 128,
+  "total_ms": 130
+ },
+ "_credits": "5"
+}

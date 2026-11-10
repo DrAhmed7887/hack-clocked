@@ -1,0 +1,129 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7457,
+ "ungrounded": 0.2543,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9623,
+   "share_of_answer": 0.7176,
+   "claims": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0201,
+   "share_of_answer": 0.015,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0176,
+   "share_of_answer": 0.0131,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "No allergies are mentioned in any records.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0732,
+   "supported": 0.0065,
+   "contradicted": 0.0024,
+   "not_stated": 0.9843,
+   "not_a_claim": 0.0067,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3231,
+    "D2": 0.3688,
+    "D3": 0.3081
+   },
+   "source": null
+  },
+  {
+   "claim": "Omeprazole 20mg o.d. in the clinic note of 2024-06-12 and 20 mg una vez al d\u00eda in the GP letter of 2025-01-29 is missing from the discharge summary of 2025-09-09.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2822,
+   "supported": 0.5775,
+   "contradicted": 0.024,
+   "not_stated": 0.3845,
+   "not_a_claim": 0.014,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0294,
+    "D2": 0.03,
+    "D3": 0.9407
+   },
+   "source": "D3"
+  },
+  {
+   "claim": "Lisinopril 10mg daily in the clinic note of 2024-06-12 and 10 mg una vez al d\u00eda in the GP letter of 2025-01-29 was stopped in the discharge summary of 2025-09-09.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2822,
+   "supported": 0.989,
+   "contradicted": 0.0048,
+   "not_stated": 0.0037,
+   "not_a_claim": 0.0025,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0028,
+    "D2": 0.0018,
+    "D3": 0.9954
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril stopped on 2025-09-09",
+    "start": 274,
+    "end": 306,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Warfarin dose differs between the clinic note of 2024-06-12 and GP letter of 2025-01-29 which say 3mg OD and 3 mg una vez al d\u00eda seg\u00fan INR, and the discharge summary of 2025-09-09 which says 5mg OD as per INR",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3624,
+   "supported": 0.8366,
+   "contradicted": 0.0299,
+   "not_stated": 0.1126,
+   "not_a_claim": 0.0209,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0243,
+    "D2": 0.0312,
+    "D3": 0.9445
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarin 5mg OD as per INR",
+    "start": 331,
+    "end": 357,
+    "confidence": 0.621
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.0065
+ },
+ "timing": {
+  "read_ms": 162,
+  "total_ms": 164
+ },
+ "_credits": "7"
+}

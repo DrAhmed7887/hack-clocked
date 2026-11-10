@@ -1,0 +1,150 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5433,
+ "ungrounded": 0.4567,
+ "verdict": "contradicted",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D2",
+   "share": 0.8147,
+   "share_of_answer": 0.4426,
+   "claims": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1853,
+   "share_of_answer": 0.1007,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "No known drug allergies are stated in the GP letter of 2025-11-29.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1272,
+   "supported": 0.9942,
+   "contradicted": 0.0031,
+   "not_stated": 0.0014,
+   "not_a_claim": 0.0013,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0013,
+    "D2": 0.9987
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "Sin alergias medicamentosas conocidas.",
+    "start": 251,
+    "end": 289,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Amlodipine is recorded as stopped in the GP letter of 2025-11-29, whereas the pharmacy record of 2025-05-30 says 'amlodipine 5mg o.d.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2601,
+   "supported": 0.5668,
+   "contradicted": 0.1137,
+   "not_stated": 0.2723,
+   "not_a_claim": 0.0472,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0615,
+    "D2": 0.9385
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "amlodipino suspendido el 2025-11-29",
+    "start": 306,
+    "end": 341,
+    "confidence": 0.851
+   }
+  },
+  {
+   "claim": "Atorvastatina '20 mg por la noche' is only in the GP letter of 2025-11-29.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1426,
+   "supported": 0.9892,
+   "contradicted": 0.0055,
+   "not_stated": 0.0031,
+   "not_a_claim": 0.0022,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0018,
+    "D2": 0.9982
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "atorvastatina 20 mg por la noche",
+    "start": 344,
+    "end": 376,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Insulin glargine '16 units ON' is missing from the GP letter of 2025-11-29.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1445,
+   "supported": 0.4075,
+   "contradicted": 0.0199,
+   "not_stated": 0.549,
+   "not_a_claim": 0.0237,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.9277,
+    "D2": 0.0723
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "insulin glargine 16 units ON",
+    "start": 151,
+    "end": 179,
+    "confidence": 0.996
+   }
+  },
+  {
+   "claim": "Warfarin dose differs between the pharmacy record of 2025-05-30 which says '3mg OD as per INR' and the GP letter of 2025-11-29 which says '5 mg una vez al d\u00eda seg\u00fan INR'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3256,
+   "supported": 0.2135,
+   "contradicted": 0.4763,
+   "not_stated": 0.1687,
+   "not_a_claim": 0.1415,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.5259,
+    "D2": 0.4741
+   },
+   "source": null
+  }
+ ],
+ "unsupported_claims": [
+  1,
+  3,
+  4
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 4,
+  "supported": 0.2135
+ },
+ "timing": {
+  "read_ms": 141,
+  "total_ms": 145
+ },
+ "_credits": "6"
+}

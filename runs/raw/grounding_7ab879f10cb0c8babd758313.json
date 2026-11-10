@@ -1,0 +1,118 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.6986,
+ "ungrounded": 0.3014,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.8425,
+   "share_of_answer": 0.5886,
+   "claims": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1368,
+   "share_of_answer": 0.0956,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0207,
+   "share_of_answer": 0.0145,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin new: 'atorvastatin 20 mg at night' from the clinic note of 2026-02-28.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2306,
+   "supported": 0.9976,
+   "contradicted": 0.001,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0007,
+    "D3": 0.9985
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatin 20 mg at night",
+    "start": 351,
+    "end": 378,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Bisoprolol stopped: 'bisoprolol stopped on 2026-02-28' from the clinic note of 2026-02-28.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.25,
+   "supported": 0.9977,
+   "contradicted": 0.001,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0006,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0007,
+    "D3": 0.9986
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "bisoprolol stopped on 2026-02-28",
+    "start": 316,
+    "end": 348,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Metformin missing from the newest record: 'metformin 500 mg twice daily' from the discharge summary of 2024-08-28 and 'metformin 500 mg twice daily' from the pharmacy record of 2024-12-29",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5194,
+   "supported": 0.422,
+   "contradicted": 0.0268,
+   "not_stated": 0.5172,
+   "not_a_claim": 0.0341,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.4344,
+    "D2": 0.0645,
+    "D3": 0.5011
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "metformin 500 mg twice daily",
+    "start": 344,
+    "end": 372,
+    "confidence": 0.996
+   }
+  }
+ ],
+ "unsupported_claims": [
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.422
+ },
+ "timing": {
+  "read_ms": 107,
+  "total_ms": 109
+ },
+ "_credits": "5"
+}

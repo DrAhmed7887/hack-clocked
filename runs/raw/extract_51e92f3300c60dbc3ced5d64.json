@@ -1,0 +1,345 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 241,
+   "end": 265,
+   "confidence": 0.9999999995611939,
+   "p_verify": 0.9999999995611939
+  },
+  "problems": {
+   "value": [
+    "Known type 2 diabetes.",
+    "Known atrial fibrillation.",
+    "Known gastro-oesophageal reflux disease.",
+    "Known hyperlipidaemia."
+   ],
+   "items": [
+    {
+     "value": "Known type 2 diabetes.",
+     "start": 126,
+     "end": 148,
+     "confidence": 0.9999999997823315,
+     "p_verify": 0.9999999997823315
+    },
+    {
+     "value": "Known atrial fibrillation.",
+     "start": 149,
+     "end": 175,
+     "confidence": 0.9999999995073767,
+     "p_verify": 0.9999999995073767
+    },
+    {
+     "value": "Known gastro-oesophageal reflux disease.",
+     "start": 176,
+     "end": 216,
+     "confidence": 0.999999999711906,
+     "p_verify": 0.999999999711906
+    },
+    {
+     "value": "Known hyperlipidaemia.",
+     "start": 217,
+     "end": 239,
+     "confidence": 0.9999999998330631,
+     "p_verify": 0.9999999998330631
+    }
+   ],
+   "confidence": 0.9999999995073767
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "amlodipine",
+     "frequency": null,
+     "line": "amlodipine stopped on 2025-11-29",
+     "stopped": "stopped on 2025-11-29"
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": "atorvastatin 20 mg at night",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "line": "warfarin 5 mg once daily, dose by INR",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 280,
+     "end": 315,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 282,
+       "end": 292,
+       "confidence": 0.999999990831688,
+       "p_verify": 0.999999990831688
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.991,
+       "p_blank": 0.991
+      },
+      "line": {
+       "value": "amlodipine stopped on 2025-11-29",
+       "start": 282,
+       "end": 314,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-11-29",
+       "start": 293,
+       "end": 314,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 315,
+     "end": 345,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 317,
+       "end": 329,
+       "confidence": 0.9999999998444127,
+       "p_verify": 0.9999999998444127
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 330,
+       "end": 335,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 336,
+       "end": 344,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.499,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 317,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg at night",
+       "start": 317,
+       "end": 344,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 345,
+     "end": 385,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 347,
+       "end": 355,
+       "confidence": 0.9999999997389262,
+       "p_verify": 0.9999999997389262
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 356,
+       "end": 360,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 361,
+       "end": 371,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 5 mg once daily, dose by INR",
+       "start": 347,
+       "end": 384,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 385,
+     "end": 415,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 387,
+       "end": 397,
+       "confidence": 0.9999999997363176,
+       "p_verify": 0.9999999997363176
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 398,
+       "end": 404,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 405,
+       "end": 415,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 387,
+       "end": 415,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 193,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 82,
+    "locate": 0,
+    "verify": 25,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 14,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 79,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 193,
+  "server_ms": 342
+ },
+ "_credits": "8"
+}

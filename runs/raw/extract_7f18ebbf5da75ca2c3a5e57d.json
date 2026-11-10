@@ -1,0 +1,316 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex - causes contact dermatitis"
+   ],
+   "items": [
+    {
+     "value": "latex - causes contact dermatitis",
+     "start": 126,
+     "end": 159,
+     "confidence": 0.9999999988424342,
+     "p_verify": 0.9999999988424342
+    }
+   ],
+   "confidence": 0.9999999988424342
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "5mg",
+     "drug": "amlodipine",
+     "frequency": "o.d.",
+     "line": "amlodipine 5mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "warfarin",
+     "frequency": "stopped on 2025-12-01",
+     "line": "warfarin stopped on 2025-12-01",
+     "stopped": "stopped on 2025-12-01"
+    },
+    {
+     "dose": "20mg",
+     "drug": "lisinopril",
+     "frequency": "OD",
+     "line": "lisinopril 20mg OD",
+     "stopped": null
+    },
+    {
+     "dose": "100 mcg",
+     "drug": "salbutamol inhaler",
+     "frequency": "2 puffs when required",
+     "line": "salbutamol inhaler 100 mcg, 2 puffs when required",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 175,
+     "end": 197,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 177,
+       "end": 187,
+       "confidence": 0.9999999993333248,
+       "p_verify": 0.9999999993333248
+      },
+      "dose": {
+       "value": "5mg",
+       "start": 188,
+       "end": 191,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 192,
+       "end": 196,
+       "p_start": 1,
+       "p_close": 0.997,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.997
+      },
+      "line": {
+       "value": "amlodipine 5mg o.d.",
+       "start": 177,
+       "end": 196,
+       "p_start": 1,
+       "p_close": 0.905,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.905
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.968,
+       "p_blank": 0.968
+      }
+     }
+    },
+    {
+     "start": 197,
+     "end": 230,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 199,
+       "end": 207,
+       "confidence": 0.9999999834338678,
+       "p_verify": 0.9999999834338678
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      },
+      "frequency": {
+       "value": "stopped on 2025-12-01",
+       "start": 208,
+       "end": 229,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 0.979,
+       "confidence": 0.979
+      },
+      "line": {
+       "value": "warfarin stopped on 2025-12-01",
+       "start": 199,
+       "end": 229,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-12-01",
+       "start": 208,
+       "end": 229,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 230,
+     "end": 251,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 232,
+       "end": 242,
+       "confidence": 0.9999999996805617,
+       "p_verify": 0.9999999996805617
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 243,
+       "end": 247,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 248,
+       "end": 250,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 20mg OD",
+       "start": 232,
+       "end": 250,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 251,
+     "end": 302,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 253,
+       "end": 271,
+       "confidence": 0.9999999993462665,
+       "p_verify": 0.9999999993462665
+      },
+      "dose": {
+       "value": "100 mcg",
+       "start": 272,
+       "end": 279,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "2 puffs when required",
+       "start": 281,
+       "end": 302,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 mcg, 2 puffs when required",
+       "start": 253,
+       "end": 302,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 179,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 77,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 29,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 76,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 179,
+  "server_ms": 354
+ },
+ "_credits": "8"
+}
