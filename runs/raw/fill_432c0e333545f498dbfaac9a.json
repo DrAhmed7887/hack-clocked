@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Atorvastatin is new: 'atorvastatin 20 mg at night' from the discharge summary of 2025-12-19. Levothyroxine dose differs: 'levothyroxine 50 micrograms once daily before breakfast' from the clinic note of 2025-03-19, 'levothyroxine 50 micrograms once daily before breakfast' from the GP letter of 2025-11-01, and 'levothyroxine 75 micrograms once daily before breakfast' from the discharge summary of 2025-12-19. Lisinopril is missing from the newest record: 'lisinopril 10 mg once daily' from the clinic note of 2025-03-19 and 'lisinopril 10 mg once daily' from the GP letter of 2025-11-01",
+   "confidence": 0.9791770891437385,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 492,
+  "total_ms": 513,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 352,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "20"
+}

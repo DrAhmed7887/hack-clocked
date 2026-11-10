@@ -1,0 +1,153 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7426,
+ "ungrounded": 0.2574,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.661,
+   "share_of_answer": 0.4909,
+   "claims": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.2016,
+   "share_of_answer": 0.1497,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D4",
+   "share": 0.0855,
+   "share_of_answer": 0.0635,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0519,
+   "share_of_answer": 0.0385,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The pharmacy record of 2025-04-17 states 'sulfonamides (hives)' while the GP letter of 2025-12-25 states 'Sin alergias medicamentosas conocidas.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1505,
+   "supported": 0.7436,
+   "contradicted": 0.2144,
+   "not_stated": 0.0216,
+   "not_a_claim": 0.0204,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0137,
+    "D2": 0.0156,
+    "D3": 0.9282,
+    "D4": 0.0425
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "Allergies: sulfonamides (hives)",
+    "start": 116,
+    "end": 147,
+    "confidence": 0.993
+   }
+  },
+  {
+   "claim": "The clinic note of 2024-08-15 states 'atorvastatin 20mg ON', the discharge summary of 2025-01-11 states 'atorvastatin 20 mg ON', the pharmacy record of 2025-04-17 states 'atorvastatin 20 mg ON', and the GP letter of 2025-12-25 states 'atorvastatina suspendido el 2025-12-25'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2874,
+   "supported": 0.7774,
+   "contradicted": 0.0777,
+   "not_stated": 0.1048,
+   "not_a_claim": 0.04,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7864,
+    "D2": 0.0822,
+    "D3": 0.0333,
+    "D4": 0.0981
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "atorvastatin 20mg ON",
+    "start": 173,
+    "end": 193,
+    "confidence": 0.937
+   }
+  },
+  {
+   "claim": "The clinic note of 2024-08-15 states 'bisoprolol 2.5mg o.d.', the discharge summary of 2025-01-11 states 'bisoprolol 2.5 mg o.d.', the pharmacy record of 2025-04-17 states 'bisoprolol 2.5mg OD', and the GP letter of 2025-12-25 states 'bisoprolol 5 mg una vez al d\u00eda'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.279,
+   "supported": 0.7754,
+   "contradicted": 0.1472,
+   "not_stated": 0.0626,
+   "not_a_claim": 0.0147,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7385,
+    "D2": 0.0303,
+    "D3": 0.0914,
+    "D4": 0.1398
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D4",
+    "quote": "bisoprolol 5 mg una vez al d\u00eda",
+    "start": 276,
+    "end": 306,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The clinic note of 2024-08-15 states 'warfarin 3 mg OD as per INR', the discharge summary of 2025-01-11 states 'warfarin 3 mg OD as per INR', and the pharmacy record of 2025-04-17 states 'warfarin 3mg OD as per INR', but it is not mentioned in the GP letter of 2025-12-25",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2832,
+   "supported": 0.6743,
+   "contradicted": 0.018,
+   "not_stated": 0.2939,
+   "not_a_claim": 0.0138,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8058,
+    "D2": 0.0622,
+    "D3": 0.0974,
+    "D4": 0.0346
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "warfarin 3 mg OD as per INR",
+    "start": 242,
+    "end": 269,
+    "confidence": 0.983
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 3,
+  "supported": 0.6743
+ },
+ "timing": {
+  "read_ms": 204,
+  "total_ms": 207
+ },
+ "_credits": "8"
+}

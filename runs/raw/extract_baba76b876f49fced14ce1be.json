@@ -1,0 +1,324 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex (contact dermatitis)"
+   ],
+   "items": [
+    {
+     "value": "latex (contact dermatitis)",
+     "start": 152,
+     "end": 178,
+     "confidence": 0.9999999996388522,
+     "p_verify": 0.9999999996388522
+    }
+   ],
+   "confidence": 0.9999999996388522
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known asthma."
+   ],
+   "items": [
+    {
+     "value": "Known asthma.",
+     "start": 128,
+     "end": 141,
+     "confidence": 0.9999999998176674,
+     "p_verify": 0.9999999998176674
+    }
+   ],
+   "confidence": 0.9999999998176674
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 10 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "insulin glargine",
+     "frequency": null,
+     "line": "insulin glargine stopped on 2025-09-23",
+     "stopped": "stopped on 2025-09-23"
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 194,
+     "end": 224,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 196,
+       "end": 206,
+       "confidence": 0.9999999995234088,
+       "p_verify": 0.9999999995234088
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 207,
+       "end": 212,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 213,
+       "end": 223,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 10 mg once daily",
+       "start": 196,
+       "end": 223,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 224,
+     "end": 282,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 226,
+       "end": 239,
+       "confidence": 0.9999999998340099,
+       "p_verify": 0.9999999998340099
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 240,
+       "end": 253,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 254,
+       "end": 264,
+       "p_start": 1,
+       "p_close": 0.562,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.562
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 226,
+       "end": 281,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.983,
+       "p_blank": 0.983
+      }
+     }
+    },
+    {
+     "start": 282,
+     "end": 323,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 284,
+       "end": 300,
+       "confidence": 0.9999999953723568,
+       "p_verify": 0.9999999953723568
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.256,
+       "rejected_value": "stopped on 2025-09-23",
+       "rejected_p_verify": 0.002,
+       "reason": "verification_rejected"
+      },
+      "line": {
+       "value": "insulin glargine stopped on 2025-09-23",
+       "start": 284,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-09-23",
+       "start": 301,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 323,
+     "end": 377,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 325,
+       "end": 343,
+       "confidence": 0.999999998207127,
+       "p_verify": 0.999999998207127
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 344,
+       "end": 358,
+       "p_start": 1,
+       "p_close": 0.998,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.998
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 368,
+       "end": 377,
+       "p_start": 0.955,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.955
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 325,
+       "end": 377,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 193,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 78,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 10,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 89,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 193,
+  "server_ms": 678
+ },
+ "_credits": "8"
+}

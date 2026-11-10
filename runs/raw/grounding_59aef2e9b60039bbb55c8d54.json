@@ -1,0 +1,118 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8017,
+ "ungrounded": 0.1983,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6064,
+   "share_of_answer": 0.4861,
+   "claims": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.3305,
+   "share_of_answer": 0.265,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0631,
+   "share_of_answer": 0.0506,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The clinic note of 2024-08-19 says 'levothyroxine 50 micrograms OD before breakfast', the pharmacy record of 2024-12-07 says 'levothyroxine 50 mcg OD before breakfast', and the discharge summary of 2024-12-26 says 'levothyroxine 75 micrograms mane, before food'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4729,
+   "supported": 0.7443,
+   "contradicted": 0.0572,
+   "not_stated": 0.1139,
+   "not_a_claim": 0.0846,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7696,
+    "D2": 0.0852,
+    "D3": 0.1452
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D3",
+    "quote": "levothyroxine 75 micrograms mane, before food",
+    "start": 195,
+    "end": 240,
+    "confidence": 0.983
+   }
+  },
+  {
+   "claim": "The clinic note of 2024-08-19 says 'lisinopril 10 mg o.d.', the pharmacy record of 2024-12-07 says 'lisinopril 10mg o.d.', and the discharge summary of 2024-12-26 says 'lisinopril stopped on 2024-12-26'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3664,
+   "supported": 0.7898,
+   "contradicted": 0.0764,
+   "not_stated": 0.0376,
+   "not_a_claim": 0.0962,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7433,
+    "D2": 0.0707,
+    "D3": 0.186
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril stopped on 2024-12-26",
+    "start": 243,
+    "end": 275,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2024-12-26 says 'salbutamol inhaler 100 micrograms, 2 puffs PRN'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1606,
+   "supported": 0.9977,
+   "contradicted": 0.001,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0006,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0007,
+    "D3": 0.9986
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler 100 micrograms, 2 puffs PRN",
+    "start": 278,
+    "end": 324,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.7443
+ },
+ "timing": {
+  "read_ms": 140,
+  "total_ms": 141
+ },
+ "_credits": "6"
+}

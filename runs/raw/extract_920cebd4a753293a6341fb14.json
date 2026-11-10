@@ -1,0 +1,334 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "penicilina (exantema)"
+   ],
+   "items": [
+    {
+     "value": "penicilina (exantema)",
+     "start": 213,
+     "end": 234,
+     "confidence": 0.9999999995066045,
+     "p_verify": 0.9999999995066045
+    }
+   ],
+   "confidence": 0.9999999995066045
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- enfermedad renal cr\u00f3nica estadio 3a",
+    "- fibrilaci\u00f3n auricular"
+   ],
+   "items": [
+    {
+     "value": "- enfermedad renal cr\u00f3nica estadio 3a",
+     "start": 141,
+     "end": 178,
+     "confidence": 0.999999999604892,
+     "p_verify": 0.999999999604892
+    },
+    {
+     "value": "- fibrilaci\u00f3n auricular",
+     "start": 179,
+     "end": 202,
+     "confidence": 0.9999999990187658,
+     "p_verify": 0.9999999990187658
+    }
+   ],
+   "confidence": 0.9999999990187658
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 microgramos",
+     "drug": "levotiroxina",
+     "frequency": "una vez al d\u00eda en ayunas",
+     "line": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipino",
+     "frequency": "una vez al d\u00eda",
+     "line": "amlodipino 5 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "una vez al d\u00eda",
+     "line": "lisinopril 10 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarina",
+     "frequency": "una vez al d\u00eda seg\u00fan INR",
+     "line": "warfarina 3 mg una vez al d\u00eda seg\u00fan INR",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 250,
+     "end": 305,
+     "fields": {
+      "drug": {
+       "value": "levotiroxina",
+       "start": 252,
+       "end": 264,
+       "confidence": 0.9999999989894097,
+       "p_verify": 0.9999999989894097
+      },
+      "dose": {
+       "value": "50 microgramos",
+       "start": 265,
+       "end": 279,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda en ayunas",
+       "start": 280,
+       "end": 304,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+       "start": 252,
+       "end": 304,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.946,
+       "p_blank": 0.946
+      }
+     }
+    },
+    {
+     "start": 305,
+     "end": 338,
+     "fields": {
+      "drug": {
+       "value": "amlodipino",
+       "start": 307,
+       "end": 317,
+       "confidence": 0.9999999995174549,
+       "p_verify": 0.9999999995174549
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 318,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 323,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipino 5 mg una vez al d\u00eda",
+       "start": 307,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.989,
+       "p_blank": 0.989
+      }
+     }
+    },
+    {
+     "start": 338,
+     "end": 372,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 340,
+       "end": 350,
+       "confidence": 0.9999999996785813,
+       "p_verify": 0.9999999996785813
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 351,
+       "end": 356,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 357,
+       "end": 371,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg una vez al d\u00eda",
+       "start": 340,
+       "end": 371,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 372,
+     "end": 413,
+     "fields": {
+      "drug": {
+       "value": "warfarina",
+       "start": 374,
+       "end": 383,
+       "confidence": 0.9999999987160135,
+       "p_verify": 0.9999999987160135
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 384,
+       "end": 388,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda seg\u00fan INR",
+       "start": 389,
+       "end": 413,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarina 3 mg una vez al d\u00eda seg\u00fan INR",
+       "start": 374,
+       "end": 413,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 236,
+  "forwards": {
+   "fields": [
+    8,
+    1
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 5,
+    "branches": 1,
+    "generate": 119,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 34,
+    "resolve": 13,
+    "extend": 10,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 89,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 236,
+  "server_ms": 405
+ },
+ "_credits": "10"
+}

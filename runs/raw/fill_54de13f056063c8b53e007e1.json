@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The clinic note of 2024-06-12 says 'lisinopril 10mg daily', the GP letter of 2025-01-29 says 'lisinopril 10 mg una vez al d\u00eda', and the discharge summary of 2025-09-09 says 'lisinopril stopped on 2025-09-09'. The clinic note of 2024-06-12 says 'omeprazole 20mg o.d.' and the GP letter of 2025-01-29 says 'omeprazol 20 mg una vez al d\u00eda', but it is not in the discharge summary of 2025-09-09. The clinic note of 2024-06-12 says 'warfarin 3mg OD as per INR', the GP letter of 2025-01-29 says 'warfarina 3 mg una vez al d\u00eda seg\u00fan INR', and the discharge summary of 2025-09-09 says 'warfarin 5mg OD as per INR'",
+   "confidence": 0.1626444230454441,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 604,
+  "total_ms": 632,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 368,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "25"
+}

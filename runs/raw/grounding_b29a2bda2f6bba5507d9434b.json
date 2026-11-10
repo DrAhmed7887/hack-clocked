@@ -1,0 +1,143 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8314,
+ "ungrounded": 0.1686,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6023,
+   "share_of_answer": 0.5008,
+   "claims": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.3092,
+   "share_of_answer": 0.2571,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0885,
+   "share_of_answer": 0.0735,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2025-07-08 says 'amlodipine 5 mg daily', the pharmacy record of 2025-10-10 says 'amlodipine 5 mg o.d.', and the GP letter of 2025-12-03 says 'amlodipino suspendido el 2025-12-03'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3322,
+   "supported": 0.7554,
+   "contradicted": 0.033,
+   "not_stated": 0.174,
+   "not_a_claim": 0.0376,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.6236,
+    "D2": 0.1317,
+    "D3": 0.2447
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D3",
+    "quote": "amlodipino suspendido el 2025-12-03",
+    "start": 302,
+    "end": 337,
+    "confidence": 0.999
+   }
+  },
+  {
+   "claim": "The GP letter of 2025-12-03 says 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1433,
+   "supported": 0.9975,
+   "contradicted": 0.0011,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0007,
+    "D3": 0.9985
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+    "start": 247,
+    "end": 299,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2025-07-08 says 'metformin 500mg BD' and the pharmacy record of 2025-10-10 says 'metformin 500mg BD'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2052,
+   "supported": 0.9693,
+   "contradicted": 0.0099,
+   "not_stated": 0.009,
+   "not_a_claim": 0.0118,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9663,
+    "D2": 0.0198,
+    "D3": 0.0139
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "metformin 500mg BD",
+    "start": 268,
+    "end": 286,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2025-07-08 says 'omeprazole 20mg OD', the pharmacy record of 2025-10-10 says 'omeprazole 20 mg o.d.', and the GP letter of 2025-12-03 says 'omeprazol 40 mg una vez al d\u00eda'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3192,
+   "supported": 0.7471,
+   "contradicted": 0.0781,
+   "not_stated": 0.0875,
+   "not_a_claim": 0.0873,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.6371,
+    "D2": 0.1528,
+    "D3": 0.2102
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazol 40 mg una vez al d\u00eda",
+    "start": 214,
+    "end": 244,
+    "confidence": 0.998
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 3,
+  "supported": 0.7471
+ },
+ "timing": {
+  "read_ms": 156,
+  "total_ms": 158
+ },
+ "_credits": "7"
+}

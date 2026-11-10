@@ -1,0 +1,397 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 221,
+   "end": 245,
+   "confidence": 0.9999999991004898,
+   "p_verify": 0.9999999991004898
+  },
+  "problems": {
+   "value": [
+    "Known chronic kidney disease stage 3a.",
+    "Known essential hypertension.",
+    "Known hyperlipidaemia."
+   ],
+   "items": [
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 128,
+     "end": 166,
+     "confidence": 0.9999999998896052,
+     "p_verify": 0.9999999998896052
+    },
+    {
+     "value": "Known essential hypertension.",
+     "start": 167,
+     "end": 196,
+     "confidence": 0.9999999998762181,
+     "p_verify": 0.9999999998762181
+    },
+    {
+     "value": "Known hyperlipidaemia.",
+     "start": 197,
+     "end": 219,
+     "confidence": 0.9999999997205082,
+     "p_verify": 0.9999999997205082
+    }
+   ],
+   "confidence": 0.9999999997205082
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "line": "metformin 500 mg twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "line": "omeprazole 20 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": "atorvastatin 20 mg at night",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 260,
+     "end": 291,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 262,
+       "end": 271,
+       "confidence": 0.999999999780065,
+       "p_verify": 0.999999999780065
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 272,
+       "end": 278,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 279,
+       "end": 290,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500 mg twice daily",
+       "start": 262,
+       "end": 290,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 291,
+     "end": 349,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 293,
+       "end": 306,
+       "confidence": 0.9999999996110371,
+       "p_verify": 0.9999999996110371
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 307,
+       "end": 320,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 321,
+       "end": 348,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 293,
+       "end": 348,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 349,
+     "end": 379,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 351,
+       "end": 361,
+       "confidence": 0.9999999993266637,
+       "p_verify": 0.9999999993266637
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 362,
+       "end": 367,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 368,
+       "end": 378,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazole 20 mg once daily",
+       "start": 351,
+       "end": 378,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 379,
+     "end": 409,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 381,
+       "end": 393,
+       "confidence": 0.9999999996757469,
+       "p_verify": 0.9999999996757469
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 394,
+       "end": 399,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 400,
+       "end": 408,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.498,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 381,
+         "p_verify": 0.999
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg at night",
+       "start": 381,
+       "end": 408,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 409,
+     "end": 463,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 411,
+       "end": 429,
+       "confidence": 0.999999999171991,
+       "p_verify": 0.999999999171991
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 430,
+       "end": 444,
+       "p_start": 1,
+       "p_close": 0.984,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.984
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 454,
+       "end": 463,
+       "p_start": 0.99,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.99
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 411,
+       "end": 463,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.986,
+       "p_blank": 0.986
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 212,
+  "forwards": {
+   "fields": [
+    6,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 80,
+    "locate": 0,
+    "verify": 25,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 45,
+    "resolve": 15,
+    "extend": 0,
+    "contest": 42,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 104,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 212,
+  "server_ms": 352
+ },
+ "_credits": "9"
+}

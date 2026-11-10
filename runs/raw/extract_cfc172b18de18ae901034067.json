@@ -1,0 +1,331 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "gastro-oesophageal reflux disease",
+    "atrial fibrillation"
+   ],
+   "items": [
+    {
+     "value": "gastro-oesophageal reflux disease",
+     "start": 132,
+     "end": 165,
+     "confidence": 0.9999999789092588,
+     "p_verify": 0.9999999789092588
+    },
+    {
+     "value": "atrial fibrillation",
+     "start": 173,
+     "end": 192,
+     "confidence": 0.999999995186599,
+     "p_verify": 0.999999995186599
+    }
+   ],
+   "confidence": 0.9999999789092588
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "line": "insulin glargine 16 units at night",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 10 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "line": "atorvastatin 20 mg at night",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 208,
+     "end": 245,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 210,
+       "end": 226,
+       "confidence": 0.9999999998023854,
+       "p_verify": 0.9999999998023854
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 227,
+       "end": 235,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 236,
+       "end": 244,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units at night",
+       "start": 210,
+       "end": 244,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 245,
+     "end": 275,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 247,
+       "end": 257,
+       "confidence": 0.9999999996548345,
+       "p_verify": 0.9999999996548345
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 258,
+       "end": 263,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 264,
+       "end": 274,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg once daily",
+       "start": 247,
+       "end": 274,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 275,
+     "end": 305,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 277,
+       "end": 289,
+       "confidence": 0.9999999997363176,
+       "p_verify": 0.9999999997363176
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 290,
+       "end": 295,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 296,
+       "end": 304,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.498,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin",
+         "start": 277,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg at night",
+       "start": 277,
+       "end": 304,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 305,
+     "end": 362,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 307,
+       "end": 320,
+       "confidence": 0.9999999997718243,
+       "p_verify": 0.9999999997718243
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 321,
+       "end": 334,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 335,
+       "end": 362,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 307,
+       "end": 362,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 186,
+  "forwards": {
+   "fields": [
+    7,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 87,
+    "locate": 0,
+    "verify": 18,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 14,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 78,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 186,
+  "server_ms": 190
+ },
+ "_credits": "8"
+}

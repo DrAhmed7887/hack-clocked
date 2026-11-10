@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The discharge summary of 2026-03-26 says 'No known drug allergies.' while the clinic note of 2026-06-13 says 'latex - causes contact dermatitis'. Amlodipine 5mg daily is in the discharge summary of 2026-03-26 but missing from the clinic note of 2026-06-13. Insulin glargine 16 units ON is recorded as stopped in the clinic note of 2026-06-13 compared to the discharge summary of 2026-03-26. Levothyroxine dose differs between the discharge summary of 2026-03-26 which says '50 micrograms mane, before food' and the clinic note of 2026-06-13 which says '75 mcg OD before breakfast'",
+   "confidence": 0.12318835484087487,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 16,
+  "generate_ms": 517,
+  "total_ms": 539,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 592,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "21"
+}

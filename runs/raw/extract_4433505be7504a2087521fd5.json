@@ -1,0 +1,283 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "gastro-oesophageal reflux disease",
+    "hypothyroidism",
+    "chronic kidney disease stage 3a"
+   ],
+   "items": [
+    {
+     "value": "gastro-oesophageal reflux disease",
+     "start": 157,
+     "end": 190,
+     "confidence": 0.9999999948125664,
+     "p_verify": 0.9999999948125664
+    },
+    {
+     "value": "hypothyroidism",
+     "start": 198,
+     "end": 212,
+     "confidence": 0.9999999948067451,
+     "p_verify": 0.9999999948067451
+    },
+    {
+     "value": "chronic kidney disease stage 3a",
+     "start": 220,
+     "end": 251,
+     "confidence": 0.9999999979634402,
+     "p_verify": 0.9999999979634402
+    }
+   ],
+   "confidence": 0.9999999948067451
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "lisinopril",
+     "frequency": null,
+     "stopped": "stopped on 2025-09-09"
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 267,
+     "end": 302,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 269,
+       "end": 279,
+       "confidence": 0.9999999596321104,
+       "p_verify": 0.9999999596321104
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      },
+      "stopped": {
+       "value": "stopped on 2025-09-09",
+       "start": 280,
+       "end": 301,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 302,
+     "end": 333,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 304,
+       "end": 314,
+       "confidence": 0.9999999998139926,
+       "p_verify": 0.9999999998139926
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 315,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 322,
+       "end": 332,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 333,
+     "end": 373,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 335,
+       "end": 343,
+       "confidence": 0.9999999996567415,
+       "p_verify": 0.9999999996567415
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 344,
+       "end": 348,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 349,
+       "end": 359,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 373,
+     "end": 430,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 375,
+       "end": 388,
+       "confidence": 0.9999999998431772,
+       "p_verify": 0.9999999998431772
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 389,
+       "end": 402,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 403,
+       "end": 413,
+       "p_start": 1,
+       "p_close": 0.835,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.835
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 225,
+  "forwards": {
+   "fields": [
+    9,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 129,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 34,
+    "resolve": 11,
+    "extend": 0,
+    "contest": 20,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 69,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 225,
+  "server_ms": 228
+ },
+ "_credits": "10"
+}

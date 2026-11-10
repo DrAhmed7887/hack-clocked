@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Atorvastatin is new: 'atorvastatin 20mg ON' from the clinic note of 2026-02-28.\nBisoprolol stopped: 'bisoprolol stopped on 2026-02-28' from the clinic note of 2026-02-28.\nMetformin is missing from the newest record: 'metformin 500mg BD' from the discharge summary of 2024-08-28 and 'metformin 500 mg BD' from the pharmacy record of 2024-12-29",
+   "confidence": 0.978405827893054,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 334,
+  "total_ms": 353,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 336,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "14"
+}

@@ -1,0 +1,155 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5819,
+ "ungrounded": 0.4181,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.6129,
+   "share_of_answer": 0.3567,
+   "claims": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.3343,
+   "share_of_answer": 0.1945,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0529,
+   "share_of_answer": 0.0308,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The GP letter of 2025-06-05 says 'l\u00e1tex (dermatitis de contacto)' but the discharge summary of 2025-12-08 says 'nil known.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2013,
+   "supported": 0.8832,
+   "contradicted": 0.071,
+   "not_stated": 0.0301,
+   "not_a_claim": 0.0157,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9464,
+    "D2": 0.039,
+    "D3": 0.0146
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "Alergia: l\u00e1tex (dermatitis de contacto).",
+    "start": 210,
+    "end": 250,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Amlodipine dose differs between the GP letter of 2025-06-05, the discharge summary of 2025-12-08, and the clinic note of 2026-05-08.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2178,
+   "supported": 0.2283,
+   "contradicted": 0.0902,
+   "not_stated": 0.6593,
+   "not_a_claim": 0.0222,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.4641,
+    "D2": 0.3616,
+    "D3": 0.1743
+   },
+   "source": null
+  },
+  {
+   "claim": "Bisoprolol is missing from the clinic note of 2026-05-08 compared to the GP letter of 2025-06-05 and the discharge summary of 2025-12-08.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2261,
+   "supported": 0.0677,
+   "contradicted": 0.0142,
+   "not_stated": 0.9045,
+   "not_a_claim": 0.0136,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.1484,
+    "D2": 0.3031,
+    "D3": 0.5486
+   },
+   "source": null
+  },
+  {
+   "claim": "Insulin glargine '16 units ON' is new in the clinic note of 2026-05-08.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1172,
+   "supported": 0.9971,
+   "contradicted": 0.0012,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0008,
+    "D3": 0.9985
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "insulin glargine 16 units ON",
+    "start": 236,
+    "end": 264,
+    "confidence": 0.999
+   }
+  },
+  {
+   "claim": "Salbutamol inhaler was stopped in the clinic note of 2026-05-08 according to the GP letter of 2025-06-05 and the discharge summary of 2025-12-08",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2376,
+   "supported": 0.9355,
+   "contradicted": 0.0094,
+   "not_stated": 0.0475,
+   "not_a_claim": 0.0076,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0037,
+    "D2": 0.005,
+    "D3": 0.9913
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler stopped on 2026-05-08",
+    "start": 193,
+    "end": 233,
+    "confidence": 0.592
+   }
+  }
+ ],
+ "unsupported_claims": [
+  1,
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.0677
+ },
+ "timing": {
+  "read_ms": 174,
+  "total_ms": 177
+ },
+ "_credits": "7"
+}

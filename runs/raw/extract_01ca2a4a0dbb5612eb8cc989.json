@@ -1,0 +1,322 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known gastro-oesophageal reflux disease.",
+    "Known chronic kidney disease stage 3a."
+   ],
+   "items": [
+    {
+     "value": "Known gastro-oesophageal reflux disease.",
+     "start": 149,
+     "end": 189,
+     "confidence": 0.9999999998142408,
+     "p_verify": 0.9999999998142408
+    },
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 190,
+     "end": 228,
+     "confidence": 0.9999999998867997,
+     "p_verify": 0.9999999998867997
+    }
+   ],
+   "confidence": 0.9999999998142408
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "line": "insulin glargine 16 units at night",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "atorvastatin",
+     "frequency": null,
+     "line": "atorvastatin stopped on 2026-05-04",
+     "stopped": "stopped on 2026-05-04"
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 243,
+     "end": 280,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 245,
+       "end": 261,
+       "confidence": 0.9999999997188711,
+       "p_verify": 0.9999999997188711
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 262,
+       "end": 270,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 271,
+       "end": 279,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units at night",
+       "start": 245,
+       "end": 279,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 280,
+     "end": 311,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 282,
+       "end": 292,
+       "confidence": 0.9999999997258382,
+       "p_verify": 0.9999999997258382
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 293,
+       "end": 299,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 300,
+       "end": 310,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 282,
+       "end": 310,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 311,
+     "end": 348,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 313,
+       "end": 325,
+       "confidence": 0.999999969212091,
+       "p_verify": 0.999999969212091
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 1,
+       "p_blank": 0.121,
+       "rejected_value": "stopped on 2026-05-04",
+       "rejected_p_verify": 0,
+       "reason": "verification_rejected"
+      },
+      "line": {
+       "value": "atorvastatin stopped on 2026-05-04",
+       "start": 313,
+       "end": 347,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2026-05-04",
+       "start": 326,
+       "end": 347,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 348,
+     "end": 405,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 350,
+       "end": 363,
+       "confidence": 0.9999999997247675,
+       "p_verify": 0.9999999997247675
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 364,
+       "end": 377,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 378,
+       "end": 405,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 350,
+       "end": 405,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 205,
+  "forwards": {
+   "fields": [
+    6,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 4,
+    "branches": 1,
+    "generate": 97,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 1,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 80,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 205,
+  "server_ms": 209
+ },
+ "_credits": "9"
+}

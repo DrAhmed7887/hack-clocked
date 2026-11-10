@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Amlodipine missing from the newest record: 'amlodipine 5 mg once daily' from the clinic note of 2025-03-15 and 'amlodipine 5 mg once daily' from the GP letter of 2026-04-16.\nInsulin glargine stopped: 'insulin glargine 16 units at night' from the clinic note of 2025-03-15, 'insulin glargine 16 units at night' from the GP letter of 2026-04-16, and 'insulin glargine stopped on 2026-08-01' from the pharmacy record of 2026-08-01.\nSalbutamol inhaler new: 'salbutamol inhaler 100 micrograms, 2 puffs as needed' from the pharmacy record of 2026-08-01",
+   "confidence": 0.6931331264807407,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 522,
+  "total_ms": 542,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 352,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "22"
+}

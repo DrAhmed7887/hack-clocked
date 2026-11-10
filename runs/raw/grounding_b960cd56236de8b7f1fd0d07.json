@@ -1,0 +1,101 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9973,
+ "ungrounded": 0.0027,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D4",
+   "share": 0.54,
+   "share_of_answer": 0.5386,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.4583,
+   "share_of_answer": 0.4571,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.001,
+   "share_of_answer": 0.001,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0006,
+   "share_of_answer": 0.0006,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The pharmacy record of 2025-04-17 says 'sulfonamides (hives)'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4593,
+   "supported": 0.9974,
+   "contradicted": 0.0008,
+   "not_stated": 0.001,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0011,
+    "D3": 0.9968,
+    "D4": 0.0014
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "Allergies: sulfonamides (hives)",
+    "start": 116,
+    "end": 147,
+    "confidence": 0.982
+   }
+  },
+  {
+   "claim": "The GP letter of 2025-12-25 says 'Sin alergias medicamentosas conocidas'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5407,
+   "supported": 0.9973,
+   "contradicted": 0.001,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.001,
+    "D3": 0.0009,
+    "D4": 0.9975
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "Sin alergias medicamentosas conocidas.",
+    "start": 180,
+    "end": 218,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.9973
+ },
+ "timing": {
+  "read_ms": 89,
+  "total_ms": 90
+ },
+ "_credits": "4"
+}

@@ -1,0 +1,110 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7821,
+ "ungrounded": 0.2179,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.8282,
+   "share_of_answer": 0.6477,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1149,
+   "share_of_answer": 0.0898,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.057,
+   "share_of_answer": 0.0446,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin is missing from the newest record: the discharge summary of 2025-05-19 says 'atorvastatin 20 mg nocte' and the pharmacy record of 2025-07-05 says 'atorvastatin 20 mg nocte'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3257,
+   "supported": 0.8111,
+   "contradicted": 0.0432,
+   "not_stated": 0.1272,
+   "not_a_claim": 0.0186,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.015,
+    "D2": 0.0219,
+    "D3": 0.963
+   },
+   "source": "D3"
+  },
+  {
+   "claim": "Levothyroxine dose differs: the discharge summary of 2025-05-19 says 'levothyroxine 50 micrograms OD before breakfast', the pharmacy record of 2025-07-05 says 'levothyroxine 50 mcg OD before breakfast', and the GP letter of 2025-12-23 says 'levotiroxina 75 microgramos una vez al d\u00eda en ayunas'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5166,
+   "supported": 0.6981,
+   "contradicted": 0.046,
+   "not_stated": 0.1593,
+   "not_a_claim": 0.0967,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.2378,
+    "D2": 0.1072,
+    "D3": 0.655
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 micrograms OD before breakfast",
+    "start": 336,
+    "end": 383,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril stopped: the GP letter of 2025-12-23 says 'lisinopril suspendido el 2025-12-23'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1576,
+   "supported": 0.9976,
+   "contradicted": 0.001,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0007,
+    "D3": 0.9986
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril suspendido el 2025-12-23",
+    "start": 247,
+    "end": 282,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.6981
+ },
+ "timing": {
+  "read_ms": 134,
+  "total_ms": 135
+ },
+ "_credits": "6"
+}

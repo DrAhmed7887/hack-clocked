@@ -1,0 +1,260 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "insulin glargine",
+     "frequency": null,
+     "stopped": "stopped on 2026-08-01"
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 129,
+     "end": 160,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 131,
+       "end": 140,
+       "confidence": 0.9999999998278275,
+       "p_verify": 0.9999999998278275
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 141,
+       "end": 147,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 148,
+       "end": 159,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 160,
+     "end": 201,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 162,
+       "end": 178,
+       "confidence": 0.9999998509120003,
+       "p_verify": 0.9999998509120003
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.546,
+       "p_blank": 0,
+       "rejected_value": "stopped on 2026-08-01",
+       "rejected_p_verify": 0.454,
+       "reason": "verification_rejected"
+      },
+      "stopped": {
+       "value": "stopped on 2026-08-01",
+       "start": 179,
+       "end": 200,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 201,
+     "end": 256,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 203,
+       "end": 221,
+       "confidence": 0.9999999985467989,
+       "p_verify": 0.9999999985467989
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 222,
+       "end": 236,
+       "p_start": 1,
+       "p_close": 0.999,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 246,
+       "end": 255,
+       "p_start": 0.706,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.706
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 256,
+     "end": 285,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 258,
+       "end": 268,
+       "confidence": 0.9999999998343783,
+       "p_verify": 0.9999999998343783
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 269,
+       "end": 274,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 275,
+       "end": 285,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 144,
+  "forwards": {
+   "fields": [
+    3,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 52,
+    "locate": 0,
+    "verify": 14,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 34,
+    "resolve": 11,
+    "extend": 0,
+    "contest": 25,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 73,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 144,
+  "server_ms": 147
+ },
+ "_credits": "6"
+}

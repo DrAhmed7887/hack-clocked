@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Levothyroxine dose differs: 'levothyroxine 50 micrograms OD before breakfast' from the clinic note of 2024-08-19, 'levothyroxine 50 mcg OD before breakfast' from the pharmacy record of 2024-12-07, and 'levothyroxine 75 micrograms mane, before food' from the discharge summary of 2024-12-26.\nLisinopril stopped: 'lisinopril stopped on 2024-12-26' from the discharge summary of 2024-12-26.\nSalbutamol inhaler new: 'salbutamol inhaler 100 micrograms, 2 puffs PRN' from the discharge summary of 2024-12-26",
+   "confidence": 0.3571603910317569,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 425,
+  "total_ms": 445,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 368,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "18"
+}

@@ -1,0 +1,299 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [
+    "D2"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [
+    "D1",
+    "D3"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [
+    "D2"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D4",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D1",
+    "D2",
+    "D3"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "overlapping",
+   "related": 0.9955,
+   "probabilities": {
+    "same": 0.0744,
+    "overlapping": 0.9124,
+    "conflicting": 0.0086,
+    "unrelated": 0.0045
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.0041,
+      "restated": 0.9876,
+      "elaborated": 0.0041,
+      "different": 0.0042
+     },
+     "confidence": 0.9958,
+     "a": {
+      "document": "D1",
+      "quote": "Outpatient clinic note, Alexandria",
+      "start": 0,
+      "end": 34,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D2",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-05-04\nPatient: synthetic case P017, 80-year-old female.\n\n\nMedications:\n- warfarin 3mg OD as per INR\n- amlodipine 5 mg daily\n- levothyroxine 50 mcg mane, before food\n- insulin glargine 16 units ON\n- salbutamol inhaler 100 mcg, 2 puffs PRN",
+      "start": 0,
+      "end": 295,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9936,
+   "probabilities": {
+    "same": 0.0223,
+    "overlapping": 0.9596,
+    "conflicting": 0.0117,
+    "unrelated": 0.0064
+   },
+   "duplicates": [],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.9974,
+   "probabilities": {
+    "same": 0.0026,
+    "overlapping": 0.0074,
+    "conflicting": 0.9873,
+    "unrelated": 0.0026
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9932,
+      "date_or_version": 0.0015,
+      "rule_or_condition": 0.0015,
+      "scope": 0.0011,
+      "name": 0.0014,
+      "no_conflict": 0.0013
+     },
+     "confidence": 0.9987,
+     "a": {
+      "document": "D1",
+      "quote": "- amlodipine 5mg o.d.",
+      "start": 172,
+      "end": 193,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Informe de derivaci\u00f3n, centro de atenci\u00f3n primaria, Valencia\nFecha: 2025-09-23\nPaciente: caso sint\u00e9tico P017, 80 a\u00f1os, mujer.\n\nAntecedentes:\n- asma\n\nAlergia: l\u00e1tex (dermatitis de contacto).\n\nTratamiento:\n- amlodipino 10 mg una vez al d\u00eda\n- levotiroxina 50 microgramos una vez al d\u00eda en ayunas\n- insulina glargina suspendido el 2025-09-23\n- salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda",
+      "start": 0,
+      "end": 402,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9906,
+   "probabilities": {
+    "same": 0.1807,
+    "overlapping": 0.7957,
+    "conflicting": 0.0142,
+    "unrelated": 0.0094
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.0045,
+      "restated": 0.9867,
+      "elaborated": 0.0044,
+      "different": 0.0044
+     },
+     "confidence": 0.9956,
+     "a": {
+      "document": "D2",
+      "quote": "Community pharmacy dispensing record, Valencia",
+      "start": 0,
+      "end": 46,
+      "confidence": 0.998
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-07-04\nPatient: synthetic case P017, 80-year-old female.\n\nProblems:\nHistory of hypothyroidism.\n\nAllergies: nil known.\n\nMedications:\n- warfarin 3mg OD as per INR\n- amlodipine 5mg OD\n- levothyroxine 50 micrograms mane, before food\n- insulin glargine 16 units ON\n- salbutamol inhaler 100 mcg, 2 puffs PRN",
+      "start": 0,
+      "end": 384,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D2",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.997,
+   "probabilities": {
+    "same": 0.003,
+    "overlapping": 0.01,
+    "conflicting": 0.984,
+    "unrelated": 0.003
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9943,
+      "date_or_version": 0.0013,
+      "rule_or_condition": 0.0013,
+      "scope": 0.0009,
+      "name": 0.0011,
+      "no_conflict": 0.0011
+     },
+     "confidence": 0.9989,
+     "a": {
+      "document": "D2",
+      "quote": "- amlodipine 5 mg daily",
+      "start": 158,
+      "end": 181,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Informe de derivaci\u00f3n, centro de atenci\u00f3n primaria, Valencia\nFecha: 2025-09-23\nPaciente: caso sint\u00e9tico P017, 80 a\u00f1os, mujer.\n\nAntecedentes:\n- asma\n\nAlergia: l\u00e1tex (dermatitis de contacto).\n\nTratamiento:\n- amlodipino 10 mg una vez al d\u00eda\n- levotiroxina 50 microgramos una vez al d\u00eda en ayunas\n- insulina glargina suspendido el 2025-09-23\n- salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda",
+      "start": 0,
+      "end": 402,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D3",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.9968,
+   "probabilities": {
+    "same": 0.0025,
+    "overlapping": 0.0085,
+    "conflicting": 0.9858,
+    "unrelated": 0.0032
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "scope",
+     "kinds": {
+      "value": 0.0798,
+      "date_or_version": 0.0236,
+      "rule_or_condition": 0.2057,
+      "scope": 0.595,
+      "name": 0.028,
+      "no_conflict": 0.0679
+     },
+     "confidence": 0.9321,
+     "a": {
+      "document": "D3",
+      "quote": "Allergies: nil known.",
+      "start": 179,
+      "end": 200,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Informe de derivaci\u00f3n, centro de atenci\u00f3n primaria, Valencia\nFecha: 2025-09-23\nPaciente: caso sint\u00e9tico P017, 80 a\u00f1os, mujer.\n\nAntecedentes:\n- asma\n\nAlergia: l\u00e1tex (dermatitis de contacto).\n\nTratamiento:\n- amlodipino 10 mg una vez al d\u00eda\n- levotiroxina 50 microgramos una vez al d\u00eda en ayunas\n- insulina glargina suspendido el 2025-09-23\n- salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda",
+      "start": 0,
+      "end": 402,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [
+  0,
+  3
+ ],
+ "conflicts": [
+  2,
+  4,
+  5
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 33,
+  "passage_reads": 1,
+  "passages_ms": 104,
+  "passages": 9,
+  "counterparts_ms": 199,
+  "kinds_ms": 38
+ },
+ "timing": {
+  "read_ms": 373,
+  "total_ms": 375
+ },
+ "_credits": "15"
+}

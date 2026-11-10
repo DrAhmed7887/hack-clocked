@@ -1,0 +1,317 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "Sin alergias medicamentosas conocidas.",
+   "start": 180,
+   "end": 218,
+   "confidence": 0.9999999996710889,
+   "p_verify": 0.9999999996710889
+  },
+  "problems": {
+   "value": [
+    "enfermedad renal cr\u00f3nica estadio 3a"
+   ],
+   "items": [
+    {
+     "value": "enfermedad renal cr\u00f3nica estadio 3a",
+     "start": 143,
+     "end": 178,
+     "confidence": 0.9999999991786106,
+     "p_verify": 0.9999999991786106
+    }
+   ],
+   "confidence": 0.9999999991786106
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "atorvastatina",
+     "frequency": null,
+     "line": "atorvastatina suspendido el 2025-12-25",
+     "stopped": "suspendido el 2025-12-25"
+    },
+    {
+     "dose": "5 mg",
+     "drug": "bisoprolol",
+     "frequency": "una vez al d\u00eda",
+     "line": "bisoprolol 5 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "500 mg",
+     "drug": "metformina",
+     "frequency": "cada 12 horas",
+     "line": "metformina 500 mg cada 12 horas",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazol",
+     "frequency": "una vez al d\u00eda",
+     "line": "omeprazol 20 mg una vez al d\u00eda",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 233,
+     "end": 274,
+     "fields": {
+      "drug": {
+       "value": "atorvastatina",
+       "start": 235,
+       "end": 248,
+       "confidence": 0.999508394154715,
+       "p_verify": 0.999508394154715
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.991,
+       "p_blank": 0.991
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 1,
+       "p_blank": 0.003,
+       "rejected_value": "suspendido el 2025-12-25",
+       "rejected_p_verify": 0,
+       "reason": "verification_rejected"
+      },
+      "line": {
+       "value": "atorvastatina suspendido el 2025-12-25",
+       "start": 235,
+       "end": 273,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "suspendido el 2025-12-25",
+       "start": 249,
+       "end": 273,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 274,
+     "end": 307,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 276,
+       "end": 286,
+       "confidence": 0.9999999994441642,
+       "p_verify": 0.9999999994441642
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 287,
+       "end": 291,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 292,
+       "end": 306,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 5 mg una vez al d\u00eda",
+       "start": 276,
+       "end": 306,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 307,
+     "end": 341,
+     "fields": {
+      "drug": {
+       "value": "metformina",
+       "start": 309,
+       "end": 319,
+       "confidence": 0.9999999994251212,
+       "p_verify": 0.9999999994251212
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 320,
+       "end": 326,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "cada 12 horas",
+       "start": 327,
+       "end": 340,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformina 500 mg cada 12 horas",
+       "start": 309,
+       "end": 340,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 341,
+     "end": 373,
+     "fields": {
+      "drug": {
+       "value": "omeprazol",
+       "start": 343,
+       "end": 352,
+       "confidence": 0.9999999994281832,
+       "p_verify": 0.9999999994281832
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 353,
+       "end": 358,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 359,
+       "end": 373,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazol 20 mg una vez al d\u00eda",
+       "start": 343,
+       "end": 373,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 260,
+  "forwards": {
+   "fields": [
+    8,
+    1
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 4,
+    "branches": 1,
+    "generate": 116,
+    "locate": 0,
+    "verify": 21,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 55,
+    "resolve": 13,
+    "extend": 11,
+    "contest": 32,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 115,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 260,
+  "server_ms": 265
+ },
+ "_credits": "11"
+}

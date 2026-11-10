@@ -1,0 +1,327 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [
+    "D2",
+    "D3"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [
+    "D1",
+    "D3"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [
+    "D1",
+    "D2"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D4",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D1",
+    "D2",
+    "D3"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "overlapping",
+   "related": 0.9986,
+   "probabilities": {
+    "same": 0.0016,
+    "overlapping": 0.9947,
+    "conflicting": 0.0023,
+    "unrelated": 0.0014
+   },
+   "duplicates": [
+    {
+     "kind": "elaborated",
+     "kinds": {
+      "verbatim": 0.0072,
+      "restated": 0.0346,
+      "elaborated": 0.5002,
+      "different": 0.4581
+     },
+     "confidence": 0.5419,
+     "a": {
+      "document": "D1",
+      "quote": "Outpatient clinic note, Alexandria",
+      "start": 0,
+      "end": 34,
+      "confidence": 0.923
+     },
+     "b": {
+      "document": "D2",
+      "quote": "GP referral letter, primary care centre, Valencia\nDate: 2025-07-22\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\nKnown gastro-oesophageal reflux disease.\nKnown atrial fibrillation.\n\nMedications:\n- insulin glargine 16 units at night\n- lisinopril 10 mg once daily\n- atorvastatin 20 mg at night\n- levothyroxine 50 micrograms once daily before breakfast",
+      "start": 0,
+      "end": 362,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9895,
+   "probabilities": {
+    "same": 0.1515,
+    "overlapping": 0.8222,
+    "conflicting": 0.0158,
+    "unrelated": 0.0105
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.2023,
+      "restated": 0.6786,
+      "elaborated": 0.0945,
+      "different": 0.0246
+     },
+     "confidence": 0.9754,
+     "a": {
+      "document": "D1",
+      "quote": "- insulin glargine 16 units at night",
+      "start": 166,
+      "end": 202,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2026-01-31\nPatient: synthetic case P011, 56-year-old male.\n\n\nMedications:\n- insulin glargine 16 units at night\n- lisinopril 10 mg once daily\n- atorvastatin 20 mg at night\n- levothyroxine 50 micrograms once daily before breakfast",
+      "start": 0,
+      "end": 281,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.9903,
+   "probabilities": {
+    "same": 0.0077,
+    "overlapping": 0.0502,
+    "conflicting": 0.9324,
+    "unrelated": 0.0097
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.4994,
+      "date_or_version": 0.0622,
+      "rule_or_condition": 0.0557,
+      "scope": 0.1218,
+      "name": 0.1623,
+      "no_conflict": 0.0985
+     },
+     "confidence": 0.9015,
+     "a": {
+      "document": "D1",
+      "quote": "- lisinopril 10 mg once daily",
+      "start": 203,
+      "end": 232,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-05-04\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\nKnown gastro-oesophageal reflux disease.\nKnown chronic kidney disease stage 3a.\n\nMedications:\n- insulin glargine 16 units at night\n- bisoprolol 2.5 mg once daily\n- atorvastatin stopped on 2026-05-04\n- levothyroxine 50 micrograms once daily before breakfast",
+      "start": 0,
+      "end": 405,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9949,
+   "probabilities": {
+    "same": 0.0237,
+    "overlapping": 0.9625,
+    "conflicting": 0.0088,
+    "unrelated": 0.0051
+   },
+   "duplicates": [
+    {
+     "kind": "elaborated",
+     "kinds": {
+      "verbatim": 0.0469,
+      "restated": 0.1141,
+      "elaborated": 0.7881,
+      "different": 0.0509
+     },
+     "confidence": 0.9491,
+     "a": {
+      "document": "D2",
+      "quote": "- insulin glargine 16 units at night",
+      "start": 208,
+      "end": 244,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2026-01-31\nPatient: synthetic case P011, 56-year-old male.\n\n\nMedications:\n- insulin glargine 16 units at night\n- lisinopril 10 mg once daily\n- atorvastatin 20 mg at night\n- levothyroxine 50 micrograms once daily before breakfast",
+      "start": 0,
+      "end": 281,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D2",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.9922,
+   "probabilities": {
+    "same": 0.0076,
+    "overlapping": 0.0813,
+    "conflicting": 0.9033,
+    "unrelated": 0.0078
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.5001,
+      "date_or_version": 0.0172,
+      "rule_or_condition": 0.4299,
+      "scope": 0.0113,
+      "name": 0.0156,
+      "no_conflict": 0.0258
+     },
+     "confidence": 0.9742,
+     "a": {
+      "document": "D2",
+      "quote": "- atorvastatin 20 mg at night",
+      "start": 275,
+      "end": 304,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-05-04\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\nKnown gastro-oesophageal reflux disease.\nKnown chronic kidney disease stage 3a.\n\nMedications:\n- insulin glargine 16 units at night\n- bisoprolol 2.5 mg once daily\n- atorvastatin stopped on 2026-05-04\n- levothyroxine 50 micrograms once daily before breakfast",
+      "start": 0,
+      "end": 405,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D3",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.9932,
+   "probabilities": {
+    "same": 0.0049,
+    "overlapping": 0.1827,
+    "conflicting": 0.8056,
+    "unrelated": 0.0068
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.5872,
+      "date_or_version": 0.0454,
+      "rule_or_condition": 0.2915,
+      "scope": 0.0141,
+      "name": 0.0238,
+      "no_conflict": 0.038
+     },
+     "confidence": 0.962,
+     "a": {
+      "document": "D3",
+      "quote": "- atorvastatin 20 mg at night",
+      "start": 194,
+      "end": 223,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2026-05-04\nPatient: synthetic case P011, 56-year-old male.\n\nProblems:\nKnown gastro-oesophageal reflux disease.\nKnown chronic kidney disease stage 3a.\n\nMedications:\n- insulin glargine 16 units at night\n- bisoprolol 2.5 mg once daily\n- atorvastatin stopped on 2026-05-04\n- levothyroxine 50 micrograms once daily before breakfast",
+      "start": 0,
+      "end": 405,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [
+  0,
+  1,
+  3
+ ],
+ "conflicts": [
+  2,
+  4,
+  5
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 31,
+  "passage_reads": 1,
+  "passages_ms": 103,
+  "passages": 9,
+  "counterparts_ms": 194,
+  "kinds_ms": 36
+ },
+ "timing": {
+  "read_ms": 362,
+  "total_ms": 365
+ },
+ "_credits": "15"
+}

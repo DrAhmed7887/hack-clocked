@@ -1,0 +1,136 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8204,
+ "ungrounded": 0.1796,
+ "verdict": "contradicted",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.8665,
+   "share_of_answer": 0.7109,
+   "claims": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1035,
+   "share_of_answer": 0.0849,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0299,
+   "share_of_answer": 0.0246,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict new: the discharge summary of 2024-04-14 says 'latex (contact dermatitis)' and the GP letter of 2024-04-15 says 'No known drug allergies.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2136,
+   "supported": 0.3908,
+   "contradicted": 0.5007,
+   "not_stated": 0.0528,
+   "not_a_claim": 0.0557,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.8236,
+    "D2": 0.1165,
+    "D3": 0.0599
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "Allergy: latex (contact dermatitis).",
+    "start": 194,
+    "end": 230,
+    "confidence": 0.991
+   }
+  },
+  {
+   "claim": "Amlodipine dose differs: the discharge summary of 2024-04-14 says 'amlodipine 5 mg once daily', the GP letter of 2024-04-15 says 'amlodipine 5 mg once daily', and the pharmacy record of 2025-09-17 says 'amlodipine 10 mg once daily'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3218,
+   "supported": 0.865,
+   "contradicted": 0.0379,
+   "not_stated": 0.0214,
+   "not_a_claim": 0.0757,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.055,
+    "D2": 0.0485,
+    "D3": 0.8965
+   },
+   "source": "D3"
+  },
+  {
+   "claim": "Atorvastatin stopped: the discharge summary of 2024-04-14 says 'atorvastatin 20 mg at night', the GP letter of 2024-04-15 says 'atorvastatin 20 mg at night', and the pharmacy record of 2025-09-17 says 'atorvastatin stopped on 2025-09-17'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3301,
+   "supported": 0.9828,
+   "contradicted": 0.0073,
+   "not_stated": 0.0054,
+   "not_a_claim": 0.0045,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0024,
+    "D2": 0.0037,
+    "D3": 0.9939
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatin stopped on 2025-09-17",
+    "start": 197,
+    "end": 231,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Insulin glargine new: the pharmacy record of 2025-09-17 says 'insulin glargine 16 units at night'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1345,
+   "supported": 0.9972,
+   "contradicted": 0.0013,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.001,
+    "D3": 0.9983
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "insulin glargine 16 units at night",
+    "start": 160,
+    "end": 194,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.3908
+ },
+ "timing": {
+  "read_ms": 150,
+  "total_ms": 153
+ },
+ "_credits": "6"
+}

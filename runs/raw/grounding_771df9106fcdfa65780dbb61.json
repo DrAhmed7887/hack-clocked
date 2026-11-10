@@ -1,0 +1,129 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7583,
+ "ungrounded": 0.2417,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9686,
+   "share_of_answer": 0.7344,
+   "claims": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0173,
+   "share_of_answer": 0.0131,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0142,
+   "share_of_answer": 0.0108,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "No allergies are mentioned in any records.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0984,
+   "supported": 0.0042,
+   "contradicted": 0.0015,
+   "not_stated": 0.9911,
+   "not_a_claim": 0.0032,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3139,
+    "D2": 0.3172,
+    "D3": 0.3689
+   },
+   "source": null
+  },
+  {
+   "claim": "Levothyroxine dose or timing differs between the clinic note of 2024-08-19, the pharmacy record of 2024-12-07, and the discharge summary of 2024-12-26.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3536,
+   "supported": 0.5996,
+   "contradicted": 0.0391,
+   "not_stated": 0.3458,
+   "not_a_claim": 0.0155,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0588,
+    "D2": 0.0474,
+    "D3": 0.8938
+   },
+   "source": "D3"
+  },
+  {
+   "claim": "Lisinopril was stopped in the discharge summary of 2024-12-26 compared to the clinic note of 2024-08-19 and the pharmacy record of 2024-12-07.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3326,
+   "supported": 0.9952,
+   "contradicted": 0.0021,
+   "not_stated": 0.0018,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0011,
+    "D2": 0.0012,
+    "D3": 0.9977
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril stopped on 2024-12-26",
+    "start": 243,
+    "end": 275,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Salbutamol inhaler 100 micrograms, 2 puffs PRN is new in the discharge summary of 2024-12-26",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2155,
+   "supported": 0.9974,
+   "contradicted": 0.0011,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.0008,
+    "D3": 0.9985
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler 100 micrograms, 2 puffs PRN",
+    "start": 278,
+    "end": 324,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.0042
+ },
+ "timing": {
+  "read_ms": 133,
+  "total_ms": 135
+ },
+ "_credits": "6"
+}

@@ -1,0 +1,119 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7719,
+ "ungrounded": 0.2281,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6266,
+   "share_of_answer": 0.4837,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.3075,
+   "share_of_answer": 0.2374,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0659,
+   "share_of_answer": 0.0508,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The clinic note of 2025-04-22 says 'atorvastatin 20mg nocte' and the pharmacy record of 2025-08-03 says 'atorvastatin 20mg ON', but this is not in the discharge summary of 2026-04-24.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3588,
+   "supported": 0.5938,
+   "contradicted": 0.0682,
+   "not_stated": 0.2998,
+   "not_a_claim": 0.0383,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8698,
+    "D2": 0.0706,
+    "D3": 0.0596
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "atorvastatin 20mg nocte",
+    "start": 284,
+    "end": 307,
+    "confidence": 0.955
+   }
+  },
+  {
+   "claim": "The clinic note of 2025-04-22 says 'salbutamol inhaler 100 mcg, 2 puffs PRN', the pharmacy record of 2025-08-03 says 'salbutamol inhaler 100 mcg, 2 puffs when required', and the discharge summary of 2026-04-24 says 'salbutamol inhaler stopped on 2026-04-24'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5059,
+   "supported": 0.8381,
+   "contradicted": 0.0342,
+   "not_stated": 0.0259,
+   "not_a_claim": 0.1019,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7035,
+    "D2": 0.0842,
+    "D3": 0.2122
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "salbutamol inhaler 100 mcg, 2 puffs PRN",
+    "start": 310,
+    "end": 349,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2026-04-24 says 'warfarin 3mg OD as per INR'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1353,
+   "supported": 0.9974,
+   "contradicted": 0.0011,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0009,
+    "D2": 0.0008,
+    "D3": 0.9983
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarin 3mg OD as per INR",
+    "start": 330,
+    "end": 356,
+    "confidence": 0.999
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.5938
+ },
+ "timing": {
+  "read_ms": 116,
+  "total_ms": 119
+ },
+ "_credits": "5"
+}

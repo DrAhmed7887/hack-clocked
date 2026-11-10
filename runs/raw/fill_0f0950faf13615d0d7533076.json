@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "No known drug allergies are stated in the discharge summary of 2025-07-08. Amlodipine was stopped according to the GP letter of 2025-12-03, whereas the discharge summary of 2025-07-08 and pharmacy record of 2025-10-10 list it. Metformin is missing from the GP letter of 2025-12-03 compared to the discharge summary of 2025-07-08 and pharmacy record of 2025-10-10. Omeprazole dose differs in the GP letter of 2025-12-03 as \"omeprazol 40 mg una vez al d\u00eda\" compared to the discharge summary of 2025-07-08 and pharmacy record of 2025-10-10. Levotiroxina 50 microgramos una vez al d\u00eda en ayunas is new in the GP letter of 2025-12-03",
+   "confidence": 0.8769283382640004,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 678,
+  "total_ms": 706,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 656,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "28"
+}

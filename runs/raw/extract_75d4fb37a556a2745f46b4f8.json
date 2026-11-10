@@ -1,0 +1,322 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 181,
+   "end": 205,
+   "confidence": 0.9999999994481572,
+   "p_verify": 0.9999999994481572
+  },
+  "problems": {
+   "value": [
+    "Known hypothyroidism.",
+    "Known essential hypertension."
+   ],
+   "items": [
+    {
+     "value": "Known hypothyroidism.",
+     "start": 128,
+     "end": 149,
+     "confidence": 0.9999999998900808,
+     "p_verify": 0.9999999998900808
+    },
+    {
+     "value": "Known essential hypertension.",
+     "start": 150,
+     "end": 179,
+     "confidence": 0.9999999998143583,
+     "p_verify": 0.9999999998143583
+    }
+   ],
+   "confidence": 0.9999999998143583
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "lisinopril",
+     "frequency": null,
+     "line": "lisinopril stopped on 2025-12-23",
+     "stopped": "stopped on 2025-12-23"
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "2 puffs as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    },
+    {
+     "dose": "75 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 75 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 220,
+     "end": 255,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 222,
+       "end": 232,
+       "confidence": 0.9999998360959534,
+       "p_verify": 0.9999998360959534
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.568,
+       "p_blank": 0.568
+      },
+      "line": {
+       "value": "lisinopril stopped on 2025-12-23",
+       "start": 222,
+       "end": 254,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-12-23",
+       "start": 233,
+       "end": 254,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 255,
+     "end": 310,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 257,
+       "end": 275,
+       "confidence": 0.99999999916799,
+       "p_verify": 0.99999999916799
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 276,
+       "end": 290,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "2 puffs as needed",
+       "start": 292,
+       "end": 309,
+       "p_start": 0.98,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.98
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 257,
+       "end": 309,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 310,
+     "end": 368,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 312,
+       "end": 325,
+       "confidence": 0.9999999998330631,
+       "p_verify": 0.9999999998330631
+      },
+      "dose": {
+       "value": "75 micrograms",
+       "start": 326,
+       "end": 339,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 340,
+       "end": 367,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 75 micrograms once daily before breakfast",
+       "start": 312,
+       "end": 367,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 368,
+     "end": 398,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 370,
+       "end": 380,
+       "confidence": 0.9999999995892237,
+       "p_verify": 0.9999999995892237
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 381,
+       "end": 387,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 388,
+       "end": 398,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 370,
+       "end": 398,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 183,
+  "forwards": {
+   "fields": [
+    4,
+    1
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 67,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 11,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 89,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 183,
+  "server_ms": 187
+ },
+ "_credits": "8"
+}

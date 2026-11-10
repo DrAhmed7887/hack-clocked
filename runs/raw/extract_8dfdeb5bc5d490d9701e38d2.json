@@ -1,0 +1,332 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "gastro-oesophageal reflux disease",
+    "hypothyroidism",
+    "chronic kidney disease stage 3a"
+   ],
+   "items": [
+    {
+     "value": "gastro-oesophageal reflux disease",
+     "start": 134,
+     "end": 167,
+     "confidence": 0.9999999821856548,
+     "p_verify": 0.9999999821856548
+    },
+    {
+     "value": "hypothyroidism",
+     "start": 175,
+     "end": 189,
+     "confidence": 0.9999999933092902,
+     "p_verify": 0.9999999933092902
+    },
+    {
+     "value": "chronic kidney disease stage 3a",
+     "start": 197,
+     "end": 228,
+     "confidence": 0.9999999980260987,
+     "p_verify": 0.9999999980260987
+    }
+   ],
+   "confidence": 0.9999999821856548
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 244,
+     "end": 274,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 246,
+       "end": 256,
+       "confidence": 0.9999999996157432,
+       "p_verify": 0.9999999996157432
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 257,
+       "end": 262,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 263,
+       "end": 273,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 274,
+     "end": 305,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 276,
+       "end": 286,
+       "confidence": 0.9999999997124724,
+       "p_verify": 0.9999999997124724
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 287,
+       "end": 293,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 294,
+       "end": 304,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 305,
+     "end": 335,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 307,
+       "end": 317,
+       "confidence": 0.999999999885266,
+       "p_verify": 0.999999999885266
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 318,
+       "end": 323,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 324,
+       "end": 334,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 335,
+     "end": 375,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 337,
+       "end": 345,
+       "confidence": 0.999999999747168,
+       "p_verify": 0.999999999747168
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 346,
+       "end": 350,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 351,
+       "end": 361,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 375,
+     "end": 432,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 377,
+       "end": 390,
+       "confidence": 0.9999999996302751,
+       "p_verify": 0.9999999996302751
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 391,
+       "end": 404,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 405,
+       "end": 415,
+       "p_start": 1,
+       "p_close": 0.881,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.881
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 229,
+  "forwards": {
+   "fields": [
+    9,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 130,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 33,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 24,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 73,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 5,
+   "cells": 15,
+   "explicit": 0
+  },
+  "total_ms": 229,
+  "server_ms": 582
+ },
+ "_credits": "10"
+}

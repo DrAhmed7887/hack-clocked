@@ -1,0 +1,139 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8858,
+ "ungrounded": 0.1142,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D4",
+   "share": 0.6999,
+   "share_of_answer": 0.62,
+   "claims": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.2719,
+   "share_of_answer": 0.2409,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0152,
+   "share_of_answer": 0.0135,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.013,
+   "share_of_answer": 0.0115,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "D3 reports sulfonamides (hives) allergy while D4 states no known drug allergies.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2817,
+   "supported": 0.8781,
+   "contradicted": 0.073,
+   "not_stated": 0.0291,
+   "not_a_claim": 0.0198,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0108,
+    "D2": 0.017,
+    "D3": 0.9441,
+    "D4": 0.028
+   },
+   "source": "D3"
+  },
+  {
+   "claim": "Atorvastatin was stopped in D4 compared to D1, D2, and D3.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2042,
+   "supported": 0.9947,
+   "contradicted": 0.0018,
+   "not_stated": 0.0023,
+   "not_a_claim": 0.0012,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0011,
+    "D2": 0.0015,
+    "D3": 0.0009,
+    "D4": 0.9965
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "atorvastatina suspendido el 2025-12-25",
+    "start": 235,
+    "end": 273,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Bisoprolol dose differs in D4 (5 mg | 1/day) compared to D1, D2, and D3 (2.5 mg | 1/day).",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3134,
+   "supported": 0.934,
+   "contradicted": 0.0369,
+   "not_stated": 0.0172,
+   "not_a_claim": 0.0119,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0101,
+    "D2": 0.0123,
+    "D3": 0.0099,
+    "D4": 0.9678
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "bisoprolol 5 mg una vez al d\u00eda",
+    "start": 276,
+    "end": 306,
+    "confidence": 0.993
+   }
+  },
+  {
+   "claim": "Warfarin is missing from D4 but present in D1, D2, and D3",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2007,
+   "supported": 0.7105,
+   "contradicted": 0.0488,
+   "not_stated": 0.2143,
+   "not_a_claim": 0.0264,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0396,
+    "D2": 0.0376,
+    "D3": 0.03,
+    "D4": 0.8929
+   },
+   "source": "D4"
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 3,
+  "supported": 0.7105
+ },
+ "timing": {
+  "read_ms": 140,
+  "total_ms": 143
+ },
+ "_credits": "6"
+}

@@ -1,0 +1,342 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 233,
+   "end": 257,
+   "confidence": 0.999999999629815,
+   "p_verify": 0.999999999629815
+  },
+  "problems": {
+   "value": [
+    "chronic kidney disease stage 3a",
+    "asthma",
+    "essential hypertension"
+   ],
+   "items": [
+    {
+     "value": "chronic kidney disease stage 3a",
+     "start": 155,
+     "end": 186,
+     "confidence": 0.9999999972702893,
+     "p_verify": 0.9999999972702893
+    },
+    {
+     "value": "asthma",
+     "start": 194,
+     "end": 200,
+     "confidence": 0.9999999949034533,
+     "p_verify": 0.9999999949034533
+    },
+    {
+     "value": "essential hypertension",
+     "start": 208,
+     "end": 230,
+     "confidence": 0.9999999908426794,
+     "p_verify": 0.9999999908426794
+    }
+   ],
+   "confidence": 0.9999999908426794
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 272,
+     "end": 327,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 274,
+       "end": 292,
+       "confidence": 0.9999999994479516,
+       "p_verify": 0.9999999994479516
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 293,
+       "end": 307,
+       "p_start": 1,
+       "p_close": 0.994,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.994
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 317,
+       "end": 326,
+       "p_start": 0.996,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.996
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 327,
+     "end": 356,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 329,
+       "end": 339,
+       "confidence": 0.9999999998457945,
+       "p_verify": 0.9999999998457945
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 340,
+       "end": 344,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 345,
+       "end": 355,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 356,
+     "end": 414,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 358,
+       "end": 371,
+       "confidence": 0.999999999785872,
+       "p_verify": 0.999999999785872
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 372,
+       "end": 385,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 386,
+       "end": 413,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 414,
+     "end": 451,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 416,
+       "end": 432,
+       "confidence": 0.9999999995462185,
+       "p_verify": 0.9999999995462185
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 433,
+       "end": 441,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 442,
+       "end": 450,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 451,
+     "end": 480,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 453,
+       "end": 465,
+       "confidence": 0.9999999996713147,
+       "p_verify": 0.9999999996713147
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 466,
+       "end": 471,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 472,
+       "end": 480,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.499,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 453,
+         "p_verify": 0
+        }
+       ],
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 1,
+       "p_blank": 1
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 233,
+  "forwards": {
+   "fields": [
+    8,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 121,
+    "locate": 0,
+    "verify": 25,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 34,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 31,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 81,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 5,
+   "cells": 15,
+   "explicit": 0
+  },
+  "total_ms": 233,
+  "server_ms": 236
+ },
+ "_credits": "10"
+}

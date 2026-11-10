@@ -1,0 +1,369 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known essential hypertension."
+   ],
+   "items": [
+    {
+     "value": "Known essential hypertension.",
+     "start": 149,
+     "end": 178,
+     "confidence": 0.9999999993065638,
+     "p_verify": 0.9999999993065638
+    }
+   ],
+   "confidence": 0.9999999993065638
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "75 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "mane",
+     "line": "levothyroxine 75 micrograms mane, before food",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "lisinopril",
+     "frequency": null,
+     "line": "lisinopril stopped on 2024-12-26",
+     "stopped": "stopped on 2024-12-26"
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "PRN",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs PRN",
+     "stopped": null
+    },
+    {
+     "dose": "2.5mg",
+     "drug": "bisoprolol",
+     "frequency": "daily",
+     "line": "bisoprolol 2.5mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "3mg",
+     "drug": "warfarin",
+     "frequency": "OD as per INR",
+     "line": "warfarin 3mg OD as per INR",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 193,
+     "end": 241,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 195,
+       "end": 208,
+       "confidence": 0.999999999669889,
+       "p_verify": 0.999999999669889
+      },
+      "dose": {
+       "value": "75 micrograms",
+       "start": 209,
+       "end": 222,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "mane",
+       "start": 223,
+       "end": 227,
+       "p_start": 1,
+       "p_close": 0.988,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.988
+      },
+      "line": {
+       "value": "levothyroxine 75 micrograms mane, before food",
+       "start": 195,
+       "end": 240,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 241,
+     "end": 276,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 243,
+       "end": 253,
+       "confidence": 0.99999999883438,
+       "p_verify": 0.99999999883438
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.991,
+       "p_blank": 0.002,
+       "rejected_value": "stopped on 2024-12-26",
+       "rejected_p_verify": 0.009,
+       "reason": "verification_rejected"
+      },
+      "line": {
+       "value": "lisinopril stopped on 2024-12-26",
+       "start": 243,
+       "end": 275,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2024-12-26",
+       "start": 254,
+       "end": 275,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 276,
+     "end": 325,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 278,
+       "end": 296,
+       "confidence": 0.9999999991340638,
+       "p_verify": 0.9999999991340638
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 297,
+       "end": 311,
+       "p_start": 1,
+       "p_close": 0.998,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.998
+      },
+      "frequency": {
+       "value": "PRN",
+       "start": 321,
+       "end": 324,
+       "p_start": 0.998,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.998
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs PRN",
+       "start": 278,
+       "end": 324,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 325,
+     "end": 350,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 327,
+       "end": 337,
+       "confidence": 0.9999999995961129,
+       "p_verify": 0.9999999995961129
+      },
+      "dose": {
+       "value": "2.5mg",
+       "start": 338,
+       "end": 343,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 344,
+       "end": 349,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5mg daily",
+       "start": 327,
+       "end": 349,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 350,
+     "end": 378,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 352,
+       "end": 360,
+       "confidence": 0.9999999997759317,
+       "p_verify": 0.9999999997759317
+      },
+      "dose": {
+       "value": "3mg",
+       "start": 361,
+       "end": 364,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD as per INR",
+       "start": 365,
+       "end": 378,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3mg OD as per INR",
+       "start": 352,
+       "end": 378,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 220,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    6,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 77,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 47,
+    "resolve": 16,
+    "extend": 11,
+    "contest": 41,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 117,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     6,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 220,
+  "server_ms": 349
+ },
+ "_credits": "9"
+}

@@ -1,0 +1,326 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "penicillin - causes rash"
+   ],
+   "items": [
+    {
+     "value": "penicillin - causes rash",
+     "start": 251,
+     "end": 275,
+     "confidence": 0.9999999994479516,
+     "p_verify": 0.9999999994479516
+    }
+   ],
+   "confidence": 0.9999999994479516
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- hyperlipidaemia\nKnown type 2 diabetes.\nHistory of atrial fibrillation.\nKnown asthma."
+   ],
+   "items": [
+    {
+     "value": "- hyperlipidaemia\nKnown type 2 diabetes.\nHistory of atrial fibrillation.\nKnown asthma.",
+     "start": 151,
+     "end": 237,
+     "confidence": 0.9999999990060593,
+     "p_verify": 0.9999999990060593
+    }
+   ],
+   "confidence": 0.9999999990060593
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "5mg",
+     "drug": "amlodipine",
+     "frequency": "OD",
+     "line": "amlodipine 5mg OD",
+     "stopped": null
+    },
+    {
+     "dose": "10mg",
+     "drug": "lisinopril",
+     "frequency": "OD",
+     "line": "lisinopril 10mg OD",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "ON",
+     "line": "insulin glargine 16 units ON",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "2 puffs when required",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs when required",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 291,
+     "end": 311,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 293,
+       "end": 303,
+       "confidence": 0.9999999994971835,
+       "p_verify": 0.9999999994971835
+      },
+      "dose": {
+       "value": "5mg",
+       "start": 304,
+       "end": 307,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 308,
+       "end": 310,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5mg OD",
+       "start": 293,
+       "end": 310,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 311,
+     "end": 332,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 313,
+       "end": 323,
+       "confidence": 0.9999999996198092,
+       "p_verify": 0.9999999996198092
+      },
+      "dose": {
+       "value": "10mg",
+       "start": 324,
+       "end": 328,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 329,
+       "end": 331,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10mg OD",
+       "start": 313,
+       "end": 331,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 332,
+     "end": 363,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 334,
+       "end": 350,
+       "confidence": 0.9999999997247675,
+       "p_verify": 0.9999999997247675
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 351,
+       "end": 359,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 360,
+       "end": 362,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units ON",
+       "start": 334,
+       "end": 362,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 363,
+     "end": 421,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 365,
+       "end": 383,
+       "confidence": 0.9999999984177952,
+       "p_verify": 0.9999999984177952
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 384,
+       "end": 398,
+       "p_start": 1,
+       "p_close": 0.998,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.998
+      },
+      "frequency": {
+       "value": "2 puffs when required",
+       "start": 400,
+       "end": 421,
+       "p_start": 0.967,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.967
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs when required",
+       "start": 365,
+       "end": 421,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 195,
+  "forwards": {
+   "fields": [
+    6,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 92,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 195,
+  "server_ms": 598
+ },
+ "_credits": "8"
+}

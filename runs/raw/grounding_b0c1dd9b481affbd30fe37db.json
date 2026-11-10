@@ -1,0 +1,109 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7903,
+ "ungrounded": 0.2097,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D2",
+   "share": 0.7093,
+   "share_of_answer": 0.5605,
+   "claims": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.2907,
+   "share_of_answer": 0.2298,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Levothyroxine is new: 'levothyroxine 50 micrograms once daily before breakfast' from the GP letter of 2026-03-16.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2897,
+   "supported": 0.9719,
+   "contradicted": 0.0102,
+   "not_stated": 0.0129,
+   "not_a_claim": 0.005,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0066,
+    "D2": 0.9934
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "levothyroxine 50 micrograms once daily before breakfast",
+    "start": 253,
+    "end": 308,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril is missing from the newest record: 'lisinopril 10 mg once daily' from the pharmacy record of 2025-02-15.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2949,
+   "supported": 0.88,
+   "contradicted": 0.0527,
+   "not_stated": 0.0509,
+   "not_a_claim": 0.0164,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.1467,
+    "D2": 0.8533
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10 mg once daily",
+    "start": 222,
+    "end": 249,
+    "confidence": 0.993
+   }
+  },
+  {
+   "claim": "Metformin dose differs: 'metformin 500 mg twice daily' from the pharmacy record of 2025-02-15 and 'metformin 1000 mg twice daily' from the GP letter of 2026-03-16",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4154,
+   "supported": 0.6,
+   "contradicted": 0.1495,
+   "not_stated": 0.1614,
+   "not_a_claim": 0.0892,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7617,
+    "D2": 0.2383
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "metformin 500 mg twice daily",
+    "start": 252,
+    "end": 280,
+    "confidence": 0.969
+   }
+  }
+ ],
+ "unsupported_claims": [
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.6
+ },
+ "timing": {
+  "read_ms": 103,
+  "total_ms": 105
+ },
+ "_credits": "4"
+}

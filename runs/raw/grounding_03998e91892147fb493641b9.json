@@ -1,0 +1,169 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7567,
+ "ungrounded": 0.2433,
+ "verdict": "contradicted",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.7247,
+   "share_of_answer": 0.5483,
+   "claims": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.2251,
+   "share_of_answer": 0.1703,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0503,
+   "share_of_answer": 0.038,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict: the GP letter of 2025-06-05 says 'latex (contact dermatitis)' and the discharge summary of 2025-12-08 says 'No known drug allergies.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1569,
+   "supported": 0.1741,
+   "contradicted": 0.6082,
+   "not_stated": 0.1534,
+   "not_a_claim": 0.0642,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.7279,
+    "D2": 0.1826,
+    "D3": 0.0895
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "latex (contact dermatitis).",
+    "start": 202,
+    "end": 229,
+    "confidence": 0.986
+   }
+  },
+  {
+   "claim": "Amlodipine dose differs: the GP letter of 2025-06-05 says 'amlodipine 5 mg once daily', the discharge summary of 2025-12-08 says 'amlodipine 5 mg once daily', and the clinic note of 2026-05-08 says 'amlodipine 10 mg once daily'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2385,
+   "supported": 0.714,
+   "contradicted": 0.0363,
+   "not_stated": 0.0908,
+   "not_a_claim": 0.1589,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.1373,
+    "D2": 0.106,
+    "D3": 0.7566
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "amlodipine 10 mg once daily",
+    "start": 273,
+    "end": 300,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Bisoprolol is missing from the newest record: the GP letter of 2025-06-05 says 'bisoprolol 2.5 mg once daily' and the discharge summary of 2025-12-08 says 'bisoprolol 2.5 mg once daily'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1946,
+   "supported": 0.7892,
+   "contradicted": 0.0302,
+   "not_stated": 0.1449,
+   "not_a_claim": 0.0358,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8185,
+    "D2": 0.09,
+    "D3": 0.0914
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "bisoprolol 2.5 mg once daily",
+    "start": 246,
+    "end": 274,
+    "confidence": 0.589
+   }
+  },
+  {
+   "claim": "Insulin glargine is new: the clinic note of 2026-05-08 says 'insulin glargine 16 units at night'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1015,
+   "supported": 0.9973,
+   "contradicted": 0.0012,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0007,
+    "D3": 0.9985
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "insulin glargine 16 units at night",
+    "start": 236,
+    "end": 270,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Salbutamol inhaler stopped: the GP letter of 2025-06-05 says 'salbutamol inhaler 100 micrograms, 2 puffs as needed', the discharge summary of 2025-12-08 says 'salbutamol inhaler 100 micrograms, 2 puffs as needed', and the clinic note of 2026-05-08 says 'salbutamol inhaler stopped on 2026-05-08'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3086,
+   "supported": 0.9862,
+   "contradicted": 0.0063,
+   "not_stated": 0.0037,
+   "not_a_claim": 0.0038,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0042,
+    "D2": 0.0036,
+    "D3": 0.9923
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler stopped on 2026-05-08",
+    "start": 193,
+    "end": 233,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.1741
+ },
+ "timing": {
+  "read_ms": 195,
+  "total_ms": 198
+ },
+ "_credits": "7"
+}

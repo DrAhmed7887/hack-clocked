@@ -1,0 +1,188 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [
+    "D3"
+   ],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [
+    "D1"
+   ],
+   "conflicts": [
+    "D1",
+    "D2"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "same",
+   "related": 0.9879,
+   "probabilities": {
+    "same": 0.6442,
+    "overlapping": 0.3179,
+    "conflicting": 0.0257,
+    "unrelated": 0.0121
+   },
+   "duplicates": [],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9968,
+   "probabilities": {
+    "same": 0.003,
+    "overlapping": 0.0053,
+    "conflicting": 0.9885,
+    "unrelated": 0.0032
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.0174,
+      "restated": 0.9161,
+      "elaborated": 0.0384,
+      "different": 0.0281
+     },
+     "confidence": 0.9719,
+     "a": {
+      "document": "D1",
+      "quote": "- gastro-oesophageal reflux disease",
+      "start": 140,
+      "end": 175,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-09-09\nPatient: synthetic case P003, 40-year-old female.\n\nProblems:\nHistory of gastro-oesophageal reflux disease.\nHistory of hypothyroidism.\n- chronic kidney disease stage 3a\n\nMedications:\n- lisinopril stopped on 2025-09-09\n- bisoprolol 2.5mg OD\n- warfarin 5mg OD as per INR\n- levothyroxine 50 mcg mane, before food",
+      "start": 0,
+      "end": 398,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.5022,
+      "date_or_version": 0.0249,
+      "rule_or_condition": 0.3848,
+      "scope": 0.0254,
+      "name": 0.0228,
+      "no_conflict": 0.04
+     },
+     "confidence": 0.96,
+     "a": {
+      "document": "D1",
+      "quote": "- lisinopril 10mg daily",
+      "start": 251,
+      "end": 274,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-09-09\nPatient: synthetic case P003, 40-year-old female.\n\nProblems:\nHistory of gastro-oesophageal reflux disease.\nHistory of hypothyroidism.\n- chronic kidney disease stage 3a\n\nMedications:\n- lisinopril stopped on 2025-09-09\n- bisoprolol 2.5mg OD\n- warfarin 5mg OD as per INR\n- levothyroxine 50 mcg mane, before food",
+      "start": 0,
+      "end": 398,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9969,
+   "probabilities": {
+    "same": 0.0032,
+    "overlapping": 0.0085,
+    "conflicting": 0.9852,
+    "unrelated": 0.0031
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.7321,
+      "date_or_version": 0.0257,
+      "rule_or_condition": 0.1768,
+      "scope": 0.015,
+      "name": 0.0186,
+      "no_conflict": 0.0317
+     },
+     "confidence": 0.9683,
+     "a": {
+      "document": "D2",
+      "quote": "- lisinopril 10 mg una vez al d\u00eda",
+      "start": 251,
+      "end": 284,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-09-09\nPatient: synthetic case P003, 40-year-old female.\n\nProblems:\nHistory of gastro-oesophageal reflux disease.\nHistory of hypothyroidism.\n- chronic kidney disease stage 3a\n\nMedications:\n- lisinopril stopped on 2025-09-09\n- bisoprolol 2.5mg OD\n- warfarin 5mg OD as per INR\n- levothyroxine 50 mcg mane, before food",
+      "start": 0,
+      "end": 398,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [
+  1
+ ],
+ "conflicts": [
+  1,
+  2
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 27,
+  "passage_reads": 1,
+  "passages_ms": 71,
+  "passages": 5,
+  "counterparts_ms": 132,
+  "kinds_ms": 30
+ },
+ "timing": {
+  "read_ms": 260,
+  "total_ms": 263
+ },
+ "_credits": "10"
+}

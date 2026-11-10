@@ -1,0 +1,139 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5818,
+ "ungrounded": 0.4182,
+ "verdict": "contradicted",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D4",
+   "share": 0.7699,
+   "share_of_answer": 0.448,
+   "claims": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1164,
+   "share_of_answer": 0.0677,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.0741,
+   "share_of_answer": 0.0431,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0395,
+   "share_of_answer": 0.023,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict new: the pharmacy record of 2025-04-17 says 'sulfonamides (hives)' and the GP letter of 2025-12-25 says 'No known drug allergies.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1653,
+   "supported": 0.257,
+   "contradicted": 0.6822,
+   "not_stated": 0.0306,
+   "not_a_claim": 0.0302,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.0325,
+    "D2": 0.0689,
+    "D3": 0.7341,
+    "D4": 0.1645
+   },
+   "source": null,
+   "evidence": {
+    "document": "D3",
+    "quote": "Allergy: sulfonamides (hives).",
+    "start": 116,
+    "end": 146,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Atorvastatin stopped: the GP letter of 2025-12-25 says 'atorvastatin stopped on 2025-12-25'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1042,
+   "supported": 0.9974,
+   "contradicted": 0.0008,
+   "not_stated": 0.001,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.0012,
+    "D3": 0.0006,
+    "D4": 0.9975
+   },
+   "source": "D4"
+  },
+  {
+   "claim": "Bisoprolol dose differs: the GP letter of 2025-12-25 says 'bisoprolol 5 mg once daily' whereas the clinic note of 2024-08-15 says 'bisoprolol 2.5 mg once daily', the discharge summary of 2025-01-11 says 'bisoprolol 2.5 mg once daily', and the pharmacy record of 2025-04-17 says 'bisoprolol 2.5 mg once daily'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3499,
+   "supported": 0.8312,
+   "contradicted": 0.1073,
+   "not_stated": 0.0334,
+   "not_a_claim": 0.0281,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0304,
+    "D2": 0.0258,
+    "D3": 0.0161,
+    "D4": 0.9276
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "bisoprolol 5 mg once daily",
+    "start": 246,
+    "end": 272,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Warfarin missing from the newest record: the GP letter of 2025-12-25 does not list it, although the clinic note of 2024-08-15 says 'warfarin 3 mg once daily, dose by INR', the discharge summary of 2025-01-11 says 'warfarin 3 mg once daily, dose by INR', and the pharmacy record of 2025-04-17 says 'warfarin 3 mg once daily, dose by INR'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3805,
+   "supported": 0.3799,
+   "contradicted": 0.0205,
+   "not_stated": 0.584,
+   "not_a_claim": 0.0156,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3972,
+    "D2": 0.0861,
+    "D3": 0.0498,
+    "D4": 0.4669
+   },
+   "source": null
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  3
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.257
+ },
+ "timing": {
+  "read_ms": 174,
+  "total_ms": 177
+ },
+ "_credits": "7"
+}

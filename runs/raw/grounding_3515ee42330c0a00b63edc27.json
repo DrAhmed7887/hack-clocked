@@ -1,0 +1,93 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9976,
+ "ungrounded": 0.0024,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.5095,
+   "share_of_answer": 0.5083,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.4898,
+   "share_of_answer": 0.4887,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.0007,
+   "share_of_answer": 0.0007,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2024-04-14 says 'latex - causes contact dermatitis'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5099,
+   "supported": 0.9978,
+   "contradicted": 0.0007,
+   "not_stated": 0.0006,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9982,
+    "D2": 0.0011,
+    "D3": 0.0007
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "Allergic to latex - causes contact dermatitis.",
+    "start": 194,
+    "end": 240,
+    "confidence": 0.893
+   }
+  },
+  {
+   "claim": "The GP letter of 2024-04-15 says 'Sin alergias medicamentosas conocidas.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4901,
+   "supported": 0.9975,
+   "contradicted": 0.001,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.9985,
+    "D3": 0.0007
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "Sin alergias medicamentosas conocidas.",
+    "start": 199,
+    "end": 237,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.9975
+ },
+ "timing": {
+  "read_ms": 72,
+  "total_ms": 74
+ },
+ "_credits": "3"
+}

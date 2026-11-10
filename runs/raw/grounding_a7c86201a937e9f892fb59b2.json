@@ -1,0 +1,136 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5748,
+ "ungrounded": 0.4252,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.5513,
+   "share_of_answer": 0.3169,
+   "claims": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.2769,
+   "share_of_answer": 0.1591,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.1718,
+   "share_of_answer": 0.0987,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2024-12-09 says 'atorvastatin 20mg ON', the pharmacy record of 2025-05-15 says 'atorvastatin 20mg nocte', and the GP letter of 2025-07-20 says 'atorvastatina 40 mg por la noche'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3104,
+   "supported": 0.392,
+   "contradicted": 0.0659,
+   "not_stated": 0.4793,
+   "not_a_claim": 0.0629,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.4479,
+    "D2": 0.1275,
+    "D3": 0.4246
+   },
+   "source": null,
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatina 40 mg por la noche",
+    "start": 308,
+    "end": 340,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2024-12-09 says 'lisinopril 10 mg OD' and the pharmacy record of 2025-05-15 says 'lisinopril 10mg OD', but it is not in the GP letter of 2025-07-20.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2645,
+   "supported": 0.3682,
+   "contradicted": 0.038,
+   "not_stated": 0.5481,
+   "not_a_claim": 0.0457,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.5455,
+    "D2": 0.3865,
+    "D3": 0.068
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10 mg OD",
+    "start": 251,
+    "end": 270,
+    "confidence": 0.99
+   }
+  },
+  {
+   "claim": "The discharge summary of 2024-12-09 says 'omeprazole 20 mg o.d.', the pharmacy record of 2025-05-15 says 'omeprazole 20mg daily', and the GP letter of 2025-07-20 says 'omeprazol suspendido el 2025-07-20'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3119,
+   "supported": 0.7784,
+   "contradicted": 0.0522,
+   "not_stated": 0.091,
+   "not_a_claim": 0.0783,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.2119,
+    "D2": 0.1874,
+    "D3": 0.6008
+   },
+   "source": "D3"
+  },
+  {
+   "claim": "The GP letter of 2025-07-20 says 'warfarina 3 mg una vez al d\u00eda seg\u00fan INR'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1131,
+   "supported": 0.9978,
+   "contradicted": 0.0009,
+   "not_stated": 0.0006,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.0007,
+    "D3": 0.9987
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarina 3 mg una vez al d\u00eda seg\u00fan INR",
+    "start": 266,
+    "end": 305,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.3682
+ },
+ "timing": {
+  "read_ms": 159,
+  "total_ms": 161
+ },
+ "_credits": "7"
+}

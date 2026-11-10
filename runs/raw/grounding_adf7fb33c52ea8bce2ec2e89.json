@@ -1,0 +1,136 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.2352,
+ "ungrounded": 0.7648,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.7069,
+   "share_of_answer": 0.1662,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1822,
+   "share_of_answer": 0.0428,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.111,
+   "share_of_answer": 0.0261,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "No allergy conflicts were identified.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0683,
+   "supported": 0.0148,
+   "contradicted": 0.0071,
+   "not_stated": 0.9542,
+   "not_a_claim": 0.0239,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.2624,
+    "D2": 0.4794,
+    "D3": 0.2582
+   },
+   "source": null
+  },
+  {
+   "claim": "Atorvastatin 20mg ON is new in the discharge summary of 2025-12-19.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1236,
+   "supported": 0.9738,
+   "contradicted": 0.0073,
+   "not_stated": 0.0136,
+   "not_a_claim": 0.0052,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0022,
+    "D2": 0.0025,
+    "D3": 0.9952
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatin 20mg ON",
+    "start": 266,
+    "end": 286,
+    "confidence": 0.5
+   }
+  },
+  {
+   "claim": "Levothyroxine dose differs between the clinic note of 2025-03-19 which says '50 mcg mane, before food', the GP letter of 2025-11-01 which says '50 microgramos una vez al d\u00eda en ayunas', and the discharge summary of 2025-12-19 which says '75 mcg OD before breakfast'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4908,
+   "supported": 0.1317,
+   "contradicted": 0.0445,
+   "not_stated": 0.8005,
+   "not_a_claim": 0.0233,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3829,
+    "D2": 0.1924,
+    "D3": 0.4247
+   },
+   "source": null,
+   "evidence": {
+    "document": "D3",
+    "quote": "levothyroxine 75 mcg OD before breakfast",
+    "start": 289,
+    "end": 329,
+    "confidence": 0.846
+   }
+  },
+  {
+   "claim": "Lisinopril is missing from the discharge summary of 2025-12-19 but was '10 mg OD' in the clinic note of 2025-03-19 and '10 mg una vez al d\u00eda' in the GP letter of 2025-11-01",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3173,
+   "supported": 0.155,
+   "contradicted": 0.0318,
+   "not_stated": 0.7803,
+   "not_a_claim": 0.0329,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3573,
+    "D2": 0.2618,
+    "D3": 0.3809
+   },
+   "source": null,
+   "evidence": {
+    "document": "D2",
+    "quote": "lisinopril 10 mg una vez al d\u00eda",
+    "start": 340,
+    "end": 371,
+    "confidence": 0.84
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  2,
+  3
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.0148
+ },
+ "timing": {
+  "read_ms": 146,
+  "total_ms": 150
+ },
+ "_credits": "6"
+}

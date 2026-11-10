@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Amlodipine stopped: 'amlodipino suspendido el 2025-11-29' from the GP letter of 2025-11-29.\nAtorvastatin new: 'atorvastatina 20 mg por la noche' from the GP letter of 2025-11-29.\nInsulin glargine missing from the newest record: 'insulin glargine 16 units ON' from the pharmacy record of 2025-05-30.\nWarfarin dose differs: 'warfarin 3mg OD as per INR' from the pharmacy record of 2025-05-30 and 'warfarina 5 mg una vez al d\u00eda seg\u00fan INR' from the GP letter of 2025-11-29",
+   "confidence": 0.9827782685146317,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 585,
+  "total_ms": 619,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 368,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "18"
+}

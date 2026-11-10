@@ -1,0 +1,324 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known asthma.",
+    "History of type 2 diabetes."
+   ],
+   "items": [
+    {
+     "value": "Known asthma.",
+     "start": 113,
+     "end": 126,
+     "confidence": 0.9999999998407503,
+     "p_verify": 0.9999999998407503
+    },
+    {
+     "value": "History of type 2 diabetes.",
+     "start": 127,
+     "end": 154,
+     "confidence": 0.9999999998407503,
+     "p_verify": 0.9999999998407503
+    }
+   ],
+   "confidence": 0.9999999998407503
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500mg",
+     "drug": "metformin",
+     "frequency": "bd",
+     "line": "metformin 500mg bd",
+     "stopped": null
+    },
+    {
+     "dose": "5mg",
+     "drug": "amlodipine",
+     "frequency": "OD",
+     "line": "amlodipine 5mg OD",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "nocte",
+     "line": "insulin glargine 16 units nocte",
+     "stopped": null
+    },
+    {
+     "dose": "10mg",
+     "drug": "lisinopril",
+     "frequency": "OD",
+     "line": "lisinopril 10mg OD",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 169,
+     "end": 190,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 171,
+       "end": 180,
+       "confidence": 0.9999999995256474,
+       "p_verify": 0.9999999995256474
+      },
+      "dose": {
+       "value": "500mg",
+       "start": 181,
+       "end": 186,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "bd",
+       "start": 187,
+       "end": 189,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500mg bd",
+       "start": 171,
+       "end": 189,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 0.94,
+       "confidence": 0.94
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 190,
+     "end": 210,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 192,
+       "end": 202,
+       "confidence": 0.999999999343496,
+       "p_verify": 0.999999999343496
+      },
+      "dose": {
+       "value": "5mg",
+       "start": 203,
+       "end": 206,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 207,
+       "end": 209,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5mg OD",
+       "start": 192,
+       "end": 209,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 210,
+     "end": 244,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 212,
+       "end": 228,
+       "confidence": 0.9999999996934872,
+       "p_verify": 0.9999999996934872
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 229,
+       "end": 237,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "nocte",
+       "start": 238,
+       "end": 243,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units nocte",
+       "start": 212,
+       "end": 243,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 244,
+     "end": 264,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 246,
+       "end": 256,
+       "confidence": 0.9999999996238018,
+       "p_verify": 0.9999999996238018
+      },
+      "dose": {
+       "value": "10mg",
+       "start": 257,
+       "end": 261,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 262,
+       "end": 264,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10mg OD",
+       "start": 246,
+       "end": 264,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 168,
+  "forwards": {
+   "fields": [
+    4,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 67,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 32,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 29,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 75,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 168,
+  "server_ms": 287
+ },
+ "_credits": "7"
+}

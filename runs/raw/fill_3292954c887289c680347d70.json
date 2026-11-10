@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The GP letter of 2024-09-19 says 'amlodipino 5 mg una vez al d\u00eda', the discharge summary of 2025-08-23 says 'amlodipine 5mg OD', and the pharmacy record of 2026-02-26 says 'amlodipine stopped on 2026-02-26'. The GP letter of 2024-09-19 says 'lisinopril 10 mg una vez al d\u00eda', the discharge summary of 2025-08-23 says 'lisinopril 10mg OD', and the pharmacy record of 2026-02-26 says 'lisinopril 20mg daily'. The pharmacy record of 2026-02-26 says 'omeprazole 20mg OD'",
+   "confidence": 0.13938553984189317,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 463,
+  "total_ms": 484,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 320,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "19"
+}

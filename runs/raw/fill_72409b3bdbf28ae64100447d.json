@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The pharmacy record of 2025-04-17 states 'sulfonamides (hives)' while the GP letter of 2025-12-25 states 'Sin alergias medicamentosas conocidas.'. The clinic note of 2024-08-15 states 'atorvastatin 20mg ON', the discharge summary of 2025-01-11 states 'atorvastatin 20 mg ON', the pharmacy record of 2025-04-17 states 'atorvastatin 20 mg ON', and the GP letter of 2025-12-25 states 'atorvastatina suspendido el 2025-12-25'. The clinic note of 2024-08-15 states 'bisoprolol 2.5mg o.d.', the discharge summary of 2025-01-11 states 'bisoprolol 2.5 mg o.d.', the pharmacy record of 2025-04-17 states 'bisoprolol 2.5mg OD', and the GP letter of 2025-12-25 states 'bisoprolol 5 mg una vez al d\u00eda'. The clinic note of 2024-08-15 states 'warfarin 3 mg OD as per INR', the discharge summary of 2025-01-11 states 'warfarin 3 mg OD as per INR', and the pharmacy record of 2025-04-17 states 'warfarin 3mg OD as per INR', but it is not mentioned in the GP letter of 2025-12-25",
+   "confidence": 0.5805268132137282,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 22,
+  "generate_ms": 947,
+  "total_ms": 977,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 496,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "38"
+}

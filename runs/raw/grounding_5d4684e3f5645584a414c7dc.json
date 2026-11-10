@@ -1,0 +1,136 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7301,
+ "ungrounded": 0.2699,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9463,
+   "share_of_answer": 0.6909,
+   "claims": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.031,
+   "share_of_answer": 0.0227,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0227,
+   "share_of_answer": 0.0166,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "No allergy conflicts were identified.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0693,
+   "supported": 0.9955,
+   "contradicted": 0.002,
+   "not_stated": 0.0016,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0009,
+    "D3": 0.9983
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "Sin alergias medicamentosas conocidas.",
+    "start": 192,
+    "end": 230,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Atorvastatin 20 mg nocte is missing from the GP letter of 2025-12-23 compared to the discharge summary of 2025-05-19 and the pharmacy record of 2025-07-05.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2903,
+   "supported": 0.458,
+   "contradicted": 0.0178,
+   "not_stated": 0.5142,
+   "not_a_claim": 0.01,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.0105,
+    "D2": 0.0214,
+    "D3": 0.9681
+   },
+   "source": null
+  },
+  {
+   "claim": "Levothyroxine dose differs between the GP letter of 2025-12-23 which says 'levotiroxina 75 microgramos una vez al d\u00eda en ayunas' and the discharge summary of 2025-05-19 and pharmacy record of 2025-07-05.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3801,
+   "supported": 0.7338,
+   "contradicted": 0.1167,
+   "not_stated": 0.1375,
+   "not_a_claim": 0.012,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0393,
+    "D2": 0.0568,
+    "D3": 0.9039
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "levotiroxina 75 microgramos una vez al d\u00eda en ayunas",
+    "start": 350,
+    "end": 402,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril was stopped in the GP letter of 2025-12-23 whereas the discharge summary of 2025-05-19 and pharmacy record of 2025-07-05 list it",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2603,
+   "supported": 0.9575,
+   "contradicted": 0.0221,
+   "not_stated": 0.0102,
+   "not_a_claim": 0.0102,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0167,
+    "D2": 0.0157,
+    "D3": 0.9676
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril suspendido el 2025-12-23",
+    "start": 247,
+    "end": 282,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.458
+ },
+ "timing": {
+  "read_ms": 150,
+  "total_ms": 153
+ },
+ "_credits": "6"
+}

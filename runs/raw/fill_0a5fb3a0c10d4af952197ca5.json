@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Amlodipine is missing from the newest record, as the clinic note of 2025-03-15 says 'amlodipine 5mg OD' and the GP letter of 2026-04-16 says 'amlodipino 5 mg una vez al d\u00eda'.\nInsulin glargine stopped, as the pharmacy record of 2026-08-01 says 'insulin glargine stopped on 2026-08-01'.\nSalbutamol inhaler is new, as the pharmacy record of 2026-08-01 says 'salbutamol inhaler 100 mcg, 2 puffs PRN'",
+   "confidence": 0.8251509133938043,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 392,
+  "total_ms": 412,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 368,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "16"
+}

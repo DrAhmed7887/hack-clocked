@@ -1,0 +1,117 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9715,
+ "ungrounded": 0.0285,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9844,
+   "share_of_answer": 0.9563,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0081,
+   "share_of_answer": 0.0078,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0075,
+   "share_of_answer": 0.0073,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin is missing from the newest record, as the clinic note of 2025-04-22 says 'atorvastatin 20 mg at night' and the pharmacy record of 2025-08-03 says 'atorvastatin 20 mg at night'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4678,
+   "supported": 0.9423,
+   "contradicted": 0.0175,
+   "not_stated": 0.0293,
+   "not_a_claim": 0.0108,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0168,
+    "D2": 0.0156,
+    "D3": 0.9676
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "atorvastatin 20 mg at night",
+    "start": 293,
+    "end": 320,
+    "confidence": 0.85
+   }
+  },
+  {
+   "claim": "Salbutamol inhaler stopped, as the discharge summary of 2026-04-24 says 'salbutamol inhaler stopped on 2026-04-24'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2847,
+   "supported": 0.9971,
+   "contradicted": 0.0012,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0008,
+    "D3": 0.9985
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler stopped on 2026-04-24",
+    "start": 401,
+    "end": 441,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Warfarin is new, as the discharge summary of 2026-04-24 says 'warfarin 3 mg once daily, dose by INR'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2475,
+   "supported": 0.997,
+   "contradicted": 0.0013,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0009,
+    "D2": 0.0009,
+    "D3": 0.9982
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarin 3 mg once daily, dose by INR",
+    "start": 361,
+    "end": 398,
+    "confidence": 0.991
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.9423
+ },
+ "timing": {
+  "read_ms": 107,
+  "total_ms": 109
+ },
+ "_credits": "5"
+}

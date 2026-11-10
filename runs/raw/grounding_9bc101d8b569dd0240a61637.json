@@ -1,0 +1,85 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9968,
+ "ungrounded": 0.0032,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.5327,
+   "share_of_answer": 0.531,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.4673,
+   "share_of_answer": 0.4658,
+   "claims": [
+    1
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2026-03-26 says 'levothyroxine 50 micrograms mane, before food'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5329,
+   "supported": 0.9972,
+   "contradicted": 0.001,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9984,
+    "D2": 0.0016
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 micrograms mane, before food",
+    "start": 359,
+    "end": 404,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The clinic note of 2026-06-13 says 'levothyroxine 75 mcg OD before breakfast'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4671,
+   "supported": 0.9964,
+   "contradicted": 0.0016,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0012,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0009,
+    "D2": 0.9991
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "levothyroxine 75 mcg OD before breakfast",
+    "start": 264,
+    "end": 304,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.9964
+ },
+ "timing": {
+  "read_ms": 90,
+  "total_ms": 91
+ },
+ "_credits": "4"
+}

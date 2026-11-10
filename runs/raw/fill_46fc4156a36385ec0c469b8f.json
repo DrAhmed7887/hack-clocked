@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The clinic note of 2026-02-28 states 'atorvastatin 20mg ON'. The discharge summary of 2024-08-28 says 'bisoprolol 2.5mg daily', the pharmacy record of 2024-12-29 says 'bisoprolol 2.5 mg daily', and the clinic note of 2026-02-28 says 'bisoprolol stopped on 2026-02-28'. The discharge summary of 2024-08-28 says 'metformin 500mg BD' and the pharmacy record of 2024-12-29 says 'metformin 500 mg BD'",
+   "confidence": 0.6573029085302011,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 398,
+  "total_ms": 418,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 304,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "17"
+}

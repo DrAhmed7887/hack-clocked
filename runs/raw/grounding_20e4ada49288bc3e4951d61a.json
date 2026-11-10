@@ -1,0 +1,127 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.6868,
+ "ungrounded": 0.3132,
+ "verdict": "contradicted",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6665,
+   "share_of_answer": 0.4578,
+   "claims": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.3335,
+   "share_of_answer": 0.2291,
+   "claims": [
+    1
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The pharmacy record of 2025-05-30 says 'amlodipine 5mg o.d.' and the GP letter of 2025-11-29 says 'amlodipino suspendido el 2025-11-29'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2925,
+   "supported": 0.6599,
+   "contradicted": 0.0424,
+   "not_stated": 0.2436,
+   "not_a_claim": 0.054,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8312,
+    "D2": 0.1688
+   },
+   "source": "D1"
+  },
+  {
+   "claim": "The GP letter of 2025-11-29 says 'atorvastatina 20 mg por la noche'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1462,
+   "supported": 0.9961,
+   "contradicted": 0.0017,
+   "not_stated": 0.0011,
+   "not_a_claim": 0.0012,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.9992
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "atorvastatina 20 mg por la noche",
+    "start": 344,
+    "end": 376,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The pharmacy record of 2025-05-30 says 'insulin glargine 16 units ON' but it is not in the GP letter of 2025-11-29.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2473,
+   "supported": 0.9891,
+   "contradicted": 0.0033,
+   "not_stated": 0.0042,
+   "not_a_claim": 0.0034,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9959,
+    "D2": 0.0041
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "insulin glargine 16 units ON",
+    "start": 151,
+    "end": 179,
+    "confidence": 0.97
+   }
+  },
+  {
+   "claim": "The pharmacy record of 2025-05-30 says 'warfarin 3mg OD as per INR' and the GP letter of 2025-11-29 says 'warfarina 5 mg una vez al d\u00eda seg\u00fan INR'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.314,
+   "supported": 0.3298,
+   "contradicted": 0.5186,
+   "not_stated": 0.0958,
+   "not_a_claim": 0.0558,
+   "verdict": "contradicted",
+   "sources": {
+    "D1": 0.5178,
+    "D2": 0.4822
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "warfarin 3mg OD as per INR",
+    "start": 182,
+    "end": 208,
+    "confidence": 0.999
+   }
+  }
+ ],
+ "unsupported_claims": [
+  3
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 3,
+  "supported": 0.3298
+ },
+ "timing": {
+  "read_ms": 130,
+  "total_ms": 132
+ },
+ "_credits": "5"
+}

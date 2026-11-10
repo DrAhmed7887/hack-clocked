@@ -1,0 +1,316 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex (contact dermatitis)"
+   ],
+   "items": [
+    {
+     "value": "latex (contact dermatitis)",
+     "start": 123,
+     "end": 149,
+     "confidence": 0.9999999997856488,
+     "p_verify": 0.9999999997856488
+    }
+   ],
+   "confidence": 0.9999999997856488
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "warfarin",
+     "frequency": "stopped on 2025-12-01",
+     "line": "warfarin stopped on 2025-12-01",
+     "stopped": "stopped on 2025-12-01"
+    },
+    {
+     "dose": "20 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 20 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 165,
+     "end": 194,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 167,
+       "end": 177,
+       "confidence": 0.999999999741443,
+       "p_verify": 0.999999999741443
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 178,
+       "end": 182,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 183,
+       "end": 193,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg once daily",
+       "start": 167,
+       "end": 193,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.991,
+       "p_blank": 0.991
+      }
+     }
+    },
+    {
+     "start": 194,
+     "end": 227,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 196,
+       "end": 204,
+       "confidence": 0.9999998450470605,
+       "p_verify": 0.9999998450470605
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      },
+      "frequency": {
+       "value": "stopped on 2025-12-01",
+       "start": 205,
+       "end": 226,
+       "p_start": 0.733,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 0.876,
+       "confidence": 0.733
+      },
+      "line": {
+       "value": "warfarin stopped on 2025-12-01",
+       "start": 196,
+       "end": 226,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-12-01",
+       "start": 205,
+       "end": 226,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 227,
+     "end": 257,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 229,
+       "end": 239,
+       "confidence": 0.9999999997124724,
+       "p_verify": 0.9999999997124724
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 240,
+       "end": 245,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 246,
+       "end": 256,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 20 mg once daily",
+       "start": 229,
+       "end": 256,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 257,
+     "end": 311,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 259,
+       "end": 277,
+       "confidence": 0.9999999991555222,
+       "p_verify": 0.9999999991555222
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 278,
+       "end": 292,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 302,
+       "end": 311,
+       "p_start": 0.622,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.622
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 259,
+       "end": 311,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.991,
+       "p_blank": 0.991
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 154,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 60,
+    "locate": 0,
+    "verify": 13,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 154,
+  "server_ms": 459
+ },
+ "_credits": "7"
+}

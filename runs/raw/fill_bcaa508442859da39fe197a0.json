@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "No allergies are mentioned in any records. The dose for atorvastatin differs between the discharge summary of 2024-12-09, the pharmacy record of 2025-05-15, and the GP letter of 2025-07-20. Lisinopril is missing from the GP letter of 2025-07-20 compared to the discharge summary of 2024-12-09 and the pharmacy record of 2025-05-15. Omeprazole was stopped in the GP letter of 2025-07-20 according to the discharge summary of 2024-12-09 and the pharmacy record of 2025-05-15. Warfarin is new in the GP letter of 2025-07-20",
+   "confidence": 0.89700884868129,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 17,
+  "generate_ms": 537,
+  "total_ms": 566,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 640,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "22"
+}

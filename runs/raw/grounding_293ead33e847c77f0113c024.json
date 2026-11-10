@@ -1,0 +1,118 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8492,
+ "ungrounded": 0.1508,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6934,
+   "share_of_answer": 0.5888,
+   "claims": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.2425,
+   "share_of_answer": 0.2059,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0642,
+   "share_of_answer": 0.0545,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2025-12-19 lists 'atorvastatin 20mg ON'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1432,
+   "supported": 0.9973,
+   "contradicted": 0.0012,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0006,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0009,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatin 20mg ON",
+    "start": 266,
+    "end": 286,
+    "confidence": 0.999
+   }
+  },
+  {
+   "claim": "The clinic note of 2025-03-19 states 'levothyroxine 50 mcg mane, before food', the GP letter of 2025-11-01 states 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas', and the discharge summary of 2025-12-19 states 'levothyroxine 75 mcg OD before breakfast'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5727,
+   "supported": 0.78,
+   "contradicted": 0.0673,
+   "not_stated": 0.0762,
+   "not_a_claim": 0.0765,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7906,
+    "D2": 0.0798,
+    "D3": 0.1296
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D3",
+    "quote": "levothyroxine 75 mcg OD before breakfast",
+    "start": 289,
+    "end": 329,
+    "confidence": 0.994
+   }
+  },
+  {
+   "claim": "The clinic note of 2025-03-19 lists 'lisinopril 10 mg OD' and the GP letter of 2025-11-01 lists 'lisinopril 10 mg una vez al d\u00eda'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2841,
+   "supported": 0.9143,
+   "contradicted": 0.0228,
+   "not_stated": 0.0376,
+   "not_a_claim": 0.0253,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9069,
+    "D2": 0.0721,
+    "D3": 0.021
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D2",
+    "quote": "lisinopril 10 mg una vez al d\u00eda",
+    "start": 340,
+    "end": 371,
+    "confidence": 0.997
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.78
+ },
+ "timing": {
+  "read_ms": 131,
+  "total_ms": 133
+ },
+ "_credits": "6"
+}

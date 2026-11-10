@@ -1,0 +1,119 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9975,
+ "ungrounded": 0.0025,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.3453,
+   "share_of_answer": 0.3445,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.33,
+   "share_of_answer": 0.3292,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.3247,
+   "share_of_answer": 0.3239,
+   "claims": [
+    0
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2024-12-09 says 'atorvastatin 20mg ON'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3249,
+   "supported": 0.9976,
+   "contradicted": 0.0008,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0009,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9977,
+    "D2": 0.0014,
+    "D3": 0.0009
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "atorvastatin 20mg ON",
+    "start": 297,
+    "end": 317,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The pharmacy record of 2025-05-15 says 'atorvastatin 20mg nocte'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3299,
+   "supported": 0.9975,
+   "contradicted": 0.0008,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.001,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.9979,
+    "D3": 0.0014
+   },
+   "source": "D2",
+   "evidence": {
+    "document": "D2",
+    "quote": "atorvastatin 20mg nocte",
+    "start": 176,
+    "end": 199,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The GP letter of 2025-07-20 says 'atorvastatina 40 mg por la noche'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3452,
+   "supported": 0.9973,
+   "contradicted": 0.0012,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0008,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatina 40 mg por la noche",
+    "start": 308,
+    "end": 340,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.9973
+ },
+ "timing": {
+  "read_ms": 111,
+  "total_ms": 112
+ },
+ "_credits": "5"
+}

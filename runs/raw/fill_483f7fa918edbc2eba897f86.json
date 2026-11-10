@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Amlodipine is new: 'amlodipine 5 mg once daily' from the pharmacy record of 2025-12-01.\nLisinopril dose differs: 'lisinopril 10 mg once daily' from the discharge summary of 2024-06-06, 'lisinopril 10 mg once daily' from the clinic note of 2024-09-16, and 'lisinopril 20 mg once daily' from the pharmacy record of 2025-12-01.\nMetformin is missing from the newest record: 'metformin 500 mg twice daily' from the discharge summary of 2024-06-06 and 'metformin 500 mg twice daily' from the clinic note of 2024-09-16.\nWarfarin stopped: 'warfarin 3 mg once daily, dose by INR' from the discharge summary of 2024-06-06, 'warfarin 3 mg once daily, dose by INR' from the clinic note of 2024-09-16, and 'warfarin stopped on 2025-12-01' from the pharmacy record of 2025-12-01",
+   "confidence": 0.9816302243208577,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 674,
+  "total_ms": 699,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 448,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "28"
+}

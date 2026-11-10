@@ -1,0 +1,319 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known atrial fibrillation.",
+    "Known essential hypertension."
+   ],
+   "items": [
+    {
+     "value": "Known atrial fibrillation.",
+     "start": 128,
+     "end": 154,
+     "confidence": 0.999999999784382,
+     "p_verify": 0.999999999784382
+    },
+    {
+     "value": "Known essential hypertension.",
+     "start": 155,
+     "end": 184,
+     "confidence": 0.9999999998779934,
+     "p_verify": 0.9999999998779934
+    }
+   ],
+   "confidence": 0.999999999784382
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "40 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "line": "omeprazole 40 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "amlodipine",
+     "frequency": null,
+     "line": "amlodipine stopped on 2025-12-03",
+     "stopped": "stopped on 2025-12-03"
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 199,
+     "end": 229,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 201,
+       "end": 211,
+       "confidence": 0.9999999993256068,
+       "p_verify": 0.9999999993256068
+      },
+      "dose": {
+       "value": "40 mg",
+       "start": 212,
+       "end": 217,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 218,
+       "end": 228,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazole 40 mg once daily",
+       "start": 201,
+       "end": 228,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 229,
+     "end": 287,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 231,
+       "end": 244,
+       "confidence": 0.999999999663526,
+       "p_verify": 0.999999999663526
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 245,
+       "end": 258,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 259,
+       "end": 269,
+       "p_start": 1,
+       "p_close": 0.989,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.989
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 231,
+       "end": 286,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.988,
+       "p_blank": 0.988
+      }
+     }
+    },
+    {
+     "start": 287,
+     "end": 322,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 289,
+       "end": 299,
+       "confidence": 0.9999999975757197,
+       "p_verify": 0.9999999975757197
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.99,
+       "p_blank": 0.99
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.952,
+       "p_blank": 0.952
+      },
+      "line": {
+       "value": "amlodipine stopped on 2025-12-03",
+       "start": 289,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-12-03",
+       "start": 300,
+       "end": 321,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 322,
+     "end": 352,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 324,
+       "end": 334,
+       "confidence": 0.9999999997024824,
+       "p_verify": 0.9999999997024824
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 335,
+       "end": 341,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 342,
+       "end": 352,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 324,
+       "end": 352,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.988,
+       "p_blank": 0.988
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 169,
+  "forwards": {
+   "fields": [
+    4,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 67,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 77,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 169,
+  "server_ms": 308
+ },
+ "_credits": "7"
+}

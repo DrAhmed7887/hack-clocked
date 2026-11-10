@@ -1,0 +1,306 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 129,
+     "end": 169,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 131,
+       "end": 139,
+       "confidence": 0.9999999992821138,
+       "p_verify": 0.9999999992821138
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 140,
+       "end": 144,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 145,
+       "end": 155,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 169,
+     "end": 198,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 171,
+       "end": 181,
+       "confidence": 0.9999999998466498,
+       "p_verify": 0.9999999998466498
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 182,
+       "end": 186,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 187,
+       "end": 197,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 198,
+     "end": 256,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 200,
+       "end": 213,
+       "confidence": 0.9999999995085007,
+       "p_verify": 0.9999999995085007
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 214,
+       "end": 227,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 228,
+       "end": 255,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    },
+    {
+     "start": 256,
+     "end": 293,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 258,
+       "end": 274,
+       "confidence": 0.9999999995633797,
+       "p_verify": 0.9999999995633797
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 275,
+       "end": 283,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 284,
+       "end": 292,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 293,
+     "end": 347,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 295,
+       "end": 313,
+       "confidence": 0.9999999992728827,
+       "p_verify": 0.9999999992728827
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 314,
+       "end": 328,
+       "p_start": 1,
+       "p_close": 0.992,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.992
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 338,
+       "end": 347,
+       "p_start": 0.987,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.987
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 141,
+  "forwards": {
+   "fields": [
+    3,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 51,
+    "locate": 0,
+    "verify": 14,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 32,
+    "resolve": 11,
+    "extend": 0,
+    "contest": 24,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 70,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 5,
+   "cells": 15,
+   "explicit": 0
+  },
+  "total_ms": 141,
+  "server_ms": 553
+ },
+ "_credits": "6"
+}

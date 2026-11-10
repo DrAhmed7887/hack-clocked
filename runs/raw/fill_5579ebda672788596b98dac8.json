@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The GP letter of 2025-06-05 states 'l\u00e1tex (dermatitis de contacto)' while the discharge summary of 2025-12-08 states 'nil known.'. Amlodipine is recorded as 'amlodipino 5 mg una vez al d\u00eda' in the GP letter of 2025-06-05, 'amlodipine 5mg o.d.' in the discharge summary of 2025-12-08, and 'amlodipine 10mg o.d.' in the clinic note of 2026-05-08. Bisoprolol is listed as 'bisoprolol 2.5 mg una vez al d\u00eda' in the GP letter of 2025-06-05 and 'bisoprolol 2.5mg daily' in the discharge summary of 2025-12-08, but is not in the clinic note of 2026-05-08. The clinic note of 2026-05-08 states 'insulin glargine 16 units ON'. The GP letter of 2025-06-05 states 'salbutamol inhalador 100 microgramos, 2 inhalaciones a demanda', the discharge summary of 2025-12-08 states 'salbutamol inhaler 100 micrograms, 2 puffs PRN', and the clinic note of 2026-05-08 states 'salbutamol inhaler stopped on 2026-05-08'",
+   "confidence": 0.9662421531615336,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 863,
+  "total_ms": 891,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 480,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "35"
+}

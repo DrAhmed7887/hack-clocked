@@ -1,0 +1,127 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7668,
+ "ungrounded": 0.2332,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D4",
+   "share": 0.963,
+   "share_of_answer": 0.7384,
+   "claims": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0152,
+   "share_of_answer": 0.0116,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.013,
+   "share_of_answer": 0.0099,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0089,
+   "share_of_answer": 0.0068,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin stopped: 'atorvastatin stopped on 2026-05-04' from the discharge summary of 2026-05-04.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2392,
+   "supported": 0.9978,
+   "contradicted": 0.0007,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.001,
+    "D3": 0.0006,
+    "D4": 0.9977
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "atorvastatin stopped on 2026-05-04",
+    "start": 293,
+    "end": 327,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Bisoprolol new: 'bisoprolol 2.5mg o.d.' from the discharge summary of 2026-05-04.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1938,
+   "supported": 0.9978,
+   "contradicted": 0.0007,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0011,
+    "D3": 0.0005,
+    "D4": 0.9976
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "bisoprolol 2.5mg o.d.",
+    "start": 269,
+    "end": 290,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril missing from the newest record: 'lisinopril 10mg o.d.' from the clinic note of 2024-12-10, 'lisinopril 10 mg una vez al d\u00eda' from the GP letter of 2025-07-22, and 'lisinopril 10 mg daily' from the pharmacy record of 2026-01-31",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.567,
+   "supported": 0.5904,
+   "contradicted": 0.0376,
+   "not_stated": 0.3557,
+   "not_a_claim": 0.0163,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0195,
+    "D2": 0.0334,
+    "D3": 0.029,
+    "D4": 0.9181
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10mg o.d.",
+    "start": 202,
+    "end": 222,
+    "confidence": 0.686
+   }
+  }
+ ],
+ "unsupported_claims": [
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.5904
+ },
+ "timing": {
+  "read_ms": 134,
+  "total_ms": 135
+ },
+ "_credits": "6"
+}

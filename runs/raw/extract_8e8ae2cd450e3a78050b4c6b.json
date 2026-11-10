@@ -1,0 +1,295 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "hypothyroidism",
+    "hyperlipidaemia",
+    "chronic kidney disease stage 3a"
+   ],
+   "items": [
+    {
+     "value": "hypothyroidism",
+     "start": 157,
+     "end": 171,
+     "confidence": 0.9999999951110445,
+     "p_verify": 0.9999999951110445
+    },
+    {
+     "value": "hyperlipidaemia",
+     "start": 179,
+     "end": 194,
+     "confidence": 0.9999999861561262,
+     "p_verify": 0.9999999861561262
+    },
+    {
+     "value": "chronic kidney disease stage 3a",
+     "start": 202,
+     "end": 233,
+     "confidence": 0.9999999983822148,
+     "p_verify": 0.9999999983822148
+    }
+   ],
+   "confidence": 0.9999999861561262
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 249,
+     "end": 279,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 251,
+       "end": 261,
+       "confidence": 0.9999999996308073,
+       "p_verify": 0.9999999996308073
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 262,
+       "end": 267,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 268,
+       "end": 278,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 279,
+     "end": 309,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 281,
+       "end": 291,
+       "confidence": 0.9999999997519051,
+       "p_verify": 0.9999999997519051
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 292,
+       "end": 297,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 298,
+       "end": 308,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    },
+    {
+     "start": 309,
+     "end": 339,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 311,
+       "end": 323,
+       "confidence": 0.9999999996608937,
+       "p_verify": 0.9999999996608937
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 324,
+       "end": 329,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 330,
+       "end": 338,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.497,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 311,
+         "p_verify": 0.987
+        }
+       ],
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 339,
+     "end": 369,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 341,
+       "end": 351,
+       "confidence": 0.9999999997612876,
+       "p_verify": 0.9999999997612876
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 352,
+       "end": 358,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 359,
+       "end": 369,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 200,
+  "forwards": {
+   "fields": [
+    7,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 107,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 27,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 25,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 67,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 4,
+   "cells": 12,
+   "explicit": 0
+  },
+  "total_ms": 200,
+  "server_ms": 204
+ },
+ "_credits": "9"
+}

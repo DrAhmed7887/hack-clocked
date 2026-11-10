@@ -1,0 +1,335 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "nil known",
+   "start": 259,
+   "end": 268,
+   "confidence": 0.999997174373028,
+   "p_verify": 0.999997174373028
+  },
+  "problems": {
+   "value": [
+    "type 2 diabetes",
+    "atrial fibrillation",
+    "gastro-oesophageal reflux disease"
+   ],
+   "items": [
+    {
+     "value": "type 2 diabetes",
+     "start": 157,
+     "end": 172,
+     "confidence": 0.9999999958271022,
+     "p_verify": 0.9999999958271022
+    },
+    {
+     "value": "atrial fibrillation",
+     "start": 180,
+     "end": 199,
+     "confidence": 0.999999994997895,
+     "p_verify": 0.999999994997895
+    },
+    {
+     "value": "gastro-oesophageal reflux disease",
+     "start": 212,
+     "end": 245,
+     "confidence": 0.9999999955596115,
+     "p_verify": 0.9999999955596115
+    }
+   ],
+   "confidence": 0.999999994997895
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "2.5mg",
+     "drug": "bisoprolol",
+     "frequency": "daily",
+     "line": "bisoprolol 2.5mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "PRN",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs PRN",
+     "stopped": null
+    },
+    {
+     "dose": "5mg",
+     "drug": "amlodipine",
+     "frequency": "o.d.",
+     "line": "amlodipine 5mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "nocte",
+     "line": "atorvastatin 20 mg nocte",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 284,
+     "end": 309,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 286,
+       "end": 296,
+       "confidence": 0.9999999997731184,
+       "p_verify": 0.9999999997731184
+      },
+      "dose": {
+       "value": "2.5mg",
+       "start": 297,
+       "end": 302,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 303,
+       "end": 308,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5mg daily",
+       "start": 286,
+       "end": 308,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 0.979,
+       "confidence": 0.979
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 309,
+     "end": 358,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 311,
+       "end": 329,
+       "confidence": 0.999999999659358,
+       "p_verify": 0.999999999659358
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 330,
+       "end": 344,
+       "p_start": 1,
+       "p_close": 0.953,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.953
+      },
+      "frequency": {
+       "value": "PRN",
+       "start": 354,
+       "end": 357,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs PRN",
+       "start": 311,
+       "end": 357,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 358,
+     "end": 380,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 360,
+       "end": 370,
+       "confidence": 0.9999999997522935,
+       "p_verify": 0.9999999997522935
+      },
+      "dose": {
+       "value": "5mg",
+       "start": 371,
+       "end": 374,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 375,
+       "end": 379,
+       "p_start": 1,
+       "p_close": 0.996,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.996
+      },
+      "line": {
+       "value": "amlodipine 5mg o.d.",
+       "start": 360,
+       "end": 379,
+       "p_start": 1,
+       "p_close": 0.963,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.963
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 380,
+     "end": 406,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 382,
+       "end": 394,
+       "confidence": 0.9999999998184896,
+       "p_verify": 0.9999999998184896
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 395,
+       "end": 400,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "nocte",
+       "start": 401,
+       "end": 406,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg nocte",
+       "start": 382,
+       "end": 406,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 239,
+  "forwards": {
+   "fields": [
+    7,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 107,
+    "locate": 0,
+    "verify": 26,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 53,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 31,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 101,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 239,
+  "server_ms": 243
+ },
+ "_credits": "10"
+}

@@ -1,0 +1,187 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D2",
+    "D3"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D1",
+    "D3"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D1",
+    "D2"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "conflicting",
+   "related": 0.9937,
+   "probabilities": {
+    "same": 0.006,
+    "overlapping": 0.0261,
+    "conflicting": 0.9615,
+    "unrelated": 0.0063
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "scope",
+     "kinds": {
+      "value": 0.0331,
+      "date_or_version": 0.0136,
+      "rule_or_condition": 0.0881,
+      "scope": 0.8215,
+      "name": 0.0221,
+      "no_conflict": 0.0217
+     },
+     "confidence": 0.9783,
+     "a": {
+      "document": "D1",
+      "quote": "Allergic to latex - causes contact dermatitis.",
+      "start": 194,
+      "end": 240,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D2",
+      "quote": "Informe de derivaci\u00f3n, centro de atenci\u00f3n primaria, Valencia\nFecha: 2024-04-15\nPaciente: caso sint\u00e9tico P013, 36 a\u00f1os, var\u00f3n.\n\nAntecedentes:\n- hipertensi\u00f3n arterial esencial\n- fibrilaci\u00f3n auricular\n\nSin alergias medicamentosas conocidas.\n\nTratamiento:\n- bisoprolol 2.5 mg una vez al d\u00eda\n- atorvastatina 20 mg por la noche\n- amlodipino 5 mg una vez al d\u00eda\n- lisinopril 10 mg una vez al d\u00eda",
+      "start": 0,
+      "end": 388,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9963,
+   "probabilities": {
+    "same": 0.0049,
+    "overlapping": 0.0374,
+    "conflicting": 0.954,
+    "unrelated": 0.0037
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.994,
+      "date_or_version": 0.0014,
+      "rule_or_condition": 0.0014,
+      "scope": 0.0009,
+      "name": 0.0011,
+      "no_conflict": 0.0012
+     },
+     "confidence": 0.9988,
+     "a": {
+      "document": "D1",
+      "quote": "- amlodipine 5mg daily",
+      "start": 306,
+      "end": 328,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-09-17\nPatient: synthetic case P013, 36-year-old male.\n\n\nMedications:\n- bisoprolol 2.5mg OD\n- insulin glargine 16 units ON\n- atorvastatin stopped on 2025-09-17\n- amlodipine 10mg o.d.\n- lisinopril 10mg daily",
+      "start": 0,
+      "end": 263,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9921,
+   "probabilities": {
+    "same": 0.0077,
+    "overlapping": 0.052,
+    "conflicting": 0.9324,
+    "unrelated": 0.0079
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "rule_or_condition",
+     "kinds": {
+      "value": 0.1081,
+      "date_or_version": 0.0758,
+      "rule_or_condition": 0.6696,
+      "scope": 0.0214,
+      "name": 0.0337,
+      "no_conflict": 0.0914
+     },
+     "confidence": 0.9086,
+     "a": {
+      "document": "D2",
+      "quote": "- atorvastatina 20 mg por la noche",
+      "start": 287,
+      "end": 321,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-09-17\nPatient: synthetic case P013, 36-year-old male.\n\n\nMedications:\n- bisoprolol 2.5mg OD\n- insulin glargine 16 units ON\n- atorvastatin stopped on 2025-09-17\n- amlodipine 10mg o.d.\n- lisinopril 10mg daily",
+      "start": 0,
+      "end": 263,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [],
+ "conflicts": [
+  0,
+  1,
+  2
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 26,
+  "passage_reads": 1,
+  "passages_ms": 70,
+  "passages": 6,
+  "counterparts_ms": 134,
+  "kinds_ms": 30
+ },
+ "timing": {
+  "read_ms": 259,
+  "total_ms": 263
+ },
+ "_credits": "10"
+}

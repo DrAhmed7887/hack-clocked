@@ -1,0 +1,319 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- fibrilaci\u00f3n auricular",
+    "- hipertensi\u00f3n arterial esencial"
+   ],
+   "items": [
+    {
+     "value": "- fibrilaci\u00f3n auricular",
+     "start": 141,
+     "end": 164,
+     "confidence": 0.9999999996608946,
+     "p_verify": 0.9999999996608946
+    },
+    {
+     "value": "- hipertensi\u00f3n arterial esencial",
+     "start": 165,
+     "end": 197,
+     "confidence": 0.9999999991522244,
+     "p_verify": 0.9999999991522244
+    }
+   ],
+   "confidence": 0.9999999991522244
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "40 mg",
+     "drug": "omeprazol",
+     "frequency": "una vez al d\u00eda",
+     "line": "omeprazol 40 mg una vez al d\u00eda",
+     "stopped": null
+    },
+    {
+     "dose": "50 microgramos",
+     "drug": "levotiroxina",
+     "frequency": "una vez al d\u00eda en ayunas",
+     "line": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "amlodipino",
+     "frequency": null,
+     "line": "amlodipino suspendido el 2025-12-03",
+     "stopped": "suspendido el 2025-12-03"
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "una vez al d\u00eda",
+     "line": "bisoprolol 2.5 mg una vez al d\u00eda",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 212,
+     "end": 245,
+     "fields": {
+      "drug": {
+       "value": "omeprazol",
+       "start": 214,
+       "end": 223,
+       "confidence": 0.9999999990922142,
+       "p_verify": 0.9999999990922142
+      },
+      "dose": {
+       "value": "40 mg",
+       "start": 224,
+       "end": 229,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 230,
+       "end": 244,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazol 40 mg una vez al d\u00eda",
+       "start": 214,
+       "end": 244,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    },
+    {
+     "start": 245,
+     "end": 300,
+     "fields": {
+      "drug": {
+       "value": "levotiroxina",
+       "start": 247,
+       "end": 259,
+       "confidence": 0.9999999994747832,
+       "p_verify": 0.9999999994747832
+      },
+      "dose": {
+       "value": "50 microgramos",
+       "start": 260,
+       "end": 274,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda en ayunas",
+       "start": 275,
+       "end": 299,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+       "start": 247,
+       "end": 299,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.982,
+       "p_blank": 0.982
+      }
+     }
+    },
+    {
+     "start": 300,
+     "end": 338,
+     "fields": {
+      "drug": {
+       "value": "amlodipino",
+       "start": 302,
+       "end": 312,
+       "confidence": 0.999999945456892,
+       "p_verify": 0.999999945456892
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.99,
+       "p_blank": 0.99
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.938,
+       "p_blank": 0.938
+      },
+      "line": {
+       "value": "amlodipino suspendido el 2025-12-03",
+       "start": 302,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "suspendido el 2025-12-03",
+       "start": 313,
+       "end": 337,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 338,
+     "end": 372,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 340,
+       "end": 350,
+       "confidence": 0.9999999993543711,
+       "p_verify": 0.9999999993543711
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 351,
+       "end": 357,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "una vez al d\u00eda",
+       "start": 358,
+       "end": 372,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg una vez al d\u00eda",
+       "start": 340,
+       "end": 372,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.985,
+       "p_blank": 0.985
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 215,
+  "forwards": {
+   "fields": [
+    8,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 99,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 13,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 92,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 215,
+  "server_ms": 345
+ },
+ "_credits": "9"
+}

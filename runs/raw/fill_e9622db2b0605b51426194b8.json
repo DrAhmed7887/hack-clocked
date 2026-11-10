@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The discharge summary of 2024-04-14 states 'latex - causes contact dermatitis' while the GP letter of 2024-04-15 states 'Sin alergias medicamentosas conocidas.'. The discharge summary of 2024-04-14 states 'amlodipine 5mg daily', the GP letter of 2024-04-15 states 'amlodipino 5 mg una vez al d\u00eda', and the pharmacy record of 2025-09-17 states 'amlodipine 10mg o.d.'. The discharge summary of 2024-04-14 states 'atorvastatin 20mg nocte', the GP letter of 2024-04-15 states 'atorvastatina 20 mg por la noche', and the pharmacy record of 2025-09-17 states 'atorvastatin stopped on 2025-09-17'. The pharmacy record of 2025-09-17 states 'insulin glargine 16 units ON'",
+   "confidence": 0.9863068146805322,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 586,
+  "total_ms": 612,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 368,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "24"
+}

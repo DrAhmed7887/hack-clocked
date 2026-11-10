@@ -1,0 +1,111 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7947,
+ "ungrounded": 0.2053,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.91,
+   "share_of_answer": 0.7232,
+   "claims": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0468,
+   "share_of_answer": 0.0372,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0432,
+   "share_of_answer": 0.0343,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin is new: 'atorvastatin 20 mg at night' from the discharge summary of 2025-12-19.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.157,
+   "supported": 0.9878,
+   "contradicted": 0.0046,
+   "not_stated": 0.0042,
+   "not_a_claim": 0.0033,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0017,
+    "D2": 0.0018,
+    "D3": 0.9965
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatin 20 mg at night",
+    "start": 260,
+    "end": 287,
+    "confidence": 0.996
+   }
+  },
+  {
+   "claim": "Levothyroxine dose differs: 'levothyroxine 50 micrograms once daily before breakfast' from the clinic note of 2025-03-19, 'levothyroxine 50 micrograms once daily before breakfast' from the GP letter of 2025-11-01, and 'levothyroxine 75 micrograms once daily before breakfast' from the discharge summary of 2025-12-19.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.541,
+   "supported": 0.8516,
+   "contradicted": 0.0398,
+   "not_stated": 0.0298,
+   "not_a_claim": 0.0788,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0635,
+    "D2": 0.0576,
+    "D3": 0.879
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 micrograms once daily before breakfast",
+    "start": 245,
+    "end": 300,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril is missing from the newest record: 'lisinopril 10 mg once daily' from the clinic note of 2025-03-19 and 'lisinopril 10 mg once daily' from the GP letter of 2025-11-01",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.302,
+   "supported": 0.5924,
+   "contradicted": 0.0456,
+   "not_stated": 0.3432,
+   "not_a_claim": 0.0188,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0431,
+    "D2": 0.042,
+    "D3": 0.9149
+   },
+   "source": "D3"
+  }
+ ],
+ "unsupported_claims": [
+  2
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 2,
+  "supported": 0.5924
+ },
+ "timing": {
+  "read_ms": 109,
+  "total_ms": 111
+ },
+ "_credits": "5"
+}

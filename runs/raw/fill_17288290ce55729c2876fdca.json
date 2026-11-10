@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The clinic note of 2025-03-15 states 'amlodipine 5mg OD' and the GP letter of 2026-04-16 states 'amlodipino 5 mg una vez al d\u00eda', but it is not in the pharmacy record of 2026-08-01. The clinic note of 2025-03-15 states 'insulin glargine 16 units nocte', the GP letter of 2026-04-16 states 'insulina glargina 16 unidades por la noche', and the pharmacy record of 2026-08-01 states 'insulin glargine stopped on 2026-08-01'. The pharmacy record of 2026-08-01 states 'salbutamol inhaler 100 mcg, 2 puffs PRN'",
+   "confidence": 0.9815929044653028,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 508,
+  "total_ms": 530,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 320,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "21"
+}

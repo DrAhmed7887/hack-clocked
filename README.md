@@ -9,6 +9,7 @@ Built for the Clocked Build Challenge 2026 by a physician (12 years in clinical 
 
 - **Live demo:** https://drahmed7887.github.io/hack-clocked/ (static site built from recorded Clocked responses; start with patient P001).
 - **Demo film (2:32):** [on YouTube](https://youtu.be/Bjk8wvfwo-s), or [`site/film.mp4`](site/film.mp4), also playable on the demo's home page. It follows one allergy sentence through Protect, Extract, the rules, Fill and Verify. The film's source is in [`video/film/`](video/film/).
+- **For judges:** [`JUDGES.md`](JUDGES.md) maps each judging criterion to its evidence, and the evals reproduce in seconds with no key.
 
 ## Why
 - Medication history errors at hospital admission occur in up to 67% of cases ([Tam et al., CMAJ 2005](https://doi.org/10.1503/cmaj.045311)).
@@ -31,7 +32,7 @@ Conflicts are never resolved for the clinician, and the newest record is never a
 | 1 | **Extract** (`/clocked/extract`) | Copies problems, allergies and each medication line (as records with `drug`, `dose`, `frequency`, `stopped`, `line`) from every document, with exact character positions. |
 | 2 | (fixed rules) | Normalise prescriber shorthand and Spanish (BD = cada 12 horas = twice daily; 2,5 mg = 2.5 mg; metformina = metformin), then label every fact. Unrecognised wording is compared as written, never assumed equal. **No model decides a label.** |
 | 3 | **Fill** (`/clocked/fill`, `generate`) | Drafts one sentence per discrepancy, quoting the records. |
-| 4 | **Verify** (`/clocked/grounding`) | Checks each drafted sentence against the **original** records. Unsupported sentences are removed and shown. A conflict sentence is checked one record at a time, because as a whole it is "contradicted" by design. |
+| 4 | **Verify** (`/clocked/grounding`) | Checks each drafted sentence against the **original** records. Unsupported sentences are removed and shown. A conflict sentence rebuilt by the rules (R7b) is checked one record at a time, because as a whole it is "contradicted" by design. |
 | 0 | **Protect** (`/clocked/pii`) | Privacy gate before anything else runs: each record is scanned for names, contact details, birth dates and ID numbers. Only the synthetic case label is allow-listed; any other hit stops processing. |
 | 5 | **Compare** (`/clocked/compare`) | An independent conflict detector on the raw records. Its conflicts are matched against the rules' findings, and any conflict no rule explains is shown to the clinician. |
 
@@ -66,13 +67,13 @@ Without the shorthand/Spanish normalisation, medication labels on the realistic 
 ```bash
 python3 -m unittest discover -s tests -v        # rule tests, offline
 python3 data/generate.py && python3 data/make_hard.py   # synthetic data (seeded)
-export CLOCKED_API_KEY=...                       # your own key; never commit it
+export CLOCKED_API_KEY=...                       # only for new calls; never commit it
 python3 eval/score.py 0 hard                     # Extract + rules, scored
 python3 eval/score_summary.py hard               # Fill + Verify, scored
 python3 eval/score_crosscheck.py hard            # Protect + Compare, scored
 python3 app/build_site.py                        # static site in site/
 ```
-Standard library only (Python 3.9+). The demo site is plain HTML built from recorded Clocked responses: no API key reaches the browser.
+The eval scripts replay the recorded Clocked responses in `runs/raw/`, so they need no key and spend no credits; with your own key and an empty `runs/raw/`, the same scripts call Clocked live. Standard library only (Python 3.9+). The demo site is plain HTML built from recorded Clocked responses: no API key reaches the browser.
 
 ## Limits
 - Synthetic, English and Spanish records only; drug and problem pairings are random (see [`data/DATA_CARD.md`](data/DATA_CARD.md)).

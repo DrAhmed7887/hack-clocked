@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "No allergy conflicts were identified. Atorvastatin 20mg ON is new in the clinic note of 2026-02-28. Bisoprolol was stopped on 2026-02-28 according to the clinic note of 2026-02-28, whereas the discharge summary of 2024-08-28 and pharmacy record of 2024-12-29 list bisoprolol 2.5mg daily or 2.5 mg daily. Metformin 500mg BD in the discharge summary of 2024-08-28 and metformin 500 mg BD in the pharmacy record of 2024-12-29 is missing from the clinic note of 2026-02-28",
+   "confidence": 0.08366727877638191,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 16,
+  "generate_ms": 575,
+  "total_ms": 600,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 672,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "24"
+}

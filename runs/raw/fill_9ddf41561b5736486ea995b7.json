@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The GP letter of 2026-03-16 states 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas'. The pharmacy record of 2025-02-15 states 'lisinopril 10mg o.d.', but this is not mentioned in the GP letter of 2026-03-16. The pharmacy record of 2025-02-15 states 'metformin 500 mg b.i.d.', whereas the GP letter of 2026-03-16 states 'metformina 1000 mg cada 12 horas'",
+   "confidence": 0.9824138461686592,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 343,
+  "total_ms": 363,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 272,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "15"
+}

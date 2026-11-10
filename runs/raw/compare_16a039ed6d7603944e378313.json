@@ -1,0 +1,187 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D2",
+    "D3"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D1",
+    "D3"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D1",
+    "D2"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "conflicting",
+   "related": 0.9965,
+   "probabilities": {
+    "same": 0.0027,
+    "overlapping": 0.0061,
+    "conflicting": 0.9877,
+    "unrelated": 0.0035
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "rule_or_condition",
+     "kinds": {
+      "value": 0.1063,
+      "date_or_version": 0.0307,
+      "rule_or_condition": 0.6642,
+      "scope": 0.0816,
+      "name": 0.0573,
+      "no_conflict": 0.06
+     },
+     "confidence": 0.94,
+     "a": {
+      "document": "D1",
+      "quote": "Alergia: l\u00e1tex (dermatitis de contacto).",
+      "start": 210,
+      "end": 250,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D2",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)\nDate: 2025-12-08\nPatient: synthetic case P005, 50-year-old female.\n\nProblems:\nKnown type 2 diabetes.\nKnown atrial fibrillation.\nHistory of gastro-oesophageal reflux disease.\n\nAllergies: nil known.\n\nMedications:\n- bisoprolol 2.5mg daily\n- salbutamol inhaler 100 micrograms, 2 puffs PRN\n- amlodipine 5mg o.d.\n- atorvastatin 20 mg nocte",
+      "start": 0,
+      "end": 406,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9937,
+   "probabilities": {
+    "same": 0.0059,
+    "overlapping": 0.0287,
+    "conflicting": 0.9591,
+    "unrelated": 0.0063
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9947,
+      "date_or_version": 0.0012,
+      "rule_or_condition": 0.0011,
+      "scope": 0.0008,
+      "name": 0.001,
+      "no_conflict": 0.0012
+     },
+     "confidence": 0.9988,
+     "a": {
+      "document": "D1",
+      "quote": "- amlodipino 5 mg una vez al d\u00eda",
+      "start": 365,
+      "end": 397,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Outpatient clinic note, Alexandria\nDate: 2026-05-08\nPatient: synthetic case P005, 50-year-old female.\n\nProblems:\nHistory of type 2 diabetes.\n- gastro-oesophageal reflux disease\n\nMedications:\n- salbutamol inhaler stopped on 2026-05-08\n- insulin glargine 16 units ON\n- amlodipine 10mg o.d.\n- atorvastatin 20 mg ON",
+      "start": 0,
+      "end": 311,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "conflicting",
+   "related": 0.9937,
+   "probabilities": {
+    "same": 0.0083,
+    "overlapping": 0.0276,
+    "conflicting": 0.9578,
+    "unrelated": 0.0063
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9943,
+      "date_or_version": 0.0013,
+      "rule_or_condition": 0.0012,
+      "scope": 0.0009,
+      "name": 0.0011,
+      "no_conflict": 0.0012
+     },
+     "confidence": 0.9988,
+     "a": {
+      "document": "D2",
+      "quote": "- amlodipine 5mg o.d.",
+      "start": 358,
+      "end": 379,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Outpatient clinic note, Alexandria\nDate: 2026-05-08\nPatient: synthetic case P005, 50-year-old female.\n\nProblems:\nHistory of type 2 diabetes.\n- gastro-oesophageal reflux disease\n\nMedications:\n- salbutamol inhaler stopped on 2026-05-08\n- insulin glargine 16 units ON\n- amlodipine 10mg o.d.\n- atorvastatin 20 mg ON",
+      "start": 0,
+      "end": 311,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [],
+ "conflicts": [
+  0,
+  1,
+  2
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 25,
+  "passage_reads": 1,
+  "passages_ms": 69,
+  "passages": 6,
+  "counterparts_ms": 183,
+  "kinds_ms": 35
+ },
+ "timing": {
+  "read_ms": 312,
+  "total_ms": 314
+ },
+ "_credits": "13"
+}

@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Allergy conflict: the GP letter of 2025-06-05 says 'latex (contact dermatitis)' and the discharge summary of 2025-12-08 says 'No known drug allergies.'.\nAmlodipine dose differs: the GP letter of 2025-06-05 says 'amlodipine 5 mg once daily', the discharge summary of 2025-12-08 says 'amlodipine 5 mg once daily', and the clinic note of 2026-05-08 says 'amlodipine 10 mg once daily'.\nBisoprolol is missing from the newest record: the GP letter of 2025-06-05 says 'bisoprolol 2.5 mg once daily' and the discharge summary of 2025-12-08 says 'bisoprolol 2.5 mg once daily'.\nInsulin glargine is new: the clinic note of 2026-05-08 says 'insulin glargine 16 units at night'.\nSalbutamol inhaler stopped: the GP letter of 2025-06-05 says 'salbutamol inhaler 100 micrograms, 2 puffs as needed', the discharge summary of 2025-12-08 says 'salbutamol inhaler 100 micrograms, 2 puffs as needed', and the clinic note of 2026-05-08 says 'salbutamol inhaler stopped on 2026-05-08'",
+   "confidence": 0.39042777418342767,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 22,
+  "generate_ms": 838,
+  "total_ms": 867,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 512,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "34"
+}

@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Allergy conflict new: the discharge summary of 2025-07-04 says 'No known drug allergies.' and the GP letter of 2025-09-23 says 'latex (contact dermatitis)'.\nAmlodipine dose differs: the clinic note of 2024-11-22 says 'amlodipine 5 mg once daily', the pharmacy record of 2025-05-04 says 'amlodipine 5 mg once daily', the discharge summary of 2025-07-04 says 'amlodipine 5 mg once daily', and the GP letter of 2025-09-23 says 'amlodipine 10 mg once daily'.\nInsulin glargine stopped: the GP letter of 2025-09-23 says 'insulin glargine stopped on 2025-09-23'.\nWarfarin missing from the newest record: the clinic note of 2024-11-22 says 'warfarin 3 mg once daily, dose by INR', the pharmacy record of 2025-05-04 says 'warfarin 3 mg once daily, dose by INR', and the discharge summary of 2025-07-04 says 'warfarin 3 mg once daily, dose by INR'",
+   "confidence": 0.5430850150741485,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 762,
+  "total_ms": 788,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 544,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "31"
+}

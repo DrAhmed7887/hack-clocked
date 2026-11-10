@@ -1,0 +1,180 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7217,
+ "ungrounded": 0.2783,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D4",
+   "share": 0.7755,
+   "share_of_answer": 0.5597,
+   "claims": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.132,
+   "share_of_answer": 0.0952,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0682,
+   "share_of_answer": 0.0492,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0244,
+   "share_of_answer": 0.0176,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict new: the discharge summary of 2025-07-04 says 'nil known.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0742,
+   "supported": 0.9701,
+   "contradicted": 0.0131,
+   "not_stated": 0.0105,
+   "not_a_claim": 0.0063,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0021,
+    "D2": 0.0034,
+    "D3": 0.9797,
+    "D4": 0.0147
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "Allergies: nil known.",
+    "start": 179,
+    "end": 200,
+    "confidence": 0.835
+   }
+  },
+  {
+   "claim": "' and the GP letter of 2025-09-23 says 'l\u00e1tex (dermatitis de contacto)'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0722,
+   "supported": 0.9876,
+   "contradicted": 0.0041,
+   "not_stated": 0.0057,
+   "not_a_claim": 0.0025,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0017,
+    "D2": 0.0028,
+    "D3": 0.0022,
+    "D4": 0.9934
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "Alergia: l\u00e1tex (dermatitis de contacto).",
+    "start": 149,
+    "end": 189,
+    "confidence": 0.915
+   }
+  },
+  {
+   "claim": "Amlodipine dose differs: the clinic note of 2024-11-22 says 'amlodipine 5mg o.d.', the pharmacy record of 2025-05-04 says 'amlodipine 5 mg daily', the discharge summary of 2025-07-04 says 'amlodipine 5mg OD', and the GP letter of 2025-09-23 says 'amlodipino 10 mg una vez al d\u00eda'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2808,
+   "supported": 0.6257,
+   "contradicted": 0.3049,
+   "not_stated": 0.0297,
+   "not_a_claim": 0.0398,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0634,
+    "D2": 0.0403,
+    "D3": 0.0282,
+    "D4": 0.8681
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D1",
+    "quote": "amlodipine 5mg o.d.",
+    "start": 174,
+    "end": 193,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Insulin glargine stopped: the clinic note of 2024-11-22 says 'insulin glargine 16 units nocte', the pharmacy record of 2025-05-04 says 'insulin glargine 16 units ON', the discharge summary of 2025-07-04 says 'insulin glargine 16 units ON', and the GP letter of 2025-09-23 says 'insulina glargina suspendido el 2025-09-23'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.323,
+   "supported": 0.9762,
+   "contradicted": 0.0098,
+   "not_stated": 0.0082,
+   "not_a_claim": 0.0057,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0299,
+    "D2": 0.0128,
+    "D3": 0.0066,
+    "D4": 0.9507
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D1",
+    "quote": "insulin glargine 16 units nocte",
+    "start": 244,
+    "end": 275,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Warfarin missing from the newest record: the clinic note of 2024-11-22 says 'warfarin 3 mg OD as per INR', the pharmacy record of 2025-05-04 says 'warfarin 3mg OD as per INR', and the discharge summary of 2025-07-04 says 'warfarin 3mg OD as per INR'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2497,
+   "supported": 0.35,
+   "contradicted": 0.0226,
+   "not_stated": 0.5961,
+   "not_a_claim": 0.0313,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3245,
+    "D2": 0.0692,
+    "D3": 0.2004,
+    "D4": 0.4059
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "warfarin 3 mg OD as per INR",
+    "start": 144,
+    "end": 171,
+    "confidence": 0.976
+   }
+  }
+ ],
+ "unsupported_claims": [
+  2,
+  4
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 4,
+  "supported": 0.35
+ },
+ "timing": {
+  "read_ms": 241,
+  "total_ms": 243
+ },
+ "_credits": "9"
+}

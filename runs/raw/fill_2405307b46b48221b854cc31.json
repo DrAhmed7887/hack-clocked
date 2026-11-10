@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Allergy conflict new: the discharge summary of 2024-04-14 says 'latex (contact dermatitis)' and the GP letter of 2024-04-15 says 'No known drug allergies.'.\nAmlodipine dose differs: the discharge summary of 2024-04-14 says 'amlodipine 5 mg once daily', the GP letter of 2024-04-15 says 'amlodipine 5 mg once daily', and the pharmacy record of 2025-09-17 says 'amlodipine 10 mg once daily'.\nAtorvastatin stopped: the discharge summary of 2024-04-14 says 'atorvastatin 20 mg at night', the GP letter of 2024-04-15 says 'atorvastatin 20 mg at night', and the pharmacy record of 2025-09-17 says 'atorvastatin stopped on 2025-09-17'.\nInsulin glargine new: the pharmacy record of 2025-09-17 says 'insulin glargine 16 units at night'",
+   "confidence": 0.09852048400366875,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 20,
+  "generate_ms": 649,
+  "total_ms": 675,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 400,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "27"
+}

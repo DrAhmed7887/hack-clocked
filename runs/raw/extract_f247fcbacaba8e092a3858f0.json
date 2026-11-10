@@ -1,0 +1,331 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "chronic kidney disease stage 3a",
+    "type 2 diabetes"
+   ],
+   "items": [
+    {
+     "value": "chronic kidney disease stage 3a",
+     "start": 157,
+     "end": 188,
+     "confidence": 0.999999996825989,
+     "p_verify": 0.999999996825989
+    },
+    {
+     "value": "type 2 diabetes",
+     "start": 196,
+     "end": 211,
+     "confidence": 0.9999999979287955,
+     "p_verify": 0.9999999979287955
+    }
+   ],
+   "confidence": 0.999999996825989
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 227,
+     "end": 257,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 229,
+       "end": 241,
+       "confidence": 0.9999999997895073,
+       "p_verify": 0.9999999997895073
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 242,
+       "end": 247,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 248,
+       "end": 256,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.498,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin",
+         "start": 229,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 257,
+     "end": 288,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 259,
+       "end": 269,
+       "confidence": 0.9999999997959181,
+       "p_verify": 0.9999999997959181
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 270,
+       "end": 276,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 277,
+       "end": 287,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 288,
+     "end": 319,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 290,
+       "end": 299,
+       "confidence": 0.9999999998623892,
+       "p_verify": 0.9999999998623892
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 300,
+       "end": 306,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 307,
+       "end": 318,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 319,
+     "end": 359,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 321,
+       "end": 329,
+       "confidence": 0.9999999997662941,
+       "p_verify": 0.9999999997662941
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 330,
+       "end": 334,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 335,
+       "end": 345,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 359,
+     "end": 388,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 361,
+       "end": 371,
+       "confidence": 0.9999999998728681,
+       "p_verify": 0.9999999998728681
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 372,
+       "end": 377,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 378,
+       "end": 388,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 200,
+  "forwards": {
+   "fields": [
+    7,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 2,
+    "branches": 1,
+    "generate": 102,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 33,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 24,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 73,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 5,
+   "cells": 15,
+   "explicit": 0
+  },
+  "total_ms": 200,
+  "server_ms": 391
+ },
+ "_credits": "9"
+}

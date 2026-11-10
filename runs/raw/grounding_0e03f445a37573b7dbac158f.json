@@ -1,0 +1,117 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.9066,
+ "ungrounded": 0.0934,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9759,
+   "share_of_answer": 0.8848,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.013,
+   "share_of_answer": 0.0118,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0111,
+   "share_of_answer": 0.01,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Amlodipine is missing from the newest record, as the clinic note of 2025-03-15 says 'amlodipine 5mg OD' and the GP letter of 2026-04-16 says 'amlodipino 5 mg una vez al d\u00eda'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4427,
+   "supported": 0.7937,
+   "contradicted": 0.0365,
+   "not_stated": 0.1502,
+   "not_a_claim": 0.0197,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0271,
+    "D2": 0.0319,
+    "D3": 0.9409
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "amlodipine 5mg OD",
+    "start": 192,
+    "end": 209,
+    "confidence": 0.996
+   }
+  },
+  {
+   "claim": "Insulin glargine stopped, as the pharmacy record of 2026-08-01 says 'insulin glargine stopped on 2026-08-01'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2774,
+   "supported": 0.9971,
+   "contradicted": 0.0014,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.001,
+    "D3": 0.9983
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "insulin glargine stopped on 2026-08-01",
+    "start": 153,
+    "end": 191,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Salbutamol inhaler is new, as the pharmacy record of 2026-08-01 says 'salbutamol inhaler 100 mcg, 2 puffs PRN'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2799,
+   "supported": 0.9958,
+   "contradicted": 0.0019,
+   "not_stated": 0.0012,
+   "not_a_claim": 0.0011,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0011,
+    "D2": 0.0011,
+    "D3": 0.9978
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "salbutamol inhaler 100 mcg, 2 puffs PRN",
+    "start": 194,
+    "end": 233,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.7937
+ },
+ "timing": {
+  "read_ms": 109,
+  "total_ms": 111
+ },
+ "_credits": "5"
+}

@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Lisinopril stopped: 'lisinopril stopped on 2025-09-09' from the discharge summary of 2025-09-09.\nOmeprazole missing from the newest record: 'omeprazole 20mg o.d.' from the clinic note of 2024-06-12 and 'omeprazol 20 mg una vez al d\u00eda' from the GP letter of 2025-01-29.\nWarfarin dose differs: 'warfarin 3mg OD as per INR' from the clinic note of 2024-06-12, 'warfarina 3 mg una vez al d\u00eda seg\u00fan INR' from the GP letter of 2025-01-29, and 'warfarin 5mg OD as per INR' from the discharge summary of 2025-09-09",
+   "confidence": 0.9314095388306579,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 706,
+  "total_ms": 738,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 416,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "21"
+}

@@ -1,0 +1,326 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex - causes contact dermatitis"
+   ],
+   "items": [
+    {
+     "value": "latex - causes contact dermatitis",
+     "start": 206,
+     "end": 239,
+     "confidence": 0.9999999995259472,
+     "p_verify": 0.9999999995259472
+    }
+   ],
+   "confidence": 0.9999999995259472
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "- essential hypertension"
+   ],
+   "items": [
+    {
+     "value": "- essential hypertension",
+     "start": 149,
+     "end": 173,
+     "confidence": 0.9999999997933902,
+     "p_verify": 0.9999999997933902
+    }
+   ],
+   "confidence": 0.9999999997933902
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "2.5mg",
+     "drug": "bisoprolol",
+     "frequency": "daily",
+     "line": "bisoprolol 2.5mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "20mg",
+     "drug": "atorvastatin",
+     "frequency": "nocte",
+     "line": "atorvastatin 20mg nocte",
+     "stopped": null
+    },
+    {
+     "dose": "5mg",
+     "drug": "amlodipine",
+     "frequency": "daily",
+     "line": "amlodipine 5mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "daily",
+     "line": "lisinopril 10 mg daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 255,
+     "end": 280,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 257,
+       "end": 267,
+       "confidence": 0.999999999783374,
+       "p_verify": 0.999999999783374
+      },
+      "dose": {
+       "value": "2.5mg",
+       "start": 268,
+       "end": 273,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 274,
+       "end": 279,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5mg daily",
+       "start": 257,
+       "end": 279,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 280,
+     "end": 306,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 282,
+       "end": 294,
+       "confidence": 0.9999999996373885,
+       "p_verify": 0.9999999996373885
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 295,
+       "end": 299,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "nocte",
+       "start": 300,
+       "end": 305,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20mg nocte",
+       "start": 282,
+       "end": 305,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 306,
+     "end": 329,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 308,
+       "end": 318,
+       "confidence": 0.9999999997250539,
+       "p_verify": 0.9999999997250539
+      },
+      "dose": {
+       "value": "5mg",
+       "start": 319,
+       "end": 322,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 323,
+       "end": 328,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5mg daily",
+       "start": 308,
+       "end": 328,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    },
+    {
+     "start": 329,
+     "end": 353,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 331,
+       "end": 341,
+       "confidence": 0.9999999998097178,
+       "p_verify": 0.9999999998097178
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 342,
+       "end": 347,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 348,
+       "end": 353,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg daily",
+       "start": 331,
+       "end": 353,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 182,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 4,
+    "branches": 1,
+    "generate": 79,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 29,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 76,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 182,
+  "server_ms": 188
+ },
+ "_credits": "8"
+}

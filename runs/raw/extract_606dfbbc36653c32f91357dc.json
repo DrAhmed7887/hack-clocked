@@ -1,0 +1,359 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "line": "insulin glargine 16 units at night",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "atorvastatin",
+     "frequency": null,
+     "line": "atorvastatin stopped on 2025-09-17",
+     "stopped": "stopped on 2025-09-17"
+    },
+    {
+     "dose": "10 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 10 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 10 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 127,
+     "end": 158,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 129,
+       "end": 139,
+       "confidence": 0.9999999995933417,
+       "p_verify": 0.9999999995933417
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 140,
+       "end": 146,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 147,
+       "end": 157,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 129,
+       "end": 157,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.991,
+       "p_blank": 0.991
+      }
+     }
+    },
+    {
+     "start": 158,
+     "end": 195,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 160,
+       "end": 176,
+       "confidence": 0.9999999996993845,
+       "p_verify": 0.9999999996993845
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 177,
+       "end": 185,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 186,
+       "end": 194,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units at night",
+       "start": 160,
+       "end": 194,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    },
+    {
+     "start": 195,
+     "end": 232,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 197,
+       "end": 209,
+       "confidence": 0.9999999164484242,
+       "p_verify": 0.9999999164484242
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.99,
+       "p_blank": 0.99
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.27,
+       "rejected_value": "stopped on 2025-09-17",
+       "rejected_p_verify": 0.001,
+       "reason": "verification_rejected"
+      },
+      "line": {
+       "value": "atorvastatin stopped on 2025-09-17",
+       "start": 197,
+       "end": 231,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-09-17",
+       "start": 210,
+       "end": 231,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 232,
+     "end": 262,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 234,
+       "end": 244,
+       "confidence": 0.9999999997124724,
+       "p_verify": 0.9999999997124724
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 245,
+       "end": 250,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 251,
+       "end": 261,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 10 mg once daily",
+       "start": 234,
+       "end": 261,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.992,
+       "p_blank": 0.992
+      }
+     }
+    },
+    {
+     "start": 262,
+     "end": 291,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 264,
+       "end": 274,
+       "confidence": 0.9999999996922895,
+       "p_verify": 0.9999999996922895
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 275,
+       "end": 280,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 281,
+       "end": 291,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg once daily",
+       "start": 264,
+       "end": 291,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 155,
+  "forwards": {
+   "fields": [
+    3,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 35,
+    "locate": 0,
+    "verify": 13,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 46,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 42,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 103,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 155,
+  "server_ms": 365
+ },
+ "_credits": "7"
+}

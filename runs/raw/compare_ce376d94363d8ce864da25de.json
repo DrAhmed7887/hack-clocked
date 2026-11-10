@@ -1,0 +1,328 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [
+    "D3"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [
+    "D3",
+    "D4"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [
+    "D1",
+    "D2"
+   ],
+   "conflicts": [
+    "D4"
+   ]
+  },
+  {
+   "id": "D4",
+   "duplicates": [],
+   "overlaps": [
+    "D2"
+   ],
+   "conflicts": [
+    "D1",
+    "D2",
+    "D3"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "overlapping",
+   "related": 0.9975,
+   "probabilities": {
+    "same": 0.0108,
+    "overlapping": 0.9811,
+    "conflicting": 0.0056,
+    "unrelated": 0.0025
+   },
+   "duplicates": [],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9965,
+   "probabilities": {
+    "same": 0.0191,
+    "overlapping": 0.9706,
+    "conflicting": 0.0069,
+    "unrelated": 0.0035
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.0019,
+      "restated": 0.9936,
+      "elaborated": 0.0021,
+      "different": 0.0024
+     },
+     "confidence": 0.558,
+     "a": {
+      "document": "D1",
+      "quote": "Discharge summary, internal medicine ward, Cairo (translated to English)",
+      "start": 0,
+      "end": 72,
+      "confidence": 0.558
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Outpatient clinic note, Alexandria\nDate: 2025-07-20\nPatient: synthetic case P002, 80-year-old female.\n\nProblems:\nHistory of chronic kidney disease stage 3a.\nKnown essential hypertension.\nHistory of hyperlipidaemia.\n\nAllergies: nil known.\n\nMedications:\n- metformin 500 mg b.i.d.\n- levothyroxine 50 mcg mane, before food\n- omeprazole 20 mg daily\n- atorvastatin 20mg nocte\n- salbutamol inhaler 100 mcg, 2 puffs when required",
+      "start": 0,
+      "end": 421,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.9957,
+   "probabilities": {
+    "same": 0.0035,
+    "overlapping": 0.0196,
+    "conflicting": 0.9726,
+    "unrelated": 0.0043
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.994,
+      "date_or_version": 0.0016,
+      "rule_or_condition": 0.0012,
+      "scope": 0.001,
+      "name": 0.0012,
+      "no_conflict": 0.0011
+     },
+     "confidence": 0.9989,
+     "a": {
+      "document": "D1",
+      "quote": "- levothyroxine 50 mcg OD before breakfast",
+      "start": 278,
+      "end": 320,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-09-16\nPatient: synthetic case P002, 80-year-old female.\n\n\nNo known drug allergies.\n\nMedications:\n- metformin 500mg b.i.d.\n- levothyroxine 75 micrograms OD before breakfast\n- omeprazole stopped on 2025-09-16\n- salbutamol inhaler 100 mcg, 2 puffs when required",
+      "start": 0,
+      "end": 316,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9958,
+   "probabilities": {
+    "same": 0.0373,
+    "overlapping": 0.9496,
+    "conflicting": 0.0089,
+    "unrelated": 0.0042
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.0017,
+      "restated": 0.9937,
+      "elaborated": 0.0021,
+      "different": 0.0024
+     },
+     "confidence": 0.9976,
+     "a": {
+      "document": "D2",
+      "quote": "Antecedentes:",
+      "start": 127,
+      "end": 140,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Outpatient clinic note, Alexandria\nDate: 2025-07-20\nPatient: synthetic case P002, 80-year-old female.\n\nProblems:\nHistory of chronic kidney disease stage 3a.\nKnown essential hypertension.\nHistory of hyperlipidaemia.\n\nAllergies: nil known.\n\nMedications:\n- metformin 500 mg b.i.d.\n- levothyroxine 50 mcg mane, before food\n- omeprazole 20 mg daily\n- atorvastatin 20mg nocte\n- salbutamol inhaler 100 mcg, 2 puffs when required",
+      "start": 0,
+      "end": 421,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": []
+  },
+  {
+   "a": "D2",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.9914,
+   "probabilities": {
+    "same": 0.0061,
+    "overlapping": 0.4386,
+    "conflicting": 0.5467,
+    "unrelated": 0.0086
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.0245,
+      "restated": 0.7752,
+      "elaborated": 0.0435,
+      "different": 0.1568
+     },
+     "confidence": 0.8432,
+     "a": {
+      "document": "D2",
+      "quote": "Sin alergias medicamentosas conocidas.",
+      "start": 230,
+      "end": 268,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-09-16\nPatient: synthetic case P002, 80-year-old female.\n\n\nNo known drug allergies.\n\nMedications:\n- metformin 500mg b.i.d.\n- levothyroxine 75 micrograms OD before breakfast\n- omeprazole stopped on 2025-09-16\n- salbutamol inhaler 100 mcg, 2 puffs when required",
+      "start": 0,
+      "end": 316,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9937,
+      "date_or_version": 0.0016,
+      "rule_or_condition": 0.0012,
+      "scope": 0.0011,
+      "name": 0.0012,
+      "no_conflict": 0.0011
+     },
+     "confidence": 0.9989,
+     "a": {
+      "document": "D2",
+      "quote": "- levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+      "start": 317,
+      "end": 371,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-09-16\nPatient: synthetic case P002, 80-year-old female.\n\n\nNo known drug allergies.\n\nMedications:\n- metformin 500mg b.i.d.\n- levothyroxine 75 micrograms OD before breakfast\n- omeprazole stopped on 2025-09-16\n- salbutamol inhaler 100 mcg, 2 puffs when required",
+      "start": 0,
+      "end": 316,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D3",
+   "b": "D4",
+   "relation": "conflicting",
+   "related": 0.994,
+   "probabilities": {
+    "same": 0.0057,
+    "overlapping": 0.0467,
+    "conflicting": 0.9416,
+    "unrelated": 0.006
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "value",
+     "kinds": {
+      "value": 0.9945,
+      "date_or_version": 0.0014,
+      "rule_or_condition": 0.001,
+      "scope": 0.0009,
+      "name": 0.0011,
+      "no_conflict": 0.001
+     },
+     "confidence": 0.999,
+     "a": {
+      "document": "D3",
+      "quote": "- levothyroxine 50 mcg mane, before food",
+      "start": 278,
+      "end": 318,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D4",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2025-09-16\nPatient: synthetic case P002, 80-year-old female.\n\n\nNo known drug allergies.\n\nMedications:\n- metformin 500mg b.i.d.\n- levothyroxine 75 micrograms OD before breakfast\n- omeprazole stopped on 2025-09-16\n- salbutamol inhaler 100 mcg, 2 puffs when required",
+      "start": 0,
+      "end": 316,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [
+  1,
+  3,
+  4
+ ],
+ "conflicts": [
+  2,
+  4,
+  5
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 33,
+  "passage_reads": 1,
+  "passages_ms": 104,
+  "passages": 9,
+  "counterparts_ms": 199,
+  "kinds_ms": 36
+ },
+ "timing": {
+  "read_ms": 371,
+  "total_ms": 375
+ },
+ "_credits": "15"
+}

@@ -1,0 +1,342 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 221,
+   "end": 245,
+   "confidence": 0.999999999618836,
+   "p_verify": 0.999999999618836
+  },
+  "problems": {
+   "value": [
+    "chronic kidney disease stage 3a",
+    "essential hypertension",
+    "hyperlipidaemia"
+   ],
+   "items": [
+    {
+     "value": "chronic kidney disease stage 3a",
+     "start": 134,
+     "end": 165,
+     "confidence": 0.9999999957853114,
+     "p_verify": 0.9999999957853114
+    },
+    {
+     "value": "essential hypertension",
+     "start": 173,
+     "end": 195,
+     "confidence": 0.9999999955238255,
+     "p_verify": 0.9999999955238255
+    },
+    {
+     "value": "hyperlipidaemia",
+     "start": 203,
+     "end": 218,
+     "confidence": 0.9999999951076517,
+     "p_verify": 0.9999999951076517
+    }
+   ],
+   "confidence": 0.9999999951076517
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "at night",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 260,
+     "end": 291,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 262,
+       "end": 271,
+       "confidence": 0.9999999997974456,
+       "p_verify": 0.9999999997974456
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 272,
+       "end": 278,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 279,
+       "end": 290,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 291,
+     "end": 349,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 293,
+       "end": 306,
+       "confidence": 0.999999999922613,
+       "p_verify": 0.999999999922613
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 307,
+       "end": 320,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 321,
+       "end": 348,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 349,
+     "end": 379,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 351,
+       "end": 361,
+       "confidence": 0.9999999999211446,
+       "p_verify": 0.9999999999211446
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 362,
+       "end": 367,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 368,
+       "end": 378,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 379,
+     "end": 409,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 381,
+       "end": 393,
+       "confidence": 0.9999999998468336,
+       "p_verify": 0.9999999998468336
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 394,
+       "end": 399,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 400,
+       "end": 408,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.498,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "atorvastatin 20 mg at night",
+         "start": 381,
+         "p_verify": 1
+        }
+       ],
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    },
+    {
+     "start": 409,
+     "end": 463,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 411,
+       "end": 429,
+       "confidence": 0.9999999994620534,
+       "p_verify": 0.9999999994620534
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 430,
+       "end": 444,
+       "p_start": 1,
+       "p_close": 0.986,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.986
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 454,
+       "end": 463,
+       "p_start": 0.983,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.983
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 216,
+  "forwards": {
+   "fields": [
+    8,
+    1
+   ],
+   "records": [
+    3,
+    1
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 116,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 24,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 74,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     3,
+     1
+    ]
+   },
+   "records": 5,
+   "cells": 15,
+   "explicit": 0
+  },
+  "total_ms": 216,
+  "server_ms": 394
+ },
+ "_credits": "9"
+}

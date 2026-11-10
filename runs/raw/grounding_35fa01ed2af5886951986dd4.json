@@ -1,0 +1,67 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5894,
+ "ungrounded": 0.4106,
+ "verdict": "ungrounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.9009,
+   "share_of_answer": 0.531,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0681,
+   "share_of_answer": 0.0401,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.031,
+   "share_of_answer": 0.0183,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict: the GP letter of 2025-06-05 says 'l\u00e1tex (dermatitis de contacto)'; the discharge summary of 2025-12-08 says 'nil known.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 1,
+   "supported": 0.5894,
+   "contradicted": 0.2743,
+   "not_stated": 0.0801,
+   "not_a_claim": 0.0562,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9009,
+    "D2": 0.0681,
+    "D3": 0.031
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "Alergia: l\u00e1tex (dermatitis de contacto).",
+    "start": 210,
+    "end": 250,
+    "confidence": 0.997
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.5894
+ },
+ "timing": {
+  "read_ms": 118,
+  "total_ms": 119
+ },
+ "_credits": "4"
+}

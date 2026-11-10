@@ -1,0 +1,374 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "nil known.",
+   "start": 190,
+   "end": 200,
+   "confidence": 0.9999999625026427,
+   "p_verify": 0.9999999625026427
+  },
+  "problems": {
+   "value": [
+    "History of hypothyroidism."
+   ],
+   "items": [
+    {
+     "value": "History of hypothyroidism.",
+     "start": 151,
+     "end": 177,
+     "confidence": 0.9999999996067479,
+     "p_verify": 0.9999999996067479
+    }
+   ],
+   "confidence": 0.9999999996067479
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "3mg",
+     "drug": "warfarin",
+     "frequency": "OD as per INR",
+     "line": "warfarin 3mg OD as per INR",
+     "stopped": null
+    },
+    {
+     "dose": "5mg",
+     "drug": "amlodipine",
+     "frequency": "OD",
+     "line": "amlodipine 5mg OD",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "mane",
+     "line": "levothyroxine 50 micrograms mane, before food",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "ON",
+     "line": "insulin glargine 16 units ON",
+     "stopped": null
+    },
+    {
+     "dose": "100 mcg",
+     "drug": "salbutamol inhaler",
+     "frequency": "PRN",
+     "line": "salbutamol inhaler 100 mcg, 2 puffs PRN",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 215,
+     "end": 244,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 217,
+       "end": 225,
+       "confidence": 0.9999999994813986,
+       "p_verify": 0.9999999994813986
+      },
+      "dose": {
+       "value": "3mg",
+       "start": 226,
+       "end": 229,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD as per INR",
+       "start": 230,
+       "end": 243,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3mg OD as per INR",
+       "start": 217,
+       "end": 243,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 244,
+     "end": 264,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 246,
+       "end": 256,
+       "confidence": 0.9999999991896547,
+       "p_verify": 0.9999999991896547
+      },
+      "dose": {
+       "value": "5mg",
+       "start": 257,
+       "end": 260,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD",
+       "start": 261,
+       "end": 263,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5mg OD",
+       "start": 246,
+       "end": 263,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 264,
+     "end": 312,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 266,
+       "end": 279,
+       "confidence": 0.9999999996215785,
+       "p_verify": 0.9999999996215785
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 280,
+       "end": 293,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "mane",
+       "start": 294,
+       "end": 298,
+       "p_start": 1,
+       "p_close": 0.958,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.958
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms mane, before food",
+       "start": 266,
+       "end": 311,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 312,
+     "end": 343,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 314,
+       "end": 330,
+       "confidence": 0.9999999996435709,
+       "p_verify": 0.9999999996435709
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 331,
+       "end": 339,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 340,
+       "end": 342,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units ON",
+       "start": 314,
+       "end": 342,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 343,
+     "end": 384,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 345,
+       "end": 363,
+       "confidence": 0.9999999989784518,
+       "p_verify": 0.9999999989784518
+      },
+      "dose": {
+       "value": "100 mcg",
+       "start": 364,
+       "end": 371,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "PRN",
+       "start": 381,
+       "end": 384,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 mcg, 2 puffs PRN",
+       "start": 345,
+       "end": 384,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 195,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 2,
+    "generate": 63,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 46,
+    "resolve": 16,
+    "extend": 0,
+    "contest": 41,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 105,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 195,
+  "server_ms": 511
+ },
+ "_credits": "8"
+}

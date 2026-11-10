@@ -1,0 +1,143 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7,
+ "ungrounded": 0.3,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9284,
+   "share_of_answer": 0.6499,
+   "claims": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0452,
+   "share_of_answer": 0.0317,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0264,
+   "share_of_answer": 0.0185,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin dose differs: 'atorvastatin 20 mg at night' from the discharge summary of 2024-12-09, 'atorvastatin 20 mg at night' from the pharmacy record of 2025-05-15, and 'atorvastatin 40 mg at night' from the GP letter of 2025-07-20.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3151,
+   "supported": 0.7845,
+   "contradicted": 0.03,
+   "not_stated": 0.1579,
+   "not_a_claim": 0.0276,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.077,
+    "D2": 0.0483,
+    "D3": 0.8747
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatin 40 mg at night",
+    "start": 303,
+    "end": 330,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril is missing from the newest record: 'lisinopril 10 mg once daily' from the discharge summary of 2024-12-09 and 'lisinopril 10 mg once daily' from the pharmacy record of 2025-05-15.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2537,
+   "supported": 0.095,
+   "contradicted": 0.0232,
+   "not_stated": 0.8563,
+   "not_a_claim": 0.0255,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.495,
+    "D2": 0.2438,
+    "D3": 0.2612
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10 mg once daily",
+    "start": 251,
+    "end": 278,
+    "confidence": 0.981
+   }
+  },
+  {
+   "claim": "Omeprazole stopped: 'omeprazole 20 mg once daily' from the discharge summary of 2024-12-09, 'omeprazole 20 mg once daily' from the pharmacy record of 2025-05-15, and 'omeprazole stopped on 2025-07-20' from the GP letter of 2025-07-20.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3124,
+   "supported": 0.9932,
+   "contradicted": 0.0031,
+   "not_stated": 0.002,
+   "not_a_claim": 0.0018,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0019,
+    "D2": 0.0018,
+    "D3": 0.9963
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazole stopped on 2025-07-20",
+    "start": 228,
+    "end": 260,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Warfarin is new: 'warfarin 3 mg once daily, dose by INR' from the GP letter of 2025-07-20",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1188,
+   "supported": 0.997,
+   "contradicted": 0.0013,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0009,
+    "D2": 0.0007,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarin 3 mg once daily, dose by INR",
+    "start": 263,
+    "end": 300,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.095
+ },
+ "timing": {
+  "read_ms": 153,
+  "total_ms": 155
+ },
+ "_credits": "6"
+}

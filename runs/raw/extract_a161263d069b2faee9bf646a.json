@@ -1,0 +1,322 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "NKDA",
+   "start": 278,
+   "end": 282,
+   "confidence": 0.9999999959218124,
+   "p_verify": 0.9999999959218124
+  },
+  "problems": {
+   "value": [
+    "- type 2 diabetes\nHistory of chronic kidney disease stage 3a.\nKnown gastro-oesophageal reflux disease.",
+    "- essential hypertension"
+   ],
+   "items": [
+    {
+     "value": "- type 2 diabetes\nHistory of chronic kidney disease stage 3a.\nKnown gastro-oesophageal reflux disease.",
+     "start": 149,
+     "end": 251,
+     "confidence": 0.9931323953224818,
+     "p_verify": 0.9931323953224818
+    },
+    {
+     "value": "- essential hypertension",
+     "start": 252,
+     "end": 276,
+     "confidence": 0.9999999993904267,
+     "p_verify": 0.9999999993904267
+    }
+   ],
+   "confidence": 0.9931323953224818
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "ON",
+     "line": "insulin glargine 16 units ON",
+     "stopped": null
+    },
+    {
+     "dose": "3mg",
+     "drug": "warfarin",
+     "frequency": "OD as per INR",
+     "line": "warfarin 3mg OD as per INR",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "salbutamol inhaler",
+     "frequency": null,
+     "line": "salbutamol inhaler stopped on 2026-04-24",
+     "stopped": "stopped on 2026-04-24"
+    },
+    {
+     "dose": "5mg",
+     "drug": "amlodipine",
+     "frequency": "o.d.",
+     "line": "amlodipine 5mg o.d.",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 297,
+     "end": 328,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 299,
+       "end": 315,
+       "confidence": 0.9999999997308617,
+       "p_verify": 0.9999999997308617
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 316,
+       "end": 324,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 325,
+       "end": 327,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units ON",
+       "start": 299,
+       "end": 327,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 328,
+     "end": 357,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 330,
+       "end": 338,
+       "confidence": 0.9999999997210531,
+       "p_verify": 0.9999999997210531
+      },
+      "dose": {
+       "value": "3mg",
+       "start": 339,
+       "end": 342,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD as per INR",
+       "start": 343,
+       "end": 356,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3mg OD as per INR",
+       "start": 330,
+       "end": 356,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 357,
+     "end": 400,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 359,
+       "end": 377,
+       "confidence": 0.9999999272903014,
+       "p_verify": 0.9999999272903014
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.822,
+       "p_blank": 0.822
+      },
+      "line": {
+       "value": "salbutamol inhaler stopped on 2026-04-24",
+       "start": 359,
+       "end": 399,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2026-04-24",
+       "start": 378,
+       "end": 399,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 400,
+     "end": 421,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 402,
+       "end": 412,
+       "confidence": 0.9999999992044175,
+       "p_verify": 0.9999999992044175
+      },
+      "dose": {
+       "value": "5mg",
+       "start": 413,
+       "end": 416,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 417,
+       "end": 421,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5mg o.d.",
+       "start": 402,
+       "end": 421,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.974,
+       "p_blank": 0.974
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 213,
+  "forwards": {
+   "fields": [
+    6,
+    1
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 5,
+    "branches": 2,
+    "generate": 94,
+    "locate": 0,
+    "verify": 21,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 12,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 89,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 213,
+  "server_ms": 217
+ },
+ "_credits": "9"
+}

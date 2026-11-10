@@ -1,0 +1,42 @@
+{
+ "model": "clocked-1.0",
+ "entities": [
+  {
+   "type": "person",
+   "value": "caso sint\u00e9tico P008",
+   "start": 89,
+   "end": 108,
+   "confidence": 0.958,
+   "source": "model",
+   "mentions": 1
+  }
+ ],
+ "counts": {
+  "person": 1
+ },
+ "threshold": 0.5,
+ "instructions_used": "default",
+ "mentions": {
+  "candidates": 0,
+  "variants": 0,
+  "reads": 0,
+  "verified": 0,
+  "occurrences": {
+   "read": 0,
+   "kept": 0
+  },
+  "rejected": {},
+  "spans": 0,
+  "ms": 0
+ },
+ "checks": {
+  "trimmed": 0,
+  "split": 0,
+  "rejected": {}
+ },
+ "timing": {
+  "read_ms": 124,
+  "total_ms": 125
+ },
+ "_credits": "5"
+}

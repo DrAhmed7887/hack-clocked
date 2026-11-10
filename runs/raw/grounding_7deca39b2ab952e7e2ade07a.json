@@ -1,0 +1,136 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.6026,
+ "ungrounded": 0.3974,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.9196,
+   "share_of_answer": 0.5542,
+   "claims": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0515,
+   "share_of_answer": 0.0311,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0288,
+   "share_of_answer": 0.0174,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Amlodipine stopped, 'amlodipino suspendido el 2025-12-03' from the GP letter of 2025-12-03.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.155,
+   "supported": 0.9969,
+   "contradicted": 0.0014,
+   "not_stated": 0.0009,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0009,
+    "D3": 0.9983
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "amlodipino suspendido el 2025-12-03",
+    "start": 302,
+    "end": 337,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Levothyroxine new, 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas' from the GP letter of 2025-12-03.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1823,
+   "supported": 0.9974,
+   "contradicted": 0.0011,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0007,
+    "D3": 0.9984
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "levotiroxina 50 microgramos una vez al d\u00eda en ayunas",
+    "start": 247,
+    "end": 299,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Metformin missing from the newest record, 'metformin 500mg BD' from the discharge summary of 2025-07-08 and 'metformin 500mg BD' from the pharmacy record of 2025-10-10.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2862,
+   "supported": 0.4152,
+   "contradicted": 0.0277,
+   "not_stated": 0.5394,
+   "not_a_claim": 0.0178,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.0211,
+    "D2": 0.0587,
+    "D3": 0.9202
+   },
+   "source": null
+  },
+  {
+   "claim": "Omeprazole dose differs, 'omeprazole 20mg OD' from the discharge summary of 2025-07-08, 'omeprazole 20 mg o.d.' from the pharmacy record of 2025-10-10, and 'omeprazol 40 mg una vez al d\u00eda' from the GP letter of 2025-12-03",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3765,
+   "supported": 0.3917,
+   "contradicted": 0.0422,
+   "not_stated": 0.5111,
+   "not_a_claim": 0.0549,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.099,
+    "D2": 0.1615,
+    "D3": 0.7394
+   },
+   "source": null,
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazol 40 mg una vez al d\u00eda",
+    "start": 214,
+    "end": 244,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  2,
+  3
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 3,
+  "supported": 0.3917
+ },
+ "timing": {
+  "read_ms": 154,
+  "total_ms": 156
+ },
+ "_credits": "6"
+}

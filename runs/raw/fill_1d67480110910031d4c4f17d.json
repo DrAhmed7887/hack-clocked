@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Amlodipine stopped, 'amlodipino suspendido el 2025-12-03' from the GP letter of 2025-12-03.\nLevothyroxine new, 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas' from the GP letter of 2025-12-03.\nMetformin missing from the newest record, 'metformin 500mg BD' from the discharge summary of 2025-07-08 and 'metformin 500mg BD' from the pharmacy record of 2025-10-10.\nOmeprazole dose differs, 'omeprazole 20mg OD' from the discharge summary of 2025-07-08, 'omeprazole 20 mg o.d.' from the pharmacy record of 2025-10-10, and 'omeprazol 40 mg una vez al d\u00eda' from the GP letter of 2025-12-03",
+   "confidence": 0.9848390196539799,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 20,
+  "generate_ms": 577,
+  "total_ms": 603,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 448,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "24"
+}

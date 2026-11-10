@@ -1,0 +1,111 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8397,
+ "ungrounded": 0.1603,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6492,
+   "share_of_answer": 0.5451,
+   "claims": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.299,
+   "share_of_answer": 0.2511,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0518,
+   "share_of_answer": 0.0435,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The clinic note of 2026-02-28 states 'atorvastatin 20mg ON'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1527,
+   "supported": 0.9973,
+   "contradicted": 0.0012,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0009,
+    "D2": 0.0009,
+    "D3": 0.9982
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatin 20mg ON",
+    "start": 341,
+    "end": 361,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The discharge summary of 2024-08-28 says 'bisoprolol 2.5mg daily', the pharmacy record of 2024-12-29 says 'bisoprolol 2.5 mg daily', and the clinic note of 2026-02-28 says 'bisoprolol stopped on 2026-02-28'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5267,
+   "supported": 0.7369,
+   "contradicted": 0.0571,
+   "not_stated": 0.0704,
+   "not_a_claim": 0.1355,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.692,
+    "D2": 0.0742,
+    "D3": 0.2338
+   },
+   "source": "D1"
+  },
+  {
+   "claim": "The discharge summary of 2024-08-28 says 'metformin 500mg BD' and the pharmacy record of 2024-12-29 says 'metformin 500 mg BD'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3206,
+   "supported": 0.9334,
+   "contradicted": 0.019,
+   "not_stated": 0.0196,
+   "not_a_claim": 0.0281,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.9234,
+    "D2": 0.0487,
+    "D3": 0.0279
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "metformin 500mg BD",
+    "start": 328,
+    "end": 346,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.7369
+ },
+ "timing": {
+  "read_ms": 114,
+  "total_ms": 116
+ },
+ "_credits": "5"
+}

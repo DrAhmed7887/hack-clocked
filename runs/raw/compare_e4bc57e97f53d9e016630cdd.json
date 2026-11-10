@@ -1,0 +1,188 @@
+{
+ "model": "clocked-1.0",
+ "verdict": "conflicts",
+ "threshold": 0.5,
+ "instructions_used": "custom",
+ "evidence": "all",
+ "documents": [
+  {
+   "id": "D1",
+   "duplicates": [],
+   "overlaps": [],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D2",
+   "duplicates": [],
+   "overlaps": [
+    "D3"
+   ],
+   "conflicts": [
+    "D3"
+   ]
+  },
+  {
+   "id": "D3",
+   "duplicates": [],
+   "overlaps": [
+    "D2"
+   ],
+   "conflicts": [
+    "D1",
+    "D2"
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "a": "D1",
+   "b": "D2",
+   "relation": "same",
+   "related": 0.9965,
+   "probabilities": {
+    "same": 0.9768,
+    "overlapping": 0.0153,
+    "conflicting": 0.0043,
+    "unrelated": 0.0035
+   },
+   "duplicates": [],
+   "conflicts": []
+  },
+  {
+   "a": "D1",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.995,
+   "probabilities": {
+    "same": 0.0038,
+    "overlapping": 0.5851,
+    "conflicting": 0.4061,
+    "unrelated": 0.005
+   },
+   "duplicates": [],
+   "conflicts": [
+    {
+     "kind": "rule_or_condition",
+     "kinds": {
+      "value": 0.0732,
+      "date_or_version": 0.0244,
+      "rule_or_condition": 0.8301,
+      "scope": 0.0197,
+      "name": 0.0206,
+      "no_conflict": 0.032
+     },
+     "confidence": 0.968,
+     "a": {
+      "document": "D1",
+      "quote": "- insulin glargine 16 units nocte",
+      "start": 210,
+      "end": 243,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2026-08-01\nPatient: synthetic case P007, 51-year-old female.\n\n\nMedications:\n- metformin 500 mg bd\n- insulin glargine stopped on 2026-08-01\n- salbutamol inhaler 100 mcg, 2 puffs PRN\n- lisinopril 10 mg daily",
+      "start": 0,
+      "end": 258,
+      "confidence": 1
+     }
+    }
+   ]
+  },
+  {
+   "a": "D2",
+   "b": "D3",
+   "relation": "overlapping",
+   "related": 0.9966,
+   "probabilities": {
+    "same": 0.0043,
+    "overlapping": 0.9408,
+    "conflicting": 0.0515,
+    "unrelated": 0.0034
+   },
+   "duplicates": [
+    {
+     "kind": "restated",
+     "kinds": {
+      "verbatim": 0.02,
+      "restated": 0.6386,
+      "elaborated": 0.0395,
+      "different": 0.3019
+     },
+     "confidence": 0.6981,
+     "a": {
+      "document": "D2",
+      "quote": "- metformina 500 mg cada 12 horas",
+      "start": 189,
+      "end": 222,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2026-08-01\nPatient: synthetic case P007, 51-year-old female.\n\n\nMedications:\n- metformin 500 mg bd\n- insulin glargine stopped on 2026-08-01\n- salbutamol inhaler 100 mcg, 2 puffs PRN\n- lisinopril 10 mg daily",
+      "start": 0,
+      "end": 258,
+      "confidence": 1
+     }
+    }
+   ],
+   "conflicts": [
+    {
+     "kind": "rule_or_condition",
+     "kinds": {
+      "value": 0.2647,
+      "date_or_version": 0.0255,
+      "rule_or_condition": 0.6269,
+      "scope": 0.015,
+      "name": 0.0217,
+      "no_conflict": 0.0463
+     },
+     "confidence": 0.9537,
+     "a": {
+      "document": "D2",
+      "quote": "- insulina glargina 16 unidades por la noche",
+      "start": 256,
+      "end": 300,
+      "confidence": 1
+     },
+     "b": {
+      "document": "D3",
+      "quote": "Community pharmacy dispensing record, Valencia\nDate: 2026-08-01\nPatient: synthetic case P007, 51-year-old female.\n\n\nMedications:\n- metformin 500 mg bd\n- insulin glargine stopped on 2026-08-01\n- salbutamol inhaler 100 mcg, 2 puffs PRN\n- lisinopril 10 mg daily",
+      "start": 0,
+      "end": 258,
+      "confidence": 1
+     }
+    }
+   ]
+  }
+ ],
+ "duplicates": [],
+ "overlaps": [
+  2
+ ],
+ "conflicts": [
+  1,
+  2
+ ],
+ "related_pairs": [
+  0,
+  1,
+  2
+ ],
+ "stages": {
+  "pairs_reread": 0,
+  "pairs_ms": 25,
+  "passage_reads": 1,
+  "passages_ms": 67,
+  "passages": 5,
+  "counterparts_ms": 103,
+  "kinds_ms": 24
+ },
+ "timing": {
+  "read_ms": 218,
+  "total_ms": 221
+ },
+ "_credits": "9"
+}

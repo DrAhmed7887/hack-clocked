@@ -1,0 +1,361 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10mg",
+     "drug": "lisinopril",
+     "frequency": "o.d.",
+     "line": "lisinopril 10mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "2 puffs when required",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs when required",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "nocte",
+     "line": "atorvastatin 20 mg nocte",
+     "stopped": null
+    },
+    {
+     "dose": "50 mcg",
+     "drug": "levothyroxine",
+     "frequency": "OD before breakfast",
+     "line": "levothyroxine 50 mcg OD before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "o.d.",
+     "line": "bisoprolol 2.5 mg o.d.",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 129,
+     "end": 152,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 131,
+       "end": 141,
+       "confidence": 0.99999999958165,
+       "p_verify": 0.99999999958165
+      },
+      "dose": {
+       "value": "10mg",
+       "start": 142,
+       "end": 146,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 147,
+       "end": 151,
+       "p_start": 1,
+       "p_close": 0.994,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.994
+      },
+      "line": {
+       "value": "lisinopril 10mg o.d.",
+       "start": 131,
+       "end": 151,
+       "p_start": 1,
+       "p_close": 0.98,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.98
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 152,
+     "end": 211,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 154,
+       "end": 172,
+       "confidence": 0.9999999995995392,
+       "p_verify": 0.9999999995995392
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 173,
+       "end": 187,
+       "p_start": 1,
+       "p_close": 0.999,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "frequency": {
+       "value": "2 puffs when required",
+       "start": 189,
+       "end": 210,
+       "p_start": 0.999,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.999
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs when required",
+       "start": 154,
+       "end": 210,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.991,
+       "p_blank": 0.991
+      }
+     }
+    },
+    {
+     "start": 211,
+     "end": 238,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 213,
+       "end": 225,
+       "confidence": 0.9999999998369553,
+       "p_verify": 0.9999999998369553
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 226,
+       "end": 231,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "nocte",
+       "start": 232,
+       "end": 237,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "atorvastatin 20 mg nocte",
+       "start": 213,
+       "end": 237,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 238,
+     "end": 281,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 240,
+       "end": 253,
+       "confidence": 0.999999999794644,
+       "p_verify": 0.999999999794644
+      },
+      "dose": {
+       "value": "50 mcg",
+       "start": 254,
+       "end": 260,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD before breakfast",
+       "start": 261,
+       "end": 280,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 mcg OD before breakfast",
+       "start": 240,
+       "end": 280,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 281,
+     "end": 305,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 283,
+       "end": 293,
+       "confidence": 0.9999999996428439,
+       "p_verify": 0.9999999996428439
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 294,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 301,
+       "end": 305,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg o.d.",
+       "start": 283,
+       "end": 305,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 191,
+  "forwards": {
+   "fields": [
+    3,
+    1
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 51,
+    "locate": 0,
+    "verify": 14,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 2,
+    "point": 57,
+    "resolve": 16,
+    "extend": 0,
+    "contest": 42,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 119,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 191,
+  "server_ms": 406
+ },
+ "_credits": "8"
+}

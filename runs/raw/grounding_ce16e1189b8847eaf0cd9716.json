@@ -1,0 +1,117 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8552,
+ "ungrounded": 0.1448,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.8547,
+   "share_of_answer": 0.7309,
+   "claims": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.0889,
+   "share_of_answer": 0.076,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0564,
+   "share_of_answer": 0.0483,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin is missing from the newest record, as the discharge summary of 2025-05-19 says 'atorvastatin 20 mg at night' and the pharmacy record of 2025-07-05 says 'atorvastatin 20 mg at night'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2583,
+   "supported": 0.8844,
+   "contradicted": 0.0181,
+   "not_stated": 0.0773,
+   "not_a_claim": 0.0202,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0121,
+    "D2": 0.0193,
+    "D3": 0.9686
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "atorvastatin 20 mg at night",
+    "start": 304,
+    "end": 331,
+    "confidence": 0.993
+   }
+  },
+  {
+   "claim": "Levothyroxine dose differs, as the discharge summary of 2025-05-19 says 'levothyroxine 50 micrograms once daily before breakfast', the pharmacy record of 2025-07-05 says 'levothyroxine 50 micrograms once daily before breakfast', and the GP letter of 2025-12-23 says 'levothyroxine 75 micrograms once daily before breakfast'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4291,
+   "supported": 0.7355,
+   "contradicted": 0.041,
+   "not_stated": 0.0453,
+   "not_a_claim": 0.1783,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.2306,
+    "D2": 0.1377,
+    "D3": 0.6317
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 micrograms once daily before breakfast",
+    "start": 334,
+    "end": 389,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Lisinopril stopped, as the discharge summary of 2025-05-19 says 'lisinopril 10 mg once daily', the pharmacy record of 2025-07-05 says 'lisinopril 10 mg once daily', and the GP letter of 2025-12-23 says 'lisinopril stopped on 2025-12-23'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3126,
+   "supported": 0.9955,
+   "contradicted": 0.0021,
+   "not_stated": 0.0013,
+   "not_a_claim": 0.0011,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0015,
+    "D2": 0.0013,
+    "D3": 0.9972
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril stopped on 2025-12-23",
+    "start": 222,
+    "end": 254,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.7355
+ },
+ "timing": {
+  "read_ms": 145,
+  "total_ms": 147
+ },
+ "_credits": "6"
+}

@@ -1,0 +1,387 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known gastro-oesophageal reflux disease.",
+    "Known hypothyroidism.",
+    "Known chronic kidney disease stage 3a."
+   ],
+   "items": [
+    {
+     "value": "Known gastro-oesophageal reflux disease.",
+     "start": 128,
+     "end": 168,
+     "confidence": 0.9999999998359355,
+     "p_verify": 0.9999999998359355
+    },
+    {
+     "value": "Known hypothyroidism.",
+     "start": 169,
+     "end": 190,
+     "confidence": 0.9999999996241935,
+     "p_verify": 0.9999999996241935
+    },
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 191,
+     "end": 229,
+     "confidence": 0.9999999998888371,
+     "p_verify": 0.9999999998888371
+    }
+   ],
+   "confidence": 0.9999999996241935
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "10 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 10 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "once daily",
+     "line": "bisoprolol 2.5 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "line": "omeprazole 20 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "line": "warfarin 3 mg once daily, dose by INR",
+     "stopped": null
+    },
+    {
+     "dose": "50 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily",
+     "line": "levothyroxine 50 micrograms once daily before breakfast",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 244,
+     "end": 274,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 246,
+       "end": 256,
+       "confidence": 0.9999999994302344,
+       "p_verify": 0.9999999994302344
+      },
+      "dose": {
+       "value": "10 mg",
+       "start": 257,
+       "end": 262,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 263,
+       "end": 273,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 10 mg once daily",
+       "start": 246,
+       "end": 273,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 0.997,
+       "confidence": 0.997
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 274,
+     "end": 305,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 276,
+       "end": 286,
+       "confidence": 0.9999999996680062,
+       "p_verify": 0.9999999996680062
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 287,
+       "end": 293,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 294,
+       "end": 304,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg once daily",
+       "start": 276,
+       "end": 304,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 305,
+     "end": 335,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 307,
+       "end": 317,
+       "confidence": 0.9999999998785589,
+       "p_verify": 0.9999999998785589
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 318,
+       "end": 323,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 324,
+       "end": 334,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazole 20 mg once daily",
+       "start": 307,
+       "end": 334,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 335,
+     "end": 375,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 337,
+       "end": 345,
+       "confidence": 0.9999999995761291,
+       "p_verify": 0.9999999995761291
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 346,
+       "end": 350,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 351,
+       "end": 361,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3 mg once daily, dose by INR",
+       "start": 337,
+       "end": 374,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 375,
+     "end": 432,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 377,
+       "end": 390,
+       "confidence": 0.9999999995372231,
+       "p_verify": 0.9999999995372231
+      },
+      "dose": {
+       "value": "50 micrograms",
+       "start": 391,
+       "end": 404,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 405,
+       "end": 415,
+       "p_start": 1,
+       "p_close": 0.932,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.932
+      },
+      "line": {
+       "value": "levothyroxine 50 micrograms once daily before breakfast",
+       "start": 377,
+       "end": 432,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 216,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 4,
+    "branches": 2,
+    "generate": 82,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 47,
+    "resolve": 16,
+    "extend": 0,
+    "contest": 41,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 107,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 216,
+  "server_ms": 426
+ },
+ "_credits": "9"
+}

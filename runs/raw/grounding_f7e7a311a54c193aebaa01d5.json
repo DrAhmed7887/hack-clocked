@@ -1,0 +1,129 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7805,
+ "ungrounded": 0.2195,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.7917,
+   "share_of_answer": 0.618,
+   "claims": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1845,
+   "share_of_answer": 0.144,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0238,
+   "share_of_answer": 0.0185,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The discharge summary of 2024-04-14 notes 'latex - causes contact dermatitis' while the GP letter of 2024-04-15 says 'Sin alergias medicamentosas conocidas.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2727,
+   "supported": 0.5691,
+   "contradicted": 0.3495,
+   "not_stated": 0.0528,
+   "not_a_claim": 0.0287,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8807,
+    "D2": 0.0857,
+    "D3": 0.0336
+   },
+   "source": "D1"
+  },
+  {
+   "claim": "Amlodipine dose differs between the discharge summary of 2024-04-14, the GP letter of 2024-04-15, and the pharmacy record of 2025-09-17.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2378,
+   "supported": 0.5893,
+   "contradicted": 0.3151,
+   "not_stated": 0.0798,
+   "not_a_claim": 0.0158,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0463,
+    "D2": 0.032,
+    "D3": 0.9217
+   },
+   "source": "D3"
+  },
+  {
+   "claim": "Atorvastatin was 'atorvastatin stopped on 2025-09-17' according to the pharmacy record of 2025-09-17, which differs from the discharge summary of 2024-04-14 and the GP letter of 2024-04-15.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3304,
+   "supported": 0.9896,
+   "contradicted": 0.0049,
+   "not_stated": 0.0036,
+   "not_a_claim": 0.0019,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.002,
+    "D2": 0.0018,
+    "D3": 0.9961
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatin stopped on 2025-09-17",
+    "start": 182,
+    "end": 216,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Insulin glargine 'insulin glargine 16 units ON' is new in the pharmacy record of 2025-09-17",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1591,
+   "supported": 0.9948,
+   "contradicted": 0.0021,
+   "not_stated": 0.0018,
+   "not_a_claim": 0.0013,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0012,
+    "D2": 0.0011,
+    "D3": 0.9977
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "insulin glargine 16 units ON",
+    "start": 151,
+    "end": 179,
+    "confidence": 0.999
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0,
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.5691
+ },
+ "timing": {
+  "read_ms": 142,
+  "total_ms": 144
+ },
+ "_credits": "6"
+}

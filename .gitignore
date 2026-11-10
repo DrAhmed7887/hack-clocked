@@ -4,5 +4,6 @@ __pycache__/
 *.pyc
 node_modules/
 .venv/
-runs/
+runs/*
+!runs/raw/
 .DS_Store

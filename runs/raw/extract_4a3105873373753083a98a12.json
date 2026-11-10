@@ -1,0 +1,334 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "latex (contact dermatitis)"
+   ],
+   "items": [
+    {
+     "value": "latex (contact dermatitis)",
+     "start": 216,
+     "end": 242,
+     "confidence": 0.999999999599956,
+     "p_verify": 0.999999999599956
+    }
+   ],
+   "confidence": 0.999999999599956
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "History of essential hypertension.",
+    "Known hypothyroidism."
+   ],
+   "items": [
+    {
+     "value": "History of essential hypertension.",
+     "start": 149,
+     "end": 183,
+     "confidence": 0.9999999997519047,
+     "p_verify": 0.9999999997519047
+    },
+    {
+     "value": "Known hypothyroidism.",
+     "start": 184,
+     "end": 205,
+     "confidence": 0.9999999998222966,
+     "p_verify": 0.9999999998222966
+    }
+   ],
+   "confidence": 0.9999999997519047
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "50 mcg",
+     "drug": "levothyroxine",
+     "frequency": "OD before breakfast",
+     "line": "levothyroxine 50 mcg OD before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": "2.5mg",
+     "drug": "bisoprolol",
+     "frequency": "daily",
+     "line": "bisoprolol 2.5mg daily",
+     "stopped": null
+    },
+    {
+     "dose": "500mg",
+     "drug": "metformin",
+     "frequency": "BD",
+     "line": "metformin 500mg BD",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "ON",
+     "line": "insulin glargine 16 units ON",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 258,
+     "end": 301,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 260,
+       "end": 273,
+       "confidence": 0.9999999998359355,
+       "p_verify": 0.9999999998359355
+      },
+      "dose": {
+       "value": "50 mcg",
+       "start": 274,
+       "end": 280,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD before breakfast",
+       "start": 281,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 50 mcg OD before breakfast",
+       "start": 260,
+       "end": 300,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 301,
+     "end": 326,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 303,
+       "end": 313,
+       "confidence": 0.9999999998623892,
+       "p_verify": 0.9999999998623892
+      },
+      "dose": {
+       "value": "2.5mg",
+       "start": 314,
+       "end": 319,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "daily",
+       "start": 320,
+       "end": 325,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "bisoprolol 2.5mg daily",
+       "start": 303,
+       "end": 325,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 326,
+     "end": 347,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 328,
+       "end": 337,
+       "confidence": 0.9999999998067834,
+       "p_verify": 0.9999999998067834
+      },
+      "dose": {
+       "value": "500mg",
+       "start": 338,
+       "end": 343,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "BD",
+       "start": 344,
+       "end": 346,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500mg BD",
+       "start": 328,
+       "end": 346,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 347,
+     "end": 377,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 349,
+       "end": 365,
+       "confidence": 0.9999999997005979,
+       "p_verify": 0.9999999997005979
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 366,
+       "end": 374,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 375,
+       "end": 377,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units ON",
+       "start": 349,
+       "end": 377,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.999
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 184,
+  "forwards": {
+   "fields": [
+    5,
+    1
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 3,
+    "branches": 1,
+    "generate": 82,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 32,
+    "resolve": 12,
+    "extend": 0,
+    "contest": 29,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 76,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 184,
+  "server_ms": 350
+ },
+ "_credits": "8"
+}

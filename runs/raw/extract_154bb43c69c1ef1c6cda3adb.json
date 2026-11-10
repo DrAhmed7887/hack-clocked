@@ -1,0 +1,384 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [
+    "Known chronic kidney disease stage 3a.",
+    "History of type 2 diabetes."
+   ],
+   "items": [
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 151,
+     "end": 189,
+     "confidence": 0.9999999997923203,
+     "p_verify": 0.9999999997923203
+    },
+    {
+     "value": "History of type 2 diabetes.",
+     "start": 190,
+     "end": 217,
+     "confidence": 0.9999999997988451,
+     "p_verify": 0.9999999997988451
+    }
+   ],
+   "confidence": 0.9999999997923203
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "20 mg",
+     "drug": "atorvastatin",
+     "frequency": "ON",
+     "line": null,
+     "stopped": null
+    },
+    {
+     "dose": "2.5 mg",
+     "drug": "bisoprolol",
+     "frequency": "o.d.",
+     "line": "bisoprolol 2.5 mg o.d.",
+     "stopped": null
+    },
+    {
+     "dose": "500mg",
+     "drug": "metformin",
+     "frequency": "bd",
+     "line": "metformin 500mg bd",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "OD as per INR",
+     "line": "warfarin 3 mg OD as per INR",
+     "stopped": null
+    },
+    {
+     "dose": "20mg",
+     "drug": "omeprazole",
+     "frequency": "o.d.",
+     "line": "omeprazole 20mg o.d.",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 232,
+     "end": 256,
+     "fields": {
+      "drug": {
+       "value": "atorvastatin",
+       "start": 234,
+       "end": 246,
+       "confidence": 0.9999999996819384,
+       "p_verify": 0.9999999996819384
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 247,
+       "end": 252,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "ON",
+       "start": 253,
+       "end": 255,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": null,
+       "confidence": 0.959,
+       "p_blank": 0,
+       "rejected_value": "atorvastatin 20 mg ON",
+       "rejected_p_verify": 0.041,
+       "reason": "verification_rejected"
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 256,
+     "end": 281,
+     "fields": {
+      "drug": {
+       "value": "bisoprolol",
+       "start": 258,
+       "end": 268,
+       "confidence": 0.9999999997673013,
+       "p_verify": 0.9999999997673013
+      },
+      "dose": {
+       "value": "2.5 mg",
+       "start": 269,
+       "end": 275,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 276,
+       "end": 280,
+       "p_start": 1,
+       "p_close": 0.983,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.983
+      },
+      "line": {
+       "value": "bisoprolol 2.5 mg o.d.",
+       "start": 258,
+       "end": 280,
+       "p_start": 1,
+       "p_close": 0.936,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 0.936
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.996,
+       "p_blank": 0.996
+      }
+     }
+    },
+    {
+     "start": 281,
+     "end": 302,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 283,
+       "end": 292,
+       "confidence": 0.9999999994877984,
+       "p_verify": 0.9999999994877984
+      },
+      "dose": {
+       "value": "500mg",
+       "start": 293,
+       "end": 298,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "bd",
+       "start": 299,
+       "end": 301,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500mg bd",
+       "start": 283,
+       "end": 301,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 302,
+     "end": 332,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 304,
+       "end": 312,
+       "confidence": 0.9999999996157432,
+       "p_verify": 0.9999999996157432
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 313,
+       "end": 317,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "OD as per INR",
+       "start": 318,
+       "end": 331,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3 mg OD as per INR",
+       "start": 304,
+       "end": 331,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      }
+     }
+    },
+    {
+     "start": 332,
+     "end": 354,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 334,
+       "end": 344,
+       "confidence": 0.9999999996275506,
+       "p_verify": 0.9999999996275506
+      },
+      "dose": {
+       "value": "20mg",
+       "start": 345,
+       "end": 349,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "o.d.",
+       "start": 350,
+       "end": 354,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.474,
+       "p_verify": 1,
+       "alternatives": [
+        {
+         "value": "omeprazole",
+         "start": 334,
+         "p_verify": 0.999
+        }
+       ],
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazole 20mg o.d.",
+       "start": 334,
+       "end": 354,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.994,
+       "p_blank": 0.994
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 193,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 1,
+    "branches": 1,
+    "generate": 65,
+    "locate": 0,
+    "verify": 20,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 46,
+    "resolve": 15,
+    "extend": 0,
+    "contest": 41,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 104,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 193,
+  "server_ms": 582
+ },
+ "_credits": "8"
+}

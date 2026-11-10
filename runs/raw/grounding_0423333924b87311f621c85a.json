@@ -1,0 +1,127 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7769,
+ "ungrounded": 0.2231,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6915,
+   "share_of_answer": 0.5373,
+   "claims": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "D4",
+   "share": 0.2074,
+   "share_of_answer": 0.1612,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.0632,
+   "share_of_answer": 0.0491,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0378,
+   "share_of_answer": 0.0294,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The clinic note of 2024-12-10 says 'atorvastatin 20 mg ON', the GP letter of 2025-07-22 says 'atorvastatina 20 mg por la noche', the pharmacy record of 2026-01-31 says 'atorvastatin 20mg nocte', and the discharge summary of 2026-05-04 says 'atorvastatin stopped on 2026-05-04'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.5168,
+   "supported": 0.6647,
+   "contradicted": 0.1573,
+   "not_stated": 0.1341,
+   "not_a_claim": 0.0438,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7795,
+    "D2": 0.0425,
+    "D3": 0.0778,
+    "D4": 0.1002
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D4",
+    "quote": "atorvastatin stopped on 2026-05-04",
+    "start": 293,
+    "end": 327,
+    "confidence": 0.903
+   }
+  },
+  {
+   "claim": "The discharge summary of 2026-05-04 says 'bisoprolol 2.5mg o.d.'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1213,
+   "supported": 0.9974,
+   "contradicted": 0.0009,
+   "not_stated": 0.001,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.0009,
+    "D3": 0.0006,
+    "D4": 0.9979
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "bisoprolol 2.5mg o.d.",
+    "start": 269,
+    "end": 290,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The clinic note of 2024-12-10 says 'lisinopril 10mg o.d.', the GP letter of 2025-07-22 says 'lisinopril 10 mg una vez al d\u00eda', and the pharmacy record of 2026-01-31 says 'lisinopril 10 mg daily'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3619,
+   "supported": 0.8633,
+   "contradicted": 0.0557,
+   "not_stated": 0.0548,
+   "not_a_claim": 0.0262,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8622,
+    "D2": 0.047,
+    "D3": 0.0715,
+    "D4": 0.0193
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10mg o.d.",
+    "start": 202,
+    "end": 222,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.6647
+ },
+ "timing": {
+  "read_ms": 153,
+  "total_ms": 155
+ },
+ "_credits": "6"
+}

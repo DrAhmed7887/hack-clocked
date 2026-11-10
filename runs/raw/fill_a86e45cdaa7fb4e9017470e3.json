@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The discharge summary of 2025-05-19 says 'atorvastatin 20 mg nocte' and the pharmacy record of 2025-07-05 says 'atorvastatin 20 mg nocte', but the GP letter of 2025-12-23 does not list it. The discharge summary of 2025-05-19 says 'levothyroxine 50 micrograms OD before breakfast', the pharmacy record of 2025-07-05 says 'levothyroxine 50 mcg OD before breakfast', and the GP letter of 2025-12-23 says 'levotiroxina 75 microgramos una vez al d\u00eda en ayunas'. The discharge summary of 2025-05-19 says 'lisinopril 10mg OD', the pharmacy record of 2025-07-05 says 'lisinopril 10mg o.d.', and the GP letter of 2025-12-23 says 'lisinopril suspendido el 2025-12-23'",
+   "confidence": 0.9584775249391991,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 20,
+  "generate_ms": 618,
+  "total_ms": 645,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 368,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "26"
+}

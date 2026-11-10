@@ -1,0 +1,118 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.8215,
+ "ungrounded": 0.1785,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D3",
+   "share": 0.947,
+   "share_of_answer": 0.778,
+   "claims": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0301,
+   "share_of_answer": 0.0248,
+   "claims": []
+  },
+  {
+   "id": "D1",
+   "share": 0.0228,
+   "share_of_answer": 0.0188,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Lisinopril stopped: 'lisinopril stopped on 2025-09-09' from the discharge summary of 2025-09-09.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1811,
+   "supported": 0.9972,
+   "contradicted": 0.0012,
+   "not_stated": 0.0008,
+   "not_a_claim": 0.0007,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0009,
+    "D3": 0.9983
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "lisinopril stopped on 2025-09-09",
+    "start": 269,
+    "end": 301,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Omeprazole missing from the newest record: 'omeprazole 20 mg once daily' from the clinic note of 2024-06-12 and 'omeprazole 20 mg once daily' from the GP letter of 2025-01-29.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3302,
+   "supported": 0.6006,
+   "contradicted": 0.0499,
+   "not_stated": 0.3019,
+   "not_a_claim": 0.0476,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0421,
+    "D2": 0.0589,
+    "D3": 0.899
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D1",
+    "quote": "omeprazole 20 mg once daily",
+    "start": 319,
+    "end": 346,
+    "confidence": 0.614
+   }
+  },
+  {
+   "claim": "Warfarin dose differs: 'warfarin 3 mg once daily, dose by INR' from the clinic note of 2024-06-12 and 'warfarin 3 mg once daily, dose by INR' from the GP letter of 2025-01-29 and 'warfarin 5 mg once daily, dose by INR' from the discharge summary of 2025-09-09",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4887,
+   "supported": 0.9057,
+   "contradicted": 0.0293,
+   "not_stated": 0.0457,
+   "not_a_claim": 0.0193,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0232,
+    "D2": 0.0292,
+    "D3": 0.9476
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "warfarin 5 mg once daily, dose by INR",
+    "start": 335,
+    "end": 372,
+    "confidence": 0.991
+   }
+  }
+ ],
+ "unsupported_claims": [
+  1
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 1,
+  "supported": 0.6006
+ },
+ "timing": {
+  "read_ms": 142,
+  "total_ms": 145
+ },
+ "_credits": "6"
+}

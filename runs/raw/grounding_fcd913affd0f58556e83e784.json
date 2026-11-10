@@ -1,0 +1,180 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.6747,
+ "ungrounded": 0.3253,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D4",
+   "share": 0.6551,
+   "share_of_answer": 0.442,
+   "claims": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.2028,
+   "share_of_answer": 0.1368,
+   "claims": [
+    0
+   ]
+  },
+  {
+   "id": "D1",
+   "share": 0.1045,
+   "share_of_answer": 0.0705,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.0375,
+   "share_of_answer": 0.0253,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Allergy conflict new: the discharge summary of 2025-07-04 says 'No known drug allergies.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1055,
+   "supported": 0.9928,
+   "contradicted": 0.0027,
+   "not_stated": 0.0028,
+   "not_a_claim": 0.0017,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0012,
+    "D2": 0.002,
+    "D3": 0.9934,
+    "D4": 0.0034
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "No known drug allergies.",
+    "start": 174,
+    "end": 198,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "' and the GP letter of 2025-09-23 says 'latex (contact dermatitis)'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.0815,
+   "supported": 0.9953,
+   "contradicted": 0.0014,
+   "not_stated": 0.0021,
+   "not_a_claim": 0.0012,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0008,
+    "D2": 0.0017,
+    "D3": 0.001,
+    "D4": 0.9964
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "Allergy: latex (contact dermatitis).",
+    "start": 143,
+    "end": 179,
+    "confidence": 0.932
+   }
+  },
+  {
+   "claim": "Amlodipine dose differs: the clinic note of 2024-11-22 says 'amlodipine 5 mg once daily', the pharmacy record of 2025-05-04 says 'amlodipine 5 mg once daily', the discharge summary of 2025-07-04 says 'amlodipine 5 mg once daily', and the GP letter of 2025-09-23 says 'amlodipine 10 mg once daily'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3561,
+   "supported": 0.6279,
+   "contradicted": 0.2345,
+   "not_stated": 0.0383,
+   "not_a_claim": 0.0993,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.042,
+    "D2": 0.0513,
+    "D3": 0.0414,
+    "D4": 0.8653
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "amlodipine 10 mg once daily",
+    "start": 196,
+    "end": 223,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Insulin glargine stopped: the GP letter of 2025-09-23 says 'insulin glargine stopped on 2025-09-23'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1199,
+   "supported": 0.9973,
+   "contradicted": 0.0008,
+   "not_stated": 0.0011,
+   "not_a_claim": 0.0008,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0006,
+    "D2": 0.0012,
+    "D3": 0.0007,
+    "D4": 0.9975
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D4",
+    "quote": "insulin glargine stopped on 2025-09-23",
+    "start": 284,
+    "end": 322,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Warfarin missing from the newest record: the clinic note of 2024-11-22 says 'warfarin 3 mg once daily, dose by INR', the pharmacy record of 2025-05-04 says 'warfarin 3 mg once daily, dose by INR', and the discharge summary of 2025-07-04 says 'warfarin 3 mg once daily, dose by INR'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3369,
+   "supported": 0.4323,
+   "contradicted": 0.025,
+   "not_stated": 0.5253,
+   "not_a_claim": 0.0174,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.418,
+    "D2": 0.0918,
+    "D3": 0.1604,
+    "D4": 0.3299
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "warfarin 3 mg once daily, dose by INR",
+    "start": 144,
+    "end": 181,
+    "confidence": 0.762
+   }
+  }
+ ],
+ "unsupported_claims": [
+  2,
+  4
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 4,
+  "supported": 0.4323
+ },
+ "timing": {
+  "read_ms": 171,
+  "total_ms": 173
+ },
+ "_credits": "7"
+}

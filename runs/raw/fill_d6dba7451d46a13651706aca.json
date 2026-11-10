@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Allergy conflict new: the pharmacy record of 2025-04-17 says 'sulfonamides (hives)' and the GP letter of 2025-12-25 says 'No known drug allergies.'.\nAtorvastatin stopped: the GP letter of 2025-12-25 says 'atorvastatin stopped on 2025-12-25'.\nBisoprolol dose differs: the GP letter of 2025-12-25 says 'bisoprolol 5 mg once daily' whereas the clinic note of 2024-08-15 says 'bisoprolol 2.5 mg once daily', the discharge summary of 2025-01-11 says 'bisoprolol 2.5 mg once daily', and the pharmacy record of 2025-04-17 says 'bisoprolol 2.5 mg once daily'.\nWarfarin missing from the newest record: the GP letter of 2025-12-25 does not list it, although the clinic note of 2024-08-15 says 'warfarin 3 mg once daily, dose by INR', the discharge summary of 2025-01-11 says 'warfarin 3 mg once daily, dose by INR', and the pharmacy record of 2025-04-17 says 'warfarin 3 mg once daily, dose by INR'",
+   "confidence": 0.10929892626515303,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 22,
+  "generate_ms": 872,
+  "total_ms": 903,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 544,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "35"
+}

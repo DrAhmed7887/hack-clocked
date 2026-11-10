@@ -1,0 +1,128 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.6561,
+ "ungrounded": 0.3439,
+ "verdict": "partially_grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.4637,
+   "share_of_answer": 0.3042,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D4",
+   "share": 0.3961,
+   "share_of_answer": 0.2599,
+   "claims": [
+    1
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0733,
+   "share_of_answer": 0.0481,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.0669,
+   "share_of_answer": 0.0439,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin is noted in the discharge summary of 2024-06-19 as 'atorvastatin 20 mg ON', the GP letter of 2025-06-01 as 'atorvastatina 20 mg por la noche', and the clinic note of 2025-07-20 as 'atorvastatin 20mg nocte', but is absent from the pharmacy record of 2025-09-16.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.2955,
+   "supported": 0.3214,
+   "contradicted": 0.1171,
+   "not_stated": 0.5063,
+   "not_a_claim": 0.0552,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.3508,
+    "D2": 0.1826,
+    "D3": 0.1372,
+    "D4": 0.3294
+   },
+   "source": null,
+   "evidence": {
+    "document": "D1",
+    "quote": "atorvastatin 20 mg ON",
+    "start": 347,
+    "end": 368,
+    "confidence": 0.999
+   }
+  },
+  {
+   "claim": "Levothyroxine is recorded in the discharge summary of 2024-06-19 as 'levothyroxine 50 mcg OD before breakfast', the GP letter of 2025-06-01 as 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas', the clinic note of 2025-07-20 as 'levothyroxine 50 mcg mane, before food', and the pharmacy record of 2025-09-16 as 'levothyroxine 75 micrograms OD before breakfast'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.395,
+   "supported": 0.7783,
+   "contradicted": 0.0844,
+   "not_stated": 0.0856,
+   "not_a_claim": 0.0517,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.2274,
+    "D2": 0.0595,
+    "D3": 0.0335,
+    "D4": 0.6797
+   },
+   "source": "D4",
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 mcg OD before breakfast",
+    "start": 280,
+    "end": 320,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "Omeprazole is listed in the discharge summary of 2024-06-19 as 'omeprazole 20mg daily', the GP letter of 2025-06-01 as 'omeprazol 20 mg una vez al d\u00eda', the clinic note of 2025-07-20 as 'omeprazole 20 mg daily', and the pharmacy record of 2025-09-16 as 'omeprazole stopped on 2025-09-16",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.3095,
+   "supported": 0.8195,
+   "contradicted": 0.0641,
+   "not_stated": 0.0871,
+   "not_a_claim": 0.0293,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.7924,
+    "D2": 0.049,
+    "D3": 0.0811,
+    "D4": 0.0775
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D4",
+    "quote": "omeprazole stopped on 2025-09-16",
+    "start": 232,
+    "end": 264,
+    "confidence": 0.999
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.3214
+ },
+ "timing": {
+  "read_ms": 201,
+  "total_ms": 202
+ },
+ "_credits": "8"
+}

@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Levothyroxine is new: 'levotiroxina 50 microgramos una vez al d\u00eda en ayunas' from the GP letter of 2026-03-16.\nLisinopril is missing from the newest record: 'lisinopril 10mg o.d.' from the pharmacy record of 2025-02-15.\nMetformin dose differs: 'metformin 500 mg b.i.d.' from the pharmacy record of 2025-02-15 and 'metformina 1000 mg cada 12 horas' from the GP letter of 2026-03-16",
+   "confidence": 0.9781218300988015,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 15,
+  "generate_ms": 358,
+  "total_ms": 378,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 304,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "15"
+}

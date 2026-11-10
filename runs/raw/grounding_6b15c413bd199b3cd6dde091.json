@@ -1,0 +1,60 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.5795,
+ "ungrounded": 0.4205,
+ "verdict": "ungrounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.8501,
+   "share_of_answer": 0.4926,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.1499,
+   "share_of_answer": 0.0869,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Levothyroxine differs between records: the discharge summary of 2026-03-26 says 'levothyroxine 50 micrograms mane, before food'; the clinic note of 2026-06-13 says 'levothyroxine 75 mcg OD before breakfast'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 1,
+   "supported": 0.5795,
+   "contradicted": 0.0922,
+   "not_stated": 0.1343,
+   "not_a_claim": 0.1941,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8501,
+    "D2": 0.1499
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "levothyroxine 50 micrograms mane, before food",
+    "start": 359,
+    "end": 404,
+    "confidence": 0.728
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.5795
+ },
+ "timing": {
+  "read_ms": 81,
+  "total_ms": 82
+ },
+ "_credits": "4"
+}

@@ -1,0 +1,307 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 116,
+   "end": 140,
+   "confidence": 0.9999999993675317,
+   "p_verify": 0.9999999993675317
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "500 mg",
+     "drug": "metformin",
+     "frequency": "twice daily",
+     "line": "metformin 500 mg twice daily",
+     "stopped": null
+    },
+    {
+     "dose": "75 micrograms",
+     "drug": "levothyroxine",
+     "frequency": "once daily before breakfast",
+     "line": "levothyroxine 75 micrograms once daily before breakfast",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "omeprazole",
+     "frequency": null,
+     "line": "omeprazole stopped on 2025-09-16",
+     "stopped": "stopped on 2025-09-16"
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 155,
+     "end": 186,
+     "fields": {
+      "drug": {
+       "value": "metformin",
+       "start": 157,
+       "end": 166,
+       "confidence": 0.9999999993327444,
+       "p_verify": 0.9999999993327444
+      },
+      "dose": {
+       "value": "500 mg",
+       "start": 167,
+       "end": 173,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "twice daily",
+       "start": 174,
+       "end": 185,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "metformin 500 mg twice daily",
+       "start": 157,
+       "end": 185,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 186,
+     "end": 244,
+     "fields": {
+      "drug": {
+       "value": "levothyroxine",
+       "start": 188,
+       "end": 201,
+       "confidence": 0.9999999995414024,
+       "p_verify": 0.9999999995414024
+      },
+      "dose": {
+       "value": "75 micrograms",
+       "start": 202,
+       "end": 215,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily before breakfast",
+       "start": 216,
+       "end": 243,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "levothyroxine 75 micrograms once daily before breakfast",
+       "start": 188,
+       "end": 243,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.995,
+       "p_blank": 0.995
+      }
+     }
+    },
+    {
+     "start": 244,
+     "end": 279,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 246,
+       "end": 256,
+       "confidence": 0.9999999853996089,
+       "p_verify": 0.9999999853996089
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.98,
+       "p_blank": 0.98
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.999,
+       "p_blank": 0.003,
+       "rejected_value": "stopped on 2025-09-16",
+       "rejected_p_verify": 0.001,
+       "reason": "verification_rejected"
+      },
+      "line": {
+       "value": "omeprazole stopped on 2025-09-16",
+       "start": 246,
+       "end": 278,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2025-09-16",
+       "start": 257,
+       "end": 278,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 279,
+     "end": 333,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 281,
+       "end": 299,
+       "confidence": 0.9999999989549844,
+       "p_verify": 0.9999999989549844
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 300,
+       "end": 314,
+       "p_start": 1,
+       "p_close": 0.995,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.995
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 324,
+       "end": 333,
+       "p_start": 0.988,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.988
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 281,
+       "end": 333,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.976,
+       "p_blank": 0.976
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 145,
+  "forwards": {
+   "fields": [
+    4,
+    0
+   ],
+   "records": [
+    4,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 1,
+    "generate": 46,
+    "locate": 0,
+    "verify": 18,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 33,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 78,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     4,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 145,
+  "server_ms": 572
+ },
+ "_credits": "6"
+}

@@ -1,0 +1,338 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "no_known_allergies": {
+   "value": "No known drug allergies.",
+   "start": 283,
+   "end": 307,
+   "confidence": 0.9999999997584184,
+   "p_verify": 0.9999999997584184
+  },
+  "problems": {
+   "value": [
+    "Known type 2 diabetes.",
+    "Known chronic kidney disease stage 3a.",
+    "Known gastro-oesophageal reflux disease.",
+    "Known essential hypertension."
+   ],
+   "items": [
+    {
+     "value": "Known type 2 diabetes.",
+     "start": 149,
+     "end": 171,
+     "confidence": 0.9999999997937552,
+     "p_verify": 0.9999999997937552
+    },
+    {
+     "value": "Known chronic kidney disease stage 3a.",
+     "start": 172,
+     "end": 210,
+     "confidence": 0.999999999774098,
+     "p_verify": 0.999999999774098
+    },
+    {
+     "value": "Known gastro-oesophageal reflux disease.",
+     "start": 211,
+     "end": 251,
+     "confidence": 0.9999999997308617,
+     "p_verify": 0.9999999997308617
+    },
+    {
+     "value": "Known essential hypertension.",
+     "start": 252,
+     "end": 281,
+     "confidence": 0.9999999998466498,
+     "p_verify": 0.9999999998466498
+    }
+   ],
+   "confidence": 0.9999999997308617
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "line": "insulin glargine 16 units at night",
+     "stopped": null
+    },
+    {
+     "dose": "3 mg",
+     "drug": "warfarin",
+     "frequency": "once daily",
+     "line": "warfarin 3 mg once daily, dose by INR",
+     "stopped": null
+    },
+    {
+     "dose": null,
+     "drug": "salbutamol inhaler",
+     "frequency": null,
+     "line": "salbutamol inhaler stopped on 2026-04-24",
+     "stopped": "stopped on 2026-04-24"
+    },
+    {
+     "dose": "5 mg",
+     "drug": "amlodipine",
+     "frequency": "once daily",
+     "line": "amlodipine 5 mg once daily",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 322,
+     "end": 359,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 324,
+       "end": 340,
+       "confidence": 0.9999999997052851,
+       "p_verify": 0.9999999997052851
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 341,
+       "end": 349,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 350,
+       "end": 358,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units at night",
+       "start": 324,
+       "end": 358,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.992,
+       "p_blank": 0.992
+      }
+     }
+    },
+    {
+     "start": 359,
+     "end": 399,
+     "fields": {
+      "drug": {
+       "value": "warfarin",
+       "start": 361,
+       "end": 369,
+       "confidence": 0.9999999997293607,
+       "p_verify": 0.9999999997293607
+      },
+      "dose": {
+       "value": "3 mg",
+       "start": 370,
+       "end": 374,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 375,
+       "end": 385,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "warfarin 3 mg once daily, dose by INR",
+       "start": 361,
+       "end": 398,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    },
+    {
+     "start": 399,
+     "end": 442,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 401,
+       "end": 419,
+       "confidence": 0.9999996731895676,
+       "p_verify": 0.9999996731895676
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.998,
+       "p_blank": 0.998
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.951,
+       "p_blank": 0.951
+      },
+      "line": {
+       "value": "salbutamol inhaler stopped on 2026-04-24",
+       "start": 401,
+       "end": 441,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2026-04-24",
+       "start": 420,
+       "end": 441,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 442,
+     "end": 470,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 444,
+       "end": 454,
+       "confidence": 0.9999999995352202,
+       "p_verify": 0.9999999995352202
+      },
+      "dose": {
+       "value": "5 mg",
+       "start": 455,
+       "end": 459,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 460,
+       "end": 470,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "amlodipine 5 mg once daily",
+       "start": 444,
+       "end": 470,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.993,
+       "p_blank": 0.993
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 175,
+  "forwards": {
+   "fields": [
+    4,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 2,
+    "generate": 54,
+    "locate": 0,
+    "verify": 26,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 1,
+    "point": 33,
+    "resolve": 13,
+    "extend": 12,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 91,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 4,
+   "cells": 16,
+   "explicit": 0
+  },
+  "total_ms": 175,
+  "server_ms": 476
+ },
+ "_credits": "8"
+}

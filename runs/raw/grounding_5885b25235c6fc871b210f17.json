@@ -1,0 +1,67 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.3388,
+ "ungrounded": 0.6612,
+ "verdict": "ungrounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.49,
+   "share_of_answer": 0.166,
+   "claims": []
+  },
+  {
+   "id": "D3",
+   "share": 0.3607,
+   "share_of_answer": 0.1222,
+   "claims": []
+  },
+  {
+   "id": "D2",
+   "share": 0.1493,
+   "share_of_answer": 0.0506,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "Atorvastatin differs between records: the discharge summary of 2024-12-09 says 'atorvastatin 20mg ON'; the pharmacy record of 2025-05-15 says 'atorvastatin 20mg nocte'; the GP letter of 2025-07-20 says 'atorvastatina 40 mg por la noche'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 1,
+   "supported": 0.3388,
+   "contradicted": 0.0742,
+   "not_stated": 0.5239,
+   "not_a_claim": 0.0632,
+   "verdict": "not_stated",
+   "sources": {
+    "D1": 0.49,
+    "D2": 0.1493,
+    "D3": 0.3607
+   },
+   "source": null,
+   "evidence": {
+    "document": "D3",
+    "quote": "atorvastatina 40 mg por la noche",
+    "start": 308,
+    "end": 340,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [
+  0
+ ],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.3388
+ },
+ "timing": {
+  "read_ms": 85,
+  "total_ms": 87
+ },
+ "_credits": "4"
+}

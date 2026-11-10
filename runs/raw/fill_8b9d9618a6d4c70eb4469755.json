@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "Atorvastatin dose differs: 'atorvastatin 20mg ON' from the discharge summary of 2024-12-09, 'atorvastatin 20mg nocte' from the pharmacy record of 2025-05-15, and 'atorvastatina 40 mg por la noche' from the GP letter of 2025-07-20.\nLisinopril is missing from the newest record: 'lisinopril 10 mg OD' from the discharge summary of 2024-12-09 and 'lisinopril 10mg OD' from the pharmacy record of 2025-05-15.\nOmeprazole stopped: 'omeprazol suspendido el 2025-07-20' from the GP letter of 2025-07-20.\nWarfarin is new: 'warfarina 3 mg una vez al d\u00eda seg\u00fan INR' from the GP letter of 2025-07-20",
+   "confidence": 0.7965932563765384,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 566,
+  "total_ms": 592,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 432,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "23"
+}

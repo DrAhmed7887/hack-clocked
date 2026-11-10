@@ -1,0 +1,118 @@
+{
+ "model": "clocked-1.0",
+ "grounded": 0.7511,
+ "ungrounded": 0.2489,
+ "verdict": "grounded",
+ "threshold": 0.65,
+ "instructions_used": "custom",
+ "documents": [
+  {
+   "id": "D1",
+   "share": 0.6724,
+   "share_of_answer": 0.5051,
+   "claims": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "D3",
+   "share": 0.2406,
+   "share_of_answer": 0.1807,
+   "claims": [
+    2
+   ]
+  },
+  {
+   "id": "D2",
+   "share": 0.0869,
+   "share_of_answer": 0.0653,
+   "claims": []
+  }
+ ],
+ "claims": [
+  {
+   "claim": "The GP letter of 2024-09-19 says 'amlodipino 5 mg una vez al d\u00eda', the discharge summary of 2025-08-23 says 'amlodipine 5mg OD', and the pharmacy record of 2026-02-26 says 'amlodipine stopped on 2026-02-26'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4461,
+   "supported": 0.6966,
+   "contradicted": 0.0402,
+   "not_stated": 0.1615,
+   "not_a_claim": 0.1017,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8127,
+    "D2": 0.112,
+    "D3": 0.0752
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "amlodipino 5 mg una vez al d\u00eda",
+    "start": 258,
+    "end": 288,
+    "confidence": 0.994
+   }
+  },
+  {
+   "claim": "The GP letter of 2024-09-19 says 'lisinopril 10 mg una vez al d\u00eda', the discharge summary of 2025-08-23 says 'lisinopril 10mg OD', and the pharmacy record of 2026-02-26 says 'lisinopril 20mg daily'.",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.4267,
+   "supported": 0.7347,
+   "contradicted": 0.0964,
+   "not_stated": 0.0365,
+   "not_a_claim": 0.1323,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.8051,
+    "D2": 0.097,
+    "D3": 0.0978
+   },
+   "source": "D1",
+   "evidence": {
+    "document": "D1",
+    "quote": "lisinopril 10 mg una vez al d\u00eda",
+    "start": 291,
+    "end": 322,
+    "confidence": 1
+   }
+  },
+  {
+   "claim": "The pharmacy record of 2026-02-26 says 'omeprazole 20mg OD'",
+   "kind": "claim",
+   "counted": true,
+   "weight": 0.1272,
+   "supported": 0.9976,
+   "contradicted": 0.001,
+   "not_stated": 0.0007,
+   "not_a_claim": 0.0006,
+   "verdict": "supported",
+   "sources": {
+    "D1": 0.0007,
+    "D2": 0.0007,
+    "D3": 0.9987
+   },
+   "source": "D3",
+   "evidence": {
+    "document": "D3",
+    "quote": "omeprazole 20mg OD",
+    "start": 220,
+    "end": 238,
+    "confidence": 1
+   }
+  }
+ ],
+ "unsupported_claims": [],
+ "not_claims": [],
+ "weakest_claim": {
+  "index": 0,
+  "supported": 0.6966
+ },
+ "timing": {
+  "read_ms": 134,
+  "total_ms": 136
+ },
+ "_credits": "6"
+}

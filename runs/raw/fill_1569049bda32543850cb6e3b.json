@@ -1,0 +1,21 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "handoff": {
+   "value": "The pharmacy record of 2025-12-01 lists 'amlodipine 5mg o.d.'. The discharge summary of 2024-06-06 says 'lisinopril 10mg daily', the clinic note of 2024-09-16 says 'lisinopril 10mg OD', and the pharmacy record of 2025-12-01 says 'lisinopril 20mg OD'. The discharge summary of 2024-06-06 says 'metformin 500mg b.i.d.' and the clinic note of 2024-09-16 says 'metformin 500mg bd', but it is not in the pharmacy record of 2025-12-01. The discharge summary of 2024-06-06 says 'warfarin 3mg OD as per INR', the clinic note of 2024-09-16 says 'warfarin 3mg OD as per INR', and the pharmacy record of 2025-12-01 says 'warfarin stopped on 2025-12-01'",
+   "confidence": 0.5089536830207486,
+   "source": "generated"
+  }
+ },
+ "timing": {
+  "read_ms": 21,
+  "generate_ms": 654,
+  "total_ms": 680,
+  "source_states": 1,
+  "source_prefills": 1,
+  "shared_source_tokens": 400,
+  "shared_read_generate_forwards": 0,
+  "engine": "unified"
+ },
+ "_credits": "27"
+}

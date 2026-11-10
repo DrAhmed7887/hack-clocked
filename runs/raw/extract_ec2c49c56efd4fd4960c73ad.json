@@ -1,0 +1,366 @@
+{
+ "model": "clocked-1.0",
+ "fields": {
+  "allergies": {
+   "value": [
+    "penicillin (rash)"
+   ],
+   "items": [
+    {
+     "value": "penicillin (rash)",
+     "start": 125,
+     "end": 142,
+     "confidence": 0.9999999997284466,
+     "p_verify": 0.9999999997284466
+    }
+   ],
+   "confidence": 0.9999999997284466
+  },
+  "no_known_allergies": {
+   "value": null,
+   "confidence": 1
+  },
+  "problems": {
+   "value": [],
+   "items": [],
+   "confidence": 1
+  },
+  "medications": {
+   "value": [
+    {
+     "dose": null,
+     "drug": "amlodipine",
+     "frequency": null,
+     "line": "amlodipine stopped on 2026-02-26",
+     "stopped": "stopped on 2026-02-26"
+    },
+    {
+     "dose": "20 mg",
+     "drug": "lisinopril",
+     "frequency": "once daily",
+     "line": "lisinopril 20 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "20 mg",
+     "drug": "omeprazole",
+     "frequency": "once daily",
+     "line": "omeprazole 20 mg once daily",
+     "stopped": null
+    },
+    {
+     "dose": "16 units",
+     "drug": "insulin glargine",
+     "frequency": "at night",
+     "line": "insulin glargine 16 units at night",
+     "stopped": null
+    },
+    {
+     "dose": "100 micrograms",
+     "drug": "salbutamol inhaler",
+     "frequency": "as needed",
+     "line": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+     "stopped": null
+    }
+   ],
+   "items": [
+    {
+     "start": 158,
+     "end": 193,
+     "fields": {
+      "drug": {
+       "value": "amlodipine",
+       "start": 160,
+       "end": 170,
+       "confidence": 0.9999999982154371,
+       "p_verify": 0.9999999982154371
+      },
+      "dose": {
+       "value": null,
+       "confidence": 0.99,
+       "p_blank": 0.99
+      },
+      "frequency": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      },
+      "line": {
+       "value": "amlodipine stopped on 2026-02-26",
+       "start": 160,
+       "end": 192,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": "stopped on 2026-02-26",
+       "start": 171,
+       "end": 192,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      }
+     }
+    },
+    {
+     "start": 193,
+     "end": 223,
+     "fields": {
+      "drug": {
+       "value": "lisinopril",
+       "start": 195,
+       "end": 205,
+       "confidence": 0.9999999998553306,
+       "p_verify": 0.9999999998553306
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 206,
+       "end": 211,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 212,
+       "end": 222,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "lisinopril 20 mg once daily",
+       "start": 195,
+       "end": 222,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.992,
+       "p_blank": 0.992
+      }
+     }
+    },
+    {
+     "start": 223,
+     "end": 253,
+     "fields": {
+      "drug": {
+       "value": "omeprazole",
+       "start": 225,
+       "end": 235,
+       "confidence": 0.9999999997614806,
+       "p_verify": 0.9999999997614806
+      },
+      "dose": {
+       "value": "20 mg",
+       "start": 236,
+       "end": 241,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "once daily",
+       "start": 242,
+       "end": 252,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "omeprazole 20 mg once daily",
+       "start": 225,
+       "end": 252,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.967,
+       "p_blank": 0.967
+      }
+     }
+    },
+    {
+     "start": 253,
+     "end": 290,
+     "fields": {
+      "drug": {
+       "value": "insulin glargine",
+       "start": 255,
+       "end": 271,
+       "confidence": 0.999999999599956,
+       "p_verify": 0.999999999599956
+      },
+      "dose": {
+       "value": "16 units",
+       "start": 272,
+       "end": 280,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "frequency": {
+       "value": "at night",
+       "start": 281,
+       "end": 289,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "line": {
+       "value": "insulin glargine 16 units at night",
+       "start": 255,
+       "end": 289,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.997,
+       "p_blank": 0.997
+      }
+     }
+    },
+    {
+     "start": 290,
+     "end": 344,
+     "fields": {
+      "drug": {
+       "value": "salbutamol inhaler",
+       "start": 292,
+       "end": 310,
+       "confidence": 0.9999999989957955,
+       "p_verify": 0.9999999989957955
+      },
+      "dose": {
+       "value": "100 micrograms",
+       "start": 311,
+       "end": 325,
+       "p_start": 1,
+       "p_close": 0.996,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.996
+      },
+      "frequency": {
+       "value": "as needed",
+       "start": 335,
+       "end": 344,
+       "p_start": 0.989,
+       "p_close": 1,
+       "p_point": 1,
+       "p_verify": 1,
+       "confidence": 0.989
+      },
+      "line": {
+       "value": "salbutamol inhaler 100 micrograms, 2 puffs as needed",
+       "start": 292,
+       "end": 344,
+       "p_start": 1,
+       "p_close": 1,
+       "p_point": 0.5,
+       "p_verify": 1,
+       "confidence": 1
+      },
+      "stopped": {
+       "value": null,
+       "confidence": 0.991,
+       "p_blank": 0.991
+      }
+     }
+    }
+   ],
+   "source": "extracted",
+   "row_anchor": "drug"
+  }
+ },
+ "timing": {
+  "read_ms": 179,
+  "forwards": {
+   "fields": [
+    5,
+    0
+   ],
+   "records": [
+    5,
+    0
+   ]
+  },
+  "stages": {
+   "fields": {
+    "reader": "recognition",
+    "doc": 0,
+    "branches": 2,
+    "generate": 64,
+    "locate": 0,
+    "verify": 19,
+    "assemble": 0
+   },
+   "cells": {
+    "doc": 0,
+    "point": 46,
+    "resolve": 13,
+    "extend": 0,
+    "contest": 30,
+    "lists": 0,
+    "verify": 0
+   }
+  },
+  "records": {
+   "variant": "A",
+   "listing_ms": 0,
+   "starts_ms": 0,
+   "cells_ms": 92,
+   "forwards": {
+    "listing": [
+     0,
+     0
+    ],
+    "starts": [
+     0,
+     0
+    ],
+    "cells": [
+     5,
+     0
+    ]
+   },
+   "records": 5,
+   "cells": 20,
+   "explicit": 0
+  },
+  "total_ms": 179,
+  "server_ms": 508
+ },
+ "_credits": "8"
+}
