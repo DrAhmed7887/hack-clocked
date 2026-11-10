@@ -9,6 +9,7 @@ Built for the Clocked Build Challenge 2026 by a physician (12 years in clinical 
 
 - **Live demo:** https://drahmed7887.github.io/hack-clocked/ (static site built from recorded Clocked responses; start with patient P001).
 - **Demo film (2:32):** [on YouTube](https://youtu.be/Bjk8wvfwo-s), or [`site/film.mp4`](site/film.mp4), also playable on the demo's home page. It follows one allergy sentence through Protect, Extract, the rules, Fill and Verify. The film's source is in [`video/film/`](video/film/).
+- **For judges:** [`JUDGES.md`](JUDGES.md) maps each judging criterion to its evidence, and the evals reproduce in seconds with no key.
 
 ## Why
 - Medication history errors at hospital admission occur in up to 67% of cases ([Tam et al., CMAJ 2005](https://doi.org/10.1503/cmaj.045311)).
@@ -66,13 +67,13 @@ Without the shorthand/Spanish normalisation, medication labels on the realistic 
 ```bash
 python3 -m unittest discover -s tests -v        # rule tests, offline
 python3 data/generate.py && python3 data/make_hard.py   # synthetic data (seeded)
-export CLOCKED_API_KEY=...                       # your own key; never commit it
+export CLOCKED_API_KEY=...                       # only for new calls; never commit it
 python3 eval/score.py 0 hard                     # Extract + rules, scored
 python3 eval/score_summary.py hard               # Fill + Verify, scored
 python3 eval/score_crosscheck.py hard            # Protect + Compare, scored
 python3 app/build_site.py                        # static site in site/
 ```
-Standard library only (Python 3.9+). The demo site is plain HTML built from recorded Clocked responses: no API key reaches the browser.
+The eval scripts replay the recorded Clocked responses in `runs/raw/`, so they need no key and spend no credits; with your own key and an empty `runs/raw/`, the same scripts call Clocked live. Standard library only (Python 3.9+). The demo site is plain HTML built from recorded Clocked responses: no API key reaches the browser.
 
 ## Limits
 - Synthetic, English and Spanish records only; drug and problem pairings are random (see [`data/DATA_CARD.md`](data/DATA_CARD.md)).
